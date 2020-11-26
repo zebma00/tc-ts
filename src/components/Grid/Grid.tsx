@@ -8,7 +8,11 @@ import Cell from "../Cell/Cell";
 
 interface GridProps {
   gridData: Talent[][];
-  clickHandler: (x: number, y: number) => void;
+  clickHandler: (
+    x: number,
+    y: number,
+    e: React.MouseEvent<HTMLElement>
+  ) => void;
 }
 
 const Grid: React.FC<GridProps> = ({ gridData, clickHandler }) => {
@@ -27,6 +31,5 @@ const Grid: React.FC<GridProps> = ({ gridData, clickHandler }) => {
       })}
     </div>
   );
-  // Cell per talent
 };
 export default Grid;

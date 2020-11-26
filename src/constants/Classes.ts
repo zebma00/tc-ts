@@ -6,18 +6,6 @@ export class Talent {
   value: number;
   maxValue: number;
   valueIteration: number[];
-  increment() {
-    if (this.value <= this.maxValue) {
-      console.log(this.value);
-      this.value++;
-    }
-  }
-  decrement() {
-    if (this.value >= 0) {
-      console.log(this.value);
-      this.value--;
-    }
-  }
 
   constructor(
     x: number,
@@ -34,5 +22,15 @@ export class Talent {
     this.value = 0;
     this.maxValue = maxValue;
     this.valueIteration = valueIteration;
+  }
+  increment() {
+    if (this.value < this.maxValue) {
+      this.value++;
+    }
+  }
+  decrement() {
+    if (this.value > 0) {
+      this.value--;
+    }
   }
 }

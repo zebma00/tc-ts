@@ -13,14 +13,21 @@ const TalentCalculator: React.FC = () => {
     set_gridData(gridMaker());
   }, []);
 
-  const clickHandler = (x: number, y: number) => {
-    console.log(x, y);
+  const clickHandler = (
+    x: number,
+    y: number,
+    e: React.MouseEvent<HTMLElement>
+  ) => {
     const newData = [...gridData];
-    newData[x][y].increment();
+    if (e.type === "click") {
+      newData[x][y].increment();
+    } else if (e.type === "contextmenu") {
+      e.preventDefault();
+      newData[x][y].decrement();
+    }
     set_gridData(newData);
   };
 
-  console.log(gridData);
   return <Grid gridData={gridData} clickHandler={clickHandler} />;
   // Grid per spec
 };
