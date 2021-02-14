@@ -2,18 +2,18 @@ export class Talent {
   x: number;
   y: number;
   name: string;
-  description: string;
+  description: string[];
   value: number;
   maxValue: number;
-  valueIteration: number[];
+  valueIteration: number[][];
 
   constructor(
     x: number,
     y: number,
     name: string,
-    description: string,
+    description: string[],
     maxValue: number,
-    valueIteration: number[]
+    valueIteration: number[][]
   ) {
     this.x = x;
     this.y = y;

@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from "react";
 
-import { druid } from "../../constants/druid";
+import { balance, druid } from "../../constants/druid";
 import { Talent } from "../../constants/Classes";
 import { GridDataType } from "../../constants/Types";
 import { gridMaker } from "../helpers/gridMaker";
-import Grid from "../Grid/Grid";
+import Grid from "../Grid/";
 
 const TalentCalculator: React.FC = () => {
-  const [gridData, set_gridData] = useState<Talent[][] | []>([]);
+  const [gridData, set_gridData] = useState<any>([]);
 
   useEffect(() => {
     set_gridData(gridMaker());

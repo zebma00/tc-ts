@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import ReactTooltip from "react-tooltip";
 
 import { GridDataType } from "../../constants/Types";
 import { Talent } from "../../constants/Classes";
+import Tooltip from "./Tooltip";
 import styles from "./cell.module.css";
 
 interface CellProps {
@@ -36,7 +36,9 @@ const Cell: React.FC<CellProps> = ({ cellData, clickHandler }) => {
       >
         {cellData.value}
       </button>
-      {showTooltip ? <ReactTooltip /> : null}
+      {showTooltip && (
+        <Tooltip value={cellData.value} description={cellData.description} />
+      )}
     </div>
   );
 };

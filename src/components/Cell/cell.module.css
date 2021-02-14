@@ -4,13 +4,22 @@
 }
 
 .cellButtonStyle {
+  position: relative;
   cursor: pointer;
   border: none;
   border-radius: 10px;
   background-color: #b2e6cb;
-  display: block;
-  font-size: 40px;
+  font-size: 2rem;
   text-decoration: none;
   width: 100%;
   height: 100%;
+}
+
+.tooltipStyle {
+  z-index: 10;
+  max-width: 15rem;
+  color: yellow;
+  position: absolute;
+  border: 1px solid black;
+  background-color: gray;
 }
