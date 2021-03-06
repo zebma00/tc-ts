@@ -14,7 +14,9 @@ export default [
         "While active, any time an enemy hits the caster they have a 35% chance to become afflicted by Entangling Roots. Only usable outdoors. 1 charge. Lasts 45 sec. ",
       ],
       1,
-      [[1]]
+      [[1]],
+      [{ x: null, y: null }],
+      [{ x: 0, y: 2 }]
     ),
     new Talent(
       "Improved Nature's Grasp",
@@ -24,7 +26,7 @@ export default [
       ],
       4,
       [[15, 30, 45, 65]],
-      { x: 1, y: 0 }
+      [{ x: 0, y: 1 }]
     ),
     null,
   ],
@@ -45,7 +47,9 @@ export default [
         "%.",
       ],
       5,
-      [[2, 4, 6, 8, 10]]
+      [[2, 4, 6, 8, 10]],
+      [{ x: null, y: null }],
+      [{ x: 3, y: 1 }]
     ),
     new Talent(
       "Natural Weapons",
@@ -54,7 +58,9 @@ export default [
         "%.",
       ],
       5,
-      [[2, 4, 6, 8, 10]]
+      [[2, 4, 6, 8, 10]],
+      [{ x: null, y: null }],
+      [{ x: 2, y: 2 }]
     ),
     new Talent(
       "Natural Shapeshifter",
@@ -78,7 +84,7 @@ export default [
       ],
       1,
       [[1]],
-      { x: 2, y: 1 }
+      [{ x: 1, y: 2 }]
     ),
     new Talent(
       "Nature's Reach",
@@ -100,7 +106,7 @@ export default [
       ],
       5,
       [[20, 40, 60, 80, 100]],
-      { x: 1, y: 1 }
+      [{ x: 1, y: 1 }]
     ),
     new Talent(
       "Celestial Focus",
@@ -141,7 +147,9 @@ export default [
       [
         [1, 2],
         [0.5, 1],
-      ]
+      ],
+      [{ x: null, y: null }],
+      [{ x: 5, y: 1 }]
     ),
     new Talent(
       "Moonglow",
@@ -165,7 +173,7 @@ export default [
       ],
       5,
       [[2, 4, 6, 8, 10]],
-      { x: 1, y: 4 }
+      [{ x: 1, y: 4 }]
     ),
     null,
     null,

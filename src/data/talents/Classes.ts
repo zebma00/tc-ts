@@ -3,10 +3,14 @@ export class Talent {
   description: string[];
   value: number;
   maxValue: number;
-  required?: {
-    x: number;
-    y: number;
-  };
+  requires: {
+    x: number | null;
+    y: number | null;
+  }[];
+  required: {
+    x: number | null;
+    y: number | null;
+  }[];
   valueIteration: number[][];
 
   constructor(
@@ -14,17 +18,22 @@ export class Talent {
     description: string[],
     maxValue: number,
     valueIteration: number[][],
+    requires?: {
+      x: number | null;
+      y: number | null;
+    }[],
     required?: {
-      x: number;
-      y: number;
-    }
+      x: number | null;
+      y: number | null;
+    }[]
   ) {
     this.name = name;
     this.description = description;
     this.value = 0;
     this.maxValue = maxValue;
     this.valueIteration = valueIteration;
-    this.required = required;
+    this.requires = requires ? requires : [{ x: null, y: null }];
+    this.required = required ? required : [{ x: null, y: null }];
   }
   increment() {
     if (this.value < this.maxValue) {
