@@ -1,20 +1,23 @@
 import React, { useState } from "react";
 
-import { GridDataType } from "../../constants/Types";
-import { Talent } from "../../constants/Classes";
-import Tooltip from "./Tooltip";
+import { Talent } from "../../../data/talents/Classes";
+import Tooltip from "./tooltip";
 import styles from "./cell.module.css";
 
 interface CellProps {
   cellData: Talent;
+  i: number;
+  x: number;
+  y: number;
   clickHandler: (
+    i: number,
     x: number,
     y: number,
     e: React.MouseEvent<HTMLElement>
   ) => void;
 }
 
-const Cell: React.FC<CellProps> = ({ cellData, clickHandler }) => {
+const Cell: React.FC<CellProps> = ({ cellData, i, x, y, clickHandler }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false);
 
   return (
@@ -22,10 +25,10 @@ const Cell: React.FC<CellProps> = ({ cellData, clickHandler }) => {
       <button
         className={styles.cellButtonStyle}
         onClick={(e: React.MouseEvent<HTMLElement>) => {
-          clickHandler(cellData.x, cellData.y, e);
+          clickHandler(i, x, y, e);
         }}
         onContextMenu={(e: React.MouseEvent<HTMLElement>) => {
-          clickHandler(cellData.x, cellData.y, e);
+          clickHandler(i, x, y, e);
         }}
         onMouseEnter={() => {
           set_showTooltip(true);

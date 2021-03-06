@@ -1,28 +1,14 @@
-import { Talent } from "./Classes";
+import { Talent } from "../Classes";
 
-export const druid: string[] = ["Balance", "Feral", "Restoration"];
-
-export const druid2: object[] = [
-  {
-    name: "Balance",
-  },
-  { name: "Feral" },
-  { name: "Restoration" },
-];
-
-export const balance = [
+export default [
   [
     new Talent(
-      0,
-      0,
       "Improved Wrath",
       ["Reduces the cast time of your Wrath spell by", " sec."],
       5,
       [[0.1, 0.2, 0.3, 0.4, 0.5]]
     ),
     new Talent(
-      0,
-      1,
       "Nature's Grasp",
       [
         "While active, any time an enemy hits the caster they have a 35% chance to become afflicted by Entangling Roots. Only usable outdoors. 1 charge. Lasts 45 sec. ",
@@ -31,22 +17,19 @@ export const balance = [
       [[1]]
     ),
     new Talent(
-      0,
-      2,
       "Improved Nature's Grasp",
       [
         "Increases the chance for your Nature's Grasp to entangle an enemy by ",
         "%.",
       ],
       4,
-      [[15, 30, 45, 65]]
+      [[15, 30, 45, 65]],
+      { x: 1, y: 0 }
     ),
     null,
   ],
   [
     new Talent(
-      1,
-      0,
       "Improved Entangling Roots",
       [
         "Gives you a ",
@@ -56,8 +39,6 @@ export const balance = [
       [[40, 70, 100]]
     ),
     new Talent(
-      1,
-      1,
       "Improved Moonfire",
       [
         "Increases the damage and critical strike chance of your Moonfire spell by ",
@@ -67,8 +48,6 @@ export const balance = [
       [[2, 4, 6, 8, 10]]
     ),
     new Talent(
-      1,
-      2,
       "Natural Weapons",
       [
         "Increases the damage you deal with physical attacks in all forms by ",
@@ -78,8 +57,6 @@ export const balance = [
       [[2, 4, 6, 8, 10]]
     ),
     new Talent(
-      1,
-      3,
       "Natural Shapeshifter",
       ["Reduces the mana cost of all Shapeshifting by ", "%."],
       3,
@@ -88,8 +65,6 @@ export const balance = [
   ],
   [
     new Talent(
-      2,
-      0,
       "Improved Thorns",
       ["Increases the damage caused by your Thorns spell by ", "%."],
       3,
@@ -97,18 +72,15 @@ export const balance = [
     ),
     null,
     new Talent(
-      2,
-      2,
       "Omen of Clarity",
       [
         "Imbues the druid with natural energy. Each of the druids melee attacks has a chance of causing the caster to enter a clearcasting state. The clearcasting state reduces the Rage, Mana or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.",
       ],
       1,
-      [[1]]
+      [[1]],
+      { x: 2, y: 1 }
     ),
     new Talent(
-      2,
-      3,
       "Nature's Reach",
       [
         "Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane spells by ",
@@ -121,19 +93,16 @@ export const balance = [
   [
     null,
     new Talent(
-      3,
-      1,
       "Vengeance",
       [
         "Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ",
         "%.",
       ],
       5,
-      [[20, 40, 60, 80, 100]]
+      [[20, 40, 60, 80, 100]],
+      { x: 1, y: 1 }
     ),
     new Talent(
-      3,
-      2,
       "Celestial Focus",
       [
         "Gives you Starfire a ",
@@ -151,8 +120,6 @@ export const balance = [
 
   [
     new Talent(
-      4,
-      0,
       "Celestial Spark",
       [
         "Gives your Starfire spell a ",
@@ -166,8 +133,6 @@ export const balance = [
       ]
     ),
     new Talent(
-      4,
-      1,
       "Nature's Grace",
       [
         "All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.",
@@ -179,8 +144,6 @@ export const balance = [
       ]
     ),
     new Talent(
-      4,
-      1,
       "Moonglow",
       [
         "Reduces the mana cost of your Starfire, Moonfire, Wrath, Healing Touch, Rejuvenation and Regrowth spells by ",
@@ -195,25 +158,21 @@ export const balance = [
   [
     null,
     new Talent(
-      5,
-      1,
       "Moonfury",
       [
         "Increases the damage done by your Starfire, Moonfire and Wrath spells by ",
         "%.",
       ],
       5,
-      [[2, 4, 6, 8, 10]]
+      [[2, 4, 6, 8, 10]],
+      { x: 1, y: 4 }
     ),
     null,
     null,
   ],
-
   [
     null,
     new Talent(
-      6,
-      1,
       "Moonkin Form",
       [
         "Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.",

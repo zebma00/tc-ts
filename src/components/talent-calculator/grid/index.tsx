@@ -1,20 +1,27 @@
 import React from "react";
 
-import { Talent } from "../../constants/Classes";
-import Cell from "../Cell";
-import EmptyCell from "../Cell/EmptyCell";
+import { Talent } from "../../../data/talents/Classes";
+import Cell from "../cell";
 import styles from "./grid.module.css";
 
 interface GridProps {
   gridData: Talent[][];
+  i: number;
   clickHandler: (
+    i: number,
     x: number,
     y: number,
     e: React.MouseEvent<HTMLElement>
   ) => void;
+  currentPoints: number;
 }
 
-const Grid: React.FC<GridProps> = ({ gridData, clickHandler }) => {
+const Grid: React.FC<GridProps> = ({
+  i,
+  gridData,
+  clickHandler,
+  currentPoints,
+}) => {
   return (
     <div className={styles.gridContainer}>
       <div className={styles.grid}>
@@ -24,16 +31,20 @@ const Grid: React.FC<GridProps> = ({ gridData, clickHandler }) => {
               return (
                 <Cell
                   key={`${x}, ${y}`}
+                  i={i}
+                  x={x}
+                  y={y}
                   cellData={cell}
                   clickHandler={clickHandler}
                 />
               );
             } else {
-              return <EmptyCell key={`${x}, ${y}`} />;
+              return <div key={`${x}, ${y}`} />;
             }
           });
         })}
       </div>
+      <>Current points: {currentPoints}</>
     </div>
   );
 };
