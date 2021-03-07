@@ -1,5 +1,5 @@
-import { Talent } from "../../../data/talents/Classes";
-import { ClassTalentType, GridDataType } from "../../../types/";
+import { Talent } from '../../../data/talents/Classes';
+import { ClassTalentType, GridDataType } from '../../../types/';
 
 export const gridMaker = (spec: (Talent | null)[][]) => {
   const grid: Talent[][] | null[][] = [];
@@ -20,15 +20,8 @@ export const talentCalcMaker = (classTalent: ClassTalentType) => {
   return talentTrees;
 };
 
-export const requiresTalentChecker = (
-  talentData: any,
-  x: number,
-  y: number
-) => {
-  if (
-    talentData[x][y].requires[0].x != null &&
-    talentData[x][y].requires[0].y != null
-  ) {
+export const requiresTalentChecker = (talentData: any, x: number, y: number) => {
+  if (talentData[x][y].requires[0].x != null && talentData[x][y].requires[0].y != null) {
     const requiresX = talentData[x][y].requires[0].x;
     const requiresY = talentData[x][y].requires[0].y;
     const requiresTalent = talentData[requiresX][requiresY];
@@ -43,15 +36,8 @@ export const requiresTalentChecker = (
   }
 };
 
-export const requiredTalentChecker = (
-  talentData: any,
-  x: number,
-  y: number
-) => {
-  if (
-    talentData[x][y].required[0].x !== null &&
-    talentData[x][y].required[0].y !== null
-  ) {
+export const requiredTalentChecker = (talentData: any, x: number, y: number) => {
+  if (talentData[x][y].required[0].x !== null && talentData[x][y].required[0].y !== null) {
     const requiredX = talentData[x][y].required[0].x;
     const requiredY = talentData[x][y].required[0].y;
     const requiredTalent = talentData[requiredX][requiredY];
@@ -65,32 +51,22 @@ export const requiredTalentChecker = (
   }
 };
 
-export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
-  if (x * 5 <= pointsPerTree) {
-    return true;
-  } else {
-    return false;
-  }
-};
-
-export const enabledChecker = (
-  talentData: any,
-  x: number,
-  y: number,
-  pointsPerTree: number
-) => {
+export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number) => {
   if (talentData[x][y].value === talentData[x][y].maxValue) {
-    return "yellow";
-  } else if (
-    requiresTalentChecker(talentData, x, y) &&
-    requiredPointsChecker(pointsPerTree, x)
-  ) {
-    return "green";
+    return 'yellow';
+  } else if (requiresTalentChecker(talentData, x, y) && requiredPointsChecker(pointsPerTree, x)) {
+    return 'green';
   } else {
-    return "grey";
+    return 'grey';
   }
 };
 
-export const maxValueChecker = (talentData: any) => {
-  console.log("W");
+export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
+  return x * 5 <= pointsPerTree ? true : false;
+};
+
+export const requiredXChecker = (xPerTree: number, pointsPerTree: number) => {
+  console.log(pointsPerTree, xPerTree * 5);
+  // klopt nie
+  return pointsPerTree + 1 >= (xPerTree + 1) * 5 ? true : false;
 };
