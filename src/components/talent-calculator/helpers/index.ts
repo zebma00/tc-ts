@@ -25,7 +25,6 @@ export const requiresTalentChecker = (
   x: number,
   y: number
 ) => {
-  console.log("REQUIRES", talentData);
   if (
     talentData[x][y].requires[0].x != null &&
     talentData[x][y].requires[0].y != null
@@ -33,18 +32,7 @@ export const requiresTalentChecker = (
     const requiresX = talentData[x][y].requires[0].x;
     const requiresY = talentData[x][y].requires[0].y;
     const requiresTalent = talentData[requiresX][requiresY];
-    console.log(
-      "PLEASE",
-      talentData[x][y],
-      "WHY",
-      requiresTalent,
-      "HAS",
-      x,
-      y,
-      "NEEDS",
-      requiresX,
-      requiresY
-    );
+
     if (requiresTalent.value === requiresTalent.maxValue) {
       return true;
     } else {
@@ -60,7 +48,6 @@ export const requiredTalentChecker = (
   x: number,
   y: number
 ) => {
-  console.log("REQUIRED", talentData, x, y);
   if (
     talentData[x][y].required[0].x !== null &&
     talentData[x][y].required[0].y !== null
@@ -92,7 +79,6 @@ export const enabledChecker = (
   y: number,
   pointsPerTree: number
 ) => {
-  console.log("ENABLE", talentData, x, y, pointsPerTree);
   if (talentData[x][y].value === talentData[x][y].maxValue) {
     return "yellow";
   } else if (
@@ -103,4 +89,8 @@ export const enabledChecker = (
   } else {
     return "grey";
   }
+};
+
+export const maxValueChecker = (talentData: any) => {
+  console.log("W");
 };

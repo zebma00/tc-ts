@@ -6,6 +6,7 @@ import {
   requiresTalentChecker,
   requiredTalentChecker,
   requiredPointsChecker,
+  maxValueChecker,
 } from "./helpers";
 import Grid from "./grid/";
 import styles from "./index.module.css";
@@ -27,16 +28,16 @@ const TalentCalculator: React.FC = () => {
     y: number,
     e: React.MouseEvent<HTMLElement>
   ) => {
-    console.log(talentData[i][x][y], x, y);
     e.preventDefault();
     const requiresTalent = requiresTalentChecker(talentData[i], x, y);
     const requiredTalent = requiredTalentChecker(talentData[i], x, y);
     const requiredPoints = requiredPointsChecker(pointsPerTree[i], x);
+    const { value, maxValue } = talentData[i][x][y];
     const newData = [...talentData];
     if (
       e.type === "click" &&
       totalPoints > 0 &&
-      newData[i][x][y].value < newData[i][x][y].maxValue &&
+      value < maxValue &&
       requiredPoints &&
       requiresTalent
     ) {
@@ -47,7 +48,7 @@ const TalentCalculator: React.FC = () => {
       setPointsPerTree(newPointsPerTree);
     } else if (
       e.type === "contextmenu" &&
-      newData[i][x][y].value > 0 &&
+      value > 0 &&
       pointsPerTree[i] > 0 &&
       requiredPoints &&
       requiredTalent

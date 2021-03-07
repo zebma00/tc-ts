@@ -30,7 +30,6 @@ const Grid: React.FC<GridProps> = ({
         {gridData.map((row, x) => {
           return row.map((cell, y) => {
             if (cell) {
-              console.log("GRID", gridData, x, y, currentPoints);
               const color = enabledChecker(gridData, x, y, currentPoints);
               return (
                 <Cell
