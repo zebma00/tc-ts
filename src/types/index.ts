@@ -1,3 +1,5 @@
 import { Talent } from "../data/talents/Classes";
 
-export type classTalentType = (Talent | null)[][][];
+export type ClassTalentType = (Talent | null)[][][];
+
+export type GridDataType = Talent[][];

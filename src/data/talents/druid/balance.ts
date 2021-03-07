@@ -26,7 +26,8 @@ export default [
       ],
       4,
       [[15, 30, 45, 65]],
-      [{ x: 0, y: 1 }]
+      [{ x: 0, y: 1 }],
+      [{ x: null, y: null }]
     ),
     null,
   ],
@@ -143,11 +144,8 @@ export default [
       [
         "All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.",
       ],
-      2,
-      [
-        [1, 2],
-        [0.5, 1],
-      ],
+      1,
+      [[1]],
       [{ x: null, y: null }],
       [{ x: 5, y: 1 }]
     ),
@@ -173,7 +171,7 @@ export default [
       ],
       5,
       [[2, 4, 6, 8, 10]],
-      [{ x: 1, y: 4 }]
+      [{ x: 4, y: 1 }]
     ),
     null,
     null,

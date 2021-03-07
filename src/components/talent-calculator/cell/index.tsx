@@ -9,6 +9,7 @@ interface CellProps {
   i: number;
   x: number;
   y: number;
+  color: string;
   clickHandler: (
     i: number,
     x: number,
@@ -17,13 +18,21 @@ interface CellProps {
   ) => void;
 }
 
-const Cell: React.FC<CellProps> = ({ cellData, i, x, y, clickHandler }) => {
+const Cell: React.FC<CellProps> = ({
+  cellData,
+  i,
+  x,
+  y,
+  color,
+  clickHandler,
+}) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false);
 
   return (
     <div className={styles.cellStyle}>
       <button
         className={styles.cellButtonStyle}
+        style={{ backgroundColor: color }}
         onClick={(e: React.MouseEvent<HTMLElement>) => {
           clickHandler(i, x, y, e);
         }}

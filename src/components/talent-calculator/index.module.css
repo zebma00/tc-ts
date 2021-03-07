@@ -1,0 +1,7 @@
+.tcContainer {
+    display: flex
+}
+
+.specHeader {
+    border: 1px solid red;
+}

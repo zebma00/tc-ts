@@ -1,5 +1,5 @@
 import { Talent } from "../../../data/talents/Classes";
-import { classTalentType } from "../../../types/";
+import { ClassTalentType, GridDataType } from "../../../types/";
 
 export const gridMaker = (spec: (Talent | null)[][]) => {
   const grid: Talent[][] | null[][] = [];
@@ -12,7 +12,7 @@ export const gridMaker = (spec: (Talent | null)[][]) => {
   return grid;
 };
 
-export const talentCalcMaker = (classTalent: classTalentType) => {
+export const talentCalcMaker = (classTalent: ClassTalentType) => {
   const talentTrees = [];
   for (let i = 0; i < 3; i++) {
     talentTrees.push(gridMaker(classTalent[i]));
@@ -20,20 +20,31 @@ export const talentCalcMaker = (classTalent: classTalentType) => {
   return talentTrees;
 };
 
-export const requiresChecker = (
+export const requiresTalentChecker = (
   talentData: any,
-  i: number,
   x: number,
   y: number
 ) => {
+  console.log("REQUIRES", talentData);
   if (
-    talentData[i][x][y].requires[0].x !== null &&
-    talentData[i][x][y].requires[0].y !== null
+    talentData[x][y].requires[0].x != null &&
+    talentData[x][y].requires[0].y != null
   ) {
-    const requiresX = talentData[i][x][y].requires[0].x;
-    const requiresY = talentData[i][x][y].requires[0].y;
-    const requiresTalent = talentData[i][requiresX][requiresY];
-    console.log(requiresTalent);
+    const requiresX = talentData[x][y].requires[0].x;
+    const requiresY = talentData[x][y].requires[0].y;
+    const requiresTalent = talentData[requiresX][requiresY];
+    console.log(
+      "PLEASE",
+      talentData[x][y],
+      "WHY",
+      requiresTalent,
+      "HAS",
+      x,
+      y,
+      "NEEDS",
+      requiresX,
+      requiresY
+    );
     if (requiresTalent.value === requiresTalent.maxValue) {
       return true;
     } else {
@@ -44,20 +55,19 @@ export const requiresChecker = (
   }
 };
 
-export const requiredChecker = (
+export const requiredTalentChecker = (
   talentData: any,
-  i: number,
   x: number,
   y: number
 ) => {
+  console.log("REQUIRED", talentData, x, y);
   if (
-    talentData[i][x][y].required[0].x !== null &&
-    talentData[i][x][y].required[0].y !== null
+    talentData[x][y].required[0].x !== null &&
+    talentData[x][y].required[0].y !== null
   ) {
-    const requiredX = talentData[i][x][y].required[0].x;
-    const requiredY = talentData[i][x][y].required[0].y;
-    const requiredTalent = talentData[i][requiredX][requiredY];
-    console.log(requiredTalent);
+    const requiredX = talentData[x][y].required[0].x;
+    const requiredY = talentData[x][y].required[0].y;
+    const requiredTalent = talentData[requiredX][requiredY];
     if (requiredTalent.value === 0) {
       return true;
     } else {
@@ -65,5 +75,32 @@ export const requiredChecker = (
     }
   } else {
     return true;
+  }
+};
+
+export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
+  if (x * 5 <= pointsPerTree) {
+    return true;
+  } else {
+    return false;
+  }
+};
+
+export const enabledChecker = (
+  talentData: any,
+  x: number,
+  y: number,
+  pointsPerTree: number
+) => {
+  console.log("ENABLE", talentData, x, y, pointsPerTree);
+  if (talentData[x][y].value === talentData[x][y].maxValue) {
+    return "yellow";
+  } else if (
+    requiresTalentChecker(talentData, x, y) &&
+    requiredPointsChecker(pointsPerTree, x)
+  ) {
+    return "green";
+  } else {
+    return "grey";
   }
 };

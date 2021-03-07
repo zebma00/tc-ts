@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Talent } from "../../../data/talents/Classes";
+import { enabledChecker } from "../helpers/";
 import Cell from "../cell";
 import styles from "./grid.module.css";
 
@@ -23,11 +24,14 @@ const Grid: React.FC<GridProps> = ({
   currentPoints,
 }) => {
   return (
-    <div className={styles.gridContainer}>
+    <div>
+      <>Current points: {currentPoints}</>
       <div className={styles.grid}>
         {gridData.map((row, x) => {
           return row.map((cell, y) => {
             if (cell) {
+              console.log("GRID", gridData, x, y, currentPoints);
+              const color = enabledChecker(gridData, x, y, currentPoints);
               return (
                 <Cell
                   key={`${x}, ${y}`}
@@ -35,6 +39,7 @@ const Grid: React.FC<GridProps> = ({
                   x={x}
                   y={y}
                   cellData={cell}
+                  color={color}
                   clickHandler={clickHandler}
                 />
               );
@@ -44,7 +49,6 @@ const Grid: React.FC<GridProps> = ({
           });
         })}
       </div>
-      <>Current points: {currentPoints}</>
     </div>
   );
 };

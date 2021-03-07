@@ -1,8 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 import druid from "../../data/talents/druid";
-import { talentCalcMaker, requiresChecker, requiredChecker } from "./helpers";
+import {
+  talentCalcMaker,
+  requiresTalentChecker,
+  requiredTalentChecker,
+  requiredPointsChecker,
+} from "./helpers";
 import Grid from "./grid/";
+import styles from "./index.module.css";
 
 const TalentCalculator: React.FC = () => {
   const [talentData, setTalentData] = useState<any>([]);
@@ -11,6 +17,8 @@ const TalentCalculator: React.FC = () => {
 
   useEffect(() => {
     setTalentData(talentCalcMaker(druid));
+    setTotalPoints(51);
+    setPointsPerTree([0, 0, 0]);
   }, []);
 
   const clickHandler = (
@@ -19,16 +27,18 @@ const TalentCalculator: React.FC = () => {
     y: number,
     e: React.MouseEvent<HTMLElement>
   ) => {
+    console.log(talentData[i][x][y], x, y);
     e.preventDefault();
-    const requires = requiresChecker(talentData, i, x, y);
-    const required = requiredChecker(talentData, i, x, y);
+    const requiresTalent = requiresTalentChecker(talentData[i], x, y);
+    const requiredTalent = requiredTalentChecker(talentData[i], x, y);
+    const requiredPoints = requiredPointsChecker(pointsPerTree[i], x);
     const newData = [...talentData];
     if (
       e.type === "click" &&
       totalPoints > 0 &&
-      newData[i][x][y].value !== newData[i][x][y].maxValue &&
-      x * 5 <= pointsPerTree[i] &&
-      requires
+      newData[i][x][y].value < newData[i][x][y].maxValue &&
+      requiredPoints &&
+      requiresTalent
     ) {
       newData[i][x][y].increment();
       setTotalPoints(totalPoints - 1);
@@ -37,9 +47,10 @@ const TalentCalculator: React.FC = () => {
       setPointsPerTree(newPointsPerTree);
     } else if (
       e.type === "contextmenu" &&
-      newData[i][x][y].value !== 0 &&
+      newData[i][x][y].value > 0 &&
       pointsPerTree[i] > 0 &&
-      required
+      requiredPoints &&
+      requiredTalent
     ) {
       newData[i][x][y].decrement();
       setTotalPoints(totalPoints + 1);
@@ -52,18 +63,20 @@ const TalentCalculator: React.FC = () => {
 
   return (
     <>
-      {talentData.map((gridData: any, i: number) => {
-        return (
-          <Grid
-            key={i}
-            i={i}
-            gridData={gridData}
-            clickHandler={clickHandler}
-            currentPoints={pointsPerTree[i]}
-          />
-        );
-      })}
-      <div>{totalPoints}</div>
+      <div className={styles.tcContainer}>
+        {talentData.map((gridData: any, i: number) => {
+          return (
+            <Grid
+              key={i}
+              i={i}
+              gridData={gridData}
+              clickHandler={clickHandler}
+              currentPoints={pointsPerTree[i]}
+            />
+          );
+        })}
+      </div>
+      <div className={styles.specHeader}>{totalPoints}</div>
     </>
   );
 };
