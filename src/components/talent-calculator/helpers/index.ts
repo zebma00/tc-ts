@@ -1,5 +1,5 @@
 import { Talent } from '../../../data/talents/Classes';
-import { ClassTalentType, GridDataType } from '../../../types/';
+import { ClassTalentType, ClassSpecType } from '../../../types/';
 
 export const gridMaker = (spec: (Talent | null)[][]) => {
   const grid: Talent[][] | null[][] = [];
@@ -51,22 +51,54 @@ export const requiredTalentChecker = (talentData: any, x: number, y: number) => 
   }
 };
 
-export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number) => {
+export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
+  return x * 5 <= pointsPerTree ? true : false;
+};
+
+export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number | undefined) => {
   if (talentData[x][y].value === talentData[x][y].maxValue) {
     return 'yellow';
-  } else if (requiresTalentChecker(talentData, x, y) && requiredPointsChecker(pointsPerTree, x)) {
+  } else if (requiresTalentChecker(talentData, x, y) && requiredPointsChecker(pointsPerTree!, x)) {
     return 'green';
   } else {
     return 'grey';
   }
 };
 
-export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
-  return x * 5 <= pointsPerTree ? true : false;
+export const requiredXChecker = (specData: ClassSpecType) => {
+  console.log(
+    'REQUIRE X',
+    [...specData!].map(row => {
+      // return row.filter(talent)
+    })
+  );
 };
 
-export const requiredXChecker = (xPerTree: number, pointsPerTree: number) => {
-  console.log(pointsPerTree, xPerTree * 5);
-  // klopt nie
-  return pointsPerTree + 1 >= (xPerTree + 1) * 5 ? true : false;
+export const pointsPerTreeChecker = (specData: ClassSpecType) => {
+  return [...specData!]
+    .map(row => {
+      return row
+        .filter(talent => {
+          return !!talent;
+        })
+        .map(talent => {
+          return talent?.value;
+        });
+    })
+    .flat(1)
+    .reduce((a, b) => {
+      return a! + b!;
+    });
+};
+
+export const totalPointsChecker = (talentData: ClassTalentType) => {
+  const totalPoints = [];
+  if (talentData) {
+    for (let i = 0; i < 3; i++) {
+      totalPoints.push(pointsPerTreeChecker(talentData[i]));
+    }
+    return totalPoints.reduce((a, b) => {
+      return a! + b!;
+    });
+  }
 };
