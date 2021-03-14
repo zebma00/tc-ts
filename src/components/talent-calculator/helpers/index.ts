@@ -55,7 +55,7 @@ export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
   return x * 5 <= pointsPerTree ? true : false;
 };
 
-export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number | undefined) => {
+export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: any) => {
   if (talentData[x][y].value === talentData[x][y].maxValue) {
     return 'yellow';
   } else if (requiresTalentChecker(talentData, x, y) && requiredPointsChecker(pointsPerTree!, x)) {
@@ -65,34 +65,31 @@ export const enabledChecker = (talentData: any, x: number, y: number, pointsPerT
   }
 };
 
-export const requiredXChecker = (specData: ClassSpecType) => {
-  console.log(
-    'REQUIRE X',
-    [...specData!].map(row => {
-      // return row.filter(talent)
+export const pointsPerRowChecker = (specRow: (Talent | null)[]) => {
+  return specRow
+    .filter(talent => {
+      return !!talent;
     })
-  );
+    .map(talent => {
+      return talent?.value;
+    })
+    .reduce((a, b) => {
+      return a! + b!;
+    });
 };
 
 export const pointsPerTreeChecker = (specData: ClassSpecType) => {
   return [...specData!]
     .map(row => {
-      return row
-        .filter(talent => {
-          return !!talent;
-        })
-        .map(talent => {
-          return talent?.value;
-        });
+      return pointsPerRowChecker(row)!;
     })
-    .flat(1)
     .reduce((a, b) => {
       return a! + b!;
     });
 };
 
 export const totalPointsChecker = (talentData: ClassTalentType) => {
-  const totalPoints = [];
+  const totalPoints: number[] = [];
   if (talentData) {
     for (let i = 0; i < 3; i++) {
       totalPoints.push(pointsPerTreeChecker(talentData[i]));
@@ -101,4 +98,40 @@ export const totalPointsChecker = (talentData: ClassTalentType) => {
       return a! + b!;
     });
   }
+  return totalPoints;
+};
+
+export const pointsUpToXChecker = (specData: ClassSpecType, requiredX: number) => {
+  console.log('IN PTS X CHECK', requiredX);
+  const upToXPoints = [];
+  // if (requiredX > 0) {
+  for (let i = 0; i < requiredX; i++) {
+    // console.log(pointsPerRowChecker(specData[i]));
+    upToXPoints.push(pointsPerRowChecker(specData[i]));
+    // }
+  }
+  if (upToXPoints.length) {
+    // console.log(
+    //   'UP TO X',
+    //   upToXPoints.reduce((a, b) => {
+    //     return a! + b!;
+    //   })
+    // );
+    return upToXPoints.reduce((a, b) => {
+      return a! + b!;
+    });
+  }
+  return 0;
+};
+
+export const requiredXChecker = (specData: ClassSpecType) => {
+  const requiredX = [...specData!]
+    .map(row => {
+      return row.some(talent => {
+        return talent && talent.value;
+      });
+    })
+    .lastIndexOf(true);
+
+  return requiredX;
 };

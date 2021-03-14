@@ -6,10 +6,10 @@ import {
   talentCalcMaker,
   requiresTalentChecker,
   requiredTalentChecker,
-  requiredPointsChecker,
   requiredXChecker,
   pointsPerTreeChecker,
   totalPointsChecker,
+  pointsUpToXChecker,
 } from './helpers';
 import Grid from './grid/';
 import styles from './index.module.css';
@@ -22,18 +22,21 @@ const TalentCalculator: React.FC = () => {
   }, []);
 
   const totalPoints = totalPointsChecker(talentData!);
-  const pointsLeft = 51 - totalPointsChecker(talentData!)!;
+  // const pointsLeft = 51 - totalPointsChecker(talentData!)!;
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
-    const pointsPerTree = talentData && pointsPerTreeChecker(talentData[i]);
     const newData = [...talentData!];
+    const pointsPerTree = pointsPerTreeChecker(talentData![i])!;
+    const requiredX = requiredXChecker(talentData![i]);
+    const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!;
     const requiresTalent = requiresTalentChecker(newData[i], x, y);
     const requiredTalent = requiredTalentChecker(newData[i], x, y);
     const { value, maxValue } = talentData![i][x][y]!;
-    if (e.type === 'click' && value < maxValue && requiresTalent && pointsPerTree! >= x * 5 && pointsLeft) {
+    console.log('UP TO X', upToXPoints, 'requiredX', requiredX);
+    if (e.type === 'click' && value < maxValue && requiresTalent) {
       newData[i][x][y]!.increment();
-    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
+    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent && requiredX * 5 <= upToXPoints) {
       newData[i][x][y]!.decrement();
     }
     setTalentData(newData);
@@ -48,7 +51,7 @@ const TalentCalculator: React.FC = () => {
         <div className={styles.tcFooter}>
           <>{totalPoints}</>
           <br />
-          <>{pointsLeft}</>
+          {/* <>{pointsLeft}</> */}
         </div>
       </div>
     </>
