@@ -55,13 +55,18 @@ export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
   return x * 5 <= pointsPerTree ? true : false;
 };
 
-export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: any) => {
+export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number, pointsLeft: number) => {
+  console.log(pointsLeft);
   if (talentData[x][y].value === talentData[x][y].maxValue) {
     return 'yellow';
-  } else if (requiresTalentChecker(talentData, x, y) && requiredPointsChecker(pointsPerTree!, x)) {
-    return 'green';
-  } else {
+  } else if (
+    (pointsLeft === 0 && talentData[x][y].value === 0) ||
+    !requiredPointsChecker(pointsPerTree!, x) ||
+    !requiresTalentChecker(talentData, x, y)
+  ) {
     return 'grey';
+  } else {
+    return 'green';
   }
 };
 

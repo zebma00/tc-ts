@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-import { ClassTalentType, ClassSpecType, GridDataType } from '../../types/';
+import { ClassTalentType } from '../../types/';
 import druid from '../../data/talents/druid';
 import {
   talentCalcMaker,
@@ -33,7 +33,7 @@ const TalentCalculator: React.FC = () => {
     const requiresTalent = requiresTalentChecker(newData[i], x, y);
     const requiredTalent = requiredTalentChecker(newData[i], x, y);
     const { value, maxValue } = talentData![i][x][y]!;
-    if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree) {
+    if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree && pointsLeft > 0) {
       newData[i][x][y]!.increment();
     } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
       if (x >= requiredX) {
@@ -49,7 +49,7 @@ const TalentCalculator: React.FC = () => {
     <>
       <div className={styles.tcContainer}>
         {talentData?.map((gridData: any, i: number) => {
-          return <Grid key={i} i={i} gridData={gridData} clickHandler={clickHandler} />;
+          return <Grid key={i} i={i} gridData={gridData} pointsLeft={pointsLeft!} clickHandler={clickHandler} />;
         })}
         <div className={styles.tcFooter}>
           <>{totalPoints}</>
