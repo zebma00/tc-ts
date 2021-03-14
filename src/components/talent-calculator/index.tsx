@@ -22,7 +22,7 @@ const TalentCalculator: React.FC = () => {
   }, []);
 
   const totalPoints = totalPointsChecker(talentData!);
-  // const pointsLeft = 51 - totalPointsChecker(talentData!)!;
+  const pointsLeft = 51 - totalPointsChecker(talentData!)!;
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault();
@@ -33,11 +33,14 @@ const TalentCalculator: React.FC = () => {
     const requiresTalent = requiresTalentChecker(newData[i], x, y);
     const requiredTalent = requiredTalentChecker(newData[i], x, y);
     const { value, maxValue } = talentData![i][x][y]!;
-    console.log('UP TO X', upToXPoints, 'requiredX', requiredX);
-    if (e.type === 'click' && value < maxValue && requiresTalent) {
+    if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree) {
       newData[i][x][y]!.increment();
-    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent && requiredX * 5 <= upToXPoints) {
-      newData[i][x][y]!.decrement();
+    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
+      if (x >= requiredX) {
+        newData[i][x][y]!.decrement();
+      } else if (x < requiredX && upToXPoints > requiredX * 5) {
+        newData[i][x][y]!.decrement();
+      }
     }
     setTalentData(newData);
   };
@@ -51,7 +54,7 @@ const TalentCalculator: React.FC = () => {
         <div className={styles.tcFooter}>
           <>{totalPoints}</>
           <br />
-          {/* <>{pointsLeft}</> */}
+          <>{pointsLeft}</>
         </div>
       </div>
     </>

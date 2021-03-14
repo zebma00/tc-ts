@@ -94,29 +94,20 @@ export const totalPointsChecker = (talentData: ClassTalentType) => {
     for (let i = 0; i < 3; i++) {
       totalPoints.push(pointsPerTreeChecker(talentData[i]));
     }
+  }
+  if (totalPoints.length) {
     return totalPoints.reduce((a, b) => {
       return a! + b!;
     });
   }
-  return totalPoints;
 };
 
 export const pointsUpToXChecker = (specData: ClassSpecType, requiredX: number) => {
-  console.log('IN PTS X CHECK', requiredX);
   const upToXPoints = [];
-  // if (requiredX > 0) {
   for (let i = 0; i < requiredX; i++) {
-    // console.log(pointsPerRowChecker(specData[i]));
     upToXPoints.push(pointsPerRowChecker(specData[i]));
-    // }
   }
   if (upToXPoints.length) {
-    // console.log(
-    //   'UP TO X',
-    //   upToXPoints.reduce((a, b) => {
-    //     return a! + b!;
-    //   })
-    // );
     return upToXPoints.reduce((a, b) => {
       return a! + b!;
     });
