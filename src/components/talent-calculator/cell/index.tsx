@@ -19,7 +19,15 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
   const { value, maxValue, icon } = cellData;
 
   return (
-    <div className={styles.cellWrapper}>
+    <div
+      className={styles.cellWrapper}
+      onMouseEnter={() => {
+        set_showTooltip(true);
+      }}
+      onMouseLeave={() => {
+        set_showTooltip(false);
+      }}
+    >
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
@@ -37,19 +45,13 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
           onContextMenu={(e: React.MouseEvent<HTMLElement>) => {
             clickHandler(i, x, y, e);
           }}
-          onMouseEnter={() => {
-            set_showTooltip(true);
-          }}
-          onMouseLeave={() => {
-            set_showTooltip(false);
-          }}
         >
           <div className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
             {`${value}/${maxValue}`}
           </div>
         </button>
-        {showTooltip && <Tooltip value={cellData.value} description={cellData.description} />}
       </div>
+      {showTooltip && <Tooltip value={cellData.value} description={cellData.description} />}
     </div>
   );
 };
