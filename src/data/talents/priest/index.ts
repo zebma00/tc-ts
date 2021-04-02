@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import discipline from './discipline';
+import holy from './holy';
+import shadow from './shadow';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'priest', specs: [discipline, holy, shadow] };

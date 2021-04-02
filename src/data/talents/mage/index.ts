@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import arcane from './arcane';
+import fire from './fire';
+import frost from './frost';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'mage', specs: [arcane, fire, frost] };

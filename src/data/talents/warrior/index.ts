@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import arms from './arms';
+import fury from './fury';
+import protection from './protection';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'warrior', specs: [arms, fury, protection] };

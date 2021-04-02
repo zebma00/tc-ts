@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
+import elemental from './elemental';
+import enhancement from './enhancement';
 import restoration from './restoration';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'shaman', specs: [elemental, enhancement, restoration] };

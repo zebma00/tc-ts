@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import affliction from './affliction';
+import demonology from './demonology';
+import destruction from './destruction';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'warlock', specs: [affliction, demonology, destruction] };

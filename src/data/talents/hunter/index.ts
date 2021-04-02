@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import beastMastery from './beast-mastery';
+import marksmanship from './marksmanship';
+import survival from './survival';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'hunter', specs: [beastMastery, marksmanship, survival] };

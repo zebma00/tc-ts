@@ -35,7 +35,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
           border: color ? `2px solid ${color}` : 'none',
           filter: !color ? 'grayscale(100%)' : 'none',
         }}
-        className={styles.cellStyle}
+        className={styles.cellIconStyle}
       >
         <button
           className={styles.cellButtonStyle}

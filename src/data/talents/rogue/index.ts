@@ -1,5 +1,5 @@
-import balance from './balance';
-import feral from './feral';
-import restoration from './restoration';
+import assassination from './assassination';
+import combat from './combat';
+import sublety from './sublety';
 
-export default { class: 'druid', specs: [balance, feral, restoration] };
+export default { class: 'rogue', specs: [assassination, combat, sublety] };
