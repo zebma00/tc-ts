@@ -1,0 +1,14 @@
+.tcContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+    align-items: stretch;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+.tcFooter {
+    border: 1px solid red;
+}

@@ -1,77 +1,49 @@
-import React, { useState, useEffect } from 'react';
-
-import { ClassTalentType } from '../../types/';
-import druid from '../../data/talents/druid';
-import {
-  talentCalcMaker,
-  requiresTalentChecker,
-  requiredTalentChecker,
-  requiredXChecker,
-  pointsPerTreeChecker,
-  totalPointsChecker,
-  pointsUpToXChecker,
-  specNameMaker,
-} from './helpers';
-import Grid from './grid/';
+import React, { useState } from 'react';
+import TalentCalculatorMain from './talent-calculator-main/';
 import styles from './index.module.css';
 
 const TalentCalculator: React.FC = () => {
-  const [talentData, setTalentData] = useState<ClassTalentType | null>(null);
-  const [specNames, setSpecNames] = useState<string[] | null>(null);
-  const selectedClass = druid.class;
+  const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior'];
+  const [selectedClass, setSelectedClass] = useState<string>(classes[0]);
 
-  useEffect(() => {
-    setTalentData(talentCalcMaker(druid.specs));
-    setSpecNames(specNameMaker(druid.specs));
-  }, []);
-
-  const totalPoints = totalPointsChecker(talentData!);
-  const pointsLeft = 51 - totalPointsChecker(talentData!)!;
-
-  const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    const newData = [...talentData!];
-    const pointsPerTree = pointsPerTreeChecker(talentData![i])!;
-    const requiredX = requiredXChecker(talentData![i]);
-    const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!;
-    const requiresTalent = requiresTalentChecker(newData[i], x, y);
-    const requiredTalent = requiredTalentChecker(newData[i], x, y);
-    const { value, maxValue } = talentData![i][x][y]!;
-    if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree && pointsLeft > 0) {
-      newData[i][x][y]!.increment();
-    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
-      if (x >= requiredX) {
-        newData[i][x][y]!.decrement();
-      } else if (x < requiredX && upToXPoints > requiredX * 5) {
-        newData[i][x][y]!.decrement();
-      }
-    }
-    setTalentData(newData);
+  const selectClass = (i: number) => {
+    setSelectedClass(classes[i]);
   };
 
   return (
-    <>
-      <div className={styles.tcContainer}>
-        {talentData?.map((gridData: any, i: number) => {
+    <div className={styles.tcWrapper}>
+      <div className={styles.selectWrapper}>
+        {classes.map((singleClass: string, i: number) => {
           return (
-            <Grid
+            <div
               key={i}
-              i={i}
-              gridData={gridData}
-              pointsLeft={pointsLeft!}
-              selectedClass={selectedClass}
-              specName={specNames![i]}
-              clickHandler={clickHandler}
-            />
+              className={styles.iconWrapper}
+              style={{
+                border: i === classes.indexOf(selectedClass) ? '4px solid rgba(255, 209, 0, 0.8)' : '4px solid transparent',
+                filter: i === classes.indexOf(selectedClass) ? 'none' : 'brightness(50%)',
+              }}
+            >
+              <div className={styles.iconBorder} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
+              <div
+                className={styles.iconClass}
+                style={{
+                  background: `url("/img/icons/${singleClass}.jpg") 0 0 no-repeat`,
+                }}
+              >
+                <button
+                  className={styles.selectButton}
+                  onClick={() => {
+                    selectClass(i);
+                  }}
+                />
+              </div>
+            </div>
           );
         })}
-        <div className={styles.tcFooter}>
-          <>{totalPoints}</>
-          <br />
-          <>{pointsLeft}</>
-        </div>
       </div>
-    </>
+      <br />
+      <TalentCalculatorMain selectedClass={selectedClass} />
+    </div>
   );
 };
 
