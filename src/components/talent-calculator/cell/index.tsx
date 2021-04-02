@@ -16,14 +16,14 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false);
-  const { value, maxValue } = cellData;
+  const { value, maxValue, icon } = cellData;
 
   return (
     <div className={styles.cellWrapper}>
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
-          background: `url("/img/icons/${cellData.icon}.jpg") 0 0 no-repeat`,
+          background: `url("/img/icons/${icon}.jpg") 0 0 no-repeat`,
           border: color ? `2px solid ${color}` : 'none',
           filter: !color ? 'grayscale(100%)' : 'none',
         }}
