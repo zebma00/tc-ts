@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Vengeance',
-    'vengeance',
+    'evocation',
     ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
     5,
     [[20, 40, 60, 80, 100]],

@@ -19,10 +19,10 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
 
   return (
     <div className={styles.cellWrapper}>
+      <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
-          backgroundImage: `url("/img/icons/${cellData.icon}.jpg")`,
-          filter: !color ? 'grayscale(100%)' : 'none',
+          background: `no-repeat url("/img/icons/${cellData.icon}.jpg")`,
           border: color ? `2px solid ${color}` : 'none',
         }}
         className={styles.cellStyle}
@@ -42,9 +42,9 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
             set_showTooltip(false);
           }}
         >
-          <span className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
+          <div className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
             {cellData.value}
-          </span>
+          </div>
         </button>
         {showTooltip && <Tooltip value={cellData.value} description={cellData.description} />}
       </div>
