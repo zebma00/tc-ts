@@ -1,5 +1,6 @@
 export class Talent {
   name: string;
+  icon: string;
   description: string[];
   value: number;
   maxValue: number;
@@ -15,6 +16,7 @@ export class Talent {
 
   constructor(
     name: string,
+    icon: string,
     description: string[],
     maxValue: number,
     valueIteration: number[][],
@@ -28,6 +30,7 @@ export class Talent {
     }[]
   ) {
     this.name = name;
+    this.icon = icon;
     this.description = description;
     this.value = 0;
     this.maxValue = maxValue;

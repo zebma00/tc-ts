@@ -1,5 +1,5 @@
 import { Talent } from '../../../data/talents/Classes';
-import { ClassTalentType, ClassSpecType } from '../../../types/';
+import { ClassTalentType, ClassSpecType, SpecDataType } from '../../../types/';
 
 export const gridMaker = (spec: (Talent | null)[][]) => {
   const grid: Talent[][] | null[][] = [];
@@ -12,12 +12,20 @@ export const gridMaker = (spec: (Talent | null)[][]) => {
   return grid;
 };
 
-export const talentCalcMaker = (classTalent: ClassTalentType) => {
+export const talentCalcMaker = (classTalent: SpecDataType[]) => {
   const talentTrees = [];
   for (let i = 0; i < 3; i++) {
-    talentTrees.push(gridMaker(classTalent[i]));
+    talentTrees.push(gridMaker(classTalent[i].talents));
   }
   return talentTrees;
+};
+
+export const specNameMaker = (classTalent: SpecDataType[]) => {
+  const specNames = [];
+  for (let i = 0; i < 3; i++) {
+    specNames.push(classTalent[i].spec);
+  }
+  return specNames;
 };
 
 export const requiresTalentChecker = (talentData: any, x: number, y: number) => {
@@ -56,17 +64,16 @@ export const requiredPointsChecker = (pointsPerTree: number, x: number) => {
 };
 
 export const enabledChecker = (talentData: any, x: number, y: number, pointsPerTree: number, pointsLeft: number) => {
-  console.log(pointsLeft);
   if (talentData[x][y].value === talentData[x][y].maxValue) {
-    return 'yellow';
+    return 'rgba(255, 209, 0, 0.8)';
   } else if (
     (pointsLeft === 0 && talentData[x][y].value === 0) ||
     !requiredPointsChecker(pointsPerTree!, x) ||
     !requiresTalentChecker(talentData, x, y)
   ) {
-    return 'grey';
+    return null;
   } else {
-    return 'green';
+    return 'rgba(64, 191, 64, 0.8)';
   }
 };
 
@@ -130,4 +137,8 @@ export const requiredXChecker = (specData: ClassSpecType) => {
     .lastIndexOf(true);
 
   return requiredX;
+};
+
+export const capitalizer = (string: string) => {
+  return string.charAt(0).toUpperCase() + string.slice(1);
 };
