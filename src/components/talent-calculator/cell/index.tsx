@@ -16,14 +16,16 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false);
+  const { value, maxValue } = cellData;
 
   return (
     <div className={styles.cellWrapper}>
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
-          background: `no-repeat url("/img/icons/${cellData.icon}.jpg")`,
+          background: `url("/img/icons/${cellData.icon}.jpg") 0 0 no-repeat`,
           border: color ? `2px solid ${color}` : 'none',
+          filter: !color ? 'grayscale(100%)' : 'none',
         }}
         className={styles.cellStyle}
       >
@@ -43,7 +45,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
           }}
         >
           <div className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
-            {cellData.value}
+            {`${value}/${maxValue}`}
           </div>
         </button>
         {showTooltip && <Tooltip value={cellData.value} description={cellData.description} />}
