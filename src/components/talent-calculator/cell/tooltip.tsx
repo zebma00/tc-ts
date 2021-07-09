@@ -15,23 +15,35 @@ interface TooltipProps {
 const Tooltip: React.FC<TooltipProps> = ({ value, description, manaCost, range, castTime, cooldown, name }) => {
   const activeTalent = !!manaCost || !!range || !!castTime || !!cooldown
 
-  console.log('TRUE', activeTalent, manaCost, range, castTime, cooldown)
+  const renderDescription = () => {}
 
   return (
-    <div className={styles.tooltipStyle} style={{ backgroundImage: "url('/img/background/tooltip.png')" }}>
+    <div
+      className={styles.tooltipStyle}
+      style={{
+        backgroundImage: "url('/img/background/tooltip.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
       <div className={styles.tooltipHeader}>
         <div className={styles.tooltipTitle}>{name}</div>
-        <div className={styles.tooltipRank}>{`Rank ${value}`}</div>
-        {activeTalent && (
-          <div>
-            <div>{manaCost}</div>
-            <div>{range}</div>
-            <div>{castTime}</div>
-            <div>{cooldown}</div>
-          </div>
-        )}
+        {!activeTalent && <div className={styles.tooltipRank}>{`Rank ${value}`}</div>}
       </div>
-      {description[0]}
+      {activeTalent && (
+        <>
+          <div className={styles.tooltipActiveRow}>
+            <div className={styles.tooltipActiveInfo}>{manaCost}</div>
+            <div className={styles.tooltipActiveInfo}>{range}</div>
+          </div>
+          <div>
+            <div className={styles.tooltipActiveInfo}>{castTime}</div>
+            <div className={styles.tooltipActiveInfo}>{cooldown}</div>
+          </div>
+        </>
+      )}
+      <div className={styles.tooltipDescription}>{description[0]}</div>
     </div>
   )
 }

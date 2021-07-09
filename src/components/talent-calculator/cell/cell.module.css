@@ -46,18 +46,50 @@
 .tooltipStyle {
   left: 50px;
   top: 50px;
-  max-width: 15rem;
-  min-width: 10rem;
-  /* color: yellow; */
+  min-width: 15rem;
+  padding: 8px 4px 4px 9px;
   position: absolute;
   border: 1px solid black;
-  /* background-color: red; */
   z-index: 2;
-  /* background: url('/img/background/tooltip.png/') */
+}
+
+.tooltipHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: .5rem;
+}
+
+.tooltipTitle {
+  font-size: 14px;
+  line-height: 19px;
+  color: white;
+}
+
+.tooltipActiveInfo {
+  font-size: 12px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.tooltipActiveRow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tooltipRank {
+  color: #9d9d9d;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .cellHighlight {
   position: absolute;
   height: 45px;
   width: 45px;
+}
+
+.tooltipDescription {
+  color: #ffd100;
+  font-size: 12px;
+  line-height: 17px;
 }

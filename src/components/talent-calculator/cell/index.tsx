@@ -16,7 +16,6 @@ interface CellProps {
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false)
   const { value, maxValue, icon, manaCost, range, castTime, cooldown, name } = cellData
-  console.log('CELL', cellData.name === 'Swiftmend' && cellData)
 
   return (
     <div

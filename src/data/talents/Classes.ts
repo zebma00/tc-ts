@@ -24,14 +24,18 @@ export class Talent {
     description: string[],
     maxValue: number,
     valueIteration: number[][],
-    requires?: {
-      x: number | null
-      y: number | null
-    }[],
-    required?: {
-      x: number | null
-      y: number | null
-    }[],
+    requires?:
+      | {
+          x: number | null
+          y: number | null
+        }[]
+      | null,
+    required?:
+      | {
+          x: number | null
+          y: number | null
+        }[]
+      | null,
     manaCost?: string | null,
     range?: string | null,
     castTime?: string | null,
