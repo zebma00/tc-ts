@@ -4,6 +4,7 @@ export class Talent {
   description: string[]
   value: number
   maxValue: number
+  valueIteration: number[][]
   requires: {
     x: number | null
     y: number | null
@@ -12,7 +13,6 @@ export class Talent {
     x: number | null
     y: number | null
   }[]
-  valueIteration: number[][]
   manaCost: string | null
   range: string | null
   castTime: string | null

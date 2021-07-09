@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
@@ -31,4 +31,4 @@ export default [
     [[50, 100]],
     [{ x: 2, y: 2 }]
   ),
-];
+]

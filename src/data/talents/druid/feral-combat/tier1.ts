@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
@@ -14,4 +14,4 @@ export default [
     ]
   ),
   null,
-];
+]

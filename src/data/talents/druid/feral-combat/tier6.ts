@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
@@ -12,9 +12,13 @@ export default [
       '%.',
     ],
     5,
-    [[4, 8, 12, 16, 20]],
+    [
+      [4, 8, 12, 16, 20],
+      [4, 8, 12, 16, 20],
+      [4, 8, 12, 16, 20],
+    ],
     [{ x: 3, y: 1 }]
   ),
   null,
   null,
-];
+]

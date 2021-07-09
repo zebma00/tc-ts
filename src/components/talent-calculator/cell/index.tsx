@@ -54,6 +54,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
         <Tooltip
           value={cellData.value}
           description={cellData.description}
+          valueIteration={cellData.valueIteration}
           manaCost={manaCost}
           range={range}
           castTime={castTime}
