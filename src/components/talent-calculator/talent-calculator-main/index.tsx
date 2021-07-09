@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react'
 
-import { ClassTalentType } from '../../../types/';
-import druid from '../../../data/talents/druid';
+import { ClassTalentType } from '../../../types/'
+import druid from '../../../data/talents/druid'
 import {
   talentCalcMaker,
   requiresTalentChecker,
@@ -11,48 +11,49 @@ import {
   totalPointsChecker,
   pointsUpToXChecker,
   specNameMaker,
-} from '../helpers';
-import Grid from '../grid/';
-import styles from './index.module.css';
+} from '../helpers'
+import Grid from '../grid/'
+import styles from './index.module.css'
 
 interface TalentCalculatorMain {
-  selectedClass: string;
+  selectedClass: string
 }
 
 const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass }) => {
-  const [talentData, setTalentData] = useState<ClassTalentType | null>(null);
-  const [specNames, setSpecNames] = useState<string[] | null>(null);
-  const classData = require(`../../../data/talents/${selectedClass}`);
+  const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
+  const [specNames, setSpecNames] = useState<string[] | null>(null)
+  const classData = require(`../../../data/talents/${selectedClass}`)
 
   useEffect(() => {
-    console.log(classData.default);
-    setTalentData(talentCalcMaker(classData.default.specs));
-    setSpecNames(specNameMaker(classData.default.specs));
-  }, [classData]);
+    console.log(classData.default)
+    setTalentData(talentCalcMaker(classData.default.specs))
+    setSpecNames(specNameMaker(classData.default.specs))
+  }, [classData])
 
-  const totalPoints = totalPointsChecker(talentData!);
-  const pointsLeft = 51 - totalPointsChecker(talentData!)!;
+  const totalPoints = totalPointsChecker(talentData!)
+  const pointsLeft = 51 - totalPointsChecker(talentData!)!
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
-    e.preventDefault();
-    const newData = [...talentData!];
-    const pointsPerTree = pointsPerTreeChecker(talentData![i])!;
-    const requiredX = requiredXChecker(talentData![i]);
-    const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!;
-    const requiresTalent = requiresTalentChecker(newData[i], x, y);
-    const requiredTalent = requiredTalentChecker(newData[i], x, y);
-    const { value, maxValue } = talentData![i][x][y]!;
+    e.preventDefault()
+    const newData = [...talentData!]
+    const pointsPerTree = pointsPerTreeChecker(talentData![i])!
+    const requiredX = requiredXChecker(talentData![i])
+    const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!
+    const requiresTalent = requiresTalentChecker(newData[i], x, y)
+    const requiredTalent = requiredTalentChecker(newData[i], x, y)
+    const { value, maxValue } = talentData![i][x][y]!
+
     if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree && pointsLeft > 0) {
-      newData[i][x][y]!.increment();
+      newData[i][x][y]!.increment()
     } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
       if (x >= requiredX) {
-        newData[i][x][y]!.decrement();
+        newData[i][x][y]!.decrement()
       } else if (x < requiredX && upToXPoints > requiredX * 5) {
-        newData[i][x][y]!.decrement();
+        newData[i][x][y]!.decrement()
       }
     }
-    setTalentData(newData);
-  };
+    setTalentData(newData)
+  }
 
   return (
     <>
@@ -68,7 +69,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
               specName={specNames![i]}
               clickHandler={clickHandler}
             />
-          );
+          )
         })}
         <div className={styles.tcFooter}>
           <>{totalPoints}</>
@@ -77,7 +78,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default TalentCalculatorMain;
+export default TalentCalculatorMain

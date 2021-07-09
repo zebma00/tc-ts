@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
@@ -13,4 +13,32 @@ export default [
   ),
   null,
   null,
-];
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+  '20% of base mana',
+  '40 yd range',
+  'Instant',
+  '15 sec cooldown',
+]

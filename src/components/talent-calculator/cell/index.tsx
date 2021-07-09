@@ -1,31 +1,31 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'
 
-import { Talent } from '../../../data/talents/Classes';
-import Tooltip from './tooltip';
-import styles from './cell.module.css';
+import { Talent } from '../../../data/talents/Classes'
+import Tooltip from './tooltip'
+import styles from './cell.module.css'
 
 interface CellProps {
-  cellData: Talent;
-  // Talent | ActiveTalent
-  i: number;
-  x: number;
-  y: number;
-  color: string | null;
-  clickHandler: (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => void;
+  cellData: Talent
+  i: number
+  x: number
+  y: number
+  color: string | null
+  clickHandler: (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => void
 }
 
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
-  const [showTooltip, set_showTooltip] = useState<boolean>(false);
-  const { value, maxValue, icon } = cellData;
+  const [showTooltip, set_showTooltip] = useState<boolean>(false)
+  const { value, maxValue, icon, manaCost, range, castTime, cooldown, name } = cellData
+  console.log('CELL', cellData.name === 'Swiftmend' && cellData)
 
   return (
     <div
       className={styles.cellWrapper}
       onMouseEnter={() => {
-        set_showTooltip(true);
+        set_showTooltip(true)
       }}
       onMouseLeave={() => {
-        set_showTooltip(false);
+        set_showTooltip(false)
       }}
     >
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
@@ -40,10 +40,10 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
         <button
           className={styles.cellButtonStyle}
           onClick={(e: React.MouseEvent<HTMLElement>) => {
-            clickHandler(i, x, y, e);
+            clickHandler(i, x, y, e)
           }}
           onContextMenu={(e: React.MouseEvent<HTMLElement>) => {
-            clickHandler(i, x, y, e);
+            clickHandler(i, x, y, e)
           }}
         >
           <div className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
@@ -51,9 +51,19 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
           </div>
         </button>
       </div>
-      {showTooltip && <Tooltip value={cellData.value} description={cellData.description} />}
+      {showTooltip && (
+        <Tooltip
+          value={cellData.value}
+          description={cellData.description}
+          manaCost={manaCost}
+          range={range}
+          castTime={castTime}
+          cooldown={cooldown}
+          name={name}
+        />
+      )}
     </div>
-  );
-};
+  )
+}
 
-export default Cell;
+export default Cell

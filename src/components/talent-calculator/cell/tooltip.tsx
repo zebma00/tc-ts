@@ -1,14 +1,39 @@
-import React from "react";
+import React from 'react'
 
-import styles from "./cell.module.css";
+import styles from './cell.module.css'
 
 interface TooltipProps {
-  value: number;
-  description: string[];
+  value: number
+  description: string[]
+  manaCost: string | null
+  range: string | null
+  castTime: string | null
+  cooldown: string | null
+  name: string
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ value, description }) => {
-  return <div className={styles.tooltipStyle}>{description[0]}</div>;
-};
+const Tooltip: React.FC<TooltipProps> = ({ value, description, manaCost, range, castTime, cooldown, name }) => {
+  const activeTalent = !!manaCost || !!range || !!castTime || !!cooldown
 
-export default Tooltip;
+  console.log('TRUE', activeTalent, manaCost, range, castTime, cooldown)
+
+  return (
+    <div className={styles.tooltipStyle} style={{ backgroundImage: "url('/img/background/tooltip.png')" }}>
+      <div className={styles.tooltipHeader}>
+        <div className={styles.tooltipTitle}>{name}</div>
+        <div className={styles.tooltipRank}>{`Rank ${value}`}</div>
+        {activeTalent && (
+          <div>
+            <div>{manaCost}</div>
+            <div>{range}</div>
+            <div>{castTime}</div>
+            <div>{cooldown}</div>
+          </div>
+        )}
+      </div>
+      {description[0]}
+    </div>
+  )
+}
+
+export default Tooltip
