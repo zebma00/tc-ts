@@ -11,9 +11,19 @@ export default [
       [2, 4],
     ]
   ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
+  new Talent(
+    'Feral Charge',
+    'feral-charge',
+    ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'],
+    1,
+    [[]],
+    null,
+    null,
+    '5 Rage',
+    '8 - 25 yd range',
+    'Instant cast',
+    '15 sec cooldown'
+  ),
   new Talent(
     'Sharpened Claws',
     'maul',

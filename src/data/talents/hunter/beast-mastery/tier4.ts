@@ -1,28 +1,34 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
+    'Improved Mend Pet',
+    'mend-pet',
     [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
+      'Gives your mend Pet spell a ',
+      '% chance to remove 1 poison, disease, curse of magic effect from your pet each tick and increases the time your mend pet lasts by ',
+      ' sec.',
     ],
-    3,
+    2,
     [
-      [5, 10, 15],
-      [25, 50, 75],
+      [15, 30],
+      [2, 4],
     ]
   ),
+  new Talent(
+    'Ferocity',
+    'maul',
+    ['Increases the critical strike chance of your pets by ', '%.'],
+    5,
+    [[2, 4, 6, 8, 10]],
+    [{ x: null, y: null }],
+    [{ x: 5, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
   null,
-];
+]

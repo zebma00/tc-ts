@@ -1,16 +1,22 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonkin Form',
-    'moonkin-form',
+    'Bestial Wrath',
+    'bestial-wrath',
     [
-      'Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.',
+      'Send your pet into a rage causing 50% additional damage for 18sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.',
     ],
     1,
-    [[]]
+    [[]],
+    [{ x: 4, y: 1 }],
+    null,
+    '12% of base mana',
+    '100 yd range',
+    'Instant',
+    '2 min cooldown'
   ),
   null,
   null,
-];
+]

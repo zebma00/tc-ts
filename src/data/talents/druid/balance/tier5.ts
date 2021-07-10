@@ -1,15 +1,12 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
     'Celestial Spark',
-    'starfire',
-    ['Gives your Starfire spell a ', '% and your Wrath a ', '% chance to reset the cooldown of your Innervate.'],
+    'celestial-spark',
+    ['Your successful Starfire hits reduce the cooldown of your Innervate and Hurricane spells by ', ' sec.'],
     2,
-    [
-      [1, 2],
-      [0.5, 1],
-    ]
+    [[0.5, 1]]
   ),
   new Talent(
     "Nature's Grace",
@@ -20,7 +17,12 @@ export default [
     1,
     [[1]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
   new Talent(
     'Moonglow',
@@ -30,4 +32,4 @@ export default [
     [[3, 6, 9]]
   ),
   null,
-];
+]

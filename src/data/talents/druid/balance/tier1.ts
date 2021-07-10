@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Wrath', 'wrath', ['Reduces the cast time of your Wrath spell by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
+  new Talent('Starlight Wrath', 'wrath', ['Reduces the cast time of your Wrath and Starfire spells by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
   new Talent(
     "Nature's Grasp",
     'natures-grasp',
@@ -27,5 +27,5 @@ export default [
     [{ x: 0, y: 1 }],
     [{ x: null, y: null }]
   ),
-  null,
+  new Talent("Nature's Guidance", 'natures-guidance', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
 ]

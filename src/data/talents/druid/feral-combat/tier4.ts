@@ -16,10 +16,15 @@ export default [
       [20, 40, 60, 80, 100],
     ],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
   new Talent(
-    'Blood Frenzy',
+    'Feline Frenzy',
     'rip',
     ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
     2,

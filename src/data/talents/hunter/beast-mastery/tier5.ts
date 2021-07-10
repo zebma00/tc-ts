@@ -1,33 +1,29 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Celestial Spark',
-    'starfire',
-    ['Gives your Starfire spell a ', '% and your Wrath a ', '% chance to reset the cooldown of your Innervate.'],
-    2,
-    [
-      [1, 2],
-      [0.5, 1],
-    ]
+    'Ferocious Inspiration',
+    'ferocious-inspiration',
+    ['When your pet scores a Critical hit, all party member have their damage and healing increased by ', '%.'],
+    3,
+    [[1, 2, 3]]
   ),
   new Talent(
-    "Nature's Grace",
-    'natures-grace',
+    'Intimidation',
+    'intimidation',
     [
-      'All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.',
+      'Command your pet to intimidate the target on the next succesful melee attack, causing a high amount of threat and stunning the target for 3 sec.',
     ],
     1,
-    [[1]],
+    [[]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
-  ),
-  new Talent(
-    'Moonglow',
-    'moonglow',
-    ['Reduces the mana cost of your Starfire, Moonfire, Wrath, Healing Touch, Rejuvenation and Regrowth spells by ', '%.'],
-    3,
-    [[3, 6, 9]]
+    [{ x: 6, y: 1 }],
+    '8% of base mana',
+    '100yd range',
+    'Instant',
+    '1 min cooldown',
+    ['D2']
   ),
   null,
-];
+  new Talent('Bestial Discipline', 'wrath', ['Increases the Focus generation of your pets by ', '%.'], 2, [[10, 20]]),
+]

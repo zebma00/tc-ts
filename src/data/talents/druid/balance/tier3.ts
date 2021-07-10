@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent('Improved Thorns', 'thorns', ['Increases the damage caused by your Thorns spell by ', '%.'], 3, [[25, 50, 75]]),
@@ -11,7 +11,12 @@ export default [
     ],
     1,
     [[1]],
-    [{ x: 1, y: 2 }]
+    [{ x: 1, y: 2 }],
+    null,
+    '120 Mana',
+    null,
+    'Instant',
+    null
   ),
   new Talent(
     "Nature's Reach",
@@ -20,4 +25,4 @@ export default [
     2,
     [[10, 20]]
   ),
-];
+]

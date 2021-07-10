@@ -8,12 +8,7 @@ export default [
     5,
     [[0.1, 0.2, 0.3, 0.4, 0.5]],
     [{ x: null, y: null }],
-    [{ x: 4, y: 0 }],
-    null,
-    null,
-    null,
-    null,
-    ['D3']
+    [{ x: 4, y: 0 }]
   ),
   new Talent(
     "Nature's Focus",
@@ -23,5 +18,5 @@ export default [
     [[14, 28, 42, 56, 70]]
   ),
   new Talent('Improved Enrage', 'enrage', ['The Enrage ability now instantly generates ', 'rage.'], 2, [[5, 10]]),
-  new Talent('Natural Strength', 'enrage', ['Increases your Strength by ', '% of your Intellect in any form.'], 3, [[10, 20, 30]]),
+  new Talent('Natural Strength', 'frenzy', ['Increases your Strength by ', '% of your Intellect in any form.'], 3, [[10, 20, 30]]),
 ]

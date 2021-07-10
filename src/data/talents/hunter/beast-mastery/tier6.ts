@@ -1,15 +1,15 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
+  null,
   new Talent(
-    'Moonfury',
-    'moonfury',
-    ['Increases the damage done by your Starfire, Moonfire and Wrath spells by ', '%.'],
+    'Frenzy',
+    'frenzy',
+    ['Gives your pet a ', '% chance to gain 30% attack speed increase for 8 sec after dealing a critical strike.'],
     5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: 4, y: 1 }]
+    [[20, 40, 60, 80, 100]],
+    [{ x: 3, y: 2 }]
   ),
   null,
-  null,
-];
+]
