@@ -1,7 +1,7 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Wrath', 'wrath', ['Reduces the cast time of your Wrath spell by', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
+  new Talent('Improved Wrath', 'wrath', ['Reduces the cast time of your Wrath spell by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
   new Talent(
     "Nature's Grasp",
     'natures-grasp',
@@ -11,7 +11,12 @@ export default [
     1,
     [[1]],
     [{ x: null, y: null }],
-    [{ x: 0, y: 2 }]
+    [{ x: 0, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['R1']
   ),
   new Talent(
     "Improved Nature's Grasp",
@@ -23,4 +28,4 @@ export default [
     [{ x: null, y: null }]
   ),
   null,
-];
+]

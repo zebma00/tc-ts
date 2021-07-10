@@ -1,4 +1,4 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
@@ -15,7 +15,12 @@ export default [
     5,
     [[2, 4, 6, 8, 10]],
     [{ x: null, y: null }],
-    [{ x: 3, y: 1 }]
+    [{ x: 3, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
   new Talent(
     'Natural Weapons',
@@ -24,7 +29,12 @@ export default [
     5,
     [[2, 4, 6, 8, 10]],
     [{ x: null, y: null }],
-    [{ x: 2, y: 2 }]
+    [{ x: 2, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
   new Talent('Natural Shapeshifter', 'arcane-explosion', ['Reduces the mana cost of all Shapeshifting by ', '%.'], 3, [[10, 20, 30]]),
-];
+]

@@ -9,6 +9,7 @@
   height: 39px;
   width: 39px;
   border-radius: 5px !important;
+  z-index: 1;
 }
 
 .cellButtonStyle {
@@ -50,7 +51,7 @@
   padding: 8px 4px 4px 9px;
   position: absolute;
   border: 1px solid black;
-  z-index: 2;
+  z-index: 3;
 }
 
 .tooltipHeader {
@@ -82,14 +83,163 @@
   line-height: 19px;
 }
 
+.tooltipNextRank {
+  color: #fff;
+  margin-top: 1rem;
+}
+
 .cellHighlight {
   position: absolute;
   height: 45px;
   width: 45px;
+  z-index: 1;
 }
 
 .tooltipDescription {
   color: #ffd100;
   font-size: 12px;
   line-height: 17px;
+}
+
+.arrowR1Wrapper {
+  position: absolute;
+  z-index: 2;
+  right: -15px;
+  overflow: hidden;
+}
+
+.arrowR1 {
+  z-index: 2;
+  max-width: 100%;
+  margin-left: -175px;
+}
+
+/* ------- */
+
+.arrowD1Wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: -20px;
+  overflow: hidden;
+}
+
+.arrowD1 {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -240px;
+}
+
+.arrowD1WrapperYellow {
+  position: absolute;
+  z-index: 2;
+  bottom: -20px;
+  overflow: hidden;
+}
+
+.arrowD1Yellow {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -232px;
+}
+
+/* ------- */
+
+.arrowD2Wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: -80px;
+  overflow: hidden;
+}
+
+.arrowD2 {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -179px;
+}
+
+.arrowD2WrapperYellow {
+  position: absolute;
+  z-index: 2;
+  bottom: -80px;
+  overflow: hidden;
+}
+
+.arrowD2Yellow {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -173px;
+}
+
+/* ------ */
+
+.arrowD3Wrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: -140px;
+  overflow: hidden;
+}
+
+.arrowD3 {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -118px;
+}
+
+.arrowD3WrapperYellow {
+  position: absolute;
+  z-index: 2;
+  bottom: -140px;
+  overflow: hidden;
+}
+
+.arrowD3Yellow {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -112px;
+}
+
+ /* ----- */
+.arrowR1D1rightWrapper {
+  position: absolute;
+  z-index: 2;
+  right: -37px;
+  overflow: hidden;
+}
+
+.arrowR1D1right {
+  z-index: 2;
+  max-width: 100%;
+  margin-left: -154px;
+}
+
+.arrowR1D1downWrapper {
+  position: absolute;
+  z-index: 2;
+  bottom: -20px;
+  right: -37px;
+  overflow: hidden;
+}
+
+.arrowR1D1down {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -220px;
+  top: 10px;
+  margin-left: 34px;
+}
+
+.arrowR1D1downWrapperYellow {
+  position: absolute;
+  z-index: 2;
+  bottom: -20px;
+  right: -37px;
+  overflow: hidden;
+}
+
+.arrowR1D1downYellow {
+  z-index: 2;
+  max-width: 100%;
+  margin-top: -213px;
+  top: 10px;
+  margin-left: 34px;
 }

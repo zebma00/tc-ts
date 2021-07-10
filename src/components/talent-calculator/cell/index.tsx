@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 
 import { Talent } from '../../../data/talents/Classes'
 import Tooltip from './tooltip'
+import Arrow from './arrow'
 import styles from './cell.module.css'
 
 interface CellProps {
@@ -15,7 +16,7 @@ interface CellProps {
 
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false)
-  const { value, maxValue, icon, manaCost, range, castTime, cooldown, name } = cellData
+  const { value, maxValue, icon, manaCost, range, castTime, cooldown, name, arrows } = cellData
 
   return (
     <div
@@ -54,6 +55,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
         <Tooltip
           value={cellData.value}
           description={cellData.description}
+          maxValue={cellData.maxValue}
           valueIteration={cellData.valueIteration}
           manaCost={manaCost}
           range={range}
@@ -62,6 +64,10 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
           name={name}
         />
       )}
+      {arrows &&
+        arrows.map((arrow, i) => {
+          return <Arrow arrowData={arrow} color={color} key={i} />
+        })}
     </div>
   )
 }

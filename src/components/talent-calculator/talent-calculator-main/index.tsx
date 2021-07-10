@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
+import TCFooter from '../talent-calculator-footer'
 import { ClassTalentType } from '../../../types/'
 import druid from '../../../data/talents/druid'
 import {
@@ -25,7 +26,6 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
   const classData = require(`../../../data/talents/${selectedClass}`)
 
   useEffect(() => {
-    console.log(classData.default)
     setTalentData(talentCalcMaker(classData.default.specs))
     setSpecNames(specNameMaker(classData.default.specs))
   }, [classData])
@@ -55,6 +55,20 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
     setTalentData(newData)
   }
 
+  const resetPoints = () => {
+    const newData = [...talentData!]
+    newData.forEach(grid => {
+      grid.forEach(row => {
+        row.forEach(cell => {
+          if (cell) {
+            cell.reset()
+          }
+        })
+      })
+    })
+    setTalentData(newData)
+  }
+
   return (
     <>
       <div className={styles.tcContainer}>
@@ -72,9 +86,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
           )
         })}
         <div className={styles.tcFooter}>
-          <>{totalPoints}</>
-          <br />
-          <>{pointsLeft}</>
+          <TCFooter totalPoints={totalPoints} pointsLeft={pointsLeft} resetPoints={resetPoints} />
         </div>
       </div>
     </>

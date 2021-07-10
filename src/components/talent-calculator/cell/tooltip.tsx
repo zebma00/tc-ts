@@ -5,6 +5,7 @@ import styles from './cell.module.css'
 interface TooltipProps {
   value: number
   description: string[]
+  maxValue: number
   valueIteration: number[][]
   manaCost: string | null
   range: string | null
@@ -13,27 +14,30 @@ interface TooltipProps {
   name: string
 }
 
-const Tooltip: React.FC<TooltipProps> = ({ value, description, valueIteration, manaCost, range, castTime, cooldown, name }) => {
+const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIteration, manaCost, range, castTime, cooldown, name }) => {
   const activeTalent = !!manaCost || !!range || !!castTime || !!cooldown
 
   const renderDescription: any[] = []
 
-  // renderDescription.push(valueIteration[value])
-  const temp = description.map((text, index) => {
+  description.forEach((text, index) => {
     renderDescription.push(text)
-    if (index === 0) {
-      renderDescription.push(0)
-    } else if (index < description.length && index !== 0) {
-      renderDescription.push(valueIteration[0][value])
+    if (value === 0 && index < description.length - 1) {
+      renderDescription.push(valueIteration[index][value])
+    } else if (index < description.length - 1) {
+      renderDescription.push(valueIteration[index][value - 1])
     }
-    // if (!!valueIteration[index][value]) {
-    //   renderDescription.push(valueIteration[index][value])
-    // }
   })
 
-  console.log('RENDER', renderDescription)
+  const renderDescriptionNext: any[] = []
 
-  // const renderDescription = () => {}
+  if (value < maxValue && !!value) {
+    description.forEach((text, index) => {
+      renderDescriptionNext.push(text)
+      if (index < description.length - 1) {
+        renderDescriptionNext.push(valueIteration[index][value])
+      }
+    })
+  }
 
   return (
     <div
@@ -61,7 +65,11 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, valueIteration, m
           </div>
         </>
       )}
-      <div className={styles.tooltipDescription}>{renderDescription}</div>
+      <div className={styles.tooltipDescription}>
+        {renderDescription}
+        <div>{value < maxValue && !!value && <div className={styles.tooltipNextRank}>Next rank:</div>}</div>
+        {renderDescriptionNext}
+      </div>
     </div>
   )
 }

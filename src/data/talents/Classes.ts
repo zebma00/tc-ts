@@ -17,6 +17,7 @@ export class Talent {
   range: string | null
   castTime: string | null
   cooldown: string | null
+  arrows: string[] | null
 
   constructor(
     name: string,
@@ -39,7 +40,8 @@ export class Talent {
     manaCost?: string | null,
     range?: string | null,
     castTime?: string | null,
-    cooldown?: string | null
+    cooldown?: string | null,
+    arrows?: string[] | null
   ) {
     this.name = name
     this.icon = icon
@@ -53,6 +55,7 @@ export class Talent {
     this.range = range ? range : null
     this.castTime = castTime ? castTime : null
     this.cooldown = cooldown ? cooldown : null
+    this.arrows = arrows ? arrows : null
   }
   increment() {
     if (this.value < this.maxValue) {
@@ -63,5 +66,8 @@ export class Talent {
     if (this.value > 0) {
       this.value--
     }
+  }
+  reset() {
+    this.value = 0
   }
 }

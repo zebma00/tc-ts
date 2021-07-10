@@ -24,7 +24,12 @@ export default [
     [
       { x: 3, y: 2 },
       { x: 3, y: 3 },
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    ['D1', 'R1D1']
   ),
   null,
 ]
