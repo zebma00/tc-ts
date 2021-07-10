@@ -1,14 +1,35 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
   null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
+    'Critical Mass',
+    'critical-mass',
+    ['Increases the critical strike chance of your Fire spells by ', '%.'],
+    3,
+    [[2, 4, 6]],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
+  new Talent(
+    'Blast Wave',
+    'blast-wave',
+    [
+      'A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec',
+    ],
     1,
-    [[]]
+    [[]],
+    [{ x: 2, y: 2 }],
+    null,
+    '215 Mana',
+    null,
+    'Instant',
+    '45 sec cooldown'
   ),
   null,
-];
+]

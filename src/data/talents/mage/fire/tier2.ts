@@ -1,23 +1,14 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feral Instinct',
-    'shadowmeld',
-    ['Increases threat caused in Bear and Dire Bear Form by ', '% and reduces the chance enemies have to detect you while Prowling.'],
+    'Ignite',
+    'ignite',
+    ['Your critical strikes from Fire damage spells cause the target to burn for an additional ', "% of your spell's damage for 4 sec."],
     5,
-    [[3, 6, 9, 12, 15]]
+    [[8, 16, 24, 32, 40]]
   ),
-  new Talent('Brutal Impact', 'bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]]),
-  new Talent('Thick Hide', 'thick-hide', ['Increases your Armor contribution from items by ', '%'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent(
-    'Feral Focus',
-    'thick-hide',
-    [
-      'Your damaging abilities in Cat, Bear and Dire Bear Form increase your spell damage and healing by ',
-      '% for 15 seconds. This effect stacks up to 3 times.',
-    ],
-    3,
-    [[10, 20, 30]]
-  ),
-];
+  new Talent('Flame Throwing', 'flame-throwing', ['Increases the range of your Fire spells by ', ' yards'], 2, [[3, 6]]),
+  new Talent('Improved Fire Blast', 'fire-blast', ['Reduces the cooldown of your Fire Blast by ', ' sec.'], 3, [[0.5, 1, 1.5]]),
+  null,
+]

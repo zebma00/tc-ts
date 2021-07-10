@@ -1,28 +1,10 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Mana Shield', 'mana-shield', ['Decreases the mana lost per point of damage when Mana Shield is active by ', '%.'], 2, [
+    [10, 20],
+  ]),
+  new Talent('Improved Counterspell', 'counterspell', ['Gives your counterspell a ', ' chance to silence the target for 4 sec.'], 2, [[50, 100]]),
   null,
-  new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
-    ],
-    3,
-    [
-      [5, 10, 15],
-      [25, 50, 75],
-    ]
-  ),
-  null,
-];
+  new Talent('Arcane Meditation', 'mindflay', ['Allows ', ' of your Mana regeneration to continue while casting.'], 3, [[10, 20, 30]]),
+]

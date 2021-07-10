@@ -1,23 +1,23 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Thorns', 'thorns', ['Increases the damage caused by your Thorns spell by ', '%.'], 3, [[25, 50, 75]]),
-  null,
+  new Talent('Magic Attunement', 'wrath', ['Increases the effect of your Dampen Magic and Amplify Magic spells by ', '%.'], 2, [[25, 50]]),
+  new Talent('Improved Arcane Explosion', 'arcane-explosion', ['Increases the critical strike chance of your Arcane Explosion spell by ', '%.'], 3, [
+    [2, 4, 6],
+  ]),
   new Talent(
-    'Omen of Clarity',
-    'omen-of-clarity',
-    [
-      'Imbues the druid with natural energy. Each of the druids melee attacks has a chance of causing the caster to enter a clearcasting state. The clearcasting state reduces the Rage, Mana or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.',
-    ],
+    'Arcane Resilience',
+    'arcane-resilience',
+    ['Increases your mana regeneration by 200% while you have less than 25%'],
     1,
-    [[1]],
-    [{ x: 1, y: 2 }]
+    [[]],
+    [{ x: null, y: null }],
+    [{ x: 4, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
-  new Talent(
-    "Nature's Reach",
-    'natures-reach',
-    ['Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane spells by ', '%.'],
-    2,
-    [[10, 20]]
-  ),
-];
+  null,
+]

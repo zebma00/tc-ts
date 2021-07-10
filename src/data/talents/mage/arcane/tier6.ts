@@ -1,15 +1,23 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonfury',
-    'moonfury',
-    ['Increases the damage done by your Starfire, Moonfire and Wrath spells by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: 4, y: 1 }]
+    'Arcane Instability',
+    'arcane-instability',
+    ['Increases your spell damage and critical strike chance by ', '%.'],
+    3,
+    [[1, 2, 3]],
+    [{ x: 4, y: 1 }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
+  new Talent('Unstable Missiles', 'moonfire', ['Increases the damage, critical strike chance and mana cost of your Arcane Missiles by ', '%.'], 5, [
+    [3, 6, 9, 12, 15],
+  ]),
   null,
-  null,
-];
+]

@@ -1,34 +1,19 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  null,
   new Talent(
-    'Predatory Strikes',
-    'predatory-strikes',
+    'Improved Scorch',
+    'scorch',
     [
-      'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
+      'Your Scorch spell has a ',
+      '% chance to cause your target to be vulnerable to Fire damage. This vulnaribility increases Fire damage taken by the target by 3% and lasts 30 sec. Stacks  up to 5 times.',
     ],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    3,
+    [[33, 67, 100]]
   ),
-  new Talent(
-    'Blood Frenzy',
-    'rip',
-    ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-  new Talent(
-    'Primal Fury',
-    'primal-fury',
-    ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-];
+  null,
+  new Talent('Master of Elements', 'master-of-elements', ['Your Fire and Frost spell criticals refund ', '% of their base mana cost.'], 3, [
+    [10, 20, 30],
+  ]),
+]

@@ -1,8 +1,3 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
-export default [
-  null,
-  null,
-  new Talent('Improved Regrowth', 'regrowth', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
-  null,
-];
+export default [null, null, new Talent('Lightning Reflexes', 'lightning-reflexes', ['Increases our agility by ', '%.'], 5, [[3, 6, 9, 12, 15]]), null]

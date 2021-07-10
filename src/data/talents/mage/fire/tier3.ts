@@ -1,30 +1,43 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Incinerate', 'flame-shock', ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'], 2, [[2, 4]]),
   new Talent(
-    'Feline Swiftness',
-    'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
+    'Improved Flamestrike',
+    'flamestrike',
+    ['Increases the critical strike chance of your Flamestrike spell by ', '% and reduces the cast time by ', ' sec.'],
     2,
     [
-      [15, 30],
-      [2, 4],
+      [10, 20],
+      [0.5, 1],
     ]
   ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
   new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
-    3,
-    [[2, 4, 6]],
+    'Pyroblast',
+    'pyroblast',
+    ['Hurl an immense fiery boulder that causes 148 Fire damage and an additional 56 Fire damage over 12 sec.'],
+    1,
+    [[]],
     [{ x: null, y: null }],
+    [{ x: 4, y: 2 }],
+    '125 Mana',
+    '35 yd range',
+    '6sec cast',
+    null,
+    ['D2']
+  ),
+  new Talent(
+    'Burning Soul',
+    'burning-soul',
     [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
+      'Gives your Fire spells a ',
+      '% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by ',
+      '%.',
+    ],
+    2,
+    [
+      [35, 70],
+      [15, 30],
     ]
   ),
-  null,
-];
+]

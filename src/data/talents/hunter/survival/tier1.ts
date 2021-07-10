@@ -1,20 +1,16 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
   new Talent(
-    'Improved Mark of the Wild',
-    'mark-of-the-wild',
-    ['Increases the effects of your Mark of the Wild and Gift of the Wild spells by ', '%.'],
-    5,
-    [[7, 14, 21, 28, 35]]
+    'Monster Slaying',
+    'monster-slaying',
+    ['Increases damage and critical damage by an additional ', '% against Beast, Giant and Dragonkin targets.'],
+    3,
+    [[1, 2, 3]]
   ),
-  new Talent(
-    'Furor',
-    'furor',
-    ['Gives you a ', 'chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.'],
-    5,
-    [[20, 40, 60, 80, 100]]
-  ),
+  new Talent('Humanoid Slaying', 'humanoid-slaying', ['Increases damage and critical damage by an additional ', '% against Humanoid targets.'], 3, [
+    [1, 2, 3],
+  ]),
+  new Talent('Deflection', 'deflection', ['Increases your parry chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
-];
+]

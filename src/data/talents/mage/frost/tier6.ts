@@ -1,8 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   null,
-  new Talent('Improved Regrowth', 'regrowth', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
+  new Talent(
+    "Winter's Chill",
+    'winters-chill',
+    [
+      'Gives your Frost spells a ',
+      "% chance to apply the Winter's Chill effect, which increases the critical strike chance of Frost spells against the target by 2% and all spell damage taken by 1%. This effect stacks up to 5 times.",
+    ],
+    5,
+    [[20, 40, 60, 80, 100]]
+  ),
   null,
-];
+]

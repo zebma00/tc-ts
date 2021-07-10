@@ -1,20 +1,23 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
   new Talent(
-    'Improved Mark of the Wild',
-    'mark-of-the-wild',
-    ['Increases the effects of your Mark of the Wild and Gift of the Wild spells by ', '%.'],
-    5,
-    [[7, 14, 21, 28, 35]]
+    'Frost Warding',
+    'frost-warding',
+    ['Increases your Fire resistance by ', ' and gives your Fire Ward a ', '% chance to reflect Fire spells and effects while active.'],
+    2,
+    [
+      [20, 40],
+      [10, 20],
+    ]
   ),
+  new Talent('Improved Frostbolt', 'frostbolt', ['Reduces the cast time of your Frostbolt spell by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
   new Talent(
-    'Furor',
-    'furor',
-    ['Gives you a ', 'chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.'],
-    5,
-    [[20, 40, 60, 80, 100]]
+    'Elemental Precision',
+    'elemental-precision',
+    ['Reduces the chance that the opponent can resist your Frost and Fire spells by ', '%.'],
+    3,
+    [[2, 4, 6]]
   ),
   null,
-];
+]

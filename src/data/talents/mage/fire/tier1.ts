@@ -1,17 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
-  new Talent('Ferocity', 'ferocity', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', 'Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
   new Talent(
-    'Feral Aggression',
-    'demoralizing-roar',
-    ['Increases the Attack Power reduction of your Demoralizing Roar by ', '% and the damage caused by your Ferocious Bite by ', '%.'],
-    5,
+    'Fire Warding',
+    'fire-warding',
+    ['Increases your Fire resistance by ', ' and gives your Fire Ward a ', '% chance to reflect Fire spells and effects while active.'],
+    2,
     [
-      [8, 16, 24, 32, 40],
-      [3, 6, 9, 12, 15],
+      [20, 40],
+      [10, 20],
     ]
   ),
+  new Talent('Improved Fireball', 'fireball', ['Reduces the casting time of your Fireball spell by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
+  new Talent('Impact', 'impact', ['Gives your fire spells a ', '% chance to stun the target for 2 sec.'], 5, [[2, 4, 6, 8, 10]]),
   null,
-];
+]

@@ -1,14 +1,34 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
-  null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
+    'Scatter Shot',
+    'scatter-shot',
+    [
+      'A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.',
+    ],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    '8% of base mana',
+    '15 yd range',
+    '30 sec cooldown'
   ),
+  new Talent(
+    'Barrage',
+    'barrage',
+    ['Increases the damage done by your Multishot and Volley spells by ', '%.'],
+    3,
+    [[5, 10, 15]],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
+  new Talent('Improved Serpent Sting', 'serpent-sting', ['Increases the damage of your Serpent Sting by ', '%.'], 2, [[5, 10]]),
   null,
-];
+]

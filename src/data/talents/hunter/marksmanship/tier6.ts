@@ -1,20 +1,8 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent(
-    'Heart of the Wild',
-    'heart-of-the-wild',
-    [
-      'Increases your Intellect by ',
-      '%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ',
-      '% and while in Cat Form your Strength is increased by ',
-      '%.',
-    ],
-    5,
-    [[4, 8, 12, 16, 20]],
-    [{ x: 3, y: 1 }]
-  ),
   null,
+  new Talent('Ranged Weapon Specialization', 'ranged-weapon', ['Increases the damage you deal with ranged weapons by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
-];
+]

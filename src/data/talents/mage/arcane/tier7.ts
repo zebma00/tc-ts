@@ -1,16 +1,18 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonkin Form',
-    'moonkin-form',
-    [
-      'Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.',
-    ],
+    'Arcane Power',
+    'arcane-power',
+    ['When activated, your spells deal 30% more damage while costing 30% more mana to cast. This effect lasts 15 sec.'],
     1,
-    [[]]
+    [[]],
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    'Instant',
+    '3 min cooldown'
   ),
-  null,
-  null,
-];
+]

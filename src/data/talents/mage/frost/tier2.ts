@@ -1,22 +1,30 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Ice Shards', 'ice-shards', ['Increases the critical strike damage bonus of your Forst spells by ', '%.'], 5, [[20, 40, 60, 80, 100]]),
+  new Talent('Frostbite', 'frostbite', ['Gives your Chill effects a ', '% chance to freeze the target for 5 sec.'], 3, [[5, 10, 15]]),
   new Talent(
-    'Improved Healing Touch',
-    'healing-touch',
-    ['Reduces the cast time of your Healing Touch spell by ', 'sec.'],
-    5,
-    [[0.1, 0.2, 0.3, 0.4, 0.5]],
+    'Improved Frost Nova',
+    'frost-nova',
+    ['Reduces the cooldown of your Frost Nova spell by ', ' sec.'],
+    2,
+    [[2, 4]],
     [{ x: null, y: null }],
-    [{ x: 4, y: 0 }]
+    [{ x: 3, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
   new Talent(
-    "Nature's Focus",
-    'chain-heal',
-    ['Gives you a ', '% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.'],
-    5,
-    [[14, 28, 42, 56, 70]]
+    'Permafrost',
+    'permafrost',
+    ['Increases the duration of your Chill effects by ', " sec and reduces the target's speed by an additional ", '%.'],
+    3,
+    [
+      [1, 2, 3],
+      [4, 7, 10],
+    ]
   ),
-  new Talent('Improved Enrage', 'enrage', ['The Enrage ability now instantly generates ', 'rage.'], 2, [[5, 10]]),
-  new Talent('Natural Strength', 'enrage', ['Increases your Strength by ', '% of your Intellect in any form.'], 3, [[10, 20, 30]]),
-];
+]

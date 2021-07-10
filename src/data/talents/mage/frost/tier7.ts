@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Swiftmend',
-    'swiftmend',
-    [
-      'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
-    ],
+    'Ice Barrier',
+    'ice-barrier',
+    ['Instantly shields you, absorbing 455 damage. Lasts 1 min. While the shield holds, spells will be interrupted.'],
     1,
-    [[1]]
+    [[]],
+    [{ x: 4, y: 2 }],
+    null,
+    '305 mana',
+    null,
+    'Instant',
+    '30 sec cooldown'
   ),
   null,
   null,
-];
+]
