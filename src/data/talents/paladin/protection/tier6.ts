@@ -1,20 +1,14 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Aura niche meme', '', ['Aura niche meme'], 1, [[]]),
   null,
   new Talent(
-    'Heart of the Wild',
-    'heart-of-the-wild',
-    [
-      'Increases your Intellect by ',
-      '%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ',
-      '% and while in Cat Form your Strength is increased by ',
-      '%.',
-    ],
+    'One-Handed Weapon Specialization',
+    'one-handed-spec',
+    ['Increases all damage you deal while wielding One-Handed melee weapons by ', '%.'],
     5,
-    [[4, 8, 12, 16, 20]],
-    [{ x: 3, y: 1 }]
+    [[1, 2, 3, 4, 5]]
   ),
   null,
-  null,
-];
+]

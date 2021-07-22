@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Leader of the Pack',
-    'leader-of-the-pack',
+    'Holy Shield',
+    'holy-shield',
     [
-      'While in Cat, Bear, or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 5%.',
+      'Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.',
     ],
     1,
-    [[]]
+    [[]],
+    [{ x: 4, y: 1 }],
+    null,
+    '150 Mana',
+    null,
+    'Instant',
+    '10 sec cooldown'
   ),
-  null,
-  null,
-];
+]

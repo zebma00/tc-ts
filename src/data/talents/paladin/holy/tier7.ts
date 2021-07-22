@@ -1,16 +1,22 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonkin Form',
-    'moonkin-form',
+    'Holy Shock',
+    'holy-shock',
     [
-      'Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.',
+      'Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally. Damage and healing is increased on targets with low health.',
     ],
     1,
-    [[]]
+    [[1]],
+    [{ x: 4, y: 1 }],
+    null,
+    '225 Mana',
+    '20 yd range',
+    'Instant',
+    '30 sec cooldown'
   ),
   null,
   null,
-];
+]

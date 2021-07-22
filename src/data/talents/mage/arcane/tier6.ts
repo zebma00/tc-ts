@@ -16,8 +16,12 @@ export default [
     null,
     ['D1']
   ),
-  new Talent('Unstable Missiles', 'moonfire', ['Increases the damage, critical strike chance and mana cost of your Arcane Missiles by ', '%.'], 5, [
-    [3, 6, 9, 12, 15],
-  ]),
+  new Talent(
+    'Unstable Missiles',
+    'unstable-missiles',
+    ['Increases the damage, critical strike chance and mana cost of your Arcane Missiles by ', '%.'],
+    5,
+    [[3, 6, 9, 12, 15]]
+  ),
   null,
 ]

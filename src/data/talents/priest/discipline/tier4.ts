@@ -1,28 +1,8 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Inner Fire', 'consecration', ['Increases the armor bonus of your Inner Fire spell by ', '%.'], 3, [[10, 20, 30]]),
+  new Talent('Mental Agility', 'mental-agility', ['Reduces the mana cost of your instant cast spells by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   null,
-  new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
-    ],
-    3,
-    [
-      [5, 10, 15],
-      [25, 50, 75],
-    ]
-  ),
-  null,
-];
+  new Talent('Improved Mana Burn', 'clearcasting', ['Reduces the casting time of your Mana Burn spell by ', ' sec.'], 2, [[0.5, 1]]),
+]

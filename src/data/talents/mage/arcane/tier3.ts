@@ -8,7 +8,7 @@ export default [
   new Talent(
     'Arcane Resilience',
     'arcane-resilience',
-    ['Increases your mana regeneration by 200% while you have less than 25%'],
+    ['Increases your mana gained from all sources by 30% while below 30% of your total mana.'],
     1,
     [[]],
     [{ x: null, y: null }],

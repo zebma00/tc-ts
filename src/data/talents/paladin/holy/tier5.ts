@@ -1,33 +1,33 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Celestial Spark',
-    'starfire',
-    ['Gives your Starfire spell a ', '% and your Wrath a ', '% chance to reset the cooldown of your Innervate.'],
+    'Holy Verdict',
+    'holy-verdict',
+    ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
     2,
-    [
-      [1, 2],
-      [0.5, 1],
-    ]
+    [[10, 20]]
   ),
   new Talent(
-    "Nature's Grace",
-    'natures-grace',
-    [
-      'All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.',
-    ],
+    'Divine Favor',
+    'divine-favor',
+    ['When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.'],
     1,
     [[1]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 3, y: 1 }],
+    [{ x: 6, y: 1 }],
+    '4% of base mana',
+    null,
+    'Instant',
+    '2 min cooldown',
+    ['D2']
   ),
   new Talent(
-    'Moonglow',
-    'moonglow',
-    ['Reduces the mana cost of your Starfire, Moonfire, Wrath, Healing Touch, Rejuvenation and Regrowth spells by ', '%.'],
+    "Light's Grace",
+    'lights-grace',
+    ['Gives your Holy Light spell a ', '% chance to reduce the cast time of your next Holy Light spell by 0.5 sec. This effect lasts 15 sec.'],
     3,
-    [[3, 6, 9]]
+    [[33, 67, 100]]
   ),
   null,
-];
+]

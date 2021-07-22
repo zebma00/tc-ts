@@ -1,34 +1,22 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  new Talent('Holy Reach', 'cleanse', ['ncreases the range of Smite and Holy Fire and the radius of Holy Nova and Prayer of Healing by ', '%.'], 2, [
+    [10, 20],
+  ]),
+  new Talent('Spiritual Guidance', 'spiritual-guidance', ['Increases healing and spell damage by ', '% of your total Spirit.'], 5, [
+    [5, 10, 15, 20, 15],
+  ]),
   new Talent(
-    'Predatory Strikes',
-    'predatory-strikes',
+    'Searing Light',
+    'searing-light',
+    ['Increases the damage done by your Smite and Holy Fire spells by ', '% an increases their chance to hit by ', '%.'],
+    2,
     [
-      'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
+      [5, 10],
+      [2, 4],
     ],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 1, y: 2 }]
   ),
-  new Talent(
-    'Blood Frenzy',
-    'rip',
-    ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-  new Talent(
-    'Primal Fury',
-    'primal-fury',
-    ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-];
+  null,
+]

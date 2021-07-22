@@ -1,28 +1,24 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
+    'Illumination',
+    'illumination',
+    [
+      'After getting a critical effect from your Flash of Light, Holy Light or Holy Shock heal spell, gives you a ',
+      '% chance to gain mana equal to the base cost of the spell.',
+    ],
     5,
     [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
+    [{ x: null, y: null }],
+    [{ x: 4, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
-    ],
-    3,
-    [
-      [5, 10, 15],
-      [25, 50, 75],
-    ]
-  ),
+  new Talent('Improved Blessing of Wisdom', 'blessing-wisdom', ['Increases the effect of your Blessing of Wisdom spell by ', '%.'], 2, [[10, 20]]),
   null,
-];
+]

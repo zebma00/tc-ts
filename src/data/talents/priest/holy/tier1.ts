@@ -1,17 +1,14 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
-  new Talent('Ferocity', 'ferocity', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', 'Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
   new Talent(
-    'Feral Aggression',
-    'demoralizing-roar',
-    ['Increases the Attack Power reduction of your Demoralizing Roar by ', '% and the damage caused by your Ferocious Bite by ', '%.'],
-    5,
-    [
-      [8, 16, 24, 32, 40],
-      [3, 6, 9, 12, 15],
-    ]
+    'Healing Focus',
+    'spiritual-attunement',
+    ['Gives you a ', '% chance to avoid interruption caused by damage when casting any healing spell.'],
+    2,
+    [[35, 70]]
   ),
+  new Talent('Improved Renew', 'renew', ['Increases the amount healed by your Renew spell by ', '%.'], 3, [[5, 10, 15]]),
+  new Talent('Holy Specialization', 'holy-spec', ['Increases the critical effect chance of your Holy spells by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
-];
+]

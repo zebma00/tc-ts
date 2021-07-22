@@ -1,15 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonfury',
-    'moonfury',
-    ['Increases the damage done by your Starfire, Moonfire and Wrath spells by ', '%.'],
+    'Mental Strength',
+    'presence-of-mind',
+    ['Increases your maximum Mana and Health by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],
-    [{ x: 4, y: 1 }]
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
   null,
   null,
-];
+]

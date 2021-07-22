@@ -1,16 +1,23 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent(
-    'Tranquil Spirit',
-    'tranquil-spirit',
-    ['Reduces the mana cost of your Healing Touch and Tranquility spells by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: null, y: null }],
-    [{ x: 6, y: 1 }]
-  ),
   null,
-  new Talent('Improved Rejuvenation', 'rejuvenation', ['Increases the effect of your rejuvenation spell by ', '%.'], 3, [[5, 10, 15]]),
-];
+  new Talent(
+    'Eye for an Eye',
+    'eye-for-an-eye',
+    [
+      'All spell criticals against you cause ',
+      "% of the damage to be taken by the caster as well. The damage caused by Eye for an Eye will not exceed more than 50% of the Paladin's total health.",
+    ],
+    2,
+    [[25, 50]]
+  ),
+  new Talent(
+    'Vindication',
+    'vindication',
+    ["Gives the Paladin's damaging melee attacks a chance to reduce the target's attributes by ", '% for 10 sec.'],
+    2,
+    [[15, 30]]
+  ),
+]

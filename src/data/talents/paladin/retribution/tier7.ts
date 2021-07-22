@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Swiftmend',
-    'swiftmend',
+    'Repentance',
+    'humanoid-slaying',
     [
-      'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
+      'Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.',
     ],
     1,
-    [[1]]
+    [[]],
+    null,
+    null,
+    '60 Mana',
+    '20 yd range',
+    'Instant',
+    '30 sec cooldown'
   ),
-  null,
-  null,
-];
+]

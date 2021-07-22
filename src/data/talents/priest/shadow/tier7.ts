@@ -1,16 +1,22 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Swiftmend',
-    'swiftmend',
+    'Shadowform',
+    'shadowform',
     [
-      'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
+      'Assume shadowform, increasing Shadow damage by 15% and reducing physical damage taken by 15%. The priest can not cast Holy spells in this form.',
     ],
     1,
-    [[1]]
+    [[]],
+    [{ x: 4, y: 1 }],
+    null,
+    '40% of base mana',
+    null,
+    'Instant',
+    '1.5 sec cooldown'
   ),
   null,
   null,
-];
+]

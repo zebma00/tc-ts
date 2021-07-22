@@ -1,30 +1,37 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feline Swiftness',
-    'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
+    'Blessing of Kings',
+    'blessing-kings',
     [
-      [15, 30],
-      [2, 4],
-    ]
+      'Places a Blessing on the friendly target, increasing total stats by 10% for 5 min. Players may only have one Blessing on them per Paladin at any one time.',
+    ],
+    1,
+    [[]],
+    null,
+    null,
+    '8% of base mana',
+    '30 yd range',
+    'Instant'
   ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
+  new Talent('Improved Righteous Fury', 'righteousness', ['Increases the amount of threat generated bu your Righteous Fury spell by .', '%'], 3, [
+    [20, 40, 60],
   ]),
   new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
+    'Shield Specialization',
+    'shield-spec',
+    ['Increases the amount of damage absorbed by your shield by ', '%.'],
     3,
-    [[2, 4, 6]],
-    [{ x: null, y: null }],
-    [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
-    ]
+    [[10, 20, 30]],
+    [{ x: 0, y: 2 }]
   ),
-  null,
-];
+  new Talent(
+    'Divine Purpose',
+    'divine-purpose',
+    ['While your Righteous Fury is active, generate ', '% additional threat on enemies that are stunned or incapacitated.'],
+    3,
+    [[10, 20, 30]]
+  ),
+  ,
+]

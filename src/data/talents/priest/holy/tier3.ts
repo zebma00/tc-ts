@@ -1,30 +1,33 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feline Swiftness',
-    'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
+    'Holy Nova',
+    'holy-nova',
     [
-      [15, 30],
-      [2, 4],
-    ]
+      'Causes an explosion of Holy light around the caster, dealing 29 to 34 Holy damage to enemies and healing allies for 54 to 63 within 10 yards. The effects cause no threat.',
+    ],
+    1,
+    [[]],
+    null,
+    null,
+    '185 Mana',
+    null,
+    'Instant'
   ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
   new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
+    'Blessed Recovery',
+    'blessed-recovery',
+    ['After being hit by a ranged or melee critical strike, heal for ', '% of the damage taken over 8 sec.'],
     3,
-    [[2, 4, 6]],
-    [{ x: null, y: null }],
-    [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
-    ]
+    [[8, 16, 25]]
   ),
   null,
-];
+  new Talent(
+    'Inspiration',
+    'lay-on-hands',
+    ["Increases the target's armor by ", '% for 8 sec after getting a critical hit with Heal, Greater Heal, Flash Heal or Prayer of Healing.'],
+    3,
+    [[8, 16, 25]]
+  ),
+]

@@ -10,10 +10,10 @@ export default [
       '% of your level. In addition, increases your spell damage and healing by ',
       '% of your strength.',
     ],
-    5,
+    3,
     [
-      [20, 40, 60, 80, 100],
-      [20, 40, 60, 80, 100],
+      [50, 100, 150],
+      [20, 40, 60],
     ],
     [{ x: null, y: null }],
     [{ x: 5, y: 1 }],

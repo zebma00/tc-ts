@@ -1,23 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  null,
+  new Talent('Spell Warding', 'spell-warding', ['Reduces all spell damage taken by ', '%.'], 3, [[4, 7, 10]]),
   new Talent(
-    'Feral Instinct',
-    'shadowmeld',
-    ['Increases threat caused in Bear and Dire Bear Form by ', '% and reduces the chance enemies have to detect you while Prowling.'],
+    'Divine Fury',
+    'divine-fury',
+    ['Reduces the casting time of your Heal, Greater Heal, Smite and Holy Fire spells by ', '%.'],
     5,
-    [[3, 6, 9, 12, 15]]
+    [[0.1, 0.2, 0.3, 0.4, 0.5]],
+    [{ x: null, y: null }],
+    [{ x: 3, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
-  new Talent('Brutal Impact', 'bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]]),
-  new Talent('Thick Hide', 'thick-hide', ['Increases your Armor contribution from items by ', '%'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent(
-    'Feral Focus',
-    'thick-hide',
-    [
-      'Your damaging abilities in Cat, Bear and Dire Bear Form increase your spell damage and healing by ',
-      '% for 15 seconds. This effect stacks up to 3 times.',
-    ],
-    3,
-    [[10, 20, 30]]
-  ),
-];
+  null,
+]

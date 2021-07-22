@@ -18,6 +18,7 @@
   border: none;
   border-radius: 10px;
   background-color: transparent;
+  background-size: contain;
   font-size: 2rem;
   text-decoration: none;
   width: 100%;

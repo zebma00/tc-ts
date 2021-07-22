@@ -1,16 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Leader of the Pack',
-    'leader-of-the-pack',
+    'Lightwell',
+    'lightwell',
     [
-      'While in Cat, Bear, or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 5%.',
+      'Creates a holy Lightwell near the priest. Members of your party can move through it to restore 800 health over 4 sec. Each party member can only be healed by the Lightwell once.',
     ],
     1,
-    [[]]
+    [[]],
+    [{ x: 4, y: 1 }]
   ),
   null,
   null,
-];
+]

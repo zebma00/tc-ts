@@ -1,10 +1,10 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    "Nature's Swiftness",
-    'natures-swiftness',
-    ['When activated, your next Nature spell becomes an instant cast spell.'],
+    'Silence',
+    'silence',
+    ['Silence the target, preventing them from casting spells for 5 sec.'],
     1,
     [[]],
     [
@@ -12,19 +12,37 @@ export default [
         x: 1,
         y: 0,
       },
-    ]
+    ],
+    null,
+    '255 Mana',
+    '20 yd range',
+    'Instant',
+    '45 sec cooldown'
+  ),
+  new Talent(
+    'Vampiric Embrace',
+    'vampiric-embrace',
+    ['Inflicts the target with Shadow energy, causing all party members to be healed by 20% of the damage you deal to the target.'],
+    1,
+    [[]],
+    [{ x: null, y: null }],
+    [
+      { x: 4, y: 2 },
+      { x: 6, y: 1 },
+    ],
+    '40 Mana',
+    '30 yd range',
+    'Instant',
+    '10 sec cooldown',
+    ['R1', 'D2']
+  ),
+  new Talent(
+    'Improved Vampiric Embrace',
+    'improved-vampiric-embrace',
+    ['Your Vampiric Embrace also causes party members to restore mana equal to ', '% of damage you deal to the target.'],
+    2,
+    [[3, 6]],
+    [{ x: 4, y: 1 }]
   ),
   null,
-  new Talent('Gift of Nature', 'gift-of-nature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
-  new Talent(
-    'Cycle of Life',
-    'tranquility',
-    ['Reduces the cooldown of Tranquility by ', 'minutes and Rebirth by ', 'minutes and reduces their mana cost by ', '%.'],
-    2,
-    [
-      [1, 2],
-      [5, 10],
-      [25, 50],
-    ]
-  ),
-];
+]

@@ -1,14 +1,30 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
   null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
+    'Blessing of Protection',
+    'lightning-shield',
+    [
+      'Places a Blessing on the friendly target, reducing damage dealth from all sources by up to 10 for 5 mn. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.',
+    ],
     1,
-    [[]]
+    [[]],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    '60 Mana',
+    '30 yd range',
+    'Instant',
+    null,
+    ['D2']
+  ),
+
+  new Talent(
+    'Reckoning',
+    'reckoning',
+    ['Gives you a ', '% chance to gain an extra attack after blocking an attack or being the victim of a critical strike.'],
+    5,
+    [[10, 20, 30, 40, 50]]
   ),
   null,
-];
+]

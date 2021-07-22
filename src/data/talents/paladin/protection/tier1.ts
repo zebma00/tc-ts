@@ -1,17 +1,23 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Ferocity', 'ferocity', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', 'Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
+  new Talent('Spiritual Attunement', 'spiritual-attunement', ['When you are healed, you gain mana equal to ', '% of the amount healed.'], 5, [
+    [2, 4, 6, 8, 10],
+  ]),
   new Talent(
-    'Feral Aggression',
-    'demoralizing-roar',
-    ['Increases the Attack Power reduction of your Demoralizing Roar by ', '% and the damage caused by your Ferocious Bite by ', '%.'],
+    'Redoubt',
+    'redoubt',
+    ['Increases your chance to block by ', '% after beint the civtim of a critical strike. Lasts 10 sec or 5 blocks.'],
     5,
-    [
-      [8, 16, 24, 32, 40],
-      [3, 6, 9, 12, 15],
-    ]
+    [[6, 12, 18, 24, 30]],
+    [{ x: null, y: null }],
+    [{ x: 2, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
   null,
-];
+]
