@@ -1,23 +1,39 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feral Instinct',
-    'shadowmeld',
-    ['Increases threat caused in Bear and Dire Bear Form by ', '% and reduces the chance enemies have to detect you while Prowling.'],
-    5,
-    [[3, 6, 9, 12, 15]]
-  ),
-  new Talent('Brutal Impact', 'bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]]),
-  new Talent('Thick Hide', 'thick-hide', ['Increases your Armor contribution from items by ', '%'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent(
-    'Feral Focus',
-    'thick-hide',
+    'Guardian Totems',
+    'stoneskin',
+    ['Increases the effect of your Stoneskin Totem by ', '% and reduces the cooldown of your Grounding Totem by ', ' sec.'],
+    2,
     [
-      'Your damaging abilities in Cat, Bear and Dire Bear Form increase your spell damage and healing by ',
-      '% for 15 seconds. This effect stacks up to 3 times.',
-    ],
-    3,
-    [[10, 20, 30]]
+      [10, 20],
+      [1, 2],
+    ]
   ),
-];
+  new Talent(
+    'Thundering Strikes',
+    'seal-righteousness',
+    ['Increases your chance to get a critical strike with weapon attacks by ', '%.'],
+    5,
+    [[1, 2, 3, 4, 5]],
+    [{ x: null, y: null }],
+    [{ x: 3, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
+  new Talent('Improved Ghost Wolf', 'ghost-wolf', ['Reduces the cast time of your Ghost Wolf spell by ', ' sec.'], 2, [[1, 2]]),
+  new Talent(
+    'Improved Lightning Shield',
+    'lightning-shield',
+    ['Increases the damage done by your Lightning Shield orbs by ', '% and increases the number of charges by ', '.'],
+    3,
+    [
+      [5, 10, 15],
+      [1, 2, 3],
+    ]
+  ),
+]

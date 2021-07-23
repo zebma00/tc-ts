@@ -1,30 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Feline Swiftness',
-    'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
-    [
-      [15, 30],
-      [2, 4],
-    ]
-  ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
-  new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
-    3,
-    [[2, 4, 6]],
-    [{ x: null, y: null }],
-    [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
-    ]
-  ),
+  new Talent('Enhancing Totems', 'vigor', ['Increases the effect of your Grace of Air and Strength of Earth Totems by ', '%'], 2, [[8, 15]]),
   null,
-];
+  new Talent('Two-Handed Axes and Maces', 'axes-and-maces', ['Allows you to use Two-Handed Axes and Two-Handed Maces.'], 1, [[]]),
+  new Talent(
+    'Shamanistic Focus',
+    'shamanistic-focus',
+    [
+      'After landing a melee critical strike, you have a ',
+      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60%.',
+    ],
+    2,
+    [[25, 50]]
+  ),
+]

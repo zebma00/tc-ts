@@ -1,23 +1,34 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Backstab', 'backstab', ['Increases the critical strike chance of your Backstab ability by ', '%.'], 3, [[10, 20, 30]]),
   new Talent(
-    'Feral Instinct',
-    'shadowmeld',
-    ['Increases threat caused in Bear and Dire Bear Form by ', '% and reduces the chance enemies have to detect you while Prowling.'],
-    5,
-    [[3, 6, 9, 12, 15]]
-  ),
-  new Talent('Brutal Impact', 'bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]]),
-  new Talent('Thick Hide', 'thick-hide', ['Increases your Armor contribution from items by ', '%'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent(
-    'Feral Focus',
-    'thick-hide',
-    [
-      'Your damaging abilities in Cat, Bear and Dire Bear Form increase your spell damage and healing by ',
-      '% for 15 seconds. This effect stacks up to 3 times.',
-    ],
+    'Deflection',
+    'deflection',
+    ['Increases your parry chance by ', '%.'],
     3,
-    [[10, 20, 30]]
+    [[1, 2, 3]],
+    [{ x: null, y: null }],
+    [{ x: 2, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
-];
+  new Talent(
+    'Precision',
+    'precision',
+    ['Increases your chance to hit with melee weapons by ', '%'],
+    5,
+    [[1, 2, 3, 4, 5]],
+    [{ x: null, y: null }],
+    [{ x: 3, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
+  null,
+]

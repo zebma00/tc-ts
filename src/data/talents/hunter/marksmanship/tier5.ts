@@ -29,6 +29,8 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Improved Serpent Sting', 'serpent-sting', ['Increases the damage of your Serpent Sting by ', '%.'], 2, [[5, 10]]),
+  new Talent('Improvied Scorpid Sting', 'scorpid-sting', ['Your Scorpid Sting also increases all phisical damage dealt to the target by ', '%.'], 3, [
+    [1, 2, 3],
+  ]),
   null,
 ]

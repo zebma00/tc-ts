@@ -1,28 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
-    ],
+    'Vile Poisons',
+    'feign-death',
+    ['Increases the damage dealt by your poisons by', '% and gives your poisons an additional ', '% increased chance to resist dispel effects.'],
     3,
     [
-      [5, 10, 15],
-      [25, 50, 75],
+      [7, 14, 20],
+      [13, 27, 40],
     ]
   ),
+  new Talent('Improved Poison', 'instant-poison', ['Increases the chance to apply poisons with your off-hand weapon  by ', '%.'], 3, [[10, 20, 30]]),
   null,
-];
+]

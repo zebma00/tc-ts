@@ -15,7 +15,7 @@ export default [
     '30 yd range',
     'Instant'
   ),
-  new Talent('Improved Righteous Fury', 'righteousness', ['Increases the amount of threat generated bu your Righteous Fury spell by .', '%'], 3, [
+  new Talent('Improved Righteous Fury', 'righteousness', ['Increases the amount of threat generated bu your Righteous Fury spell by ', '%.'], 3, [
     [20, 40, 60],
   ]),
   new Talent(
@@ -26,12 +26,8 @@ export default [
     [[10, 20, 30]],
     [{ x: 0, y: 2 }]
   ),
-  new Talent(
-    'Divine Purpose',
-    'divine-purpose',
-    ['While your Righteous Fury is active, generate ', '% additional threat on enemies that are stunned or incapacitated.'],
-    3,
-    [[10, 20, 30]]
-  ),
+  new Talent('Divine Purpose', 'divine-purpose', ['Increases the Holy damage you deal to enemies that are stunned or incapacitated by ', '%.'], 3, [
+    [10, 20, 30],
+  ]),
   ,
 ]

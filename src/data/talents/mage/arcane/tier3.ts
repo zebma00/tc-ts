@@ -1,7 +1,9 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Magic Attunement', 'wrath', ['Increases the effect of your Dampen Magic and Amplify Magic spells by ', '%.'], 2, [[25, 50]]),
+  new Talent('Improved Mana Shield', 'mana-shield', ['Decreases the mana lost per point of damage when Mana Shield is active by ', '%.'], 2, [
+    [10, 20],
+  ]),
   new Talent('Improved Arcane Explosion', 'arcane-explosion', ['Increases the critical strike chance of your Arcane Explosion spell by ', '%.'], 3, [
     [2, 4, 6],
   ]),

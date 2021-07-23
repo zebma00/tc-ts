@@ -1,33 +1,27 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Expose Armor', 'expose-armor', ['Increases the armor reduction by your Expose Armor by', '%.'], 2, [[25, 50]]),
   new Talent(
-    'Celestial Spark',
-    'starfire',
-    ['Gives your Starfire spell a ', '% and your Wrath a ', '% chance to reset the cooldown of your Innervate.'],
-    2,
-    [
-      [1, 2],
-      [0.5, 1],
-    ]
-  ),
-  new Talent(
-    "Nature's Grace",
-    'natures-grace',
-    [
-      'All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.',
-    ],
+    'Cold Blood',
+    'ice-barrier',
+    ['When activated, increases the critical strike chance of your Sinister Strike, Backstab, Ambush or Eviscerate by 100%.'],
     1,
-    [[1]],
+    [[]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    'Instant',
+    '3 min cooldown',
+    ['D1']
   ),
   new Talent(
-    'Moonglow',
-    'moonglow',
-    ['Reduces the mana cost of your Starfire, Moonfire, Wrath, Healing Touch, Rejuvenation and Regrowth spells by ', '%.'],
+    'Improved Kidney Shot',
+    'kidney-shot',
+    ['While effected by your Kidney Shot ability, the target receives an additional ', '% damage.'],
     3,
     [[3, 6, 9]]
   ),
   null,
-];
+]

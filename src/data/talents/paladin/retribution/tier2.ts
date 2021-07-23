@@ -1,20 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Improved Judgement',
-    'judgement',
-    ['Decreases the cooldown of your Judgement spell by ', 'sec.'],
-    2,
-    [[1, 2]],
-    [{ x: null, y: null }],
-    [{ x: 4, y: 0 }],
-    null,
-    null,
-    null,
-    null,
-    ['D3']
-  ),
+  new Talent('Improved Judgement', 'judgement', ['Decreases the cooldown of your Judgement spell by ', 'sec.'], 2, [[1, 2]]),
   new Talent(
     'Improved Seal of the Crusader',
     'smite',

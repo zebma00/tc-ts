@@ -1,17 +1,8 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Gouge', 'gouge', ['Increases the duration of your Gouge ability by ', ' sec.'], 3, [[0.5, 1, 1.5]]),
+  new Talent('Improved Sinister Strike', 'sinister-strike', ['Reduces the energy cost of your Sinister Strike ', '.'], 2, [[3, 5]]),
+  new Talent('Lightning Reflexes', 'lightning-reflexes', ['Increases your dodge chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
-  new Talent('Ferocity', 'ferocity', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', 'Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
-  new Talent(
-    'Feral Aggression',
-    'demoralizing-roar',
-    ['Increases the Attack Power reduction of your Demoralizing Roar by ', '% and the damage caused by your Ferocious Bite by ', '%.'],
-    5,
-    [
-      [8, 16, 24, 32, 40],
-      [3, 6, 9, 12, 15],
-    ]
-  ),
-  null,
-];
+]

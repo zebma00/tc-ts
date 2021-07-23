@@ -1,30 +1,40 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    "Nature's Swiftness",
-    'natures-swiftness',
-    ['When activated, your next Nature spell becomes an instant cast spell.'],
+    'Heightened Senses',
+    'shadowmeld',
+    ['Increases your stealth detection and reduces your chance to be hit by spells and ranged attacks by ', '%.'],
+    2,
+    [[2, 4]]
+  ),
+  new Talent(
+    'Preperation',
+    'preperation',
+    ['When activated, this ability finishes the cooldown of your other cooldown abilites.'],
     1,
     [[]],
-    [
-      {
-        x: 1,
-        y: 0,
-      },
-    ]
+    null,
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    'Instant',
+    '10 min cooldown',
+    ['D2']
   ),
-  null,
-  new Talent('Gift of Nature', 'gift-of-nature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
+  new Talent('Dirty Deeds', 'succubus', ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'], 2, [[10, 20]]),
   new Talent(
-    'Cycle of Life',
-    'tranquility',
-    ['Reduces the cooldown of Tranquility by ', 'minutes and Rebirth by ', 'minutes and reduces their mana cost by ', '%.'],
-    2,
+    'Hemorrhage',
+    'hemorrhage',
     [
-      [1, 2],
-      [5, 10],
-      [25, 50],
-    ]
+      'An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 25. Lasts 10 charges or 10 sec. Awards 1 combo points.',
+    ],
+    1,
+    [[]],
+    [{ x: 3, y: 2 }],
+    null,
+    '35 Energy',
+    'Melee Range',
+    'Instant'
   ),
-];
+]

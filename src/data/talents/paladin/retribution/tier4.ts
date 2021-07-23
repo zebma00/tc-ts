@@ -1,7 +1,20 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Vindication',
+    'vindication',
+    ["Gives the Paladin's damaging melee attacks a chance to reduce the target's attributes by ", '% for 10 sec.'],
+    2,
+    [[15, 30]],
+    null,
+    [{ x: 4, y: 0 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
+  ),
   null,
   new Talent(
     'Eye for an Eye',
@@ -13,11 +26,5 @@ export default [
     2,
     [[25, 50]]
   ),
-  new Talent(
-    'Vindication',
-    'vindication',
-    ["Gives the Paladin's damaging melee attacks a chance to reduce the target's attributes by ", '% for 10 sec.'],
-    2,
-    [[15, 30]]
-  ),
+  null,
 ]

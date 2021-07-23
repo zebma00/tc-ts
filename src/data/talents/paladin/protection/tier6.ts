@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Aura niche meme', '', ['Aura niche meme'], 1, [[]]),
+  null,
   null,
   new Talent(
     'One-Handed Weapon Specialization',

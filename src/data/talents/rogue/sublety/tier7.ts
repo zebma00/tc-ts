@@ -1,16 +1,14 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Swiftmend',
-    'swiftmend',
-    [
-      'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
-    ],
+    'Premeditation',
+    'fear',
+    ['When used, adds 2 combo points to your target. You must add to or use these combo points within 10 sec or the combo points are lost.'],
     1,
     [[1]]
   ),
   null,
   null,
-];
+]

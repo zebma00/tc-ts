@@ -1,20 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
+  null,
   new Talent(
-    'Heart of the Wild',
-    'heart-of-the-wild',
+    'Unleashed Rage',
+    'unleashed-rage',
     [
-      'Increases your Intellect by ',
-      '%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ',
-      '% and while in Cat Form your Strength is increased by ',
-      '%.',
+      "Causes your critical hits with melee attacks to increase all party members' melee attack power by ",
+      '% if within 20 yards of the Shaman. Lasts 10 sec.',
     ],
     5,
-    [[4, 8, 12, 16, 20]],
-    [{ x: 3, y: 1 }]
+    [[2, 4, 6, 8, 10]]
   ),
   null,
-  null,
-];
+]

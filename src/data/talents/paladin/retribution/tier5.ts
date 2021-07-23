@@ -4,12 +4,12 @@ export default [
   new Talent(
     'Crusade',
     'crusade',
-    ['Your Judgement spell has a ', '% chance to refresh all Judgements on the target'],
+    ['Your damaging melee attacks have a ', '% chance to refresh all Judgements on the target'],
     2,
     [[50, 100]],
     [
       {
-        x: 1,
+        x: 3,
         y: 0,
       },
     ]

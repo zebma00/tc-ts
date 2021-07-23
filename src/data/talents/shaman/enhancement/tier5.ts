@@ -1,14 +1,41 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
-  null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
-    1,
-    [[]]
+    'Improved Weapon Totems',
+    'weapon-totems',
+    ['Your Windfury Totem also increases attack speed by ', '% and your Flametongue Totem also increases spell damage and healing by ', '%.'],
+    2,
+    [
+      [2, 4],
+      [2, 4],
+    ]
   ),
+  new Talent(
+    'Elemental Weapons',
+    'elemental-weapons',
+    [
+      'Improves your weapon enhancing spells. Rockbiter Weapon: Also reduces physical damage taken by ',
+      '%.Flametongue Weapon: Also increases your spell damage and healing by ',
+      '% Frostbrand Weapon: Also reduces the attack speed of the affected target by ',
+      '%. Windfury Weapon: Also Increases your attack speed by ',
+      '%.',
+    ],
+    3,
+    [
+      [5, 10, 15],
+      [5, 10, 15],
+      [5, 10, 15],
+      [5, 10, 15],
+    ],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
+  ),
+  new Talent('Parry', 'deflection', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
   null,
-];
+]

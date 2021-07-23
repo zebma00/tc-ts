@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('smth', '', ['sth'], 2, [[]]),
   new Talent(
     'Presence of Mind',
     'presence-of-mind',

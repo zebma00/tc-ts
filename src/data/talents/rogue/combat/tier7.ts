@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Leader of the Pack',
-    'leader-of-the-pack',
-    [
-      'While in Cat, Bear, or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 5%.',
-    ],
+    'Adrenaline Rush',
+    'adrenaline-rush',
+    ['Increases your energy regeneration by 100% for 15 sec.'],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    null,
+    null,
+    'Instant',
+    '5 min cooldown'
   ),
   null,
   null,
-];
+]

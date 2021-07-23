@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Holy Verdict',
+    'holy-verdict',
+    ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
+    2,
+    [[10, 20]]
+  ),
   new Talent(
     'Illumination',
     'illumination',

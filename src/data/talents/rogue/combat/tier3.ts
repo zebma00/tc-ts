@@ -1,30 +1,26 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Endurance', 'shadow-affinity', ['Reduces the cooldown of your Evasion and Sprint abilities by ', ' sec.'], 2, [[45, 90]]),
   new Talent(
-    'Feline Swiftness',
-    'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
-    [
-      [15, 30],
-      [2, 4],
-    ]
-  ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
-  new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
-    3,
-    [[2, 4, 6]],
-    [{ x: null, y: null }],
-    [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
-    ]
+    'Riposte',
+    'counter-attack',
+    ["A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec."],
+    1,
+    [[]],
+    [{ x: 1, y: 1 }],
+    null,
+    '10 Energy',
+    'Melee range',
+    'Instant',
+    '6 sec cooldown'
   ),
   null,
-];
+  new Talent(
+    'Improved Sprint',
+    'sprint',
+    ['Gives a ', '% chance to remove all movement impairing effects when you activate your Sprint ability.'],
+    2,
+    [[50, 100]]
+  ),
+]

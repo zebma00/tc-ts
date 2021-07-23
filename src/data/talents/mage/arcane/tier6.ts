@@ -19,9 +19,12 @@ export default [
   new Talent(
     'Unstable Missiles',
     'unstable-missiles',
-    ['Increases the damage, critical strike chance and mana cost of your Arcane Missiles by ', '%.'],
+    [
+      'Casting Arcane Missiles increases the damage and Mana cost of your next Arcane Missiles by ',
+      '%. This effect stacks up to three times and lasts 8 sec.',
+    ],
     5,
-    [[3, 6, 9, 12, 15]]
+    [[2, 4, 6, 8, 10]]
   ),
   null,
 ]

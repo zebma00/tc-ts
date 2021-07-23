@@ -1,14 +1,36 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
-  null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
+    'Mace Specialization',
+    'mace-spec',
+    ['Increases your skill with maces by ', ' and gives you a ', '% chance to stun your target for 3 sec with a mace.'],
+    5,
+    [
+      [1, 2, 3, 4, 5],
+      [1, 2, 3, 4, 6],
+    ]
+  ),
+  new Talent(
+    'Blade Flurry',
+    'blade-flurry',
+    ['Increases your attack speed by 20%. In addition, attacks strike an additional nearby opponent. Lasts 15 sec.'],
     1,
-    [[]]
+    [[]],
+    null,
+    [{ x: 5, y: 1 }],
+    '25 Energy',
+    null,
+    '2 min cooldown',
+    'Instant',
+    ['D1']
+  ),
+  new Talent(
+    'Sword Specialization',
+    'sword-spec',
+    ['Gives you a ', '% chance to trigger an additional attack against the same target when using swords.'],
+    5,
+    [[1, 2, 3, 4, 5]]
   ),
   null,
-];
+]

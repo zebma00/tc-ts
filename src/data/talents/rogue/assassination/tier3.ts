@@ -1,23 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Thorns', 'thorns', ['Increases the damage caused by your Thorns spell by ', '%.'], 3, [[25, 50, 75]]),
-  null,
+  new Talent('Relentless Strikes', 'relentless', ['Your Finishing Moves have a 20% chance per combo point to restore 25 energy.'], 1, [[]]),
   new Talent(
-    'Omen of Clarity',
-    'omen-of-clarity',
-    [
-      'Imbues the druid with natural energy. Each of the druids melee attacks has a chance of causing the caster to enter a clearcasting state. The clearcasting state reduces the Rage, Mana or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.',
-    ],
-    1,
-    [[1]],
-    [{ x: 1, y: 2 }]
-  ),
-  new Talent(
-    "Nature's Reach",
-    'natures-reach',
-    ['Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane spells by ', '%.'],
+    'Envenom',
+    'envenom',
+    ['Increases the damage done by your bleed effects by an additional ', '% for each poison effect on the target, up to a maximum or 30%.'],
     2,
-    [[10, 20]]
+    [[3, 6]]
   ),
-];
+  new Talent(
+    'Lethality',
+    'lethality',
+    ['Increases the Critical Strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike and Hemorrhage by ', '%.'],
+    5,
+    [[6, 12, 18, 24, 30]],
+    [{ x: 0, y: 2 }]
+  ),
+  null,
+]

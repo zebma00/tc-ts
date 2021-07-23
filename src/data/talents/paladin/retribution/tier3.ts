@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Pursuit of Justice',
+    'pursuit-of-justice',
+    ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'],
+    2,
+    [[4, 8]]
+  ),
   new Talent(
     'Conviction',
     'conviction',
@@ -28,11 +34,5 @@ export default [
     null,
     'Instant'
   ),
-  new Talent(
-    'Pursuit of Justice',
-    'pursuit-of-justice',
-    ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'],
-    2,
-    [[4, 8]]
-  ),
+  null,
 ]

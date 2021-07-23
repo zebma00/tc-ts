@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonkin Form',
-    'moonkin-form',
+    'Elemental Mastery',
+    'critical-mass',
     [
-      'Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.',
+      'When activated, this spell grants your next Fire, Frost or Nature damage spell a 100% critical strike chance and reduces the mana cost by 100%.',
     ],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    'Instant',
+    '3 min cooldown'
   ),
   null,
   null,
-];
+]

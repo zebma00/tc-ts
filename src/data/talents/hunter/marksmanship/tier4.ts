@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Improvied Scorpid Sting', 'scorpid-sting', ['Increases the effect of your Scorpid Sting by ', '%.'], 3, [[10, 20, 30]]),
+  new Talent('Improved Serpent Sting', 'serpent-sting', ['Increases the damage of your Serpent Sting by ', '%.'], 2, [[5, 10]]),
   new Talent(
     'Mortal Shots',
     'mortal-shots',

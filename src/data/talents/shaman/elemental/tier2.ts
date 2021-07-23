@@ -1,30 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Improved Entangling Roots',
-    'entangling-roots',
-    ['Gives you a ', '% chance to avoid interruption caused by damage while casting Entangling Roots.'],
-    3,
-    [[40, 70, 100]]
+    "Earth's Grasp",
+    'earths-grasp',
+    ['Increases the health of your Stoneclaw Totem by ', '% and the radius of your Earthbind Totem by ', '%.'],
+    2,
+    [
+      [25, 50],
+      [10, 20],
+    ]
   ),
-  new Talent(
-    'Improved Moonfire',
-    'moonfire',
-    ['Increases the damage and critical strike chance of your Moonfire spell by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: null, y: null }],
-    [{ x: 3, y: 1 }]
-  ),
-  new Talent(
-    'Natural Weapons',
-    'natural-weapons',
-    ['Increases the damage you deal with physical attacks in all forms by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: null, y: null }],
-    [{ x: 2, y: 2 }]
-  ),
-  new Talent('Natural Shapeshifter', 'arcane-explosion', ['Reduces the mana cost of all Shapeshifting by ', '%.'], 3, [[10, 20, 30]]),
-];
+  new Talent('Call of Flame', 'immolate', ['Increases the damage done by your Fire Totems by ', '%.'], 2, [[15, 30]]),
+  new Talent('Aftershock', 'aftershock', ['Increases the critical strike chance of your Shock spells by ', '%.'], 2, [[2, 4]]),
+  new Talent("Nature's Guidance", 'natures-guidance', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+]

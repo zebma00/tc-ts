@@ -1,34 +1,18 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  null,
   new Talent(
-    'Predatory Strikes',
-    'predatory-strikes',
-    [
-      'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
-    ],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
-  ),
-  new Talent(
-    'Blood Frenzy',
+    'Flurry',
     'rip',
-    ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
+    ['Increases your attack speed by ', '% for your next 3 swings after dealing a critical strike.'],
+    5,
+    [[10, 15, 20, 25, 30]],
+    [{ x: 1, y: 1 }]
   ),
-  new Talent(
-    'Primal Fury',
-    'primal-fury',
-    ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-];
+  new Talent('Ancestral Fortitude', 'arcane-focus', ['Increases your armor by ', '% and your chance to block and chance to dodge by ', '%'], 5, [
+    [2, 4, 6, 8, 10],
+    [1, 2, 3, 4, 5],
+  ]),
+  null,
+]
