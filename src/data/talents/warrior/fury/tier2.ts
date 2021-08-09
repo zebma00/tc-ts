@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Improved Slam',
     'shadowmeld',
-    ['Reduces the casting time of your Slam ability by ', 'sec and causes your Slam to increase the damage of your next main hand attack by ', '%.'],
+    ['Reduces the casting time of your Slam ability by ', ' sec and causes your Slam to increase the damage of your next main hand attack by ', '%.'],
     5,
     [
       [0.2, 0.4, 0.6, 0.8, 1],

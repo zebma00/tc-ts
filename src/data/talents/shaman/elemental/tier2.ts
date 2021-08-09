@@ -11,7 +11,7 @@ export default [
       [10, 20],
     ]
   ),
-  new Talent('Call of Flame', 'immolate', ['Increases the damage done by your Fire Totems by ', '%.'], 2, [[15, 30]]),
+  new Talent('Call of Flame', 'immolate', ['Increases the damage done by your Fire Totems by ', '%.'], 2, [[10, 20]]),
   new Talent('Aftershock', 'aftershock', ['Increases the critical strike chance of your Shock spells by ', '%.'], 2, [[2, 4]]),
-  new Talent("Nature's Guidance", 'natures-guidance', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+  null,
 ]
