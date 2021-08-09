@@ -29,9 +29,16 @@ export default [
     null,
     'Instant'
   ),
-  new Talent('Fel Stamina', 'maul', ['Increases the Health and Attack Power of your Imp, Succubus, Void Walker and Felhunter by ', '%.'], 3, [
-    [5, 10, 15],
-  ]),
+  new Talent(
+    'Fel Stamina',
+    'maul',
+    ['Increases the Stamina of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum health by ', '%.'],
+    3,
+    [
+      [5, 10, 15],
+      [1, 2, 3],
+    ]
+  ),
   new Talent(
     'Improved Fire Stone',
     'thick-hide',

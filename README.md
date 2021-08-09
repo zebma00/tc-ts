@@ -7,7 +7,7 @@
 
 - Hunter: imp mend pet & imp res pet are too boring; imp scorp sting has overlap with mortal blood frenzy (arms war)
 - Mage: Arcane fix, fire & frost smth new
-- Paladin: consecration baseline & new 11
+- Paladin: consecration baseline & new 11 (more interesting aura mastery)
 - Rogue: smth for combat
-- Shaman: frostbrand baseline fix & elemental weapons talent frostbrand
-- Warlock: Dark Pact?; Demonic sacrifice; smth on tier 2 for sacrifice builds; AoE defense for pets
+- Shaman: frostbrand baseline fix & elemental weapons talent frostbrand; more interesting totem mastery; something else in place of imp reincarnate
+- Warlock: Dark Pact?; Demonic sacrifice

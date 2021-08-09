@@ -1,7 +1,20 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Fel Protection',
+    's',
+    [
+      "Increases your demon's chance to dodge or resist are of effect damage by ",
+      '% and increases your chance to dodge or resist are of effect damage by ',
+      '%.',
+    ],
+    3,
+    [
+      [25, 50, 75],
+      [15, 30, 45],
+    ]
+  ),
   new Talent(
     'Unholy Power',
     'predatory-strikes',

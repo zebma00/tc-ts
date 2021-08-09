@@ -24,8 +24,15 @@ export default [
     3,
     [[10, 20, 30]]
   ),
-  new Talent('Fel Intellect', 'thick-hide', ['Increases the Mana and Spell Damage of your Imp, Succubus, Void Walker and Felhunter by ', '%'], 3, [
-    [5, 10, 15],
-  ]),
+  new Talent(
+    'Fel Intellect',
+    'thick-hide',
+    ['Increases the Intellect of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum mana by ', '%.'],
+    3,
+    [
+      [5, 10, 15],
+      [1, 2, 3],
+    ]
+  ),
   null,
 ]
