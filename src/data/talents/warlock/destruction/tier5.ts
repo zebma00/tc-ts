@@ -29,5 +29,11 @@ export default [
     ['D2']
   ),
   new Talent('Ruin', 'tranquility', ['Increases the critical strike damage bonus of your Destruction spells by 100%.'], 1, [[]], [{ x: 2, y: 2 }]),
-  new Talent('Havoc', 'tranquility', ['Your spell crits reduce the cooldown of your Soul Shatter by ', ' sec.'], 2, [[3, 6]]),
+  new Talent(
+    'Havoc',
+    'tranquility',
+    ['When you get two critical hits from spells in a row, gain a ', '% chance to reset the cooldown of your Soul Shatter.'],
+    2,
+    [[25, 50]]
+  ),
 ]

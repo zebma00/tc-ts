@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   null,
   new Talent(
-    'Improved Mark of the Wild',
+    'Improved Shadow Bolt',
     'mark-of-the-wild',
     [
       'Your Shadow Bolt critical strikes increase the shadow damage taken by the target by ',

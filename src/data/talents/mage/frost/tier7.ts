@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Ice Barrier',
-    'ice-barrier',
+    'spell_ice_lament',
     ['Instantly shields you, absorbing 455 damage. Lasts 1 min. While the shield holds, spells will be interrupted.'],
     1,
     [[]],

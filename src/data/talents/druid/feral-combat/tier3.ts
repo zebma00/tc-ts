@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Feline Swiftness',
-    'ghost-wolf',
+    'spell_nature_spiritwolf',
     ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
     2,
     [
@@ -13,7 +13,7 @@ export default [
   ),
   new Talent(
     'Feral Charge',
-    'feral-charge',
+    'ability_hunter_pet_bear',
     ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'],
     1,
     [[]],
@@ -26,7 +26,7 @@ export default [
   ),
   new Talent(
     'Sharpened Claws',
-    'maul',
+    'inv_misc_monsterclaw_04',
     ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
     3,
     [[2, 4, 6]],

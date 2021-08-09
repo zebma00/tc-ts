@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Combustion',
-    'combustion',
+    'spell_fire_sealoffire',
     [
       'When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%. This effect lasts until you have caused 3 critical strikes with Fire spells.',
     ],

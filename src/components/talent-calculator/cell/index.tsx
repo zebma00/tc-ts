@@ -31,8 +31,8 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
-          background: `url("/img/icons/${icon}.jpg") 0 0 no-repeat`,
-          border: color ? `2px solid ${color}` : 'none',
+          background: `url("https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg") 0 0 no-repeat`,
+          border: !!color ? `2px solid ${color}` : 'none',
           filter: !color ? 'grayscale(100%)' : 'none',
         }}
         className={styles.cellIconStyle}

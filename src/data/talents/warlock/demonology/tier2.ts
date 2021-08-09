@@ -27,14 +27,5 @@ export default [
   new Talent('Fel Intellect', 'thick-hide', ['Increases the Mana and Spell Damage of your Imp, Succubus, Void Walker and Felhunter by ', '%'], 3, [
     [5, 10, 15],
   ]),
-  new Talent(
-    'Improved Fire Stone',
-    'thick-hide',
-    ['Your Firestone also increases your chance to hit with Fire spells by ', '% and reduces threat caused by your Fire spells by ', '%.'],
-    2,
-    [
-      [2, 4],
-      [15, 30],
-    ]
-  ),
+  null,
 ]

@@ -5,7 +5,7 @@ export default [
   null,
   new Talent(
     'One-Handed Weapon Specialization',
-    'one-handed-spec',
+    'inv_sword_20',
     ['Increases all damage you deal while wielding One-Handed melee weapons by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]]

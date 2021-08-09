@@ -1,10 +1,12 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Incinerate', 'flame-shock', ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'], 2, [[2, 4]]),
+  new Talent('Incinerate', 'spell_fire_flameshock', ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'], 2, [
+    [2, 4],
+  ]),
   new Talent(
     'Improved Flamestrike',
-    'flamestrike',
+    'spell_fire_selfdestruct',
     ['Increases the critical strike chance of your Flamestrike spell by ', '% and reduces the cast time by ', ' sec.'],
     2,
     [
@@ -14,7 +16,7 @@ export default [
   ),
   new Talent(
     'Pyroblast',
-    'pyroblast',
+    'spell_fire_fireball02',
     ['Hurl an immense fiery boulder that causes 148 Fire damage and an additional 56 Fire damage over 12 sec.'],
     1,
     [[]],
@@ -28,7 +30,7 @@ export default [
   ),
   new Talent(
     'Burning Soul',
-    'burning-soul',
+    'spell_fire_fire',
     [
       'Gives your Fire spells a ',
       '% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by ',

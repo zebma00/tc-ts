@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Vengeance',
-    'vengeance',
+    'ability_racial_avatar',
     [
       'Gives you a ',
       '% bonus to your physical and Holy damage after dealing a critical strike from a weapon swing, spell, or ability. This effect stacks up to 3 times. Lasts 15 sec.',

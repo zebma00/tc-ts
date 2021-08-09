@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     "Nature's Swiftness",
-    'natures-swiftness',
+    'spell_nature_ravenform',
     ['When activated, your next Nature spell becomes an instant cast spell.'],
     1,
     [[]],
@@ -20,10 +20,17 @@ export default [
     '3 min cooldown'
   ),
   null,
-  new Talent('Gift of Nature', 'gift-of-nature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
+  new Talent(
+    'Gift of Nature',
+    'spell_nature_protectionformnature',
+    ['Increases the effect of all healing spells by ', '%.'],
+    5,
+    [[2, 4, 6, 8, 10]],
+    [{ x: 2, y: 2 }]
+  ),
   new Talent(
     'Cycle of Life',
-    'tranquility',
+    'spell_nature_tranquility',
     ['Reduces the cooldown of Tranquility by ', ' minutes and Rebirth by ', ' minutes and reduces their mana cost by ', '%.'],
     2,
     [

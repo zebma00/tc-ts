@@ -32,5 +32,14 @@ export default [
   new Talent('Fel Stamina', 'maul', ['Increases the Health and Attack Power of your Imp, Succubus, Void Walker and Felhunter by ', '%.'], 3, [
     [5, 10, 15],
   ]),
-  null,
+  new Talent(
+    'Improved Fire Stone',
+    'thick-hide',
+    ['Your Firestone also increases your chance to hit with Fire spells by ', '% and reduces threat caused by your Fire spells by ', '%.'],
+    2,
+    [
+      [2, 4],
+      [15, 30],
+    ]
+  ),
 ]

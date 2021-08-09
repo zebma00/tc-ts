@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Critical Mass',
-    'critical-mass',
+    'spell_nature_wispheal',
     ['Increases the critical strike chance of your Fire spells by ', '%.'],
     3,
     [[2, 4, 6]],
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     'Blast Wave',
-    'blast-wave',
+    'spell_holy_excorcism_02',
     [
       'A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 160 to 192 Fire damage, and dazing them for 6 sec',
     ],

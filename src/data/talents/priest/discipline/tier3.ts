@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Inner Focus',
-    'inner-focus',
+    'spell_frost_windwalkon',
     ['When activated, reduces the mana cost of your next spell by 100% and increases its critical strike chance by 25%.'],
     1,
     [[]],
@@ -17,7 +17,7 @@ export default [
   ),
   new Talent(
     'Meditation',
-    'divine-intellect',
+    'spell_nature_sleep',
     ['Allows ', '% of your mana regeneration to continue while casting.'],
     3,
     [[10, 20, 30]],

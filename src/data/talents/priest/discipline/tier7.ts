@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Power Infusion',
-    'power-infusion',
+    'spell_holy_powerinfusion',
     ['ncreases the target with power, increasing their spell damage and healing by 20% for 15 sec.'],
     1,
     [[]],

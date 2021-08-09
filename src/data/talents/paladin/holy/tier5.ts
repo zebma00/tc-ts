@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Divine Favor',
-    'divine-favor',
+    'spell_holy_heal',
     ['When activated, gives your next Flash of Light, Holy Light, or Holy Shock spell a 100% critical effect chance.'],
     1,
     [[1]],
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     "Light's Grace",
-    'lights-grace',
+    'spell_holy_lightsgrace',
     ['Gives your Holy Light spell a ', '% chance to reduce the cast time of your next Holy Light spell by 0.5 sec. This effect lasts 15 sec.'],
     3,
     [[33, 67, 100]]

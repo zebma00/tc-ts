@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Expose Weakness',
-    'expose-weakness',
+    'ability_rogue_findweakness',
     [
       'Your melee and ranged critical strikes have a ',
       '% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all atackers against that target by 25% of your agility for 7 sec.',
@@ -13,7 +13,7 @@ export default [
   ),
   new Talent(
     'Killer Instinct',
-    'killer-instinct',
+    'spell_holy_blessingofstamina',
     ['Increases your critical strike chance with all attacks by ', '%.'],
     3,
     [[1, 2, 3]],
@@ -27,7 +27,7 @@ export default [
   ),
   new Talent(
     'Counterattack',
-    'counter-attack',
+    'ability_warrior_challange',
     [
       "A strike that becomes active after parrying an opponent's attack. This attack deals 40 damage and immobilizes the target for 5 sec. Counterattack cannot be blocked, dodged, or parried",
     ],

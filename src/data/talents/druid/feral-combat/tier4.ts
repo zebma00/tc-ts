@@ -1,10 +1,10 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  new Talent('Improved Shred', 'spell_shadow_vampiricaura', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
   new Talent(
     'Predatory Strikes',
-    'predatory-strikes',
+    'ability_hunter_pet_cat',
     [
       'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
       '% of your level. In addition, increases your spell damage and healing by ',
@@ -25,7 +25,7 @@ export default [
   ),
   new Talent(
     'Feline Frenzy',
-    'rip',
+    'ability_ghoulfrenzy',
     ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
     2,
     [[50, 100]],
@@ -33,7 +33,7 @@ export default [
   ),
   new Talent(
     'Primal Fury',
-    'primal-fury',
+    'ability_racial_cannibalize',
     ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
     2,
     [[50, 100]],

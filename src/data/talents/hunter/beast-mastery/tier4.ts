@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Improved Mend Pet',
-    'mend-pet',
+    'ability_hunter_mendpet',
     [
       'Gives your mend Pet spell a ',
       '% chance to remove 1 poison, disease, curse of magic effect from your pet each tick and increases the time your mend pet lasts by ',
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     'Ferocity',
-    'maul',
+    'inv_misc_monsterclaw_04',
     ['Increases the critical strike chance of your pets by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],

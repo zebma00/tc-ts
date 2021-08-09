@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Surefooted',
-    'surefooted',
+    'ability_kick',
     ['Increases hit chance by ', '% and increases the chance you resist movement impairing efects by ', '%.'],
     3,
     [
@@ -15,7 +15,7 @@ export default [
   null,
   new Talent(
     'Improved Feign Death',
-    'feign-death',
+    'ability_rogue_feigndeath',
     ['Reduces the cooldown of your Feign Death by ', ' sec and reduces the chance your Feign Death is resisted by ', '%.'],
     2,
     [

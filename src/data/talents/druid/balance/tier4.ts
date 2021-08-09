@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Vengeance',
-    'evocation',
+    'spell_nature_purge',
     ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
     5,
     [[20, 40, 60, 80, 100]],
@@ -12,7 +12,7 @@ export default [
   ),
   new Talent(
     'Celestial Focus',
-    'starfire',
+    'spell_arcane_starfire',
     [
       'Gives you Starfire a ',
       "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",

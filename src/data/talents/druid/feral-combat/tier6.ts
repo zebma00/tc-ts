@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Heart of the Wild',
-    'heart-of-the-wild',
+    'spell_holy_blessingofagility',
     [
       'Increases your Intellect by ',
       '%. In addition, while in Bear or Dire Bear Form your Stamina is increased by ',

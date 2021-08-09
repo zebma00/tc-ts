@@ -3,14 +3,14 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Ferocious Inspiration',
-    'ferocious-inspiration',
+    'ability_hunter_ferociousinspiration',
     ['When your pet scores a Critical hit, all party member have their damage and healing increased by ', '%.'],
     3,
     [[1, 2, 3]]
   ),
   new Talent(
     'Intimidation',
-    'intimidation',
+    'ability_devour',
     [
       'Command your pet to intimidate the target on the next succesful melee attack, causing a high amount of threat and stunning the target for 3 sec.',
     ],
@@ -25,5 +25,5 @@ export default [
     ['D2']
   ),
   null,
-  new Talent('Bestial Discipline', 'wrath', ['Increases the Focus generation of your pets by ', '%.'], 2, [[10, 20]]),
+  new Talent('Bestial Discipline', 'spell_nature_abolishmagic', ['Increases the Focus generation of your pets by ', '%.'], 2, [[10, 20]]),
 ]

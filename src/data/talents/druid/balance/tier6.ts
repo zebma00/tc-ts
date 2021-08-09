@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Moonfury',
-    'moonfury',
+    'spell_nature_moonglow',
     ['Increases the damage done by your Starfire, Moonfire and Wrath spells by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],

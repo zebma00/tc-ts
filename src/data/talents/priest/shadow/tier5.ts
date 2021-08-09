@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Silence',
-    'silence',
+    'spell_shadow_impphaseshift',
     ['Silence the target, preventing them from casting spells for 5 sec.'],
     1,
     [[]],
@@ -21,7 +21,7 @@ export default [
   ),
   new Talent(
     'Vampiric Embrace',
-    'vampiric-embrace',
+    'spell_shadow_unsummonbuilding',
     ['Inflicts the target with Shadow energy, causing all party members to be healed by 20% of the damage you deal to the target.'],
     1,
     [[]],
@@ -38,7 +38,7 @@ export default [
   ),
   new Talent(
     'Improved Vampiric Embrace',
-    'improved-vampiric-embrace',
+    'spell_shadow_improvedvampiricembrace',
     ['Your Vampiric Embrace also causes party members to restore mana equal to ', '% of damage you deal to the target.'],
     2,
     [[3, 6]],

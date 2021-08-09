@@ -3,14 +3,14 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Pursuit of Justice',
-    'pursuit-of-justice',
+    'spell_holy_persuitofjustice',
     ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'],
     2,
     [[4, 8]]
   ),
   new Talent(
     'Conviction',
-    'conviction',
+    'spell_holy_retributionaura',
     ['Increases your chance to get a critical strike with Melee weapons by ', '%.'],
     5,
     [[1, 2, 3]],
@@ -24,7 +24,7 @@ export default [
   ),
   new Talent(
     'Sanctity Aura',
-    'sanctity-aura',
+    'spell_holy_mindvision',
     ['Increases Holy damage done by party members within 30 yards by 10%. Only one Aura can be active per paladin at a time.'],
     1,
     [[]],

@@ -2,12 +2,12 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Improved Hammer of Justice', 'hammer-of-justice', ['Reduces the cooldown of your Hammer of Justice spell by ', ' sec.'], 3, [
+  new Talent('Improved Hammer of Justice', 'spell_holy_sealofmight', ['Reduces the cooldown of your Hammer of Justice spell by ', ' sec.'], 3, [
     [5, 10, 15],
   ]),
   new Talent(
     'Improved Concentration Aura',
-    'concentration-aura',
+    'spell_holy_mindsooth',
     [
       'Increases the effect of you Concentration Aura by an additional ',
       '% and gives all group members effected by the aura an additional ',

@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Lightwell',
-    'lightwell',
+    'spell_holy_summonlightwell',
     [
       'Creates a holy Lightwell near the priest. Members of your party can move through it to restore 800 health over 4 sec. Each party member can only be healed by the Lightwell once.',
     ],

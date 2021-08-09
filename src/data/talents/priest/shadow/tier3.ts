@@ -2,10 +2,12 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Improved Mind Blast', 'mind-blast', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [[0.5, 1, 1.5, 2, 2.5]]),
+  new Talent('Improved Mind Blast', 'spell_shadow_unholyfrenzy', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [
+    [0.5, 1, 1.5, 2, 2.5],
+  ]),
   new Talent(
     'Mind Flay',
-    'mind-flay',
+    'spell_shadow_siphonmana',
     ["Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%."],
     1,
     [[]],

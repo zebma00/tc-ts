@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Aimed Shot',
-    'aimed-shot',
+    'inv_spear_07',
     ['An aimed shot that increases range damage by 70.'],
     1,
     [[]],
@@ -16,5 +16,5 @@ export default [
     '6 sec cooldown'
   ),
   null,
-  new Talent('Hawk Eye', 'hawk-eye', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
+  new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
 ]

@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Repentance',
-    'humanoid-slaying',
+    'spell_holy_prayerofhealing',
     [
       'Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.',
     ],

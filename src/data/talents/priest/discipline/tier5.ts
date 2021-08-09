@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Force of Will',
-    'force-of-will',
+    'spell_nature_slowingtotem',
     ['Increases the critical strike chance of your offensive spells by ', '% and your spell damage by ', '%.'],
     5,
     [
@@ -14,7 +14,7 @@ export default [
   ),
   new Talent(
     'Divine Spirit',
-    'divine-spirit',
+    'spell_holy_divinespirit',
     ['Holy power infuses the target, increasing their spirit by 17 for 30 min.'],
     1,
     [[]],
@@ -26,10 +26,9 @@ export default [
     null,
     ['R1']
   ),
-
   new Talent(
     'Improved Divine Spirit',
-    'divine-spirit',
+    'spell_holy_divinespirit',
     [
       "Your Divine Spirit and Prayer of Spirit spells also increase the target's spell damage and healing by an amount equal to ",
       '% of their total Spirit.',

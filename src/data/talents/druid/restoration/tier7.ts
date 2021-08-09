@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Swiftmend',
-    'swiftmend',
+    'inv_relics_idolofrejuvenation',
     [
       'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
     ],

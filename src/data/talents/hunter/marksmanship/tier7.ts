@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Trueshot Aura',
-    'trueshot',
+    'ability_trueshot',
     ['Increases the attack power of party members within 45 yards by 50. Lasts 30 min.'],
     1,
     [[]],

@@ -25,7 +25,7 @@ export default [
   new Talent(
     'Elemental Devastation',
     'elemental-devastation',
-    ['Your critical strikes from offensive spells increase your chance to get a critical strike with melee attacks by ', '% for 10 sec.'],
+    ['Causes your critical strikes from spells to increase your chance to get a critical strike with melee attacks by ', '% for 10 sec.'],
     3,
     [[4, 8, 12]]
   ),

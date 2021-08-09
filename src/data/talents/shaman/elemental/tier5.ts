@@ -33,7 +33,7 @@ export default [
   new Talent(
     'Unleashed Elements',
     'unleashed-elements',
-    ["Causes your critical hits with spells to increase all party members' spell damage by ", '% if within 20 yards of the Shaman. Lasts 10 sec.'],
+    ["Causes your critical hits from spells to increase all party members' spell damage by ", '% if within 20 yards of the Shaman. Lasts 10 sec.'],
     3,
     [[4, 7, 10]]
   ),

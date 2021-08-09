@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Arcane Instability',
-    'arcane-instability',
+    'spell_shadow_teleport',
     ['Increases your spell damage and critical strike chance by ', '%.'],
     3,
     [[1, 2, 3]],
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     'Unstable Missiles',
-    'unstable-missiles',
+    'spell_arcane_arcanetorrent',
     [
       'Casting Arcane Missiles increases the damage and Mana cost of your next Arcane Missiles by ',
       '%. This effect stacks up to three times and lasts 8 sec.',
