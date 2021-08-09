@@ -1,13 +1,13 @@
 ### TO DO
 - rework functions:
-   - it is currently possible to reduce to 3 pts in a talent tier, while still having pts in higher tiers (try druid balance).
+   - it is currently possible to reduce to 3 pts in a talent tier, while still having pts in higher tiers (try druid balance -> up to 11 pts, then remove pts from tier 1)
    - Seperate concerns: 1 function for left and 1 for right click
 
 - Icons for rogue, shaman, warlock, warrior
 
-- Hunter: Aimed shot baseline
+- Hunter: Aimed shot baseline & new 11
 - Mage: Arcane fix, fire & frost smth new
-- Paladin: consecration baseline
+- Paladin: consecration baseline & new 11
 - Rogue: smth for combat
 - Shaman: frostbrand baseline fix
 - Warlock: Dark Pact?; Demonic sacrifice; smth on tier 2 for sacrifice builds

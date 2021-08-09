@@ -26,8 +26,7 @@ export default [
     ["Increases the chance for your Nature's Grasp to entangle an enemy by ", '%.'],
     4,
     [[15, 30, 45, 65]],
-    [{ x: 0, y: 1 }],
-    [{ x: null, y: null }]
+    [{ x: 0, y: 1 }]
   ),
   new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
 ]
