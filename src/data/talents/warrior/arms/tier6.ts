@@ -1,15 +1,14 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
   new Talent(
-    'Moonfury',
+    'Blood Frenzy',
     'moonfury',
-    ['Increases the damage done by your Starfire, Moonfire and Wrath spells by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    [{ x: 4, y: 1 }]
+    ['Your Rend and Deep Wounds abilities also increase all physical damage caused to that target by ', '%.'],
+    2,
+    [[2, 4]]
   ),
   null,
+  new Talent('Improved Hamstring', 'moonfury', ['Gives your Hamstring a ', '% chance to immobilize the target for 5 sec.'], 3, [[10, 20, 30]]),
   null,
-];
+]

@@ -1,33 +1,35 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Celestial Spark',
+    'Poleaxe Specialization',
     'starfire',
-    ['Gives your Starfire spell a ', '% and your Wrath a ', '% chance to reset the cooldown of your Innervate.'],
-    2,
-    [
-      [1, 2],
-      [0.5, 1],
-    ]
+    ['Increases your critical strike chance and critical strike damage with Polearms and Axes by ', '%.'],
+    5,
+    [[1, 2, 3, 4, 5]]
   ),
   new Talent(
-    "Nature's Grace",
+    'Sweeping Strikes',
     'natures-grace',
-    [
-      'All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.',
-    ],
+    ['Your next 5 melee attacks strike an additional nearby target.'],
     1,
-    [[1]],
+    [[]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 6, y: 1 }],
+    '30 Rage',
+    null,
+    'Instant cast',
+    '30 sec cooldown',
+    ['D2']
   ),
+  new Talent('Mace Specialization', 'moonglow', ['Gives you a ', '% chance to stun the target for 3 sec and generate 7 rage when using a Mace.'], 5, [
+    [1, 2, 3, 4, 6],
+  ]),
   new Talent(
-    'Moonglow',
+    'Sword Specialization',
     'moonglow',
-    ['Reduces the mana cost of your Starfire, Moonfire, Wrath, Healing Touch, Rejuvenation and Regrowth spells by ', '%.'],
-    3,
-    [[3, 6, 9]]
+    ['Gives you a ', '% chance to get an additional attack against the same target when using a Sword.'],
+    5,
+    [[1, 2, 3, 4, 5]]
   ),
-  null,
-];
+]

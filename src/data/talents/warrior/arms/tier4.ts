@@ -1,28 +1,10 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
-    'starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
-    ],
-    3,
-    [
-      [5, 10, 15],
-      [25, 50, 75],
-    ]
-  ),
+  new Talent('Two-Handed Weapon Specialization', 'evocation', ['Increases the damage you deal with Two-Handed Weapons by ', '%.'], 5, [
+    [1, 2, 3, 4, 5],
+  ]),
+  new Talent('Impale', 'starfire', ['Increases the critical strike damage bonus of your abilities by ', '%.'], 2, [[10, 20]], [{ x: 2, y: 2 }]),
   null,
-];
+]

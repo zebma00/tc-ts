@@ -1,20 +1,24 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Improved Mark of the Wild',
+    'Shield Specialization',
     'mark-of-the-wild',
-    ['Increases the effects of your Mark of the Wild and Gift of the Wild spells by ', '%.'],
+    ['Increases your chance to block by ', '% and gives you a ', '% chance to gain an additional rage point when a block occurs.'],
     5,
-    [[7, 14, 21, 28, 35]]
+    [
+      [1, 2, 3, 4, 5],
+      [20, 40, 60, 80, 100],
+    ],
+    [{ x: null, y: null }],
+    [{ x: 2, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
-  new Talent(
-    'Furor',
-    'furor',
-    ['Gives you a ', 'chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.'],
-    5,
-    [[20, 40, 60, 80, 100]]
-  ),
+  new Talent('Iron Will', 'furor', ['Increases your chance to resist Charm and Fear effects by ', '%.'], 5, [[3, 6, 9, 12, 15]]),
   null,
-];
+]

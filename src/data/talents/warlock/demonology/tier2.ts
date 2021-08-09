@@ -1,23 +1,40 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feral Instinct',
+    'Improved Health Funnel',
     'shadowmeld',
-    ['Increases threat caused in Bear and Dire Bear Form by ', '% and reduces the chance enemies have to detect you while Prowling.'],
-    5,
-    [[3, 6, 9, 12, 15]]
-  ),
-  new Talent('Brutal Impact', 'bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]]),
-  new Talent('Thick Hide', 'thick-hide', ['Increases your Armor contribution from items by ', '%'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent(
-    'Feral Focus',
-    'thick-hide',
     [
-      'Your damaging abilities in Cat, Bear and Dire Bear Form increase your spell damage and healing by ',
-      '% for 15 seconds. This effect stacks up to 3 times.',
+      'Increases the amount of Health transferred by your Health Funnel spell by ',
+      '% and reduces the Health cost by ',
+      '%. In addition your Demon takes ',
+      '% less damage while under the effect of your Health Funnel.',
     ],
+    2,
+    [
+      [10, 20],
+      [10, 20],
+      [15, 30],
+    ]
+  ),
+  new Talent(
+    'Improved Void Walker',
+    'bash',
+    ["Increases the effect of your Void Walker's Torment, Sacrifice, Consume Shadows and Suffering spells by ", '%.'],
     3,
     [[10, 20, 30]]
   ),
-];
+  new Talent('Fel Intellect', 'thick-hide', ['Increases the Mana and Spell Damage of your Imp, Succubus, Void Walker and Felhunter by ', '%'], 3, [
+    [5, 10, 15],
+  ]),
+  new Talent(
+    'Improved Fire Stone',
+    'thick-hide',
+    ['Your Firestone also increases your chance to hit with Fire spells by ', '% and reduces threat caused by your Fire spells by ', '%.'],
+    2,
+    [
+      [2, 4],
+      [15, 30],
+    ]
+  ),
+]

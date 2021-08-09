@@ -1,23 +1,27 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Thorns', 'thorns', ['Increases the damage caused by your Thorns spell by ', '%.'], 3, [[25, 50, 75]]),
-  null,
+  new Talent('Improved Curse of Agony', 'thorns', ['Increases the damage done by your Curse of Agony by ', '%.'], 3, [[2, 4, 6]]),
   new Talent(
-    'Omen of Clarity',
+    'Fel Concentration',
     'omen-of-clarity',
-    [
-      'Imbues the druid with natural energy. Each of the druids melee attacks has a chance of causing the caster to enter a clearcasting state. The clearcasting state reduces the Rage, Mana or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.',
-    ],
-    1,
-    [[1]],
-    [{ x: 1, y: 2 }]
+    ['Gives you a ', '% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.'],
+    5,
+    [[14, 28, 42, 56, 70]]
   ),
   new Talent(
-    "Nature's Reach",
+    'Amplify Curse',
     'natures-reach',
-    ['Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane spells by ', '%.'],
-    2,
-    [[10, 20]]
+    ['Increases the effect of your next Curse of Weakness or Curse of Agony by 50% or your next Curse of Exhaustion by 20%. Lasts 30 sec.'],
+    1,
+    [[]],
+    [{ x: null, y: null }],
+    [{ x: 4, y: 2 }],
+    null,
+    null,
+    'Instant',
+    '3min cooldown',
+    ['D2']
   ),
-];
+  null,
+]

@@ -1,34 +1,37 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  null,
   new Talent(
-    'Predatory Strikes',
+    'Unholy Power',
     'predatory-strikes',
-    [
-      'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
-    ],
+    ['Increases the damage done by your Imp, Succubus, Void Walker and Felhunter by ', '%.'],
     5,
-    [[20, 40, 60, 80, 100]],
+    [[4, 8, 12, 16, 20]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
   new Talent(
-    'Blood Frenzy',
+    'Master Summoner',
     'rip',
-    ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
+    ['Reduces the casting time of your summon Succubus, Imp, Felhunter or Void Walker by ', ' sec and Mana cost reduced by ', '%.'],
     2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
+    [
+      [2, 4],
+      [20, 40],
+    ],
+    [{ x: null, y: null }],
+    [{ x: 4, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
-  new Talent(
-    'Primal Fury',
-    'primal-fury',
-    ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-];
+  null,
+]

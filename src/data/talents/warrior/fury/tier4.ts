@@ -1,34 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Shred', 'shred', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
+  new Talent('Dual Wield Specialization', 'shred', ['Increases the damage done by your off-hand weapon by ', '%.'], 5, [[5, 10, 15, 20, 25]]),
+  new Talent('Improved Execute', 'predatory-strikes', ['Reduces the Rage cost of your Execute by ', '.'], 2, [[2, 5]]),
   new Talent(
-    'Predatory Strikes',
-    'predatory-strikes',
-    [
-      'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
-    ],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }]
-  ),
-  new Talent(
-    'Blood Frenzy',
+    'Enrage',
     'rip',
-    ['Your critical strikes from Cat Form abilities that add combo points have a ', '% chance to add an additional combo point.'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
+    ['Gives you a ', '% damage increase for 12 sec or a maximum of 12 swings after being the victim of a critical strike.'],
+    5,
+    [[5, 10, 15, 20, 25]],
+    [{ x: null, y: null }],
+    [{ x: 5, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
-  new Talent(
-    'Primal Fury',
-    'primal-fury',
-    ['Gives you a ', '% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear or Dire Bear Form'],
-    2,
-    [[50, 100]],
-    [{ x: 2, y: 2 }]
-  ),
-];
+  null,
+]

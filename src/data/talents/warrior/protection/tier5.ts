@@ -1,30 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
+  new Talent('Improved Intimidating Shout', 'natures-swiftness', ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'], 2, [[1, 2]]),
   new Talent(
-    "Nature's Swiftness",
-    'natures-swiftness',
-    ['When activated, your next Nature spell becomes an instant cast spell.'],
+    'Concussion Blow',
+    'gift-of-nature',
+    ['Stuns the target for 5 sec.'],
     1,
     [[]],
-    [
-      {
-        x: 1,
-        y: 0,
-      },
-    ]
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    '15 Rage',
+    'Melee Range',
+    'Instant cast',
+    '45 sec cooldown',
+    ['D2']
   ),
+  new Talent('Improved Shield Wall', 'tranquility', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [[3, 5]]),
   null,
-  new Talent('Gift of Nature', 'gift-of-nature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
-  new Talent(
-    'Cycle of Life',
-    'tranquility',
-    ['Reduces the cooldown of Tranquility by ', 'minutes and Rebirth by ', 'minutes and reduces their mana cost by ', '%.'],
-    2,
-    [
-      [1, 2],
-      [5, 10],
-      [25, 50],
-    ]
-  ),
-];
+]

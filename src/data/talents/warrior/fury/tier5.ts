@@ -1,14 +1,32 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Savage Fury', 'rake', ['Increases the damage caused by your Claw, Rake, Mail and Swipe abilites by ', '%.'], 2, [[10, 20]]),
   null,
   new Talent(
-    'Faerie Fire (Feral)',
-    'faerie-fire',
-    ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'],
+    'Death Wish',
+    'rake',
+    [
+      'When activated, increases your damage done by 20% and makes you immune to fear effects, but reduces your armor and resistances by 20% for 30 sec.',
+    ],
     1,
-    [[]]
+    [[]],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    '10 Rage',
+    null,
+    'Instant cast',
+    '3 min cooldown',
+    ['D2']
   ),
   null,
-];
+  new Talent(
+    'Improved Intercept',
+    'faerie-fire',
+    ['Reduces the cooldown of your Intercept ability by ', ' sec and increased its range by ', ' yards'],
+    2,
+    [
+      [5, 10],
+      [3, 6],
+    ]
+  ),
+]

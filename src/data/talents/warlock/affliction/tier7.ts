@@ -1,16 +1,19 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Moonkin Form',
+    'Dark Pact',
     'moonkin-form',
-    [
-      'Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike increased by 5%. The druid can only cast Balance spells while shapeshifted.',
-    ],
+    ["Drains 150 of your pet's PushManager, returning 100% to you."],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    '20 yd range',
+    null,
+    'Instant'
   ),
   null,
   null,
-];
+]

@@ -1,8 +1,8 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   null,
-  new Talent('Improved Regrowth', 'regrowth', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
+  new Talent('Emberstorm', 'regrowth', ['Increases the damage done by your Fire spells by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   null,
-];
+]

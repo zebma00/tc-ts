@@ -1,16 +1,20 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Swiftmend',
+    'Conflegrate',
     'swiftmend',
-    [
-      'Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth.',
-    ],
+    ['Inflicts the target afflicted by Immolate, dealing 249 to 316 damage, consuming the Immolate spell.'],
     1,
-    [[1]]
+    [[]],
+    [{ x: 4, y: 1 }],
+    null,
+    '165 Mana',
+    '30 yd range',
+    'Instant',
+    '10 sec cooldown'
   ),
   null,
   null,
-];
+]

@@ -1,16 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
   new Talent(
-    'Tranquil Spirit',
-    'tranquil-spirit',
-    ['Reduces the mana cost of your Healing Touch and Tranquility spells by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
+    'Intensity',
+    'rejuvenation',
+    ['Gives you a ', '% chance to avoid interruption caused by damage while casting Rain of Fire, Hellfire and Soulfire.'],
+    2,
+    [[35, 70]],
     [{ x: null, y: null }],
-    [{ x: 6, y: 1 }]
+    [{ x: 4, y: 0 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
+  new Talent('Destructive Reach', 'tranquil-spirit', ['Increases the range of your Destruction spells by ', '%.'], 2, [[10, 20]]),
   null,
-  new Talent('Improved Rejuvenation', 'rejuvenation', ['Increases the effect of your rejuvenation spell by ', '%.'], 3, [[5, 10, 15]]),
-];
+  new Talent('Improved Searing Pain', 'rejuvenation', ['Increases the critical strike chance of your Searing Pain spell by ', '%.'], 3, [[3, 6, 9]]),
+]

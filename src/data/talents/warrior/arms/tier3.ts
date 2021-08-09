@@ -1,23 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Thorns', 'thorns', ['Increases the damage caused by your Thorns spell by ', '%.'], 3, [[25, 50, 75]]),
-  null,
+  new Talent('Improved Overpower', 'thorns', ['Increases the critical strike chance of your Overpower by ', '%.'], 2, [[25, 50]]),
+  new Talent('Anger Management', 'omen-of-clarity', ['Generates 1 rage per 3 seconds while in combat.'], 1, [[1]]),
   new Talent(
-    'Omen of Clarity',
-    'omen-of-clarity',
-    [
-      'Imbues the druid with natural energy. Each of the druids melee attacks has a chance of causing the caster to enter a clearcasting state. The clearcasting state reduces the Rage, Mana or Energy cost of your next damage or healing spell or offensive ability by 100%. Lasts 10 min.',
-    ],
-    1,
-    [[1]],
-    [{ x: 1, y: 2 }]
-  ),
-  new Talent(
-    "Nature's Reach",
+    'Deep Wounds',
     'natures-reach',
-    ['Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire and Hurricane spells by ', '%.'],
-    2,
-    [[10, 20]]
+    ['Your critical strikes cause the target to bleed, dealing ', "% of your melee weapon's average damage over 12 sec."],
+    3,
+    [[20, 40, 60]],
+    [{ x: 0, y: 2 }],
+    [{ x: 3, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
-];
+  null,
+]

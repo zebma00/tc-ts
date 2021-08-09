@@ -1,16 +1,21 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
-    'Leader of the Pack',
+    'Soul Link',
     'leader-of-the-pack',
     [
-      'While in Cat, Bear, or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 5%.',
+      'While active, 20% of all damage taken by the Warlock is transferred to the active demon. In addition, both the Warlock and the demon cause 3% more damage. Active as long as a demon is active.',
     ],
     1,
-    [[]]
+    [[]],
+    [{ x: 5, y: 1 }],
+    null,
+    '20% of base mana',
+    '100 yd range',
+    'Instant'
   ),
+  new Talent('Improved Spellstone', 'leader-of-the-pack', ['Increases the damage absorbed by your Spellstone by ', '%.'], 2, [[15, 30]]),
   null,
-  null,
-];
+]

@@ -1,30 +1,33 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    "Nature's Swiftness",
+    'Pyroclasm',
     'natures-swiftness',
-    ['When activated, your next Nature spell becomes an instant cast spell.'],
-    1,
-    [[]],
+    ['Gives your Rain of Fire, Hellfire and Soulfire a ', '% chance to stun the target for 3 sec.'],
+    2,
+    [[13, 26]],
     [
       {
-        x: 1,
+        x: 3,
         y: 0,
       },
     ]
   ),
-  null,
-  new Talent('Gift of Nature', 'gift-of-nature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
   new Talent(
-    'Cycle of Life',
-    'tranquility',
-    ['Reduces the cooldown of Tranquility by ', 'minutes and Rebirth by ', 'minutes and reduces their mana cost by ', '%.'],
-    2,
-    [
-      [1, 2],
-      [5, 10],
-      [25, 50],
-    ]
+    'Improved Immolate',
+    'gift-of-nature',
+    ['Increases the initial damage of your Immolate by ', '%.'],
+    3,
+    [[10, 20, 30]],
+    [{ x: null, y: null }],
+    [{ x: 6, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2']
   ),
-];
+  new Talent('Ruin', 'tranquility', ['Increases the critical strike damage bonus of your Destruction spells by 100%.'], 1, [[]], [{ x: 2, y: 2 }]),
+  new Talent('Havoc', 'tranquility', ['Your spell crits reduce the cooldown of your Soul Shatter by ', ' sec.'], 2, [[3, 6]]),
+]

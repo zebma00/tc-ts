@@ -1,30 +1,36 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Feline Swiftness',
+    'Improved Succubus',
     'ghost-wolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
     [
-      [15, 30],
-      [2, 4],
-    ]
-  ),
-  new Talent('Feral Charge', 'feral-charge', ['Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec.'], 1, [
-    [],
-  ]),
-  new Talent(
-    'Sharpened Claws',
-    'maul',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
+      "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ",
+      '% and increases the duration of Seduction and Invisibility by ',
+      '%.',
+    ],
     3,
-    [[2, 4, 6]],
-    [{ x: null, y: null }],
     [
-      { x: 3, y: 2 },
-      { x: 3, y: 3 },
+      [10, 20, 30],
+      [10, 20, 30],
     ]
   ),
+  new Talent(
+    'Demonic Sacrifice',
+    'feral-charge',
+    [
+      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: Increases health gained from all sources by 15%. Succubus: increases your Shadow damage 15%. Felhunter: X',
+    ],
+    1,
+    [[]],
+    null,
+    null,
+    '100 yd range',
+    null,
+    'Instant'
+  ),
+  new Talent('Fel Stamina', 'maul', ['Increases the Health and Attack Power of your Imp, Succubus, Void Walker and Felhunter by ', '%.'], 3, [
+    [5, 10, 15],
+  ]),
   null,
-];
+]

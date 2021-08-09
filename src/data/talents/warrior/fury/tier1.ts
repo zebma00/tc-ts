@@ -1,17 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Ferocity', 'ferocity', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', 'Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
   new Talent(
-    'Feral Aggression',
-    'demoralizing-roar',
-    ['Increases the Attack Power reduction of your Demoralizing Roar by ', '% and the damage caused by your Ferocious Bite by ', '%.'],
+    'Booming Voice',
+    'ferocity',
+    ['Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by ', '% and reduces the rage cost by ', '.'],
     5,
     [
-      [8, 16, 24, 32, 40],
-      [3, 6, 9, 12, 15],
+      [1, 2, 3, 4, 5],
+      [10, 20, 30, 40, 50],
     ]
   ),
+  new Talent('Cruelty', 'demoralizing-roar', ['Increases your chance to get a critical strike with melee weapons by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
-];
+]

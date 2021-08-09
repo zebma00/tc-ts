@@ -1,20 +1,17 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
   null,
   new Talent(
     'Improved Mark of the Wild',
     'mark-of-the-wild',
-    ['Increases the effects of your Mark of the Wild and Gift of the Wild spells by ', '%.'],
+    [
+      'Your Shadow Bolt critical strikes increase the shadow damage taken by the target by ',
+      '% until 4 non-periodic damage sources are applied. Lasts a maximum of 12 sec.',
+    ],
     5,
-    [[7, 14, 21, 28, 35]]
+    [[4, 8, 12, 16, 20]]
   ),
-  new Talent(
-    'Furor',
-    'furor',
-    ['Gives you a ', 'chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form.'],
-    5,
-    [[20, 40, 60, 80, 100]]
-  ),
+  new Talent('Catactlysm', 'furor', ['Reduces the mana cost of your Destruction spells by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   null,
-];
+]

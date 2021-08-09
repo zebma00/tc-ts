@@ -1,28 +1,19 @@
-import { Talent } from '../../Classes';
+import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('Grim Reach', 'evocation', ['Increases the range of your Affliction spells by ', '%.'], 2, [[10, 20]]),
   new Talent(
-    'Vengeance',
-    'evocation',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
-  ),
-  new Talent(
-    'Celestial Focus',
+    'Nightfall',
     'starfire',
     [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the change you'll resist spell interruption while casting Wrath by ",
-      '%.',
+      'Gives your Corruption and Drain Life spells a ',
+      '% chance to cause you to enter a Shadow Trance state after damaging an opponent. The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%.',
     ],
-    3,
-    [
-      [5, 10, 15],
-      [25, 50, 75],
-    ]
+    2,
+    [[2, 4]]
   ),
   null,
-];
+  new Talent('Improved Drain Mana', 'evocation', ['Causes ', '% of the Mana drained by your Drain Mana spell to drain health as well.'], 2, [
+    [15, 30],
+  ]),
+]
