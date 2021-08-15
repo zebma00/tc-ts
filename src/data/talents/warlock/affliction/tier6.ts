@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Shadow Mastery',
-    'moonfury',
+    'spell_shadow_shadetruesight',
     ['Increases the damage dealt and life drained by your Shadow spells by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],

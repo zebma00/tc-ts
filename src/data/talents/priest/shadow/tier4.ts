@@ -9,7 +9,7 @@ export default [
     'spell_shadow_blackplague',
     [
       'Your Shadow damage spells have a ',
-      '% ge spells have a 20/40/60/80/100% chance to cause the target to become vulnerable to Shadow damage, increasing Shadow damage taken by 3%. This effect stacks up to 5 sec. Lasts 15 sec.',
+      '% chance to cause the target to become vulnerable to Shadow damage, increasing Shadow damage taken by 3%. This effect stacks up to 5 sec. Lasts 15 sec.',
     ],
     5,
     [[20, 40, 60, 80, 100]]

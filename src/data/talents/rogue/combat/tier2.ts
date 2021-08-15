@@ -1,10 +1,10 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Backstab', 'backstab', ['Increases the critical strike chance of your Backstab ability by ', '%.'], 3, [[10, 20, 30]]),
+  new Talent('Improved Backstab', 'ability_backstab', ['Increases the critical strike chance of your Backstab ability by ', '%.'], 3, [[10, 20, 30]]),
   new Talent(
     'Deflection',
-    'deflection',
+    'ability_parry',
     ['Increases your parry chance by ', '%.'],
     3,
     [[1, 2, 3]],
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     'Precision',
-    'precision',
+    'ability_marksmanship',
     ['Increases your chance to hit with melee weapons by ', '%'],
     5,
     [[1, 2, 3, 4, 5]],

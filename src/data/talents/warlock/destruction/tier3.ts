@@ -1,13 +1,17 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Firebolt', 'reflection', ["Reduces the Cast Time of your Imp's Fire Bolt by ", ' sec.'], 2, [[0.5, 1]]),
-  new Talent('Improved Lash of Pain', 'reflection', ["Reduces the damage and critial strike chance of your Succubus' Lash of Pain by", '%.'], 2, [
-    [10, 20],
-  ]),
+  new Talent('Improved Firebolt', 'spell_fire_firebolt', ["Reduces the Cast Time of your Imp's Fire Bolt by ", ' sec.'], 2, [[0.5, 1]]),
+  new Talent(
+    'Improved Lash of Pain',
+    'spell_shadow_curse',
+    ["Reduces the damage and critial strike chance of your Succubus' Lash of Pain by", '%.'],
+    2,
+    [[10, 20]]
+  ),
   new Talent(
     'Devastation',
-    'insect-swarm',
+    'spell_fire_flameshock',
     ['Increases the critical strike chance of your Destruction spells by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
@@ -21,7 +25,7 @@ export default [
   ),
   new Talent(
     'Shadowburn',
-    'sublety',
+    'spell_shadow_scourgebuild',
     [
       'Reagents: Soul Shard. Instantly blasts the target for 91 to 104 shadow damage. If the target dies within 5 sec and yields experience or honor, gain a Soul Shard.',
     ],

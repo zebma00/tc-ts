@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Improved Slam',
-    'shadowmeld',
+    'ability_warrior_decisivestrike',
     ['Reduces the casting time of your Slam ability by ', ' sec and causes your Slam to increase the damage of your next main hand attack by ', '%.'],
     5,
     [
@@ -11,12 +11,16 @@ export default [
       [3, 6, 9, 12, 15],
     ]
   ),
-  new Talent('Improved Demoralizing Shout', 'bash', ['Increases the melee attack power reduction of Demoralizing Shout by ', '%.'], 3, [
-    [10, 20, 30],
-  ]),
+  new Talent(
+    'Improved Demoralizing Shout',
+    'ability_warrior_warcry',
+    ['Increases the melee attack power reduction of Demoralizing Shout by ', '%.'],
+    3,
+    [[10, 20, 30]]
+  ),
   new Talent(
     'Unbridled Wrath',
-    'thick-hide',
+    'spell_nature_stoneclawtotem',
     ['Gives you a ', '% chance to gain an additional Rage point when dealing damage with melee weapons.'],
     5,
     [[8, 16, 24, 32, 40]]

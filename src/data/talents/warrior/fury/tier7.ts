@@ -4,9 +4,9 @@ export default [
   null,
   new Talent(
     'Bloodthirst',
-    'leader-of-the-pack',
+    'spell_nature_bloodlust',
     [
-      'Instantly attacks the target, dealing damage equal to 45% of attack power. In addition, your next 5 melee attacks restore 10 health. Lasts 8 sec.',
+      'Instantly attacks the target, dealing damage equal to 45% of attack power. In addition, your next 5 melee attacks restore 20 health. Lasts 8 sec.',
     ],
     1,
     [[]],

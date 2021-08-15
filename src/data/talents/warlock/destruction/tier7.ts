@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Conflegrate',
-    'swiftmend',
+    'spell_fire_fireball',
     ['Inflicts the target afflicted by Immolate, dealing 249 to 316 damage, consuming the Immolate spell.'],
     1,
     [[]],

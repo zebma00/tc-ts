@@ -1,10 +1,10 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Intimidating Shout', 'natures-swiftness', ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'], 2, [[1, 2]]),
+  new Talent('Improved Shield Wall', 'ability_warrior_shieldwall', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [[3, 5]]),
   new Talent(
     'Concussion Blow',
-    'gift-of-nature',
+    'ability_thunderbolt',
     ['Stuns the target for 5 sec.'],
     1,
     [[]],
@@ -16,6 +16,6 @@ export default [
     '45 sec cooldown',
     ['D2']
   ),
-  new Talent('Improved Shield Wall', 'tranquility', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [[3, 5]]),
+  new Talent('Improved Intimidating Shout', 'ability_golemthunderclap', ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'], 2, [[1, 2]]),
   null,
 ]

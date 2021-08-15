@@ -3,14 +3,14 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Heightened Senses',
-    'shadowmeld',
+    'ability_ambush',
     ['Increases your stealth detection and reduces your chance to be hit by spells and ranged attacks by ', '%.'],
     2,
     [[2, 4]]
   ),
   new Talent(
     'Preperation',
-    'preperation',
+    'spell_shadow_antishadow',
     ['When activated, this ability finishes the cooldown of your other cooldown abilites.'],
     1,
     [[]],
@@ -22,10 +22,12 @@ export default [
     '10 min cooldown',
     ['D2']
   ),
-  new Talent('Dirty Deeds', 'succubus', ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'], 2, [[10, 20]]),
+  new Talent('Dirty Deeds', 'spell_shadow_summonsuccubus', ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'], 2, [
+    [10, 20],
+  ]),
   new Talent(
     'Hemorrhage',
-    'hemorrhage',
+    'spell_shadow_lifedrain',
     [
       'An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 25. Lasts 10 charges or 10 sec. Awards 1 combo points.',
     ],

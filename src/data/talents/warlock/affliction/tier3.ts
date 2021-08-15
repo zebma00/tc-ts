@@ -1,17 +1,19 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Curse of Agony', 'thorns', ['Increases the damage done by your Curse of Agony by ', '%.'], 3, [[2, 4, 6]]),
+  new Talent('Improved Curse of Agony', 'spell_shadow_curseofsargeras', ['Increases the damage done by your Curse of Agony by ', '%.'], 3, [
+    [2, 4, 6],
+  ]),
   new Talent(
     'Fel Concentration',
-    'omen-of-clarity',
+    'spell_shadow_fingerofdeath',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.'],
     5,
     [[14, 28, 42, 56, 70]]
   ),
   new Talent(
     'Amplify Curse',
-    'natures-reach',
+    'spell_shadow_contagion',
     ['Increases the effect of your next Curse of Weakness or Curse of Agony by 50% or your next Curse of Exhaustion by 20%. Lasts 30 sec.'],
     1,
     [[]],

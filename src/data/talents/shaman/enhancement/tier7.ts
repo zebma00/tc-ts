@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Stormstrike',
-    'stormstrike',
+    'spell_holy_sealofmight',
     ['Gives you an extra attack that deals nature damage. In addition, the next source of Nature damage dealt to the target is increased by 20%'],
     1,
     [[]],

@@ -1,10 +1,10 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Expose Armor', 'expose-armor', ['Increases the armor reduction by your Expose Armor by', '%.'], 2, [[25, 50]]),
+  new Talent('Improved Expose Armor', 'ability_warrior_riposte', ['Increases the armor reduction by your Expose Armor by ', '%.'], 2, [[25, 50]]),
   new Talent(
     'Cold Blood',
-    'ice-barrier',
+    'spell_ice_lament',
     ['When activated, increases the critical strike chance of your Sinister Strike, Backstab, Ambush or Eviscerate by 100%.'],
     1,
     [[]],
@@ -18,7 +18,7 @@ export default [
   ),
   new Talent(
     'Improved Kidney Shot',
-    'kidney-shot',
+    'ability_rogue_kidneyshot',
     ['While effected by your Kidney Shot ability, the target receives an additional ', '% damage.'],
     3,
     [[3, 6, 9]]

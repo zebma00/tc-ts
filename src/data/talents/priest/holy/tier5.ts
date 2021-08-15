@@ -1,13 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Surge of Light',
-    'spell_holy_surgeoflight',
-    ['Your offensive spell criticals have a ', '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.'],
-    2,
-    [[25, 50]]
-  ),
+  new Talent('smth', '', ['smth proc reduces Prayer o Heal mana cost / clearcastin', '%.'], 2, [[25, 50]]),
   new Talent(
     'Spirit of Redemption',
     'inv_enchant_essenceeternallarge',
@@ -24,8 +18,13 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Improved Healing', 'spell_holy_heal02', ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'], 3, [
-    [5, 10, 15],
-  ]),
+  new Talent(
+    'Surge of Light',
+    'spell_holy_surgeoflight',
+    ['Your offensive spell criticals have a ', '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.'],
+    2,
+    [[25, 50]],
+    [{ x: 3, y: 2 }]
+  ),
   null,
 ]

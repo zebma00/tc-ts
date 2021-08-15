@@ -5,7 +5,7 @@ export default [
   null,
   new Talent(
     'Unleashed Rage',
-    'unleashed-rage',
+    'spell_nature_unleashedrage',
     [
       "Causes your critical hits with melee attacks to increase all party members' melee attack power by ",
       '% if within 20 yards of the Shaman. Lasts 10 sec.',

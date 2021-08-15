@@ -4,19 +4,9 @@ export default [
   new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
     [4, 8, 12],
   ]),
-  new Talent(
-    'Consecration',
-    'spell_holy_innerfire',
-    ['Consecrates the land beneah the Paladin, doing 64 Holy damage over 8 sec to enemies who enter the area.'],
-    1,
-    [[1]],
-    null,
-    null,
-    '135 Mana',
-    null,
-    'Instant',
-    '8 sec cooldown'
-  ),
+  new Talent('Consecration', 'spell_holy_auramastery', ['Increases the radius of your Auras to 40 yards and increases their effect by 10%.'], 1, [
+    [],
+  ]),
   new Talent(
     'Improved Lay on Hands',
     'spell_holy_layonhands',

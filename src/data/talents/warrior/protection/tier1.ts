@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Shield Specialization',
-    'mark-of-the-wild',
+    'inv_shield_06',
     ['Increases your chance to block by ', '% and gives you a ', '% chance to gain an additional rage point when a block occurs.'],
     5,
     [
@@ -19,6 +19,6 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Iron Will', 'furor', ['Increases your chance to resist Charm and Fear effects by ', '%.'], 5, [[3, 6, 9, 12, 15]]),
+  new Talent('Iron Will', 'spell_magic_magearmor', ['Increases your chance to resist Charm and Fear effects by ', '%.'], 5, [[3, 6, 9, 12, 15]]),
   null,
 ]

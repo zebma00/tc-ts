@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Death Wish',
-    'rake',
+    'spell_shadow_deathpact',
     [
       'When activated, increases your damage done by 20% and makes you immune to fear effects, but reduces your armor and resistances by 20% for 30 sec.',
     ],
@@ -21,7 +21,7 @@ export default [
   null,
   new Talent(
     'Improved Intercept',
-    'faerie-fire',
+    'ability_rogue_sprint',
     ['Reduces the cooldown of your Intercept ability by ', ' sec and increased its range by ', ' yards'],
     2,
     [

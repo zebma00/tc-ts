@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Mortal Strike',
-    'moonkin-form',
+    'ability_warrior_savageblow',
     ['A vicious strike that deals weapon damage plus 85 and wounds the target, reducing healing taken by 50% for 10 sec.'],
     1,
     [[]],

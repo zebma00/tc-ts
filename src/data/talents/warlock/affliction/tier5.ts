@@ -1,12 +1,16 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Malediction', 'starfire', ['Increases the damage bonus of your Curse of Shadows and Curse of Elements effects by ', '%.'], 3, [
-    [1, 2, 3],
-  ]),
+  new Talent(
+    'Malediction',
+    'spell_shadow_curseofachimonde',
+    ['Increases the damage bonus of your Curse of Shadows and Curse of Elements effects by ', '%.'],
+    3,
+    [[1, 2, 3]]
+  ),
   new Talent(
     'Siphon Life',
-    'natures-grace',
+    'spell_shadow_requiem',
     ['Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.'],
     1,
     [[]],
@@ -20,7 +24,7 @@ export default [
   ),
   new Talent(
     'Curse of Exhaustion',
-    'moonglow',
+    'spell_shadow_grimward',
     ["Reduces the target's movement speed by 10% for 12 sec. Only one curse can be active per Warlock on a target."],
     1,
     [[1]],
@@ -34,7 +38,7 @@ export default [
   ),
   new Talent(
     'Improved Curse of Exhaustion',
-    'moonglow',
+    'spell_shadow_grimward',
     ['Increases the speed reduction of your Curse of Exhaustion by ', '%.'],
     2,
     [[10, 20]],

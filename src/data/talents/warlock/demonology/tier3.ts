@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Improved Succubus',
-    'ghost-wolf',
+    'spell_shadow_summonsuccubus',
     [
       "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ",
       '% and increases the duration of Seduction and Invisibility by ',
@@ -17,7 +17,7 @@ export default [
   ),
   new Talent(
     'Demonic Sacrifice',
-    'feral-charge',
+    'spell_shadow_psychicscream',
     [
       'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: Increases health gained from all sources by 15%. Succubus: increases your Shadow damage 15%. Felhunter: X',
     ],
@@ -31,7 +31,7 @@ export default [
   ),
   new Talent(
     'Fel Stamina',
-    'maul',
+    'spell_shadow_antishadow',
     ['Increases the Stamina of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum health by ', '%.'],
     3,
     [
@@ -41,7 +41,7 @@ export default [
   ),
   new Talent(
     'Improved Fire Stone',
-    'thick-hide',
+    'inv_ammo_firetar',
     ['Your Firestone also increases your chance to hit with Fire spells by ', '% and reduces threat caused by your Fire spells by ', '%.'],
     2,
     [

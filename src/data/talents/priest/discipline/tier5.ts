@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('SMTIH', '', ['SMTH mana efficiency', '%.'], 2, [[1, 2]]),
   new Talent(
     'Force of Will',
     'spell_nature_slowingtotem',
@@ -37,5 +37,4 @@ export default [
     [[5, 10]],
     [{ x: 4, y: 2 }]
   ),
-  ,
 ]

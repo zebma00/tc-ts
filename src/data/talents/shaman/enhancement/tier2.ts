@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Guardian Totems',
-    'stoneskin',
+    'spell_nature_stoneskintotem',
     ['Increases the effect of your Stoneskin Totem by ', '% and reduces the cooldown of your Grounding Totem by ', ' sec.'],
     2,
     [
@@ -13,7 +13,7 @@ export default [
   ),
   new Talent(
     'Thundering Strikes',
-    'seal-righteousness',
+    'ability_thunderbolt',
     ['Increases your chance to get a critical strike with weapon attacks by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
@@ -25,10 +25,10 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Improved Ghost Wolf', 'ghost-wolf', ['Reduces the cast time of your Ghost Wolf spell by ', ' sec.'], 2, [[1, 2]]),
+  new Talent('Improved Ghost Wolf', 'spell_nature_spiritwolf', ['Reduces the cast time of your Ghost Wolf spell by ', ' sec.'], 2, [[1, 2]]),
   new Talent(
     'Improved Lightning Shield',
-    'lightning-shield',
+    'spell_nature_lightningshield',
     ['Increases the damage done by your Lightning Shield orbs by ', '% and increases the number of charges by ', '.'],
     3,
     [

@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Adrenaline Rush',
-    'adrenaline-rush',
+    'spell_shadow_shadowworddominate',
     ['Increases your energy regeneration by 100% for 15 sec.'],
     1,
     [[]],

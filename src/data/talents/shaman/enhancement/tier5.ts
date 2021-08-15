@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Improved Weapon Totems',
-    'weapon-totems',
+    'spell_fire_enchantweapon',
     ['Your Windfury Totem also increases attack speed by ', '% and your Flametongue Totem also increases spell damage and healing by ', '%.'],
     2,
     [
@@ -13,7 +13,7 @@ export default [
   ),
   new Talent(
     'Elemental Weapons',
-    'elemental-weapons',
+    'spell_fire_flametounge',
     [
       'Improves your weapon enhancing spells. Rockbiter Weapon: Also reduces physical damage taken by ',
       '%.Flametongue Weapon: Also increases your spell damage and healing by ',
@@ -36,6 +36,6 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Parry', 'deflection', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
+  new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
   null,
 ]

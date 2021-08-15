@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Master Demonologist',
-    'faerie-fire',
+    'spell_shadow_shadowpact',
     [
       'Gives the Warlock and the summoned Demon an effect as long as the Demon is active. Imp: Reduces threat caused by ',
       '%. Void Walker: reduces physical damage taken by ',

@@ -4,7 +4,7 @@ export default [
   null,
   new Talent(
     'Torrent Totem',
-    'mana-tide',
+    'spell_frost_summonwaterelemental',
     [
       "Summons a torrent totem at the feet of the caster with health equal to 20% of the shaman's for 12 sec. The torrent totem restores 170 health and mana to all party members within 20 yards every 3 sec.",
     ],
