@@ -28,7 +28,7 @@ export default [
     null,
     ['D1']
   ),
-  new Talent('Spiritual Guidance', 'spell_holy_spiritualguidence', ['Increases healing and spell damage by ', '% of your total Spirit.'], 5, [
-    [5, 10, 15, 20, 15],
+  new Talent('Spiritual Guidance', 'spell_holy_spiritualguidence', ['Increases healing and spell damage by ', '% of your total Spirit.'], 3, [
+    [8, 16, 25],
   ]),
 ]

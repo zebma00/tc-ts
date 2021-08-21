@@ -6,8 +6,7 @@
 - Icons for rogue, shaman, warlock, warrior
 
 - Druid: resto meme?
-- Hunter: imp mend pet & imp res pet are too boring; imp scorp sting has overlap with mortal blood frenzy (arms war)
-- Mage: Arcane fix, fire & frost smth new
+- Hunter:imp res pet too boring
+- Mage: frost smth new
 - Rogue: smth for combat
 - Shaman: frostbrand baseline fix & elemental weapons talent frostbrand; resto meme?
-- Warlock: Dark Pact?; Demonic sacrifice

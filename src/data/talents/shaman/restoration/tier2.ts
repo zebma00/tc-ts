@@ -9,7 +9,7 @@ export default [
     3,
     [[8, 16, 26]]
   ),
-  new Talent('Totemic Focus', 'spell_nature_moonglow', ['Reduces the mana cost of your totems by ', '%.'], 5, [[5, 10, 15, 20, 25]]),
+  new Talent('Totemic Focus', 'spell_nature_moonglow', ['Reduces the mana cost of your totems by ', '%.'], 3, [[8, 16, 25]]),
   new Talent(
     'Spiritual Warding',
     'spell_nature_spiritarmor',

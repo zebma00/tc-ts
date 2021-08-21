@@ -1,7 +1,20 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('smth', '', ['sth'], 2, [[]]),
+  new Talent(
+    'Focus Magic',
+    'spell_arcane_arcanetorrent',
+    [
+      "Increases the target's chance to critically hit with spells by 5%. When the target critically hits, the caster's chance to critically hit with spells is increased by 5% for 10 sec. Cannot be cast on self.",
+    ],
+    1,
+    [[]],
+    null,
+    null,
+    '6% of base mana',
+    '30 yd range',
+    'Instant cast'
+  ),
   new Talent(
     'Presence of Mind',
     'spell_nature_enchantarmor',

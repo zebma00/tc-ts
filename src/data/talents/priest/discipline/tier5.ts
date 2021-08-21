@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('SMTIH', '', ['SMTH mana efficiency', '%.'], 2, [[1, 2]]),
+  new Talent(
+    'Rumination',
+    'spell_arcane_focusedpower',
+    ['Causes your critical hits from spells to increase your mana regeneration from spirit by ', '% for 8 sec.'],
+    3,
+    [[16, 32, 50]]
+  ),
   new Talent(
     'Force of Will',
     'spell_nature_slowingtotem',
@@ -15,26 +21,16 @@ export default [
   new Talent(
     'Divine Spirit',
     'spell_holy_divinespirit',
-    ['Holy power infuses the target, increasing their spirit by 17 for 30 min.'],
+    [
+      'Holy power infuses the target, increasing their spirit by 17 and increasing their spell damage by an amount equal to 10% of their spirit for 30 min.',
+    ],
     1,
     [[]],
     [{ x: 2, y: 2 }],
-    [{ x: 4, y: 3 }],
+    null,
     '140 Mana',
     '30 yd range',
-    'Instant',
-    null,
-    ['R1']
+    'Instant'
   ),
-  new Talent(
-    'Improved Divine Spirit',
-    'spell_holy_divinespirit',
-    [
-      "Your Divine Spirit and Prayer of Spirit spells also increase the target's spell damage and healing by an amount equal to ",
-      '% of their total Spirit.',
-    ],
-    2,
-    [[5, 10]],
-    [{ x: 4, y: 2 }]
-  ),
+  null,
 ]

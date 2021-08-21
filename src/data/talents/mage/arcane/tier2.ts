@@ -5,9 +5,9 @@ export default [
   new Talent(
     'Magic Absorbtion',
     'spell_nature_astralrecalgroup',
-    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 20 sec cooldown'],
-    5,
-    [[1, 2, 3, 4, 5]]
+    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 20 sec cooldown.'],
+    3,
+    [[2, 4, 6]]
   ),
   new Talent(
     'Arcane Concentration',

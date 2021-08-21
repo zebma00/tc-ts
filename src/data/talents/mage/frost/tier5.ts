@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('smth', 'smth', ['smth'], 3, [[1, 2]]),
   new Talent(
     'Ice Block',
     'spell_frost_frost',

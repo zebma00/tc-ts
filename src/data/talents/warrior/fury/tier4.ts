@@ -1,9 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage done by your off-hand weapon by ', '%.'], 5, [
-    [5, 10, 15, 20, 25],
-  ]),
+  new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage done by your off-hand weapon by ', '%.'], 3, [[8, 16, 25]]),
   new Talent('Improved Execute', 'inv_sword_48', ['Reduces the Rage cost of your Execute by ', '.'], 2, [[2, 5]]),
   new Talent(
     'Enrage',

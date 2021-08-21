@@ -14,10 +14,10 @@ export default [
     'Ancestral Fortitude',
     'spell_holy_devotion',
     ['Increases your armor by ', '% and your chance to block and chance to dodge by ', '%'],
-    5,
+    3,
     [
-      [2, 4, 6, 8, 10],
-      [1, 2, 3, 4, 5],
+      [4, 7, 10],
+      [2, 4, 6],
     ]
   ),
   null,

@@ -18,10 +18,10 @@ export default [
   ),
   new Talent(
     'Unstable Missiles',
-    'spell_arcane_arcanetorrent',
+    'spell_nature_starfall',
     [
       'Casting Arcane Missiles increases the damage and Mana cost of your next Arcane Missiles by ',
-      '%. This effect stacks up to three times and lasts 8 sec.',
+      '%. This effect stacks up to 3 times and lasts 8 sec.',
     ],
     5,
     [[2, 4, 6, 8, 10]]

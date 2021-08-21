@@ -1,7 +1,6 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
   new Talent(
     'Improved Scorch',
     'spell_fire_soulburn',
@@ -11,6 +10,13 @@ export default [
     ],
     3,
     [[33, 67, 100]]
+  ),
+  new Talent(
+    'Molten Blood',
+    'spell_fire_moltenblood',
+    ['After being hit by a melee or ranged critical strike, deal fire damage equal to ', '% of the damage taken to the attacker.'],
+    2,
+    [[8, 15]]
   ),
   null,
   new Talent('Master of Elements', 'spell_fire_masterofelements', ['Your Fire and Frost spell criticals refund ', '% of their base mana cost.'], 3, [

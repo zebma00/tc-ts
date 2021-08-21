@@ -41,6 +41,6 @@ export default [
     'spell_fire_playingwithfire',
     ['When you get two critical hits from spells in a row, gain a ', '% chance to reset the cooldown of your Soul Shatter.'],
     2,
-    [[25, 50]]
+    [[50, 100]]
   ),
 ]

@@ -9,19 +9,8 @@ export default [
     5,
     [[20, 40, 60, 80, 100]]
   ),
-  new Talent(
-    'Lethal Shots',
-    'ability_searingarrow',
-    ['Increases your critical strike chance with ranged weapons by ', '%.'],
-    5,
-    [[1, 2, 3, 4, 5]],
-    [{ x: null, y: null }],
-    [{ x: 3, y: 2 }],
-    null,
-    null,
-    null,
-    null,
-    ['D3']
-  ),
+  new Talent('Improved Concussive Shot', 'spell_frost_stun', ['Gives your Concussive Shot a ', '% chance to stun the target for 3 sec.'], 5, [
+    [4, 8, 12, 16, 20],
+  ]),
   null,
 ]

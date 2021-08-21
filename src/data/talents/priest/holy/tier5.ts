@@ -1,7 +1,9 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('smth', '', ['smth proc reduces Prayer o Heal mana cost / clearcastin', '%.'], 2, [[25, 50]]),
+  new Talent('Improved Prayer of Healing', 'spell_holy_prayerofhealing02', ['Reduces the Mana cost of your Prayer of Healing spell by ', '%.'], 2, [
+    [10, 20],
+  ]),
   new Talent(
     'Spirit of Redemption',
     'inv_enchant_essenceeternallarge',

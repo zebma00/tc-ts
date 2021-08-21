@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Entrapment',
     'spell_nature_stranglevines',
-    ['Gives your Immolation Trap, Frost trap and Explosive Trap a ', ' chance to entrap the target, preventing them from moving for 5 sec.'],
+    ['Gives your Immolation Trap, Frost trap and Explosive Trap a ', ' % chance to entrap the target, preventing them from moving for 5 sec.'],
     3,
     [[8, 16, 25]]
   ),
