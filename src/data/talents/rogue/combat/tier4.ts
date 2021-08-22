@@ -13,8 +13,8 @@ export default [
     'Dual Wield Specialization',
     'ability_dualwield',
     ['Increases the damage of your off-hand weapon by ', '%.'],
-    3,
-    [[16, 32, 50]],
+    5,
+    [[10, 20, 30, 40, 50]],
     [{ x: 1, y: 2 }]
   ),
   null,

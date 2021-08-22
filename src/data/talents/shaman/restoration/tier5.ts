@@ -13,6 +13,7 @@ export default [
   ),
   null,
   new Talent("Nature's Swiftness", 'spell_nature_ravenform', ['When activated, your next Nature spell becomes an instant cast spell.'], 1, [[]]),
-  new Talent('SMTH?', 'spell_nature_healingway', ['smth', '%.'], 3, [[33, 66, 100]]),
-  ,
+  new Talent('Improved Chain Heal', 'spell_nature_healingwavegreater', ['Increases the amount healed by your Chain heal spell by ', '%.'], 2, [
+    [10, 20],
+  ]),
 ]

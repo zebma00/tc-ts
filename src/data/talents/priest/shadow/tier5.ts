@@ -44,5 +44,5 @@ export default [
     [[3, 6]],
     [{ x: 4, y: 1 }]
   ),
-  new Talent('Smth', '', ['Smth. Mana efficnec? check TBC / wotlk ', ' sec.'], 2, [[3, 6]]),
+  null,
 ]

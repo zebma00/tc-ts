@@ -14,9 +14,12 @@ export default [
   new Talent(
     'Molten Blood',
     'spell_fire_moltenblood',
-    ['After being hit by a melee or ranged critical strike, deal fire damage equal to ', '% of the damage taken to the attacker.'],
+    [
+      'After being hit by a melee or ranged critical strike, deal fire damage equal to ',
+      "% of the damage taken to the attacker. The damage caused by Molten Blood will not exceed more than 50% of the mage's total health.",
+    ],
     2,
-    [[8, 15]]
+    [[15, 30]]
   ),
   null,
   new Talent('Master of Elements', 'spell_fire_masterofelements', ['Your Fire and Frost spell criticals refund ', '% of their base mana cost.'], 3, [

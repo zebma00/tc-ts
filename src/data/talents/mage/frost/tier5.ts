@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('smth', 'smth', ['smth'], 3, [[1, 2]]),
+  new Talent(
+    'Empowered Frostbolt',
+    'spell_frost_frostbolt02',
+    ['Your Frostbolt increases the damage of your Frostbolt by ', '%. This effect stacks up to 5 times. Lasts 8 sec.'],
+    3,
+    [[1, 2, 3]]
+  ),
   new Talent(
     'Ice Block',
     'spell_frost_frost',

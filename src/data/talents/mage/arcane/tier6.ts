@@ -20,7 +20,7 @@ export default [
     'Unstable Missiles',
     'spell_nature_starfall',
     [
-      'Casting Arcane Missiles increases the damage and Mana cost of your next Arcane Missiles by ',
+      'Casting Arcane Missiles increases the damage and Mana cost of your Arcane Missiles by ',
       '%. This effect stacks up to 3 times and lasts 8 sec.',
     ],
     5,

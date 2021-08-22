@@ -15,6 +15,6 @@ export default [
     3,
     [[1, 2, 3]]
   ),
-  new Talent('Deflection', 'ability_parry', ['Increases your parry chance by ', '%.'], 3, [[2, 4, 6]]),
+  new Talent('Deflection', 'ability_parry', ['Increases your parry chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
 ]

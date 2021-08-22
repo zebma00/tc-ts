@@ -21,7 +21,7 @@ export default [
     ['Increases your ranged critical strike damage bonus by ', '%.'],
     5,
     [[6, 12, 18, 24, 30]],
-    [{ x: 1, y: 2 }]
+    [{ x: 0, y: 2 }]
   ),
   new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
 ]

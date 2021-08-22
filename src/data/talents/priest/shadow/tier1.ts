@@ -7,7 +7,7 @@ export default [
     'spell_shadow_requiem',
     [
       'Gives you a ',
-      '% chance to gain a 100% bonus to your spirit after killing an enemy that yields experience or honor. For the duration, your mana will regenerate at a 50% rate while casting. Lasts 15 sec.',
+      '% chance to gain a 100% bonus to your spirit after an enemy that yields experience or honor is killed while effected by your Shadow Word: Pain. For the duration, your mana will regenerate at a 50% rate while casting. Lasts 15 sec.',
     ],
     5,
     [[20, 40, 60, 80, 100]]

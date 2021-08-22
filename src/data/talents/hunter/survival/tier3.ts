@@ -17,7 +17,7 @@ export default [
       [5, 10],
     ]
   ),
-  new Talent('Survivalist', 'spell_shadow_twilight', ['Increases total health by ', '%.'], 3, [[4, 7, 10]]),
+  new Talent('Survivalist', 'spell_shadow_twilight', ['Increases total health by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   new Talent(
     'Deterrence',
     'ability_whirlwind',
