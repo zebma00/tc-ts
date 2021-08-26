@@ -20,7 +20,7 @@ export default [
   new Talent(
     'Unyielding Faith',
     'spell_holy_unyieldingfaith',
-    ['Increases your chance to ressit Fear and Disorient effect by an additional ', '%.'],
+    ['Increases your chance to resist Fear and Disorient effect by an additional ', '%.'],
     2,
     [[5, 10]]
   ),
