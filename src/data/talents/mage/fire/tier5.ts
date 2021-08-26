@@ -1,7 +1,16 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+    new Talent(
+    'Molten Blood',
+    'spell_fire_moltenblood',
+    [
+      'After being hit by a melee or ranged critical strike, deal fire damage equal to ',
+      "% of the damage taken to the attacker. The damage caused by Molten Blood will not exceed more than 50% of the mage's total health.",
+    ],
+    2,
+    [[15, 30]]
+  ),
   new Talent(
     'Critical Mass',
     'spell_nature_wispheal',
