@@ -4,9 +4,9 @@ export default [
   new Talent(
     'Empowered Frostbolt',
     'spell_frost_frostbolt02',
-    ['Your Frostbolt increases the damage of your Frostbolt by ', '%. This effect stacks up to 5 times. Lasts 8 sec.'],
+    ['Your Frostbolt increases the critical strike damage of your Frostbolt by ', '%. This effect stacks up to 3 times. Lasts 8 sec.'],
     3,
-    [[1, 2, 3]]
+    [[4, 7, 10]]
   ),
   new Talent(
     'Ice Block',
