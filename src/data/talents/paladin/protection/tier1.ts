@@ -8,7 +8,7 @@ export default [
   new Talent(
     'Redoubt',
     'ability_defend',
-    ['Increases your chance to block by ', '% after beint the civtim of a critical strike. Lasts 10 sec or 5 blocks.'],
+    ['Increases your chance to block by ', '% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.'],
     5,
     [[6, 12, 18, 24, 30]],
     [{ x: null, y: null }],
