@@ -5,7 +5,7 @@ export default [
     'Focus Magic',
     'spell_arcane_arcanetorrent',
     [
-      "Increases the target's chance to critically hit with spells by 5%. When the target critically hits, the caster's chance to critically hit with spells is increased by 5% for 10 sec. Cannot be cast on self.",
+      "Increases the target's chance to critically hit with spells by 3%. When the target critically hits, the caster's chance to critically hit with spells is increased by 3% for 10 sec. Cannot be cast on self.",
     ],
     1,
     [[]],
