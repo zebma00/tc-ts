@@ -16,8 +16,8 @@ export default [
     'spell_fire_flametounge',
     [
       'Improves your weapon enhancing spells. Rockbiter Weapon: Also reduces physical damage taken by ',
-      '%.Flametongue Weapon: Also increases your spell damage and healing by ',
-      '% Frostbrand Weapon: Also reduces the attack speed of the affected target by ',
+      '%. Flametongue Weapon: Also increases your spell damage and healing by ',
+      '%. Frostbrand Weapon: Also reduces the attack and cast speed of the affected target by ',
       '%. Windfury Weapon: Also Increases your attack speed by ',
       '%.',
     ],
