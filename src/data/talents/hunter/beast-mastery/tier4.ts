@@ -7,7 +7,7 @@ export default [
     'ability_hunter_mendpet',
     [
       'Gives your mend Pet spell a ',
-      '% chance to remove 1 poison, disease, curse of magic effect from your pet each tick and increases the time your mend pet lasts by ',
+      '% chance to remove 1 poison, disease, curse of magic effect from your pet each tick and increases the time your Mend Pet lasts by ',
       ' sec.',
     ],
     2,
