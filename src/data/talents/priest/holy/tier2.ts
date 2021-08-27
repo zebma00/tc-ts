@@ -15,7 +15,7 @@ export default [
     null,
     null,
     null,
-    ['D2']
+    ['D1']
   ),
   null,
 ]
