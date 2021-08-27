@@ -4,9 +4,15 @@ export default [
   new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
     [4, 8, 12],
   ]),
-  new Talent('Consecration', 'spell_holy_auramastery', ['Increases the radius of your Auras to 40 yards and increases their effect by 10%.'], 1, [
+  new Talent('Aura Mastery', 'spell_holy_auramastery', ['Increases the effect of your Auras by 100% for 15 sec.'], 1, [
     [],
-  ]),
+  ],
+  [{x: null, y: null}],
+  [{x: null, y: null}],
+  null,
+  null,
+  'Instant',
+  '2 min cooldown'),
   new Talent(
     'Improved Lay on Hands',
     'spell_holy_layonhands',
