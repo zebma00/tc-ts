@@ -5,4 +5,4 @@
 
 - Priest: return of Light well
 - Rogue: smth for combat
-- Lock: smth else affliction 31
+- Lock: smth else affliction 31; smth destro
