@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('SMTH', '', ['SMTH ', '%.'], 2, [[10, 20]]),
+  new Talent('Improved Demon Armor', 'spell_shadow_ragingscream', ['Increases the effect of your Demon Skin and Demon Armor by ', '%.'], 2, [[15, 30]]),
   new Talent(
     'Improved Void Walker',
     'spell_shadow_summonvoidwalker',
