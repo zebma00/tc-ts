@@ -10,7 +10,7 @@ export default [
     5,
     [[0.1, 0.2, 0.3, 0.4, 0.5]],
     [{ x: null, y: null }],
-    [{ x: 3, y: 2 }],
+    [{ x: 2, y: 2 }],
     null,
     null,
     null,
