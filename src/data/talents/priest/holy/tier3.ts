@@ -22,7 +22,7 @@ export default [
     3,
     [[8, 16, 25]]
   ),
-    new Talent(
+  new Talent(
     'Searing Light',
     'spell_holy_searinglightpriest',
     ['Increases the damage done by your Smite and Holy Fire spells by ', '% an increases their chance to hit by ', '%.'],

@@ -15,12 +15,12 @@ export default [
     ['Increases the effect of your totems by 30% for 15 sec.'],
     1,
     [[]],
-  [{x: null, y: null}],
-  [{x: null, y: null}],
-  null,
-  null,
-  'Instant',
-  '2 min cooldown'),
+    [{ x: null, y: null }],
+    [{ x: null, y: null }],
+    null,
+    null,
+    'Instant',
+    '2 min cooldown'
   ),
   null,
 ]

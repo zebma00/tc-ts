@@ -26,7 +26,7 @@ export default [
     ['Your offensive spell criticals have a ', '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.'],
     2,
     [[25, 50]],
-    [{ x: 3, y: 2 }]
+    [{ x: 2, y: 2 }]
   ),
   null,
 ]
