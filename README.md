@@ -5,5 +5,4 @@
 
 
 - Paladin: Seal of Crusader smth
-- Rogue: smth for combat
 - Lock: smth new affli 31 + smth new destro
