@@ -17,5 +17,11 @@ export default [
     [[10, 20, 30, 40, 50]],
     [{ x: 1, y: 2 }]
   ),
-  null,
+  new Talent(
+    'Blade Twisting',
+    'ability_rogue_bladetwisting',
+    ['Gives your Sinister Strike, Backstab and Hemorrhage abilities a ', '% chance to daze the target for 8 sec.'],
+    2,
+    [[10, 20]],
+  ),
 ]
