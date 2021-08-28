@@ -8,13 +8,6 @@ export default [
     ['Increases your parry chance by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
-    [{ x: null, y: null }],
-    [{ x: 2, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1']
   ),
   new Talent(
     'Precision',
