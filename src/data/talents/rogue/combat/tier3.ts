@@ -8,7 +8,7 @@ export default [
     ["A strike that becomes active after parrying an opponent's attack. This attack deals 150% weapon damage and disarms the target for 6 sec."],
     1,
     [[]],
-    [{ x: 1, y: 1 }],
+    [{ x: null, y: null }],
     null,
     '10 Energy',
     'Melee range',
