@@ -21,7 +21,7 @@ export default [
     'inv_misc_monsterclaw_04',
     ['Increases the critical strike chance of your pets by ', '%.'],
     5,
-    [[2, 4, 6, 8, 10]],
+    [[3, 6, 9, 12, 15]],
     [{ x: null, y: null }],
     [{ x: 5, y: 2 }],
     null,
