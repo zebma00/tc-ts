@@ -6,7 +6,7 @@ export default [
     'ability_rogue_findweakness',
     [
       'Your melee and ranged critical strikes have a ',
-      '% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all atackers against that target by 25% of your agility for 7 sec.',
+      '% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by 25% of your agility for 7 sec.',
     ],
     2,
     [[50, 100]]
