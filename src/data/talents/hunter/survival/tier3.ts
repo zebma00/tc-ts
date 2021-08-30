@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Clever Traps',
+    'Trap Mastery',
     'spell_nature_timestop',
     [
       'Increases the duration of your Freezing and Frost traps by ',
