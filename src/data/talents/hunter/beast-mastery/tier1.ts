@@ -7,7 +7,7 @@ export default [
     'spell_nature_ravenform',
     ['While Aspect of the Hawk is active, all normal ranged attacks have a ', '% chance to increase your ranged attack speed by 15% for 12 sec.'],
     5,
-    [[4, 8, 12, 16, 20]]
+    [[2, 4, 6, 8, 10]]
   ),
   new Talent(
     'Improved Aspect of the Monkey',
