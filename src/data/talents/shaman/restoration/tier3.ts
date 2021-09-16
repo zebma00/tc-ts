@@ -12,15 +12,9 @@ export default [
   new Talent(
     'Totemic Mastery',
     'spell_nature_nullward',
-    ['Increases the effect of your totems by 30% for 15 sec.'],
+    ['Increases the radius of your totems that affect friendly targets to 30 yards and increases their effect by 5%.'],
     1,
     [[]],
-    [{ x: null, y: null }],
-    [{ x: null, y: null }],
-    null,
-    null,
-    'Instant',
-    '2 min cooldown'
   ),
   null,
 ]
