@@ -7,8 +7,7 @@ export default [
     'ability_hunter_pet_cat',
     [
       'Increases your melee attack power while in Cat, Bear or Dire Bear form by ',
-      '% of your level. In addition, increases your spell damage and healing by ',
-      '% of your strength.',
+      '% of your level.',
     ],
     3,
     [
