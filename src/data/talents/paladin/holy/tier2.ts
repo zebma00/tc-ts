@@ -1,7 +1,9 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+    new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
+    [4, 8, 12],
+  ]),,
   new Talent(
     'Spiritual Focus',
     'spell_arcane_blink',
