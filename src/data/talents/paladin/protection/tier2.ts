@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Holy Guidance', 'ability_rogue_ambush', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+  null,
   new Talent(
     "Guardian's Favor",
     'spell_holy_sealofprotection',
