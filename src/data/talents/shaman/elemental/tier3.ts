@@ -5,7 +5,7 @@ export default [
     'Elemental Focus',
     'spell_shadow_manaburn',
     [
-      'After landing a critical strike with a Fire, Frost or Nature damage spell, you enter a Clearcasting state. The Clearcasting state reduces the mana cost of your next two damage spells by 40%.',
+      'After landing a critical strike with a Fire, Frost or Nature damage spell, you enter a Clearcasting state. The Clearcasting state reduces the mana cost of your next damage spells by 100%.',
     ],
     1,
     [[]]
