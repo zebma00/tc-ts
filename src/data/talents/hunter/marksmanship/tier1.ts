@@ -16,12 +16,12 @@ export default [
     5,
     [[1, 2, 3, 4, 5]],
     [{ x: null, y: null }],
-    [{ x: 2, y: 2 }],
+    [{ x: 1, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2']
+    ['D1']
   ),
   null,
 ]
