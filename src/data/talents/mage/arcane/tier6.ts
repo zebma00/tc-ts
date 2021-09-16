@@ -21,7 +21,7 @@ export default [
     'spell_nature_starfall',
     [
       'Casting Arcane Missiles increases the damage and Mana cost of your Arcane Missiles by ',
-      '%. This effect stacks up to 3 times and lasts 8 sec.',
+      '%. This effect stacks up to 3 times and lasts 12 sec.',
     ],
     5,
     [[2, 4, 6, 8, 10]]
