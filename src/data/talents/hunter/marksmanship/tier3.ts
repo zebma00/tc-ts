@@ -15,13 +15,6 @@ export default [
     '6 sec cooldown'
   ),
   new Talent('Improved Arcane Shot', 'ability_impalingbolt', ['Reduces the cooldown of your Arcane Shot by ', ' sec.'], 3, [[0.4, 0.7, 1]]),
-  new Talent(
-    'Mortal Shots',
-    'ability_piercedamage',
-    ['Increases your ranged critical strike damage bonus by ', '%.'],
-    5,
-    [[6, 12, 18, 24, 30]],
-    [{ x: 0, y: 2 }]
-  ),
+//smth,
   new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
 ]
