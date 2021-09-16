@@ -22,11 +22,5 @@ export default [
     [[33, 66, 100]]
   ),
   null,
-  new Talent(
-    'Elemental Devastation',
-    'classic_spell_fire_elementaldevastation',
-    ['Causes your critical strikes from spells to increase your chance to get a critical strike with melee attacks by ', '% for 10 sec.'],
-    3,
-    [[4, 8, 12]]
-  ),
+  null,
 ]
