@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-  new Talent('Spell Warding', 'spell_holy_spellwarding', ['Reduces all spell damage taken by ', '%.'], 3, [[4, 7, 10]]),
+  new Talent('Improved Renew', 'spell_holy_renew', ['Increases the amount healed by your Renew spell by ', '%.'], 3, [[5, 10, 15]]),
   new Talent(
     'Divine Fury',
     'spell_holy_sealofwrath',
