@@ -8,8 +8,8 @@ export default [
     'Fel Concentration',
     'spell_shadow_fingerofdeath',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.'],
-    5,
-    [[14, 28, 42, 56, 70]]
+    3,
+    [[23, 47, 70]]
   ),
   new Talent(
     'Amplify Curse',
