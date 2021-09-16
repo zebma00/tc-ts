@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+  null,
   new Talent(
     'Convection',
     'spell_nature_wispsplode',
