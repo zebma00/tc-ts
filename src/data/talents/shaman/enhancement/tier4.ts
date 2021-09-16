@@ -10,6 +10,14 @@ export default [
     [[10, 15, 20, 25, 30]],
     [{ x: 1, y: 1 }]
   ),
-  // LS
+   new Talent(
+    'Improved Lightning Shield',
+    'spell_nature_lightningshield',
+    ['Your Lightning Shield orbs heal you for ', '% of damage dealt],
+    3,
+    [
+      [10, 20, 30],
+    ]
+  ),
   null,
 ]
