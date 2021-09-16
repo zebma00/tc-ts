@@ -15,7 +15,7 @@ export default [
     'spell_nature_healingwavegreater',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells.'],
     5,
-    [[14, 28, 42, 56, 70]]
+    [[23, 47, 70]]
   ),
   new Talent('Improved Enrage', 'ability_druid_enrage', ['The Enrage ability now instantly generates ', ' rage.'], 2, [[5, 10]]),
   null,
