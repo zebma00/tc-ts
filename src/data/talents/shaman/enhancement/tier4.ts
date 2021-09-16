@@ -13,10 +13,10 @@ export default [
    new Talent(
     'Improved Lightning Shield',
     'spell_nature_lightningshield',
-    ['Your Lightning Shield orbs heal you for ', '% of damage dealt],
+    ['Your Lightning Shield orbs heal you for ', '% of damage dealt.'],
     3,
     [
-      [10, 20, 30],
+      [15, 30, 45],
     ]
   ),
   null,
