@@ -16,7 +16,7 @@ export default [
     'spell_holy_blessingofstamina',
     ['Increases your critical strike chance with all attacks by ', '%.'],
     3,
-    [[2, 4, 6]],
+    [[1, 2, 3]],
     [{ x: null, y: null }],
     [{ x: 6, y: 1 }],
     null,
