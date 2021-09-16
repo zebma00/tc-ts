@@ -7,15 +7,9 @@ export default [
   new Talent(
     'Aura Mastery',
     'spell_holy_auramastery',
-    ['Increases the effect of your Auras by 100% for 15 sec.'],
+    ['Increases the range of you Auras to 40 yards and increases their effect by 10%.'],
     1,
     [[]],
-    [{ x: null, y: null }],
-    [{ x: null, y: null }],
-    null,
-    null,
-    'Instant',
-    '2 min cooldown'
   ),
   new Talent(
     'Improved Lay on Hands',
