@@ -4,28 +4,26 @@ export default [
   new Talent(
     'Improved Weapon Totems',
     'spell_fire_enchantweapon',
-    ['Your Windfury Totem also increases attack speed by ', '% and your Flametongue Totem also increases spell damage and healing by ', '%.'],
+    ['Increases the melee attack power bonus of your Windfury Totem by ', '% and increases the damage caused by tour Flametongue Totem by ', '%.'],
     2,
     [
-      [2, 4],
-      [2, 4],
+      [15, 30],
+      [6, 12],
     ]
   ),
   new Talent(
     'Elemental Weapons',
     'spell_fire_flametounge',
     [
-      'Improves your weapon enhancing spells. Rockbiter Weapon: Also reduces physical damage taken by ',
-      '%. Flametongue Weapon: Also increases your spell damage and healing by ',
-      '%. Frostbrand Weapon: Also reduces the attack and cast speed of the affected target by ',
-      '%. Windfury Weapon: Also Increases your attack speed by ',
+      'Increases the melee attack power bonus of your Rockbiter Weapon by ',
+      '%, your Windfury Weapon effect by ',
+      '% and increases the damage caused by your Flametongue Weapon an dFrostbrand Weapon by ',
       '%.',
     ],
     3,
     [
-      [5, 10, 15],
-      [5, 10, 15],
-      [5, 10, 15],
+      [7, 14, 20],
+      [13, 27, 40],
       [5, 10, 15],
     ],
     [{ x: null, y: null }],
