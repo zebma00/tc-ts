@@ -1,9 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
-    [4, 8, 12],
-  ]),
+  // holy dmg
   new Talent(
     'Aura Mastery',
     'spell_holy_auramastery',
