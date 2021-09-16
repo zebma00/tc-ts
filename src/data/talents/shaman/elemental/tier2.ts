@@ -11,7 +11,7 @@ export default [
       [10, 20],
     ]
   ),
-  new Talent('Call of Flame', 'spell_fire_immolation', ['Increases the damage done by your Fire Totems by ', '%.'], 2, [[10, 20]]),
+  new Talent('Call of Flame', 'spell_fire_immolation', ['Increases damage done by your Fire spells, effects and totems by ', '% and increases their critical strike chance by ', '%.'], 3, [[4, 7, 10], [1, 2, 3]),
   new Talent('Crashing Shocks', 'spell_nature_elementalshields', ['Increases the critical strike chance of your Shock spells by ', '%.'], 2, [
     [2, 4],
   ]),
