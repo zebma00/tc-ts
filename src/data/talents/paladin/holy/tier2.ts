@@ -6,8 +6,8 @@ export default [
     'Spiritual Focus',
     'spell_arcane_blink',
     ['Gives your Flash or Light and Holy Light spells a ', '% chance to not lose casting time when you take damage.'],
-    5,
-    [[14, 28, 42, 56, 70]]
+    3,
+    [[23, 47, 70]]
   ),
   new Talent(
     'Improved Seal of Righteousness',
