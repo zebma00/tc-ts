@@ -12,6 +12,12 @@ export default [
     ]
   ),
   new Talent('Call of Flame', 'spell_fire_immolation', ['Increases damage done by your Fire spells, effects and totems by ', '% and increases their critical strike chance by ', '%.'], 3, [[4, 7, 10], [1, 2, 3]),
-  // ele devastation
+    new Talent(
+    'Elemental Devastation',
+    'classic_spell_fire_elementaldevastation',
+    ['Causes your critical strikes from spells to increase your chance to get a critical strike with melee attacks by ', '% for 10 sec.'],
+    3,
+    [[3, 6, 9]]
+  ),
   null,
 ]
