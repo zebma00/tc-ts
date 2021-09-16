@@ -6,8 +6,8 @@ export default [
     'Healing Focus',
     'spell_nature_healingwavelesser',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting any healing spell.'],
-    5,
-    [[14, 28, 42, 56, 70]]
+    3,
+    [[23, 47, 70]]
   ),
   new Talent(
     'Totemic Mastery',
