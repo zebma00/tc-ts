@@ -1,6 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
+  null,
   new Talent(
     'Holy Reach',
     'spell_holy_purify',
@@ -12,7 +13,4 @@ export default [
     [5, 10, 15],
   ]),
   null,
-  new Talent('Spiritual Guidance', 'spell_holy_spiritualguidence', ['Increases healing and spell damage by ', '% of your total Spirit.'], 3, [
-    [8, 16, 25],
-  ]),
 ]
