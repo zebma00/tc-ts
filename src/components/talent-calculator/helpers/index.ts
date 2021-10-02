@@ -138,35 +138,40 @@ export const requiredXChecker = (specData: ClassSpecType) => {
   return requiredX
 }
 
-export const checkMaxedValue = (talent: Talent) => {
-  const isMaxedValue = talent.value === talent.maxValue
-  return isMaxedValue
+export const checkMaxedValue = (talent: Talent | null) => {
+  return talent?.value === talent?.maxValue
+}
+
+const checkRequiredPointsInTree = (x: number) => {}
+
+export const checkZeroValue = (talent: Talent | null) => {
+  return talent?.value === 0
 }
 
 export const leftClick = (talentData: ClassTalentType, i: number, x: number, y: number) => {
   const pointsLeft = totalPointsChecker(talentData)
   const enoughPointsLeft = pointsLeft <= 51
 
-  // const allRequiredTalents = talentData[i][x][y]?.required
-  // const temp = allRequiredTalents.map(tCoordinates: {x: number, y:number}) => {
-  // const talentX = tCoordinates.x
-  // const talentY = tCoordinates.y
-  // return checkMaxedValue(talentData[i][talentX][talentY])
-  // }
+  const isMaxedValue = checkMaxedValue(talentData[i][x][y])
 
-  // if (...) talentData[i][x][y]?.increment
-
-  return true
+  if (enoughPointsLeft && !isMaxedValue) {
+    return true
+  } else {
+    return false
+  }
 }
 
 export const rightClick = (talentData: ClassTalentType, i: number, x: number, y: number) => {
   const pointsLeft = totalPointsChecker(talentData)
   const enoughPointsLeft = pointsLeft > 0
 
-  // const allRequiringTalents = talentData[i][x][y]?.requiring
+  const isZeroValue = checkZeroValue(talentData[i][x][y])
 
-  // return {booleans.any}
-  return true
+  if (enoughPointsLeft && !isZeroValue) {
+    return true
+  } else {
+    return false
+  }
 }
 
 export const capitalizer = (string: string) => {
