@@ -26,5 +26,5 @@ export default [
       [10, 20, 30, 40, 50],
     ]
   ),
-  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Increases your defense skill by ', '.'], 3, [[4, 7, 10]]),
+  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]]),
 ]

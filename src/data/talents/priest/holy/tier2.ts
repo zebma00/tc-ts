@@ -1,7 +1,9 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('Spiritual Guidance', 'spell_holy_spiritualguidence', ['Increases healing and spell damage by ', '% of your total Spirit.'], 5, [
+    [3, 6, 9, 12, 15],
+  ]),
   new Talent('Improved Renew', 'spell_holy_renew', ['Increases the amount healed by your Renew spell by ', '%.'], 3, [[5, 10, 15]]),
   new Talent(
     'Divine Fury',
@@ -17,7 +19,5 @@ export default [
     null,
     ['D1']
   ),
-    new Talent('Spiritual Guidance', 'spell_holy_spiritualguidence', ['Increases healing and spell damage by ', '% of your total Spirit.'], 5, [
-    [3, 6, 9, 12, 15],
-  ]),
+  null,
 ]

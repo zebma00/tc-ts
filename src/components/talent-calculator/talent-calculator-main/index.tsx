@@ -5,13 +5,15 @@ import { ClassTalentType } from '../../../types/'
 import druid from '../../../data/talents/druid'
 import {
   talentCalcMaker,
+  specNameMaker,
+  totalPointsChecker,
   requiresTalentChecker,
   requiredTalentChecker,
   requiredXChecker,
   pointsPerTreeChecker,
-  totalPointsChecker,
   pointsUpToXChecker,
-  specNameMaker,
+  rightClick,
+  leftClick,
 } from '../helpers'
 import Grid from '../grid/'
 import styles from './index.module.css'
@@ -36,21 +38,29 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()
     const newData = [...talentData!]
-    const pointsPerTree = pointsPerTreeChecker(talentData![i])!
-    const requiredX = requiredXChecker(talentData![i])
-    const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!
-    const requiresTalent = requiresTalentChecker(newData[i], x, y)
-    const requiredTalent = requiredTalentChecker(newData[i], x, y)
-    const { value, maxValue } = talentData![i][x][y]!
+    // const pointsPerTree = pointsPerTreeChecker(talentData![i])!
+    // const requiredX = requiredXChecker(talentData![i])
+    // const upToXPoints = pointsUpToXChecker(talentData![i], requiredX)!
+    // const requiresTalent = requiresTalentChecker(newData[i], x, y)
+    // const requiredTalent = requiredTalentChecker(newData[i], x, y)
+    // const { value, maxValue } = talentData![i][x][y]!
 
-    if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree && pointsLeft > 0) {
-      newData[i][x][y]!.increment()
-    } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
-      if (x >= requiredX) {
-        newData[i][x][y]!.decrement()
-      } else if (x < requiredX && upToXPoints > requiredX * 5) {
-        newData[i][x][y]!.decrement()
-      }
+    // if (e.type === 'click' && value < maxValue && requiresTalent && x * 5 <= pointsPerTree && pointsLeft > 0) {
+    //   newData[i][x][y]!.increment()
+    // } else if (e.type === 'contextmenu' && value > 0 && requiredTalent) {
+    //   if (x >= requiredX) {
+    //     newData[i][x][y]!.decrement()
+    //   } else if (x < requiredX && upToXPoints > requiredX * 5) {
+    //     newData[i][x][y]!.decrement()
+    //   }
+    // }
+
+    if (e.type === 'click') {
+      const canLeftClick = leftClick(newData, i, x, y)
+      canLeftClick && newData[i][x][y]!.increment()
+    } else if (e.type === 'contextmenu') {
+      const canRightClick = rightClick(newData, i, x, y)
+      canRightClick && newData[i][x][y]!.decrement()
     }
     setTalentData(newData)
   }

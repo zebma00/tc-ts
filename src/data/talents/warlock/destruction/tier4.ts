@@ -19,13 +19,5 @@ export default [
   null,
   new Talent('Improved Searing Pain', 'spell_fire_soulburn', ['Increases the critical strike chance of your Searing Pain spell by ', '%.'], 3, [
     [3, 6, 9],
-  ],
-  [{ x: null, y: null }],
-      [{ x: 4, y: 3 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1']    
- ),
+  ]),
 ]

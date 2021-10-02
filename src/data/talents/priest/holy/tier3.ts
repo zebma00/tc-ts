@@ -31,19 +31,20 @@ export default [
       [5, 10],
       [2, 4],
     ],
-    [{ x: 1, y: 2 }],
-    [{ x: 4, y: 2 }],
-    null,
-    null,
-    null,
-    null,
-    ['D2']
+    [{ x: 1, y: 2 }]
   ),
   new Talent(
     'Inspiration',
     'spell_holy_layonhands',
-    ["Increases the target's armor by ", '% for 8 sec after getting a critical hit with Heal, Greater Heal, Flash Heal or Prayer of Healing and increases your armor by ', '% after receiving a critical heal.'],
+    [
+      "Increases the target's armor by ",
+      '% for 8 sec after getting a critical hit with Heal, Greater Heal, Flash Heal or Prayer of Healing and increases your armor by ',
+      '% after receiving a critical heal.',
+    ],
     3,
-    [[8, 16, 25], [8, 16, 25]]
+    [
+      [8, 16, 25],
+      [8, 16, 25],
+    ]
   ),
 ]

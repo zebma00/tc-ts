@@ -39,9 +39,11 @@ export default [
   new Talent(
     'Havoc',
     'spell_fire_playingwithfire',
-    ['Your Searing Pain critical strikes increase Fire damage dealth to the target by ', '% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.'],
+    [
+      'Critical strikes from your Fire spells increase Fire damage dealth to the target by ',
+      '% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.',
+    ],
     2,
-    [[5, 10]],
-    [{ x: 3, y: 3 }]
+    [[5, 10]]
   ),
 ]

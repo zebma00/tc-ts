@@ -2,11 +2,14 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Empowered Frostbolt',
-    'spell_frost_frostbolt02',
-    ['Your Frostbolt increases the critical strike damage of your Frostbolt by ', '%. This effect stacks up to 3 times. Lasts 8 sec.'],
+    'Brain Freeze',
+    'spell_frost_frozencore',
+    [
+      'Gives your Frost spells a ',
+      '% chance to apply the Brain Freeze effect, which increases the critical strike damage taken by the target by 3% for 15 sec. This effect stacks up to 5 times.',
+    ],
     3,
-    [[4, 7, 10]]
+    [[1, 2, 3]]
   ),
   new Talent(
     'Ice Block',

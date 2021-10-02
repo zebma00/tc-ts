@@ -26,10 +26,10 @@ export default [
     ['D2']
   ),
   new Talent('Improved Ghost Wolf', 'spell_nature_spiritwolf', ['Reduces the cast time of your Ghost Wolf spell by ', ' sec.'], 2, [[1, 2]]),
-    new Talent(
+  new Talent(
     'Ancestral Fortitude',
     'spell_holy_devotion',
-    ['Increases your armor by ', '% and reduces the duration of movement slowing effects on you by ', '%'],
+    ['Increases your armor by ', '% and reduces the duration of movement slowing effects on you by ', '%.'],
     5,
     [
       [2, 4, 6, 8, 10],

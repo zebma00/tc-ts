@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Improved Mana Shield',
+    'spell_shadow_detectlesserinvisibility',
+    ['Decreases the mana lost per point of damage when Mana Shield is active by ', '%.'],
+    2,
+    [[10, 20]]
+  ),
   new Talent('Improved Counterspell', 'spell_frost_iceshock', ['Gives your counterspell a ', ' chance to silence the target for 4 sec.'], 2, [
     [50, 100],
   ]),

@@ -30,11 +30,5 @@ export default [
     [[10, 20, 30]],
     [{ x: 0, y: 2 }]
   ),
-  new Talent(
-    'Divine Purpose',
-    'spell_holy_divinepurpose',
-    ['Increases the Holy damage you deal to enemies that are stunned or incapacitated by ', '%.'],
-    3,
-    [[10, 20, 30]]
-  ),
+  new Talent('Anticipation', 'spell_magic_lesserinvisibilty', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]]),
 ]
