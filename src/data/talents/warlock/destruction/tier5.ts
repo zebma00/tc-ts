@@ -39,8 +39,9 @@ export default [
   new Talent(
     'Havoc',
     'spell_fire_playingwithfire',
-    ['When you get two critical hits from spells in a row, gain a ', '% chance to reset the cooldown of your Soul Shatter.'],
+    ['Your Searing Pain critical strikes increase Fire damage dealth to the target by ', '% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.'],
     2,
-    [[50, 100]]
+    [[5, 10]],
+    [{ x: 3, y: 3 }]
   ),
 ]
