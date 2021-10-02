@@ -19,7 +19,7 @@ export default [
     'Demonic Sacrifice',
     'spell_shadow_psychicscream',
     [
-      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: reduces physical damage taken by 15%. Succubus: increases your Shadow damage 15%. Felhunter: reduces magic damage taken by 15%.',
+      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: reduces threat caused by your damaging spells by 30%. Succubus: increases your Shadow damage 15%. Felhunter: regenerate 3% of total Health and Mana every 5 sec.',
     ],
     1,
     [[]],
