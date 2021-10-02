@@ -5,9 +5,9 @@ export default [
   new Talent(
     'Improved Lash of Pain',
     'spell_shadow_curse',
-    ["Reduces the damage and critial strike chance of your Succubus' Lash of Pain by", '%.'],
+    ["Reduces the cooldown of your Succubus' Lash of Pain by", ' sec.'],
     2,
-    [[10, 20]]
+    [[3, 6]]
   ),
   new Talent(
     'Devastation',
