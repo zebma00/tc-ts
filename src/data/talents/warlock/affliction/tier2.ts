@@ -24,7 +24,7 @@ export default [
       'Increases the amount drained by your Drain Life spell by an additional ',
       '% for each Affliction effect on the target, up to a maximum of 60% additional effect.',
     ],
-    2,
-    [[3, 6]]
+    5,
+    [[2, 4, 6, 8, 10]]
   ),
 ]
