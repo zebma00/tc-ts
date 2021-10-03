@@ -5,11 +5,11 @@ export class Talent {
   value: number
   maxValue: number
   valueIteration: number[][]
-  requires: {
+  required: {
     x: number | null
     y: number | null
   }[]
-  required: {
+  requiring: {
     x: number | null
     y: number | null
   }[]
@@ -25,13 +25,13 @@ export class Talent {
     description: string[],
     maxValue: number,
     valueIteration: number[][],
-    requires?:
+    required?:
       | {
           x: number | null
           y: number | null
         }[]
       | null,
-    required?:
+    requiring?:
       | {
           x: number | null
           y: number | null
@@ -49,8 +49,8 @@ export class Talent {
     this.value = 0
     this.maxValue = maxValue
     this.valueIteration = valueIteration
-    this.requires = requires ? requires : [{ x: null, y: null }]
     this.required = required ? required : [{ x: null, y: null }]
+    this.requiring = requiring ? requiring : [{ x: null, y: null }]
     this.manaCost = manaCost ? manaCost : null
     this.range = range ? range : null
     this.castTime = castTime ? castTime : null

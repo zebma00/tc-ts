@@ -6,11 +6,11 @@ import druid from '../../../data/talents/druid'
 import {
   talentCalcMaker,
   specNameMaker,
-  totalPointsChecker,
+  checkTotalPoints,
   requiresTalentChecker,
   requiredTalentChecker,
   requiredXChecker,
-  pointsPerTreeChecker,
+  checkPointsPerTree,
   pointsUpToXChecker,
   rightClick,
   leftClick,
@@ -32,8 +32,8 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
     setSpecNames(specNameMaker(classData.default.specs))
   }, [classData])
 
-  const totalPoints = totalPointsChecker(talentData!)
-  const pointsLeft = 51 - totalPointsChecker(talentData!)!
+  const totalPoints = checkTotalPoints(talentData!)
+  const pointsLeft = 51 - checkTotalPoints(talentData!)!
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()

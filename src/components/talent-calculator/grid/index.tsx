@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { Talent } from '../../../data/talents/Classes'
-import { enabledChecker, pointsPerTreeChecker, capitalizer } from '../helpers/'
+import { enabledChecker, checkPointsPerTree, capitalizer } from '../helpers/'
 import Cell from '../cell'
 import styles from './grid.module.css'
 
@@ -15,7 +15,7 @@ interface GridProps {
 }
 
 const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, clickHandler }) => {
-  const currentPoints = pointsPerTreeChecker(gridData)
+  const currentPoints = checkPointsPerTree(gridData)
 
   return (
     <div className={styles.tree}>
