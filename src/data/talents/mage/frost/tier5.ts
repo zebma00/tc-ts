@@ -8,8 +8,8 @@ export default [
       'Gives your Frost spells a ',
       '% chance to apply the Brain Freeze effect, which increases the critical strike damage taken by the target by 3% for 15 sec. This effect stacks up to 5 times.',
     ],
-    3,
-    [[1, 2, 3]]
+    2,
+    [[33, 66, 100]]
   ),
   new Talent(
     'Ice Block',

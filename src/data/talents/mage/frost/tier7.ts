@@ -8,7 +8,7 @@ export default [
     ['Instantly shields you, absorbing 455 damage. Lasts 1 min. While the shield holds, spells will be interrupted.'],
     1,
     [[]],
-    [{ x: 4, y: 2 }],
+    [{ x: 4, y: 1 }],
     null,
     '305 mana',
     null,
