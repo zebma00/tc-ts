@@ -122,7 +122,8 @@ export const checkEnoughPointsRow = (specData: ClassSpecType | null, x: number, 
   let firstRowWithPts = null
   let endLoop = false
 
-  // FIX LOOP FOR 31 PTS RIGHT CLICK
+  // FIX LOOP FOR 31 PTS RIGHT CLICK SIMPLE .FILTER() PLS LOL
+  // REORGANISE THESE FUNCTIONS INTO src/lib FOLDER
   for (let i = clickedRow + 1; endLoop === false; i++) {
     if (i === 6) return
     const rowHasPoints = checkRowHasPoints(specData![i])
