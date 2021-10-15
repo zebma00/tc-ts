@@ -1,7 +1,14 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Cleave', 'ability_warrior_cleave', ['Increases the damage done by your Cleave ability by ', '%'], 3, [[40, 80, 120]]),
+  new Talent(
+    'Crushing Blows',
+    'spell_holy_fistofjustice',
+    ['Your Slam increases damage dealt by your weapon attacks by ', '% for 3 sec.'],
+    2,
+    [[10, 20]],
+    [{ x: 1, y: 0 }]
+  ),
   new Talent(
     'Piercing Howl',
     'spell_shadow_deathscream',

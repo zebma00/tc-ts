@@ -4,12 +4,16 @@ export default [
   new Talent(
     'Improved Slam',
     'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', ' sec and causes your Slam to increase the damage of your next main hand attack by ', '%.'],
-    5,
-    [
-      [0.2, 0.4, 0.6, 0.8, 1],
-      [3, 6, 9, 12, 15],
-    ]
+    ['Reduces the casting time of your Slam ability by ', ' sec.'],
+    2,
+    [[0.5, 1]],
+    [{ x: null, y: null }],
+    [{ x: 2, y: 0 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
   ),
   new Talent(
     'Improved Demoralizing Shout',

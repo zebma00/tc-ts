@@ -5,7 +5,7 @@ export default [
   new Talent(
     'Magic Absorbtion',
     'spell_nature_astralrecalgroup',
-    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 10 sec cooldown.'],
+    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 15 sec cooldown.'],
     3,
     [[2, 4, 6]]
   ),

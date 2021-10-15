@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent('Improved Cleave', 'ability_warrior_cleave', ['Increases the damage done by your Cleave ability by ', '%'], 3, [[40, 80, 120]]),
   new Talent(
     'Death Wish',
     'spell_shadow_deathpact',

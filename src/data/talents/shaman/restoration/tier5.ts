@@ -6,7 +6,7 @@ export default [
     'classic_spell_nature_healingway',
     [
       'Your Healing Wave and Lesser Healing Wave spells have a ',
-      '% chance to increase the effect of subsequent Healing Waves and Lesser Healing Waves on that target by 6% for 15 sec. This effect stacks up to 3 times.',
+      '% chance to increase the effect of subsequent Healing Waves on that target by 6% for 15 sec. This effect stacks up to 3 times.',
     ],
     3,
     [[33, 66, 100]]

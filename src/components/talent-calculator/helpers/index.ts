@@ -113,34 +113,26 @@ export const checkRowHasPoints = (specRow: (Talent | null)[]) => {
   return rowHasPoints
 }
 
-export const getRowsBelowX = (specData: ClassSpecType | null, firstRowWithPts: number | null) => {
+export const getRowsBelowX = (specData: ClassSpecType | null, firstRowWithPts: number | undefined) => {
   return specData?.filter((_, index) => index < firstRowWithPts!)
 }
 
 export const checkEnoughPointsRow = (specData: ClassSpecType | null, x: number, y: number) => {
-  const clickedRow = x
-  let firstRowWithPts = null
-  let endLoop = false
+  //!TODO Does not yet work for rows above X (it works only for the x + 1 row)
+  const firstRowWithPts = specData?.findIndex((row, rowIndex) => {
+    return checkRowHasPoints(row) && rowIndex > x
+  })
 
-  // FIX LOOP FOR 31 PTS RIGHT CLICK
-  for (let i = clickedRow + 1; endLoop === false; i++) {
-    if (i === 6) return
-    const rowHasPoints = checkRowHasPoints(specData![i])
-    if (!!rowHasPoints) {
-      firstRowWithPts = i
-      endLoop = true
-    }
-  }
-
-  if (firstRowWithPts === null) {
+  if (firstRowWithPts === -1) {
     return true
   }
 
   const rowsBelowX = getRowsBelowX(specData, firstRowWithPts)?.filter(row => !!row)
+  console.log('WW', firstRowWithPts)
   const pointsRows = rowsBelowX?.map(row => checkPointsPerRow(row!))
   const sumPoints = pointsRows?.reduce((a, b) => a! + b!)
 
-  if (sumPoints! > firstRowWithPts * 5) {
+  if (sumPoints! > firstRowWithPts! * 5) {
     return true
   } else {
     return false
@@ -205,6 +197,7 @@ export const rightClick = (talentData: ClassTalentType, i: number, x: number, y:
   const isZeroValue = checkZeroValue(talentData[i][x][y])
 
   const enoughPointsRows = checkEnoughPointsRow(talentData[i], x, y)
+  console.log('ENOUGH', enoughPointsRows)
 
   const requiringTalentsAreZero = checkRequiringTalentsAreZero(talentData[i], x, y)
 
