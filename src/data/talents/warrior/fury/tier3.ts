@@ -4,9 +4,9 @@ export default [
   new Talent(
     'Crushing Blows',
     'spell_holy_fistofjustice',
-    ['Your Slam increases damage dealt by your weapon attacks by ', '% for 3 sec.'],
+    ['Your Slam increases damage dealt by your next weapon attack by ', '% for 3 sec.'],
     2,
-    [[10, 20]],
+    [[15, 30]],
     [{ x: 1, y: 0 }]
   ),
   new Talent(
