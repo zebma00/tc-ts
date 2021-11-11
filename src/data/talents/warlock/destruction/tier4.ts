@@ -17,7 +17,7 @@ export default [
   ),
   new Talent('Destructive Reach', 'spell_shadow_corpseexplode', ['Increases the range of your Destruction spells by ', '%.'], 2, [[10, 20]]),
   null,
-  new Talent('Improved Searing Pain', 'spell_fire_soulburn', ['Increases the critical strike chance of your Searing Pain spell by ', '%.'], 3, [
-    [3, 6, 9],
+  new Talent('Improved Searing Pain', 'spell_fire_soulburn', ['Increases the critical strike chance of your Searing Pain spell against dazed or stunned targets by ', '%.'], 3, [
+    [5, 10, 15],
   ]),
 ]
