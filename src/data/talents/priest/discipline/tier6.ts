@@ -5,7 +5,7 @@ export default [
   new Talent(
     'Mental Strength',
     'spell_nature_enchantarmor',
-    ['Increases your maximum Mana and Health by ', '%.'],
+    ['Increases your Mana, Health and Spirit by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],
     [{ x: null, y: null }],
