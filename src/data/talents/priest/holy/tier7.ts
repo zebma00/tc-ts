@@ -3,10 +3,10 @@ import { Talent } from '../../Classes'
 export default [
   null,
   new Talent(
-    'Lightwell',
-    'spell_holy_summonlightwell',
+    'Prayer of Mending',
+    'spell_holy_prayerofmendingtga',
     [
-      'Creates a holy Lightwell at the target location. The Lightwell heals a nearby party or raid member with low health for 174 to 188 health every 2 seconds. Lasts 12 sec.',
+      'Places a spell on the target that heals them for 800 the next time they take damage. When the heal occurs, Prayer of Mending jumps to a raid member within 20 yards.  Jumps up to 5 times and lasts 30 sec after each jump.  This spell can only be placed on one target at a time.',
     ],
     1,
     [[]],
@@ -14,8 +14,8 @@ export default [
     null,
     '225 Mana',
     '30 yd range',
-    '1.5 sec cast',
-    '3 min cooldown'
+    'Instant',
+    '10 sec cooldown'
   ),
   null,
   null,
