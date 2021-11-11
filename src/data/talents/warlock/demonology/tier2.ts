@@ -1,8 +1,8 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Demon Armor', 'spell_shadow_ragingscream', ['Increases the effect of your Demon Skin and Demon Armor by ', '%.'], 2, [
-    [15, 30],
+  new Talent('Improved Demon Armor', 'spell_shadow_ragingscream', ['Causes your Demon armor to also restore ', '% of your total mana every 3 sec.'], 2, [
+    [0.5, 1],
   ]),
   new Talent(
     'Improved Void Walker',
