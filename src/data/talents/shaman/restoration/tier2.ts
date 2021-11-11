@@ -2,18 +2,11 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Improved Reincarnation',
-    'spell_nature_reincarnation',
-    [
-      'Reduces the cooldown of your Reincarnation spell by ',
-      ' min and increases the amount of health and mana you reincarnate with by an additional ',
-      '%.',
-    ],
+    'Improved Chain Heal',
+    'spell_nature_healingwavegreater',
+    ['Your Chain Heal has a ', '% chance to reduce the cast time of your next Healing Wave by 1 sec.'],
     2,
-    [
-      [15, 30],
-      [15, 30],
-    ]
+    [[15, 30]]
   ),
   new Talent(
     'Ancestral Healing',
