@@ -34,7 +34,7 @@ export default [
     ['Reduces the cooldown of Tranquility by ', ' minutes and Rebirth by ', ' minutes and reduces their mana cost by ', '%.'],
     2,
     [
-      [1, 2],
+      [1.5, 3],
       [5, 10],
       [25, 50],
     ]

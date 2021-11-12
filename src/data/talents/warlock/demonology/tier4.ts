@@ -1,34 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Fel Protection',
-    'spell_shadow_demonictactics',
-    [
-      "Increases your demon's chance to dodge or resist are of effect damage by ",
-      '% and increases your chance to dodge or resist are of effect damage by ',
-      '%.',
-    ],
-    3,
-    [
-      [25, 50, 75],
-      [15, 30, 45],
-    ]
-  ),
-  new Talent(
-    'Unholy Power',
-    'spell_shadow_shadowworddominate',
-    ['Increases the damage done by your Imp, Succubus, Void Walker and Felhunter by ', '%.'],
-    5,
-    [[4, 8, 12, 16, 20]],
-    [{ x: null, y: null }],
-    [{ x: 5, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    ['D2']
-  ),
+  null,
   new Talent(
     'Master Summoner',
     'spell_shadow_impphaseshift',
@@ -38,13 +11,21 @@ export default [
       [2, 4],
       [20, 40],
     ],
+    [{ x: 2, y: 1 }],
+  ),
+  new Talent(
+    'Unholy Power',
+    'spell_shadow_shadowworddominate',
+    ['Increases the damage done by your Imp, Succubus, Void Walker and Felhunter by ', '%.'],
+    5,
+    [[4, 8, 12, 16, 20]],
     [{ x: null, y: null }],
-    [{ x: 4, y: 2 }],
+    [{ x: 5, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D1']
+    ['D2']
   ),
   null,
 ]

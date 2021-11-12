@@ -2,31 +2,35 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Fel Armor',
-    'spell_shadow_felarmour',
+    'Fel Protection',
+    'spell_shadow_demonictactics',
     [
-      'Surrounds the caster with fel energy, increasing the amount of health generated through spells and effects by 20% and increasing spell hit chance by 3%. Only one type of Armor spell can be active on the Warlock at any time. Lasts 30 min.',
+      "Increases your demon's chance to dodge or resist are of effect damage by ",
+      '% and increases your chance to dodge or resist are of effect damage by ',
+      '%.',
+    ],
+    3,
+    [
+      [25, 50, 75],
+      [15, 30, 45],
+    ]
+  ),
+  new Talent(
+    'Demonic Sacrifice',
+    'spell_shadow_psychicscream',
+    [
+      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: reduces threat caused by your damaging spells by 30%. Succubus: increases your Shadow damage 15%. Felhunter: increases Health and Mana received from all sources by 15%.',
     ],
     1,
     [[]],
     null,
-    null,
-    '437 Mana',
-    'Instant'
-  ),
-  null,
-  new Talent(
-    'Fel Domination',
-    'spell_nature_removecurse',
-    ['Your next summon of Succubus, Imp, Felhunter or Void Walker has its casting time reduced by 5.5 sec and Mana cost reduced by 50%.'],
-    1,
-    [[]],
-    [{ x: 3, y: 2 }],
-    null,
-    null,
+    [{x: 6, y: 1}],
+    '100 yd range',
     null,
     'Instant',
-    '15 min cooldown'
+    null,
+    ['D2']
   ),
+  null,
   null,
 ]

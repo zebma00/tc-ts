@@ -113,8 +113,8 @@ export const checkRowHasPoints = (specRow: (Talent | null)[]) => {
   return rowHasPoints
 }
 
-export const getRowsBelowX = (specData: ClassSpecType | null, firstRowWithPts: number | undefined) => {
-  return specData?.filter((_, index) => index < firstRowWithPts!)
+export const getRowsBelowX = (specData: ClassSpecType | null, rowWithPts: number | undefined) => {
+  return specData?.filter((_, index) => index < rowWithPts!)
 }
 
 export const checkEnoughPointsRow = (specData: ClassSpecType | null, x: number, y: number) => {
@@ -128,11 +128,25 @@ export const checkEnoughPointsRow = (specData: ClassSpecType | null, x: number, 
   }
 
   const rowsBelowX = getRowsBelowX(specData, firstRowWithPts)?.filter(row => !!row)
-  console.log('WW', firstRowWithPts)
+
   const pointsRows = rowsBelowX?.map(row => checkPointsPerRow(row!))
   const sumPoints = pointsRows?.reduce((a, b) => a! + b!)
 
   if (sumPoints! > firstRowWithPts! * 5) {
+    return true
+  } else {
+    return false
+  }
+}
+
+export const checkEnoughPointsForRightClick = (specData: ClassSpecType) => {
+  const lastRowWithPts = specData?.map(row => checkRowHasPoints(row)).lastIndexOf(true)
+
+  const ptsInLastRow = checkPointsPerRow(specData[lastRowWithPts])
+
+  const pointsInTree = checkPointsPerTree(specData) 
+
+  if ((pointsInTree - ptsInLastRow!) > lastRowWithPts * 5) {
     return true
   } else {
     return false
@@ -171,6 +185,7 @@ export const checkRequiringTalentsAreZero = (specData: ClassSpecType | null, x: 
   return requiringTalentsAreZero
 }
 
+
 // click boys
 
 export const leftClick = (talentData: ClassTalentType, i: number, x: number, y: number) => {
@@ -197,11 +212,12 @@ export const rightClick = (talentData: ClassTalentType, i: number, x: number, y:
   const isZeroValue = checkZeroValue(talentData[i][x][y])
 
   const enoughPointsRows = checkEnoughPointsRow(talentData[i], x, y)
-  console.log('ENOUGH', enoughPointsRows)
 
   const requiringTalentsAreZero = checkRequiringTalentsAreZero(talentData[i], x, y)
 
-  if (enoughPointsLeft && !isZeroValue && requiringTalentsAreZero && enoughPointsRows) {
+  const enoughPtsForRightCLick = checkEnoughPointsForRightClick(talentData[i])
+
+  if (enoughPointsLeft && !isZeroValue && requiringTalentsAreZero && enoughPointsRows && enoughPtsForRightCLick) {
     return true
   } else {
     return false

@@ -16,18 +16,18 @@ export default [
     ]
   ),
   new Talent(
-    'Demonic Sacrifice',
-    'spell_shadow_psychicscream',
-    [
-      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: reduces threat caused by your damaging spells by 30%. Succubus: increases your Shadow damage 15%. Felhunter: regenerate 3% of total Health and Mana every 5 sec.',
-    ],
+    'Fel Domination',
+    'spell_nature_removecurse',
+    ['Your next summon of Succubus, Imp, Felhunter or Void Walker has its casting time reduced by 5.5 sec and Mana cost reduced by 50%.'],
     1,
     [[]],
     null,
+    [{ x: 3, y: 1 }],
     null,
-    '100 yd range',
     null,
-    'Instant'
+    'Instant',
+    '15 min cooldown',
+    ['D1']
   ),
   new Talent(
     'Fel Stamina',

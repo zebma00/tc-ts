@@ -2,6 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
+  null,
   new Talent(
     'Master Demonologist',
     'spell_shadow_shadowpact',
@@ -19,14 +20,7 @@ export default [
       [2, 4, 6, 8, 10],
       [0.2, 0.4, 0.6, 0.8, 1],
     ],
-    [{ x: 3, y: 1 }],
-    [{ x: 6, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1']
+    [{ x: 3, y: 2 }],
   ),
-  null,
   null,
 ]
