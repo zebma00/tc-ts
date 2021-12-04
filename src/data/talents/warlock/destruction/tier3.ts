@@ -5,7 +5,7 @@ export default [
   new Talent(
     'Improved Lash of Pain',
     'spell_shadow_curse',
-    ["Reduces the cooldown of your Succubus' Lash of Pain by", ' sec.'],
+    ["Reduces the cooldown of your Succubus' Lash of Pain by ", ' sec.'],
     2,
     [[3, 6]]
   ),
@@ -22,7 +22,7 @@ export default [
     null,
     null,
     ['D2']
-  ),
+    ),
   new Talent(
     'Shadowburn',
     'spell_shadow_scourgebuild',
@@ -38,4 +38,4 @@ export default [
     'Instant',
     '15 sec cooldown'
   ),
-]
+  ]

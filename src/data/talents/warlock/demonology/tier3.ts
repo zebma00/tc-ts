@@ -2,17 +2,12 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Improved Succubus',
-    'spell_shadow_summonsuccubus',
-    [
-      "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ",
-      '% and increases the duration of Seduction and Invisibility by ',
-      '%.',
-    ],
+    'Fel Power',
+    'spell_shadow_antishadow',
+    ['Increases the Stamina and Intellect of your Imp, Succubus, Void Walker and Felhunter by ', '%.'],
     3,
     [
-      [10, 20, 30],
-      [10, 20, 30],
+      [5, 10, 15],
     ]
   ),
   new Talent(
@@ -30,20 +25,11 @@ export default [
     ['D1']
   ),
   new Talent(
-    'Fel Stamina',
-    'spell_shadow_antishadow',
-    ['Increases the Stamina of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum health by ', '%.'],
-    3,
-    [
-      [5, 10, 15],
-      [1, 2, 3],
-    ]
-  ),
-  new Talent(
     'Mana Feed',
     'spell_shadow_manafeed',
     ['When you gain mana from Drain mana or Life Tap spells, your pet gains ', '% of the mana you gain.'],
     3,
     [[33, 66, 100]]
   ),
+  null,
 ]

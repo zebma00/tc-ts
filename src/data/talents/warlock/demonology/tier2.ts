@@ -12,13 +12,17 @@ export default [
     [[10, 20, 30]]
   ),
   new Talent(
-    'Fel Intellect',
-    'spell_holy_magicalsentry',
-    ['Increases the Intellect of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum mana by ', '%.'],
+    'Improved Succubus',
+    'spell_shadow_summonsuccubus',
+    [
+      "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ",
+      '% and increases the duration of Seduction and Invisibility by ',
+      '%.',
+    ],
     3,
     [
-      [5, 10, 15],
-      [1, 2, 3],
+      [10, 20, 30],
+      [10, 20, 30],
     ]
   ),
   new Talent(
