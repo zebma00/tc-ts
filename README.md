@@ -1,6 +1,5 @@
 ### TO DO
 
-- Improve Night Elf racials
-- Ret paladin sligh buff
+- Dwarf / Night Elf racials
 - Phases
 - World Buffs
