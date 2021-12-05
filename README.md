@@ -1,5 +1,5 @@
 ### TO DO
 
-- Dwarf / Night Elf racials
+- Night Elf racials
 - Phases
 - World Buffs
