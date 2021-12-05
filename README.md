@@ -6,7 +6,7 @@
   - HUMAN:	Mage PVE, Warlock PVE
   - DWARF:	Priest PVE, Rogue PVE
   - GNOME:	Warrior PVE, Rogue PVE
-  - NIGHT: ELF	Warrior PVP, Rogue PVE
+  - NIGHT: ELF	Warrior PVE, Warrior PVP, Rogue PVE, Rogue PVP, Hunter PVP
 	
   - ORC	
   - TROLL	
