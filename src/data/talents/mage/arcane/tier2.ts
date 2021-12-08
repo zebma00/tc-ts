@@ -2,13 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent('Wand Specialization', 'inv_wand_01', ['Increases the damage you deal with wands by ', '%.'], 2, [[13, 25]]),
-  new Talent(
-    'Magic Absorbtion',
-    'spell_nature_astralrecalgroup',
-    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 15 sec cooldown.'],
-    3,
-    [[2, 4, 6]]
-  ),
+  null,
   new Talent(
     'Arcane Concentration',
     'spell_shadow_manaburn',
