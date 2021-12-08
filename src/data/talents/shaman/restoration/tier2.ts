@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Improved Chain Heal',
     'spell_nature_healingwavegreater',
-    ['Your Chain Heal has a ', '% chance to reduce the cast time of your next Healing Wave by 1 sec.'],
+    ['Your Chain Heal has a ', '% chance to reduce the mana cost of your next Healing Wave by 50%.'],
     2,
     [[15, 30]]
   ),
