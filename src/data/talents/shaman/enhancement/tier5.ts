@@ -2,14 +2,14 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Improved Weapon Totems',
-    'spell_fire_enchantweapon',
-    ['Increases the melee attack power bonus of your Windfury Totem by ', '% and increases the damage caused by tour Flametongue Totem by ', '%.'],
-    2,
+    'Shamanistic Focus',
+    'spell_nature_elementalabsorption',
     [
-      [15, 30],
-      [6, 12],
-    ]
+      'After landing a melee critical strike, you have a ',
+      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60% and increases its critical strike chance by 20%.',
+    ],
+    2,
+    [[25, 50]]
   ),
   new Talent(
     'Elemental Weapons',
@@ -17,7 +17,7 @@ export default [
     [
       'Increases the melee attack power bonus of your Rockbiter Weapon by ',
       '%, your Windfury Weapon effect by ',
-      '% and increases the damage caused by your Flametongue Weapon an dFrostbrand Weapon by ',
+      '% and increases the effect of your Flametongue Weapon and Frostbrand Weapon by ',
       '%.',
     ],
     3,

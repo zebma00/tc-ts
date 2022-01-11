@@ -11,13 +11,13 @@ export default [
   null,
   new Talent('Two-Handed Axes and Maces', 'inv_axe_10', ['Allows you to use Two-Handed Axes and Two-Handed Maces.'], 1, [[]]),
   new Talent(
-    'Shamanistic Focus',
-    'spell_nature_elementalabsorption',
+    'Improved Elemental Shields',
+    'spell_nature_lightningshield',
+    ['Your attacks have a ', '% chance to expend a Lightning Shield orb. Your spells have a ', '% chance to expend a Water Shield orb.'],
+    3,
     [
-      'After landing a melee critical strike, you have a ',
-      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60%.',
-    ],
-    2,
-    [[25, 50]]
+      [8, 16, 25],
+      [8, 16, 25],
+    ]
   ),
 ]

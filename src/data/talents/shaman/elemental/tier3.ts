@@ -10,7 +10,9 @@ export default [
     1,
     [[]]
   ),
-  new Talent('Reverberation', 'spell_frost_frostward', ['Reduces the cooldown of your Shock spells by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0, 4, 0, 5]]),
+  new Talent('Reverberation', 'spell_frost_frostward', ['Reduces the cooldown of your Shock spells by ', ' sec.'], 5, [
+    [0.1, 0.2, 0.3, 0, 4, 0, 5],
+  ]),
   new Talent(
     'Call of Thunder',
     'spell_nature_callstorm',
@@ -18,12 +20,12 @@ export default [
     5,
     [[1, 2, 3, 4, 6]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 2 }],
+    [{ x: 4, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D3']
+    ['D2']
   ),
   null,
 ]

@@ -25,11 +25,11 @@ export default [
   new Talent(
     'Thick Hide',
     'inv_misc_pelt_bear_03',
-    ['Increases the armor rating of your pets by ', "% and increases your pet's chance to dodge or resist area of effect damage by ", '%.'],
+    ['Increases the armor rating of your pets by ', '% and reduces area of effect damage taken by your pet by ', '%.'],
     3,
     [
       [10, 20, 30],
-      [25, 50, 75],
+      [20, 40, 60],
     ]
   ),
   null,

@@ -2,9 +2,9 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Poleaxe Specialization',
-    'inv_weapon_halbard_01',
-    ['Increases your critical strike chance and critical strike damage with Polearms and Axes by ', '%.'],
+    'Axe Specialization',
+    'inv_axe_06',
+    ['Increases your critical strike chance and critical strike damage with Axes by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]]
   ),

@@ -26,5 +26,11 @@ export default [
     2,
     [[25, 50]]
   ),
-  null,
+  new Talent(
+    'Two-Handed Weapon Specialization',
+    'inv_hammer_04',
+    ['Increases the damage you deal with two-handed melee weapons by ', '%.'],
+    3,
+    [[3, 6, 9]]
+  ),
 ]

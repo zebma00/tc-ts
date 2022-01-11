@@ -17,7 +17,11 @@ export default [
     ['D3']
   ),
   null,
-  new Talent('Improved Rejuvenation', 'spell_nature_rejuvenation', ['Causes your Rejuvenation to increase healing done to the target by ', '%.'], 3, [
-    [4, 7, 10],
-  ]),
+  new Talent(
+    'Improved Rejuvenation',
+    'spell_nature_rejuvenation',
+    ['Causes your Rejuvenation to increase healing done to the target by ', '%. This effect does not stack'],
+    3,
+    [[4, 7, 10]]
+  ),
 ]

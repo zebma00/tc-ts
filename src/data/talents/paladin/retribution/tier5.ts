@@ -29,7 +29,5 @@ export default [
     null,
     'Instant'
   ),
-  new Talent('Two-Handed Weapon Specialization', 'inv_hammer_04', ['Increases the damage you deal with two-handed melee weapons by ', '%.'], 3, [
-    [2, 4, 6],
-  ]),
+  null,
 ]

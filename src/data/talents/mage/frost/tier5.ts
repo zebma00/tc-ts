@@ -1,16 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Brain Freeze',
-    'spell_frost_frozencore',
-    [
-      'Gives your Frost spells a ',
-      '% chance to apply the Brain Freeze effect, which increases the critical strike damage taken by the target by 3% for 15 sec. This effect stacks up to 5 times.',
-    ],
-    2,
-    [[33, 66, 100]]
-  ),
+  null,
   new Talent(
     'Ice Block',
     'spell_frost_frost',
@@ -32,6 +23,8 @@ export default [
     '5 min cooldown',
     ['D2']
   ),
-  new Talent('Improved Cone of Cold', 'spell_frost_glacier', ['Increases the damage done by your Cone of Cold spell by ', '%.'], 3, [[5, 10, 15]]),
+  new Talent('Improved Cone of Cold', 'spell_frost_glacier', ['Increases the damage done by your Cone of Cold spell by ', '%.'], 3, [
+    [5, 10, 15],
+  ]),
   null,
 ]

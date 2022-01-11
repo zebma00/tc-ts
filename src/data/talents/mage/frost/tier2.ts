@@ -4,7 +4,9 @@ export default [
   new Talent('Ice Shards', 'spell_frost_iceshard', ['Increases the critical strike damage bonus of your Forst spells by ', '%.'], 5, [
     [20, 40, 60, 80, 100],
   ]),
-  new Talent('Frostbite', 'spell_frost_frostarmor', ['Gives your Chill effects a ', '% chance to freeze the target for 5 sec.'], 3, [[5, 10, 15]]),
+  new Talent('Frostbite', 'spell_frost_frostarmor', ['Gives your Chill effects a ', '% chance to freeze the target for 5 sec.'], 3, [
+    [5, 10, 15],
+  ]),
   new Talent(
     'Improved Frost Nova',
     'spell_frost_freezingbreath',

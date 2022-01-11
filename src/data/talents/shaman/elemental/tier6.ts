@@ -4,12 +4,14 @@ export default [
   null,
   null,
   new Talent(
-    'Lightning Mastery',
-    'spell_lightning_lightningbolt01',
-    ['Reduces the cast time of your Lightning Bolt and Chain Lightning spells by ', ' sec.'],
+    'Unleashed Elements',
+    'spell_nature_elementalprecision_1',
+    [
+      "Causes your critical hits from spells to increase all party members' spell damage and healing by ",
+      '% if within 20 yards of the Shaman. Lasts 10 sec.',
+    ],
     5,
-    [[0.2, 0.4, 0.6, 0.8, 1]],
-    [{ x: 2, y: 2 }]
+    [[2, 4, 6, 8, 10]]
   ),
   null,
 ]
