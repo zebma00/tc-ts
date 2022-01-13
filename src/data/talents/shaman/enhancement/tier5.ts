@@ -9,7 +9,7 @@ export default [
       '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60% and increases its critical strike chance by 20%.',
     ],
     2,
-    [[25, 50]]
+    [[50, 100]]
   ),
   new Talent(
     'Elemental Weapons',

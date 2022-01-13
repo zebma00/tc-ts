@@ -13,11 +13,7 @@ export default [
   new Talent(
     'Improved Weapon Totems',
     'spell_fire_enchantweapon',
-    [
-      'Increases the melee attack power bonus of your Windfury Totem by ',
-      '% and increases the damage caused by tour Flametongue Totem by ',
-      '%.',
-    ],
+    ['Increases the melee attack power bonus of your Windfury Totem by ', '% and increases the effect of your Flametongue Totem by ', '%.'],
     2,
     [
       [15, 30],

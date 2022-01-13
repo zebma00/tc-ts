@@ -19,16 +19,9 @@ export default [
   new Talent(
     'Spiritual Warding',
     'spell_nature_spiritarmor',
-    [
-      'Reduces the damage taken from Frost, Fire and Nature spells and effects by ',
-      '% and In addition, increases your healing taken by ',
-      '%.',
-    ],
+    ['Reduces the damage taken from Frost, Fire and Nature spells and effects by ', '%.'],
     3,
-    [
-      [4, 7, 10],
-      [2, 4, 6],
-    ]
+    [[4, 7, 10]]
   ),
   null,
 ]

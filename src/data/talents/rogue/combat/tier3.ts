@@ -5,6 +5,14 @@ export default [
     [45, 90],
   ]),
   new Talent(
+    'Dual Wield Specialization',
+    'ability_dualwield',
+    ['Increases the damage of your off-hand weapon by ', '%.'],
+    5,
+    [[10, 20, 30, 40, 50]],
+    [{ x: 1, y: 1 }]
+  ),
+  new Talent(
     'Riposte',
     'ability_warrior_challange',
     [
@@ -12,20 +20,12 @@ export default [
     ],
     1,
     [[]],
-    [{ x: 0, y: 1 }],
+    [{ x: 0, y: 2 }],
     null,
     '10 Energy',
     'Melee range',
     'Instant',
     '6 sec cooldown'
-  ),
-  new Talent(
-    'Dual Wield Specialization',
-    'ability_dualwield',
-    ['Increases the damage of your off-hand weapon by ', '%.'],
-    5,
-    [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 2 }]
   ),
   new Talent(
     'Improved Sprint',
