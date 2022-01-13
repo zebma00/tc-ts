@@ -1,10 +1,20 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
-  new Talent('Improved Hammer of Justice', 'spell_holy_sealofmight', ['Reduces the cooldown of your Hammer of Justice spell by ', ' sec.'], 3, [
-    [5, 10, 15],
-  ]),
+  new Talent(
+    'Improved Blessing of Salvation',
+    'spell_holy_sealofsalvation',
+    ['Increases the threat reduction of your Blessing of Salvation by ', '%.'],
+    2,
+    [[5, 10]]
+  ),
+  new Talent(
+    'Improved Hammer of Justice',
+    'spell_holy_sealofmight',
+    ['Reduces the cooldown of your Hammer of Justice spell by ', ' sec.'],
+    3,
+    [[5, 10, 15]]
+  ),
   new Talent(
     'Improved Concentration Aura',
     'spell_holy_mindsooth',

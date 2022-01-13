@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-    new Talent(
+  new Talent(
     'Holy Verdict',
     'spell_holy_fanaticism',
     ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
@@ -13,7 +13,7 @@ export default [
     'spell_holy_auramastery',
     ['Increases the range of you Auras to 40 yards and increases their effect by 10%.'],
     1,
-    [[]],
+    [[]]
   ),
   new Talent(
     'Improved Lay on Hands',
@@ -22,8 +22,8 @@ export default [
       'Gives the target of your Lay on Hands spell a  ',
       '% bonus to their armor value from items for 2 min. In addition, the cooldown of your Lay on hands spell is reduced by 10 min.',
     ],
-    5,
-    [[3, 6, 9, 12, 15]]
+    2,
+    [[15, 30]]
   ),
   new Talent(
     'Unyielding Faith',
