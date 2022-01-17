@@ -55,10 +55,18 @@
   z-index: 3;
 }
 
+@media only screen and (max-width: 500px) {
+  .tooltipStyle {
+    right: 1rem !important;
+    left: 1rem !important;
+    position: fixed;
+  }
+}
+
 .tooltipHeader {
   display: flex;
   justify-content: space-between;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .tooltipTitle {
@@ -199,7 +207,7 @@
   margin-top: -112px;
 }
 
- /* ----- */
+/* ----- */
 .arrowR1D1rightWrapper {
   position: absolute;
   z-index: 2;
