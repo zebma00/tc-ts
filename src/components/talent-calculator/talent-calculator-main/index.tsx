@@ -36,6 +36,18 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
     setTalentData(newData)
   }
 
+  const resetTree = (i: number) => {
+    const newData = [...talentData!]
+    newData[i].forEach(row => {
+      row.forEach(cell => {
+        if (cell) {
+          cell.reset()
+        }
+      })
+    })
+    setTalentData(newData)
+  }
+
   const resetPoints = () => {
     const newData = [...talentData!]
     newData.forEach(grid => {
@@ -63,6 +75,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
               selectedClass={selectedClass}
               specName={specNames![i]}
               clickHandler={clickHandler}
+              resetTree={resetTree}
             />
           )
         })}

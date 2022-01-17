@@ -12,15 +12,21 @@ interface GridProps {
   selectedClass: string
   specName: string
   clickHandler: (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => void
+  resetTree: (i: number) => void
 }
 
-const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, clickHandler }) => {
+const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, clickHandler, resetTree }) => {
   const currentPoints = checkPointsPerTree(gridData)
 
   return (
     <div className={styles.tree}>
       <div className={styles.treeHeader}>
-        {capitalizer(specName)} ({currentPoints})
+        <div className={styles.treeHeaderText}>
+          {capitalizer(specName)} ({currentPoints})
+        </div>
+        <div onClick={() => resetTree(i)} className={styles.reset}>
+          &#x2715;
+        </div>
       </div>
       <div style={{ backgroundImage: `url("/img/background/${selectedClass}/${specName}.jpg")` }} className={styles.grid}>
         {gridData.map((row, x) => {
