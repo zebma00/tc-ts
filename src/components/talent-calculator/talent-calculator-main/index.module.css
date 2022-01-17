@@ -1,10 +1,12 @@
 .tcContainer {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: stretch;
-    align-items: stretch;
-    margin: 0 auto;
-    max-width: 750px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 750px;
+  flex-direction: row;
+}
+
+@media only screen and (max-width: 500px) {
+  .tcContainer {
+    flex-direction: column;
+  }
 }

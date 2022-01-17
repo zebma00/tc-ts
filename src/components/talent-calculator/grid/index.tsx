@@ -20,9 +20,7 @@ const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, spe
   return (
     <div className={styles.tree}>
       <div className={styles.treeHeader}>
-        <>{capitalizer(specName)}</>
-        <br />
-        <>Current points: {currentPoints}</>
+        {capitalizer(specName)} ({currentPoints})
       </div>
       <div style={{ backgroundImage: `url("/img/background/${selectedClass}/${specName}.jpg")` }} className={styles.grid}>
         {gridData.map((row, x) => {

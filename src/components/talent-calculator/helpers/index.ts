@@ -144,11 +144,11 @@ export const checkEnoughPointsForRightClick = (specData: ClassSpecType) => {
 
   const ptsInLastRow = checkPointsPerRow(specData[lastRowWithPts])
 
-  const pointsInTree = checkPointsPerTree(specData) 
+  const pointsInTree = checkPointsPerTree(specData)
 
-  console.log("PTS", (pointsInTree - ptsInLastRow!))
+  console.log('PTS', pointsInTree - ptsInLastRow!)
 
-  if ((pointsInTree - ptsInLastRow!) >= lastRowWithPts * 5) {
+  if (pointsInTree - ptsInLastRow! >= lastRowWithPts * 5) {
     return true
   } else {
     return false
@@ -187,7 +187,6 @@ export const checkRequiringTalentsAreZero = (specData: ClassSpecType | null, x: 
   return requiringTalentsAreZero
 }
 
-
 // click boys
 
 export const leftClick = (talentData: ClassTalentType, i: number, x: number, y: number) => {
@@ -211,6 +210,10 @@ export const rightClick = (talentData: ClassTalentType, i: number, x: number, y:
   const pointsLeft = checkTotalPoints(talentData!)
   const enoughPointsLeft = pointsLeft > 0
 
+  if (!enoughPointsLeft) {
+    return false
+  }
+
   const isZeroValue = checkZeroValue(talentData[i][x][y])
 
   const enoughPointsRows = checkEnoughPointsRow(talentData[i], x, y)
@@ -226,6 +229,33 @@ export const rightClick = (talentData: ClassTalentType, i: number, x: number, y:
   }
 }
 
+// misc
+
 export const capitalizer = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1).replace(/-/g, ' ')
+}
+
+export const getClassColor = (selectedClass: string) => {
+  switch (selectedClass) {
+    case 'druid':
+      return '#ff7c0a'
+    case 'hunter':
+      return '#aad372'
+    case 'mage':
+      return '#68ccef'
+    case 'paladin':
+      return '#f48cba'
+    case 'priest':
+      return '#fff'
+    case 'rogue':
+      return '#fff468'
+    case 'shaman':
+      return '#2359ff'
+    case 'warlock':
+      return '#9382c9'
+    case 'warrior':
+      return '#c69b6d'
+    default:
+      return '#ff7c0a'
+  }
 }

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react'
 
 import TCFooter from '../talent-calculator-footer'
 import { ClassTalentType } from '../../../types/'
-import druid from '../../../data/talents/druid'
 import { talentCalcMaker, specNameMaker, checkTotalPoints, rightClick, leftClick } from '../helpers'
 import Grid from '../grid/'
 import styles from './index.module.css'
@@ -21,7 +20,6 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
     setSpecNames(specNameMaker(classData.default.specs))
   }, [classData])
 
-  const totalPoints = checkTotalPoints(talentData!)
   const pointsLeft = 51 - checkTotalPoints(talentData!)!
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
@@ -68,10 +66,8 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
             />
           )
         })}
-        <div className={styles.tcFooter}>
-          <TCFooter totalPoints={totalPoints} pointsLeft={pointsLeft} resetPoints={resetPoints} />
-        </div>
       </div>
+      <TCFooter pointsLeft={pointsLeft} resetPoints={resetPoints} selectedClass={selectedClass} talentData={talentData} />
     </>
   )
 }

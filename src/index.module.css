@@ -1,11 +1,15 @@
-html, body, #root {
-    height: 100%;
-    width: 100%;
-    font-family: "Open Sans",Arial,"Helvetica Neue",Helvetica,sans-serif;
-    padding: 0;
-    margin: 0;
-  }
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
 
 #app {
-    height: 100vh;
+  color: white;
+  min-height: 100vh;
+  background-color: #242424;
 }

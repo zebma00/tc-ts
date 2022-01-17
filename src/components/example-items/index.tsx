@@ -1,7 +1,9 @@
 import React from 'react'
 
-const ExampleItems:React.FC = () => {
-    return <div>Example items</div>
+import styles from './index.module.css'
+
+const ExampleItems: React.FC = () => {
+  return <div className={styles.exampleItems}>Example items</div>
 }
 
 export default ExampleItems
