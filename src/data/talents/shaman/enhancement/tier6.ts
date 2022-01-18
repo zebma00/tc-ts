@@ -7,7 +7,7 @@ export default [
     'Unleashed Rage',
     'spell_nature_unleashedrage',
     [
-      "Causes your critical hits with melee attacks to increase all party members' melee attack power by ",
+      "Causes your critical hits with melee attacks to increase all party members' attack speed by ",
       '% if within 20 yards of the Shaman. Lasts 10 sec.',
     ],
     5,

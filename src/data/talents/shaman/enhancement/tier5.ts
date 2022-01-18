@@ -6,7 +6,7 @@ export default [
     'spell_nature_elementalabsorption',
     [
       'After landing a melee critical strike, you have a ',
-      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60% and increases its critical strike chance by 20%.',
+      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60% and increases its critical strike chance by 15%.',
     ],
     2,
     [[50, 100]]
