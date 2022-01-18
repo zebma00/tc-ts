@@ -6,7 +6,7 @@ export default [
     'Blessing of Protection',
     'spell_nature_lightningshield',
     [
-      'Places a Blessing on the friendly target, reducing damage dealth from all sources by up to 10 for 5 mn. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.',
+      'Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 and increasing spell damage by 5% for 5 min. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.',
     ],
     1,
     [[]],

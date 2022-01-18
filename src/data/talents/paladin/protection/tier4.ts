@@ -1,13 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Improved Blessing of Salvation',
-    'spell_holy_sealofsalvation',
-    ['Increases the threat reduction of your Blessing of Salvation by ', '%.'],
-    2,
-    [[5, 10]]
-  ),
+  null,
   new Talent(
     'Improved Hammer of Justice',
     'spell_holy_sealofmight',
