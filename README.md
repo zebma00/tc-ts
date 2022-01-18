@@ -33,4 +33,5 @@
 ### Warlock
 - Check & improve demo builds for sacrifice build
 - Make Havoc more unique
+- havoc should be accessible for 0/30/21
 - Ruin also demon abilty crit
