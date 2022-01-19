@@ -8,8 +8,8 @@ export default [
     ['Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by ', '% and reduces the rage cost by ', '.'],
     5,
     [
-      [1, 2, 3, 4, 5],
       [10, 20, 30, 40, 50],
+      [1, 2, 3, 4, 5],
     ]
   ),
   new Talent('Cruelty', 'ability_rogue_eviscerate', ['Increases your chance to get a critical strike with melee weapons by ', '%.'], 5, [
