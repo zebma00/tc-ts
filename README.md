@@ -15,11 +15,17 @@
 ### Mage
 - Amplify / dampen magic: dampen takes 1 dispel prio (add cd); remove amplify?
 - Reorganize arcane if needed after amplify / dampen changes
+- Rename (possibly change icon) for arcane 11 pts
+- Replace new fire thing with Blazing Speed (tbc)
+- Cold snap baseline
+- Icy veins @ 11 pts
 - Winter's chill is OP
 - Something elemental @ frost: execute effect?
 
 ### Paladin
 - Aura mastery active (see wotlk)
+- Revert Blessing of Prot buff
+- Get imp Devotion Aura (see wotlk) and move up to be prot niche
 
 ### Shaman
 - Add totem range to Totemic Focus; make Totem Mastery activive that increases buffing totem effects for a short moment; revert Mana tide totem
@@ -29,6 +35,8 @@
 
 ### Hunter
 - BM buff can be better: resource generation
+- Baseline: additional stable slot
+- Smth mongoose bite --> activates when you or your pet score, or are the victim of a crit; 6 sec cooldown. Damage adjusted
 
 ### Warlock
 - Check & improve demo builds for sacrifice build
