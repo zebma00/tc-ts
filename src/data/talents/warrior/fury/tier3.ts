@@ -12,7 +12,7 @@ export default [
   new Talent(
     'Piercing Howl',
     'spell_shadow_deathscream',
-    ['Causing enemies within 20 yards of the warrior to be dazed, slowing them by 50% for 6 sec.'],
+    ['Causes enemies within 20 yards of the warrior to be dazed, slowing them by 50% for 6 sec.'],
     1,
     [[]],
     null,
