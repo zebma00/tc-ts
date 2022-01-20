@@ -26,21 +26,25 @@
 ### Paladin
 - Aura mastery active (see wotlk)
 - Revert Blessing of Prot buff
-- Get imp Devotion Aura (see wotlk) and move up to be prot niche
+- Revert salv changes
 
 ### Shaman
 - Add totem range to Totemic Focus; make Totem Mastery activive that increases buffing totem effects for a short moment; revert Mana tide totem
 - Enh should have to choose between resto-totem build and +dps-eleDevastation build; prolly eleDevastation to tier3
 - Improved elemental shields to proc on crit
 - Lightning spells -.5 sec cast time; lightning mastery -.5 sec cast time bonus
+- Stormstrike 10% nature dmg flat
+
+### Rogue
+- Smth new assassination
 
 ### Hunter
 - BM buff can be better: resource generation
 - Baseline: additional stable slot
-- Smth mongoose bite --> activates when you or your pet score, or are the victim of a crit; 6 sec cooldown. Damage adjusted
+- Smth mongoose bite
 
 ### Warlock
 - Check & improve demo builds for sacrifice build
 - Make Havoc more unique
-- havoc should be accessible for 0/30/21
+- havoc should be accessible for 0/30/21 && 0/31+/xx
 - Ruin also demon abilty crit
