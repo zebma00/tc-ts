@@ -24,13 +24,12 @@
 - Something elemental @ frost
 
 ### Paladin
-- Aura mastery active (see wotlk)
 - Revert Blessing of Prot buff
 - Revert salv changes
 - Reckoning small chance to proc
 
 ### Shaman
-- Add totem range to Totemic Focus; make Totem Mastery activive that increases buffing totem effects for a short moment; revert Mana tide totem
+- Add totem range to Totemic Focus? smth new totemic mastery?
 - Enh should have to choose between resto-totem build and +dps-eleDevastation build; prolly eleDevastation to tier3
 - Improved elemental shields to proc on crit
 - Lightning spells -.5 sec cast time; lightning mastery -.5 sec cast time bonus
