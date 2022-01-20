@@ -7,13 +7,11 @@ export default [
     'spell_shadow_detectlesserinvisibility',
     [
       'Decreases the mana lost per point of damage when Mana Shield is active by ',
-      '% and increases your chance to resist spells while Mana Shield is active by ',
       '%.',
     ],
     2,
     [
       [10, 20],
-      [2, 4],
     ]
   ),
   new Talent(
