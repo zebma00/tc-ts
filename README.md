@@ -47,3 +47,7 @@
 - Check & improve demo builds for sacrifice build
 - Make Havoc more unique
 - havoc should be accessible for 0/30/21 && 0/31+/xx
+
+### Warrior
+- 11pt arms 2 boring
+- Double must have debuff arms 2 boring
