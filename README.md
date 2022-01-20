@@ -13,14 +13,15 @@
 - Smth that increases effect of HoTs and DoTs @ resto (15-20 pts? 20-25 pts?)
 
 ### Mage
-- Amplify / dampen magic: dampen takes 1 dispel prio (add cd); remove amplify? || dampen 100% resist 1 spell ~5/10 min cd
+- Amplify / dampen magic: remove amplify? resist 1 dispel effect || dampen 100% resist 1 spell ~5/10 min cd
 - Dampen magic gains spell resist || dampen magic chance to not consume
 - Rename (possibly change icon) for arcane 11 pts
+- Magic absorbtion tier up + reorganize consequences
 - Replace new fire thing with Blazing Speed (tbc)
 - Cold snap baseline
 - Icy veins @ 11 pts
 - Winter's chill is OP
-- Something elemental @ frost: execute effect?
+- Something elemental @ frost
 
 ### Paladin
 - Aura mastery active (see wotlk)
