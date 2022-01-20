@@ -27,6 +27,7 @@
 - Aura mastery active (see wotlk)
 - Revert Blessing of Prot buff
 - Revert salv changes
+- Reckoning small chance to proc
 
 ### Shaman
 - Add totem range to Totemic Focus; make Totem Mastery activive that increases buffing totem effects for a short moment; revert Mana tide totem
@@ -51,3 +52,4 @@
 ### Warrior
 - 11pt arms 2 boring
 - Double must have debuff arms 2 boring
+- imp polearms rework
