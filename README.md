@@ -13,8 +13,8 @@
 - Smth that increases effect of HoTs and DoTs @ resto (15-20 pts? 20-25 pts?)
 
 ### Mage
-- Amplify / dampen magic: dampen takes 1 dispel prio (add cd); remove amplify?
-- Reorganize arcane if needed after amplify / dampen changes
+- Amplify / dampen magic: dampen takes 1 dispel prio (add cd); remove amplify? || dampen 100% resist 1 spell ~5/10 min cd
+- Dampen magic gains spell resist || dampen magic chance to not consume
 - Rename (possibly change icon) for arcane 11 pts
 - Replace new fire thing with Blazing Speed (tbc)
 - Cold snap baseline
