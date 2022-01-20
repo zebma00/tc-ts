@@ -31,8 +31,9 @@
 ### Shaman
 - Add totem range to Totemic Focus? smth new totemic mastery?
 - Enh should have to choose between resto-totem build and +dps-eleDevastation build; prolly eleDevastation to tier3
+- Rethink flametongue + frostbrand
 - Keep eleDevastation @ tier 2; revert crit from sham focus?
-- Improved elemental shields to proc on crit
+- Improved elemental shields 75% chance to proc on crit
 - Lightning spells -.5 sec cast time; lightning mastery -.5 sec cast time bonus
 - Stormstrike 10% nature dmg flat
 
