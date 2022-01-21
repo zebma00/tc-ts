@@ -35,13 +35,17 @@
 - Frostbrand increased dmg on slowed targets
 - Keep eleDevastation @ tier 2; 
 - revert crit from sham focus
+- natures guidance to ele tier1
 - Call of flame sawp with imp fire totems
-- Improved elemental shields 75% chance to proc on crit
+- Improved elemental shields 75% chance to proc on crit, smaller chance on spells tbh --> only offensive spells + melee crit 100% chance?
 - Lightning spells -.5 sec cast time; lightning mastery -.5 sec cast time bonus
 - Stormstrike 10% nature dmg flat
+- Revert mana tide
+- Old totem mastery is fine. Replace imp ankh with a WF/RB enh synergize
 
 ### Rogue
 - Smth new assassination
+- Revert expose armor changes (don't know if sunder armor is the issue)
 
 ### Hunter
 - BM buff can be better: resource generation
@@ -54,6 +58,10 @@
 - havoc should be accessible for 0/30/21 && 0/31+/xx
 
 ### Warrior
-- 11pt arms 2 boring
+- 11pt arms 2 boring: victory rush?
 - Double must have debuff arms 2 boring
 - imp polearms rework
+- 1h spec should be viable 0/21/30 dps build
+- Commanding shout
+- Thunder clap can be used in defensive stance
+- Smth else imp slam talents - has to synergize with prot non-31 arms / prot builds and NOT synergize standard 1h fury dps 
