@@ -1,0 +1,9 @@
+.changedSelect {
+    display: flex;
+    justify-content: space-between;
+    width: min(240px, 100%);
+    margin: 0 auto 1rem;
+}
+
+.changedSelectSingle {
+}

@@ -8,6 +8,7 @@ const useChanged = () => {
     const toggleIsNew = () => setIsNew(!isNew)
     const toggleIsChanged = () => setIsChanged(!isChanged)
     const toggleIsMoved = () => setIsMoved(!isMoved)
+    console.log("USE", isNew, isChanged, isMoved)
 
     return {
         isNew, toggleIsNew,
