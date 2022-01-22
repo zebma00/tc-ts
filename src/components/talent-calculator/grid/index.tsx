@@ -13,9 +13,10 @@ interface GridProps {
   specName: string
   clickHandler: (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => void
   resetTree: (i: number) => void
+  changedObj: any
 }
 
-const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, clickHandler, resetTree }) => {
+const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, clickHandler, resetTree, changedObj }) => {
   const currentPoints = checkPointsPerTree(gridData)
 
   return (
@@ -33,7 +34,7 @@ const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, spe
           return row.map((cell, y) => {
             if (cell) {
               const color = enabledChecker(gridData, x, y, currentPoints, pointsLeft)
-              return <Cell key={`${x}, ${y}`} i={i} x={x} y={y} cellData={cell} color={color} clickHandler={clickHandler} />
+              return <Cell key={`${x}, ${y}`} i={i} x={x} y={y} cellData={cell} color={color} clickHandler={clickHandler} changedObj={changedObj}/>
             } else {
               return <div key={`${x}, ${y}`} />
             }

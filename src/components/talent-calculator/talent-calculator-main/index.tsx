@@ -8,9 +8,10 @@ import styles from './index.module.css'
 
 interface TalentCalculatorMain {
   selectedClass: string
+  changedObj: any
 }
 
-const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass }) => {
+const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, changedObj }) => {
   const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
   const [specNames, setSpecNames] = useState<string[] | null>(null)
   const classData = require(`../../../data/talents/${selectedClass}`)
@@ -68,6 +69,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass })
         {talentData?.map((gridData: any, i: number) => {
           return (
             <Grid
+              changedObj={changedObj}
               key={i}
               i={i}
               gridData={gridData}

@@ -13,9 +13,10 @@ interface CellProps {
   y: number
   color: string | null
   clickHandler: (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => void
+  changedObj:any
 }
 
-const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) => {
+const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, changedObj }) => {
   const [showTooltip, set_showTooltip] = useState<boolean>(false)
   const { value, maxValue, icon, manaCost, range, castTime, cooldown, name, arrows } = cellData
 
@@ -29,7 +30,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
         set_showTooltip(false)
       }}
     >
-      <ChangedBar />
+      <ChangedBar changedObj={changedObj}/>
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{

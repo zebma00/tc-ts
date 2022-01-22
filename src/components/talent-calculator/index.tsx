@@ -13,11 +13,31 @@ const TalentCalculator: React.FC = () => {
     setSelectedClass(classes[i])
   }
 
+  const [isNew, setIsNew] = useState<boolean>(false)
+  const [isChanged, setIsChanged] = useState<boolean>(false)
+  const [isMoved, setIsMoved] = useState<boolean>(false)
+
+  const toggleIsNew = () => setIsNew(!isNew)
+  const toggleIsChanged = () => setIsChanged(!isChanged)
+  const toggleIsMoved = () => setIsMoved(!isMoved)
+
+  const changedObj = {
+    isNew,
+    isChanged,
+    isMoved
+  }
+
+  const toggleChangedObj ={ 
+    toggleIsChanged,
+    toggleIsNew,
+    toggleIsMoved
+  }
+
   return (
     <div className={styles.tcWrapper}>
       <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
-      <ChangedSelect />
-      <TalentCalculatorMain selectedClass={selectedClass} />
+      <ChangedSelect toggleChangedObj={toggleChangedObj}/>
+      <TalentCalculatorMain changedObj={changedObj} selectedClass={selectedClass} />
     </div>
   )
 }
