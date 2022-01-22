@@ -1,7 +1,13 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Expose Armor', 'ability_warrior_riposte', ['Increases the armor reduction by your Expose Armor by ', '%.'], 2, [[25, 50]]),
+  new Talent(
+    'Envenom',
+    'ability_creature_poison_06',
+    ['Increases the damage done by your bleed effects by an additional ', '% for each poison effect on the target, up to a maximum or 30%.'],
+    2,
+    [[3, 6]]
+  ),
   new Talent(
     'Cold Blood',
     'spell_ice_lament',

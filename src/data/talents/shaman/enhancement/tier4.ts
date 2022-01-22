@@ -11,14 +11,14 @@ export default [
     [{ x: 1, y: 1 }]
   ),
   new Talent(
-    'Improved Weapon Totems',
-    'spell_fire_enchantweapon',
-    ['Increases the melee attack power bonus of your Windfury Totem by ', '% and increases the effect of your Flametongue Totem by ', '%.'],
-    2,
+    'Shamanistic Focus',
+    'spell_nature_elementalabsorption',
     [
-      [15, 30],
-      [6, 12],
-    ]
+      'After landing a melee critical strike, you have a ',
+      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60%.',
+    ],
+    2,
+    [[50, 100]]
   ),
   null,
 ]

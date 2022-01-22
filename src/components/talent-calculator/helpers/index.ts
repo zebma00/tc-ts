@@ -41,6 +41,7 @@ export const enabledChecker = (specData: ClassSpecType, x: number, y: number, po
   if (isMaxValue) {
     return 'rgba(255, 209, 0, 0.8)'
   } else if ((noPointsLeft && isZeroValue) || !enoughPointsInTree || !requiredTalentsAreMaxed) {
+    // return 'rgba(0, 0, 0, 0.8)'
     return null
   } else {
     return 'rgba(64, 191, 64, 0.8)'

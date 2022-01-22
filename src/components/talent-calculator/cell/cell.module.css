@@ -252,3 +252,32 @@
   top: 10px;
   margin-left: 34px;
 }
+
+/* ----- */
+
+.changedBar {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  left: 10px;
+  min-height: 10px;
+  min-width: 20%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-around;
+}
+
+.changedIcon {
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.changedIcon:nth-child(2) {
+  background-color: yellow;
+}
+
+.changedIcon:nth-child(3) {
+  background-color: blue;
+}

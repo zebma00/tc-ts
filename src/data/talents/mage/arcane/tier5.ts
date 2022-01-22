@@ -30,5 +30,11 @@ export default [
     ['D1']
   ),
   new Talent('Arcane Mind', 'spell_shadow_charm', ['Reduces the Mana cost of your Arcane spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
-  null,
+  new Talent(
+    'Magic Absorbtion',
+    'spell_nature_astralrecalgroup',
+    ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 15 sec cooldown.'],
+    3,
+    [[2, 4, 6]]
+  ),
 ]

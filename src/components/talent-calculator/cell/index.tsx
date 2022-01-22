@@ -4,6 +4,7 @@ import { Talent } from '../../../data/talents/Classes'
 import Tooltip from './tooltip'
 import Arrow from './arrow'
 import styles from './cell.module.css'
+import ChangedBar from './changed-bar'
 
 interface CellProps {
   cellData: Talent
@@ -28,11 +29,12 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler }) =
         set_showTooltip(false)
       }}
     >
+      <ChangedBar />
       <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
       <div
         style={{
           background: `url("https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg") 0 0 no-repeat`,
-          border: !!color ? `2px solid ${color}` : 'none',
+          border: !!color ? `2px solid ${color}` : `2px solid black`,
           filter: !color ? 'grayscale(100%)' : 'none',
         }}
         className={styles.cellIconStyle}
