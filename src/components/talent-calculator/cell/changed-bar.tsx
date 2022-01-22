@@ -1,6 +1,5 @@
 import React from 'react'
 
-import useChanged from '../../../useChanged'
 import styles from './cell.module.css'
 
 const ChangedIcon:React.FC<{isActive: boolean}> = ({isActive}) => {
