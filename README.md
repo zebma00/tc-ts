@@ -41,4 +41,4 @@
 
 ## Function
 - State filters:
-New, Changed, Moved, Changed & Moved
+z-index bug for filter circle
