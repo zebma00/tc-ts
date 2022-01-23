@@ -147,8 +147,6 @@ export const checkEnoughPointsForRightClick = (specData: ClassSpecType) => {
 
   const pointsInTree = checkPointsPerTree(specData)
 
-  console.log('PTS', pointsInTree - ptsInLastRow!)
-
   if (pointsInTree - ptsInLastRow! >= lastRowWithPts * 5) {
     return true
   } else {
