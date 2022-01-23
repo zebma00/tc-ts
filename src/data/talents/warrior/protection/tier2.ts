@@ -24,7 +24,30 @@ export default [
     [
       [2, 4, 6, 8, 10],
       [10, 20, 30, 40, 50],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
-  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]]),
+  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: true
+  }
+  ),
 ]

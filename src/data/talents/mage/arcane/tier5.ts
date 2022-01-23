@@ -13,7 +13,13 @@ export default [
     null,
     '6% of base mana',
     '30 yd range',
-    'Instant cast'
+    'Instant cast',
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Presence of Mind',
@@ -35,6 +41,17 @@ export default [
     'spell_nature_astralrecalgroup',
     ['Causes you to restore ', '% mana after fully resisting or absorbing spell damage. 15 sec cooldown.'],
     3,
-    [[2, 4, 6]]
+    [[2, 4, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

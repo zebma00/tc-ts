@@ -14,7 +14,18 @@ export default [
     [
       [15, 30],
       [2, 4],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Ferocity',

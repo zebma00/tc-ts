@@ -7,12 +7,24 @@ export default [
     'spell_shadow_detectlesserinvisibility',
     [
       'Decreases the mana lost per point of damage when Mana Shield is active by ',
-      '%.',
+      '% and increases your armor by ', '% of your intellect.',
     ],
     2,
     [
       [10, 20],
-    ]
+      [25, 50]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   new Talent(
     'Arcane Concentration',

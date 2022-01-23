@@ -2,11 +2,22 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Axe Specialization',
-    'inv_axe_06',
-    ['Increases your critical strike chance and critical strike damage with Axes by ', '%.'],
+    'Poleaxe Specialization',
+    'inv_weapon_halbard_01',
+    ['Increases your critical strike chance and critical strike damage with Axes and Polearms by ', '%.'],
     5,
-    [[1, 2, 3, 4, 5]]
+    [[1, 2, 3, 4, 5]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Sweeping Strikes',
@@ -27,7 +38,18 @@ export default [
     'inv_mace_01',
     ['Gives you a ', '% chance to stun the target for 3 sec and generate 7 rage when using a Mace.'],
     5,
-    [[1, 2, 3, 4, 6]]
+    [[1, 2, 3, 4, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Sword Specialization',

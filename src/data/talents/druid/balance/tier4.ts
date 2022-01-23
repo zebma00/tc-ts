@@ -8,7 +8,7 @@ export default [
     ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
     5,
     [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
+    [{ x: 1, y: 1 }],
   ),
   new Talent(
     'Celestial Focus',
@@ -22,7 +22,18 @@ export default [
     [
       [5, 10, 15],
       [25, 50, 75],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
 ]

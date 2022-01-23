@@ -26,7 +26,7 @@ export default [
     ['Increases the effect of all healing spells by ', '%.'],
     5,
     [[2, 4, 6, 8, 10]],
-    [{ x: 2, y: 2 }]
+    [{ x: 2, y: 2 }],
   ),
   new Talent(
     'Cycle of Life',
@@ -37,6 +37,17 @@ export default [
       [1.5, 3],
       [5, 10],
       [25, 50],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

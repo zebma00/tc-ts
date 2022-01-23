@@ -6,14 +6,36 @@ export default [
     'spell_holy_fanaticism',
     ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
     2,
-    [[10, 20]]
+    [[10, 20]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Aura Mastery',
     'spell_holy_auramastery',
     ['Increases the range of you Auras to 40 yards and increases their effect by 10%.'],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Improved Lay on Hands',

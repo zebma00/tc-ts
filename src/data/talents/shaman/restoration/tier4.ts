@@ -14,7 +14,11 @@ export default [
     null,
     null,
     null,
-    ['D3']
+    ['D3'],
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Tidal Mastery',

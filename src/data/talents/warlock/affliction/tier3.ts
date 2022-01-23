@@ -9,7 +9,18 @@ export default [
     'spell_shadow_fingerofdeath',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.'],
     3,
-    [[23, 47, 70]]
+    [[23, 47, 70]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Amplify Curse',

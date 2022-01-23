@@ -15,7 +15,18 @@ export default [
       [15, 30],
       [15, 30],
       [5, 10],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent('Survivalist', 'spell_shadow_twilight', ['Increases total health by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   new Talent(

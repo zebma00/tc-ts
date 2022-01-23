@@ -27,6 +27,17 @@ export default [
     'spell_nature_mirrorimage',
     ['Gives you a ', '% chance to add a combo point to the target after dodging or parrying an attack or fully resisting one of their spells.'],
     2,
-    [[25, 50]]
+    [[25, 50]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

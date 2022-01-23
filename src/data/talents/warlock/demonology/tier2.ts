@@ -6,7 +6,18 @@ export default [
     'spell_shadow_ragingscream',
     ['Causes your Demon armor to also restore ', '% of your total mana every 3 sec.'],
     2,
-    [[0.5, 1]]
+    [[0.5, 1]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Improved Void Walker',
@@ -23,7 +34,18 @@ export default [
     [
       [5, 10, 15],
       [1, 2, 3],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Improved Fire Stone',
@@ -33,6 +55,17 @@ export default [
     [
       [2, 4],
       [15, 30],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

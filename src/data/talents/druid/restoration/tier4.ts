@@ -14,14 +14,25 @@ export default [
     null,
     null,
     null,
-    ['D3']
+    ['D3'],
   ),
   null,
   new Talent(
     'Improved Rejuvenation',
     'spell_nature_rejuvenation',
-    ['Causes your Rejuvenation to increase healing done to the target by ', '%. This effect does not stack'],
+    ['Causes your Rejuvenation to increase healing done to the target by ', '%. This effect does not stack.'],
     3,
-    [[4, 7, 10]]
+    [[4, 7, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

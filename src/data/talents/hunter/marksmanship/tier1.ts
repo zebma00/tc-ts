@@ -7,7 +7,18 @@ export default [
     'ability_hunter_snipershot',
     ['Causes ', "% of your Hunter's Mark ability to apply to melee attack power as well."],
     5,
-    [[20, 40, 60, 80, 100]]
+    [[20, 40, 60, 80, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   new Talent(
     'Lethal Shots',
@@ -21,7 +32,11 @@ export default [
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   null,
 ]

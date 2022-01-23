@@ -6,7 +6,18 @@ export default [
     'spell_shadow_curseofachimonde',
     ['Increases the damage bonus of your Curse of Shadows and Curse of Elements effects by ', '%.'],
     3,
-    [[1, 2, 3]]
+    [[1, 2, 3]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Siphon Life',
@@ -42,6 +53,16 @@ export default [
     ['Increases the speed reduction of your Curse of Exhaustion by ', '%.'],
     2,
     [[10, 20]],
-    [{ x: 4, y: 2 }]
+    [{ x: 4, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

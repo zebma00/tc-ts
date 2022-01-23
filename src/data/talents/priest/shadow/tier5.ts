@@ -42,7 +42,17 @@ export default [
     ['Your Vampiric Embrace also causes party members to restore mana equal to ', '% of damage you deal to the target.'],
     2,
     [[3, 6]],
-    [{ x: 4, y: 1 }]
+    [{ x: 4, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
 ]

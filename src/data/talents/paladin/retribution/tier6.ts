@@ -11,7 +11,17 @@ export default [
     ],
     5,
     [[2, 4, 6, 8, 10]],
-    [{ x: 2, y: 1 }]
+    [{ x: 2, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   null,

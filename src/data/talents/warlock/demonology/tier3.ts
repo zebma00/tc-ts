@@ -37,13 +37,35 @@ export default [
     [
       [5, 10, 15],
       [1, 2, 3],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Mana Feed',
     'spell_shadow_manafeed',
     ['When you gain mana from Drain mana or Life Tap spells, your pet gains ', '% of the mana you gain.'],
     3,
-    [[33, 66, 100]]
+    [[33, 66, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

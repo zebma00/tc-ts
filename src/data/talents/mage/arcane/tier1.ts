@@ -17,7 +17,7 @@ export default [
   new Talent(
     'Improved Arcane Missiles',
     'spell_nature_starfall',
-    ['Gives you a ', ' chance to avoid interruption caused by damage while channeling Arcane Missiles.'],
+    ['Gives you a ', '% chance to avoid interruption caused by damage while channeling Arcane Missiles.'],
     5,
     [[20, 40, 60, 80, 100]]
   ),

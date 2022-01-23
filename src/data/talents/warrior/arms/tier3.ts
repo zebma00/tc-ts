@@ -1,14 +1,20 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Trauma',
-    'ability_warrior_focusedrage',
-    ['Your melee critical strikes increase the effectiveness of Bleed effects on the target by ', '% for 1 min.'],
-    2,
-    [[10, 20]]
+  new Talent('Improved Overpower', 'inv_sword_05', ['Increases the critical strike chance of your Overpower by ', '%.'], 2, [[25, 50]]),
+  new Talent('Anger Management', 'spell_holy_blessingofstamina', ['Generates 1 rage per 3 seconds while in combat.'], 1, [[1]],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: false
+  }
   ),
-  new Talent('Anger Management', 'spell_holy_blessingofstamina', ['Generates 1 rage per 3 seconds while in combat.'], 1, [[1]]),
   new Talent(
     'Deep Wounds',
     'ability_backstab',

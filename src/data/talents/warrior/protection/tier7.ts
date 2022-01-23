@@ -15,7 +15,12 @@ export default [
     '20 Rage',
     'Melee Range',
     'Instant cast',
-    '6 sec cooldown'
+    '6 sec cooldown',
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   null,

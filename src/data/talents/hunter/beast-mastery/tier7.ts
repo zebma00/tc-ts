@@ -6,7 +6,7 @@ export default [
     'Bestial Wrath',
     'ability_druid_ferociousbite',
     [
-      'Send your pet into a rage causing 50% additional damage for 18sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.',
+      'Send your pet into a rage causing 50% additional damage for 18 sec. While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed.',
     ],
     1,
     [[]],

@@ -10,7 +10,17 @@ export default [
     ['Increases the damage of your off-hand weapon by ', '%.'],
     5,
     [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 1 }]
+    [{ x: 1, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent(
     'Riposte',

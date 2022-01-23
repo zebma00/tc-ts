@@ -13,14 +13,36 @@ export default [
     [
       [3, 6],
       [15, 30],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Bestial Recuperation',
     'ability_hunter_catlikereflexes',
-    ['Damage that would otherwise kill your pet will instead reduce it to 25% of its total health. This effect has a 1 minute cooldown.'],
+    ['Damage that would otherwise kill your pet will instead reduce it to 35% of its total health. This effect has a 1 minute cooldown.'],
     1,
-    [[]]
+    [[]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Thick Hide',
@@ -30,7 +52,18 @@ export default [
     [
       [10, 20, 30],
       [20, 40, 60],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   null,
 ]

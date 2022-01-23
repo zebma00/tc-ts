@@ -10,10 +10,33 @@ export default [
     [
       [7, 14, 20],
       [13, 27, 40],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent('Improved Poisons', 'ability_poisons', ['Increases the chance to apply poisons with your off-hand weapon  by ', '%.'], 3, [
     [10, 20, 30],
-  ]),
+  ],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: false
+  }
+  ),
   null,
 ]

@@ -31,7 +31,17 @@ export default [
       [5, 10],
       [2, 4],
     ],
-    [{ x: 1, y: 2 }]
+    [{ x: 1, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   new Talent(
     'Inspiration',

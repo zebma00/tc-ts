@@ -15,7 +15,12 @@ export default [
     '225 Mana',
     '20 yd range',
     'Instant',
-    '30 sec cooldown'
+    '30 sec cooldown',
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   null,

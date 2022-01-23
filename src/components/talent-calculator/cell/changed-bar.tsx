@@ -2,14 +2,32 @@ import React from 'react'
 
 import styles from './cell.module.css'
 
-const ChangedIcon:React.FC<{isActive: boolean}> = ({isActive}) => {
-    return <div className={styles.changedIcon} style={{ backgroundColor: isActive ? 'transparent' : '' }}/>
+interface ChangedBarProps {
+    changed: {
+        isNew: boolean
+        isChanged: boolean
+        isMoved: boolean
+      },
+    displayChanged: {
+        displayIsNew: boolean
+        displayIsChanged: boolean
+        displayIsMoved: boolean
+    }
 }
 
-const ChangedBar: React.FC<any> = ({changedObj}) => {
-    const { isNew, isChanged, isMoved } = changedObj
+const ChangedIcon:React.FC<{isActive: boolean}> = ({isActive}) => {
+    return <div className={styles.changedIcon} style={{ backgroundColor: !isActive ? 'transparent' : '' }}/>
+}
 
-    return <div className={styles.changedBar}><ChangedIcon isActive={isNew}/><ChangedIcon isActive={isChanged}/><ChangedIcon isActive={isMoved}/></div>
+const ChangedBar: React.FC<ChangedBarProps> = ({ changed, displayChanged }) => {
+    const { isNew, isChanged, isMoved } = changed
+    const { displayIsNew, displayIsChanged, displayIsMoved } = displayChanged
+
+    return <div className={styles.changedBar}>
+            <ChangedIcon isActive={isNew && displayIsNew}/>
+            <ChangedIcon isActive={isChanged && displayIsChanged}/>
+            <ChangedIcon isActive={isMoved && displayIsMoved}/>
+          </div>
 }
 
 export default ChangedBar

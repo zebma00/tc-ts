@@ -18,7 +18,18 @@ export default [
       '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60%.',
     ],
     2,
-    [[50, 100]]
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
 ]

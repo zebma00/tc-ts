@@ -24,7 +24,18 @@ export default [
       '%. This effect stacks up to 3 times and lasts 12 sec.',
     ],
     5,
-    [[2, 4, 6, 8, 10]]
+    [[2, 4, 6, 8, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
 ]

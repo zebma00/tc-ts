@@ -13,11 +13,21 @@ export default [
   new Talent(
     'Improved Elemental Shields',
     'spell_nature_lightningshield',
-    ['Your attacks have a ', '% chance to expend a Lightning Shield orb. Your spells have a ', '% chance to expend a Water Shield orb.'],
+    ['Your attacks have a ', '% chance to expend a Lightning or Water Shield orb.'],
     3,
     [
-      [8, 16, 25],
-      [8, 16, 25],
-    ]
+      [10, 20, 30],
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

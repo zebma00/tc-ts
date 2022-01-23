@@ -12,7 +12,17 @@ export default [
         x: 3,
         y: 0,
       },
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
   new Talent(
@@ -27,7 +37,13 @@ export default [
     null,
     '65 Mana',
     null,
-    'Instant'
+    'Instant',
+    null,
+    null,
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   null,
 ]

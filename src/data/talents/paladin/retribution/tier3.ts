@@ -6,7 +6,7 @@ export default [
     'spell_holy_persuitofjustice',
     ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'],
     2,
-    [[4, 8]]
+    [[4, 8]],
   ),
   new Talent(
     'Conviction',
@@ -32,7 +32,13 @@ export default [
     null,
     null,
     null,
-    'Instant'
+    'Instant',
+    null,
+    null,
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   null,
 ]

@@ -21,6 +21,17 @@ export default [
     [
       [2, 4],
       [2, 4],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

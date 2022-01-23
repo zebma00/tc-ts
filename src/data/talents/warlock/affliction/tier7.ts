@@ -14,7 +14,13 @@ export default [
     null,
     '622 Mana',
     '30 yd range',
-    '2 sec cast', 
+    '2 sec cast',
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
   null,

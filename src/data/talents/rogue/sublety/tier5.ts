@@ -37,6 +37,12 @@ export default [
     null,
     '35 Energy',
     'Melee Range',
-    'Instant'
+    'Instant',
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

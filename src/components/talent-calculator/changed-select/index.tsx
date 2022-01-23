@@ -6,7 +6,11 @@ const ChangedSelectSingle:React.FC<{text:string, onClick:()=>void}> = ({text, on
     return <div className={styles.changedSelectSingle} onClick={onClick}>{text}</div>
 }
 
-const ChangedSelect:React.FC<any> = ({toggleChangedObj}) => {
+const ChangedSelect:React.FC<{toggleChangedObj: {
+    toggleIsNew: () => void
+    toggleIsChanged: () => void
+    toggleIsMoved: () => void
+}}> = ({toggleChangedObj}) => {
     const {toggleIsNew, toggleIsChanged, toggleIsMoved} = toggleChangedObj
     
     return <div className={styles.changedSelect}>

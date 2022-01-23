@@ -3,7 +3,19 @@ import { Talent } from '../../Classes'
 export default [
   new Talent('Improved Curse of Weakness', 'spell_shadow_curseofmannoroth', ['Increases the effect of your Curse of Weakness by ', '%.'], 2, [
     [15, 30],
-  ]),
+  ],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: false
+  }
+  ),
   new Talent(
     'Improved Drain Soul',
     'spell_shadow_haunting',
@@ -25,6 +37,17 @@ export default [
       '% for each Affliction effect on the target, up to a maximum of 60% additional effect.',
     ],
     5,
-    [[2, 4, 6, 8, 10]]
+    [[2, 4, 6, 8, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

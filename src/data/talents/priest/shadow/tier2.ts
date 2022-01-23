@@ -13,7 +13,11 @@ export default [
     null,
     null,
     null,
-    ['D3']
+    ['D3'],
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent('Improved Shadow Word: Pain', 'spell_shadow_shadowwordpain', ['Increases the duration of Shadow Word: Pain by ', ' sec.'], 2, [[3, 6]]),
     new Talent('Shadow Focus', 'spell_shadow_burningspirit', ["Reduces the target's chance to resist your Shadow spells ", '%.'], 5, [

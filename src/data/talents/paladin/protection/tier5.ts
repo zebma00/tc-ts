@@ -18,13 +18,23 @@ export default [
     null,
     ['D2']
   ),
-
   new Talent(
     'Reckoning',
     'spell_holy_blessingofstrength',
     ['Gives you a ', '% chance to gain an extra attack after blocking an attack or being the victim of a critical strike.'],
     5,
-    [[20, 40, 60, 80, 100]]
+    [[20, 40, 60, 80, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
 ]

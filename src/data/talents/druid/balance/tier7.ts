@@ -14,7 +14,13 @@ export default [
     null,
     '35% of base mana',
     null,
-    'Instant'
+    'Instant',
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   null,

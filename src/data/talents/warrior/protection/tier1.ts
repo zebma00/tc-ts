@@ -19,6 +19,18 @@ export default [
     null,
     ['D2']
   ),
-  new Talent('Iron Will', 'spell_magic_magearmor', ['Increases your chance to resist Charm and Fear effects by ', '%.'], 5, [[3, 6, 9, 12, 15]]),
+  new Talent('Iron Will', 'spell_magic_magearmor', ['Increases your chance to resist Charm and Fear effects by ', '%.'], 5, [[3, 6, 9, 12, 15]],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: false,
+    isMoved: true
+  }
+  ),
   null,
 ]

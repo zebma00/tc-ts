@@ -34,6 +34,17 @@ export default [
     [
       [3, 6],
       [10, 20],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

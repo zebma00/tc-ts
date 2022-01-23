@@ -19,5 +19,17 @@ export default [
   null,
   new Talent('Improved Searing Pain', 'spell_fire_soulburn', ['Increases the critical strike chance of your Searing Pain spell against dazed or stunned targets by ', '%.'], 3, [
     [5, 10, 15],
-  ]),
+  ],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: false
+  }
+  ),
 ]

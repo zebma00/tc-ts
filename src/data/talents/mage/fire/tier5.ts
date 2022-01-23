@@ -9,7 +9,18 @@ export default [
       "% of the damage taken to the attacker. The damage caused by Molten Blood will not exceed more than 50% of the mage's total health. This damage causes no threat.",
     ],
     2,
-    [[15, 30]]
+    [[15, 30]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Critical Mass',

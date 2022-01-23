@@ -1,10 +1,34 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Holy Guidance', 'ability_rogue_ambush', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+  new Talent('Holy Guidance', 'ability_rogue_ambush', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: true
+  }
+  ),
   new Talent('Spiritual Attunement', 'spell_holy_revivechampion', ['When you are healed, you gain mana equal to ', '% of the amount healed.'], 5, [
     [2, 4, 6, 8, 10],
-  ]),
+  ],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: true,
+    isChanged: false,
+    isMoved: false
+  }
+  ),
   new Talent(
     'Redoubt',
     'ability_defend',

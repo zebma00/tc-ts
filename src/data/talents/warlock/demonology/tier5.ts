@@ -1,9 +1,21 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Fel Protection', 'spell_shadow_demonictactics', ['Reduces area of effect damage taken by your demon ', '%.'], 3, [
-    [20, 40, 60],
-  ]),
+  new Talent('Fel Protection', 'spell_shadow_demonictactics', ['Increases the armor rating of your Demon by ', '% and reduces area of effect damage taken by your demon ', '%.'], 3, [
+    [10,20,30],[20, 40, 60],
+  ],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: true,
+    isChanged: false,
+    isMoved: false
+  }
+  ),
   new Talent(
     'Demonic Sacrifice',
     'spell_shadow_psychicscream',
@@ -18,7 +30,11 @@ export default [
     null,
     'Instant',
     null,
-    ['D2']
+    ['D2'],
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   null,

@@ -18,7 +18,11 @@ export class Talent {
   castTime: string | null
   cooldown: string | null
   arrows: string[] | null
-
+  changed: {
+    isNew: boolean
+    isChanged: boolean
+    isMoved: boolean
+  }
   constructor(
     name: string,
     icon: string,
@@ -41,7 +45,12 @@ export class Talent {
     range?: string | null,
     castTime?: string | null,
     cooldown?: string | null,
-    arrows?: string[] | null
+    arrows?: string[] | null,
+    changed?: {
+      isNew: boolean
+      isChanged: boolean
+      isMoved: boolean
+    }
   ) {
     this.name = name
     this.icon = icon
@@ -56,6 +65,11 @@ export class Talent {
     this.castTime = castTime ? castTime : null
     this.cooldown = cooldown ? cooldown : null
     this.arrows = arrows ? arrows : null
+    this.changed = changed ? changed : {
+      isNew: false,
+      isChanged: false,
+      isMoved: false
+    }
   }
   increment() {
     if (this.value < this.maxValue) {

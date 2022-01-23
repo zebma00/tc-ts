@@ -25,7 +25,18 @@ export default [
     'spell_holy_surgeoflight',
     ['Your offensive spell criticals have a ', '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.'],
     2,
-    [[25, 50]]
+    [[25, 50]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
 ]

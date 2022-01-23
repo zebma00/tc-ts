@@ -30,5 +30,17 @@ export default [
     [[10, 20, 30]],
     [{ x: 0, y: 2 }]
   ),
-  new Talent('Anticipation', 'spell_magic_lesserinvisibilty', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]]),
+  new Talent('Anticipation', 'spell_magic_lesserinvisibilty', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]],
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  null,
+  { isNew: false,
+    isChanged: true,
+    isMoved: false
+  }
+  ),
 ]

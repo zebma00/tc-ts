@@ -3,11 +3,21 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Crushing Blows',
-    'spell_holy_fistofjustice',
-    ['Your Slam increases damage dealt by your next weapon attack by ', '% for 3 sec.'],
+    'ability_warrior_decisivestrike',
+    ['Your Slam increases damage dealt by your next Slam by ', '% for 10 sec. This effect stacks up to 3 times.'],
     2,
-    [[15, 30]],
-    [{ x: 1, y: 0 }]
+    [[5, 10]],
+    [{ x: 1, y: 0 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Piercing Howl',

@@ -13,18 +13,18 @@ const TalentCalculator: React.FC = () => {
     setSelectedClass(classes[i])
   }
 
-  const [isNew, setIsNew] = useState<boolean>(false)
-  const [isChanged, setIsChanged] = useState<boolean>(false)
-  const [isMoved, setIsMoved] = useState<boolean>(false)
+  const [displayIsNew, setIsNew] = useState<boolean>(false)
+  const [displayIsChanged, setIsChanged] = useState<boolean>(false)
+  const [displayIsMoved, setIsMoved] = useState<boolean>(false)
 
-  const toggleIsNew = () => setIsNew(!isNew)
-  const toggleIsChanged = () => setIsChanged(!isChanged)
-  const toggleIsMoved = () => setIsMoved(!isMoved)
+  const toggleIsNew = () => setIsNew(!displayIsNew)
+  const toggleIsChanged = () => setIsChanged(!displayIsChanged)
+  const toggleIsMoved = () => setIsMoved(!displayIsMoved)
 
-  const changedObj = {
-    isNew,
-    isChanged,
-    isMoved
+  const displayChanged = {
+    displayIsNew,
+    displayIsChanged,
+    displayIsMoved
   }
 
   const toggleChangedObj ={ 
@@ -37,7 +37,7 @@ const TalentCalculator: React.FC = () => {
     <div className={styles.tcWrapper}>
       <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
       <ChangedSelect toggleChangedObj={toggleChangedObj}/>
-      <TalentCalculatorMain changedObj={changedObj} selectedClass={selectedClass} />
+      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
     </div>
   )
 }

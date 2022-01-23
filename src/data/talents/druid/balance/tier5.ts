@@ -6,8 +6,19 @@ export default [
     'ability_druid_dreamstate',
     ['Your successful Starfire hits reduce the cooldown of your Innervate and Hurricane spells by ', ' sec.'],
     2,
-    [[0.5, 1]]
-  ),
+    [[0.5, 1]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
+    ),
   new Talent(
     "Nature's Grace",
     'spell_nature_naturesblessing',
@@ -22,7 +33,11 @@ export default [
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Moonglow',

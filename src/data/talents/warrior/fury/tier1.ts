@@ -10,7 +10,18 @@ export default [
     [
       [10, 20, 30, 40, 50],
       [1, 2, 3, 4, 5],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent('Cruelty', 'ability_rogue_eviscerate', ['Increases your chance to get a critical strike with melee weapons by ', '%.'], 5, [
     [1, 2, 3, 4, 5],

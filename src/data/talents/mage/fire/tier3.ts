@@ -12,7 +12,18 @@ export default [
     [
       [10, 20],
       [0.5, 1],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Pyroblast',

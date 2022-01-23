@@ -40,10 +40,21 @@ export default [
     'Havoc',
     'spell_fire_playingwithfire',
     [
-      'Critical strikes from your Fire spells increase Fire damage dealth to the target by ',
-      '% until 4 non-periodic damage sources are applied. Effect lasts a maximum of 12 sec.',
+      'Critical strikes from your Fire spells increase the damage of the next non-perodic Fire damage dealt to the target by ',
+      '%.',
     ],
-    2,
-    [[5, 10]]
+    3,
+    [[5, 10 ,15]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

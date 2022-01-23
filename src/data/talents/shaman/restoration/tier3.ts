@@ -7,7 +7,18 @@ export default [
     'spell_nature_healingwavelesser',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting any healing spell.'],
     3,
-    [[23, 47, 70]]
+    [[23, 47, 70]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Totemic Mastery',
@@ -15,6 +26,17 @@ export default [
     ['Increases the radius of your totems that affect friendly targets to 30 yards and increases their effect by 5%.'],
     1,
     [[]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
 ]

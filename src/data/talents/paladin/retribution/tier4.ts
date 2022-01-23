@@ -13,7 +13,11 @@ export default [
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   null,
   new Talent(
@@ -24,13 +28,24 @@ export default [
       "% of the damage to be taken by the caster as well. The damage caused by Eye for an Eye will not exceed more than 50% of the Paladin's total health.",
     ],
     2,
-    [[25, 50]]
+    [[25, 50]],
   ),
   new Talent(
     'Two-Handed Weapon Specialization',
     'inv_hammer_04',
     ['Increases the damage you deal with two-handed melee weapons by ', '%.'],
     3,
-    [[3, 6, 9]]
+    [[3, 6, 9]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
 ]

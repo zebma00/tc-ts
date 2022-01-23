@@ -9,7 +9,18 @@ export default [
     [
       [15, 30],
       [25,50],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Elemental Weapons',

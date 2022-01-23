@@ -6,7 +6,18 @@ export default [
     'spell_arcane_focusedpower',
     ['Causes your critical hits from spells to increase your mana regeneration from spirit by ', '% for 8 sec.'],
     3,
-    [[16, 32, 50]]
+    [[16, 32, 50]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Force of Will',
@@ -16,7 +27,18 @@ export default [
     [
       [1, 2, 3, 4, 5],
       [1, 2, 3, 4, 5],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent(
     'Divine Spirit',
@@ -30,7 +52,13 @@ export default [
     null,
     '140 Mana',
     '30 yd range',
-    'Instant'
+    'Instant',
+    null,
+    null,
+    { isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
 ]

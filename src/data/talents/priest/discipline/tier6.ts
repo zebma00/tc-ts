@@ -14,7 +14,11 @@ export default [
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
   null,
   null,
