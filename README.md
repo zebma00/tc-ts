@@ -15,6 +15,8 @@
 
 ### Shaman
 - Replace imp ankh with a WF/RB enh synergize
+- un-awkward call of flame
+- shock crit somewhere
 
 ### Rogue
 - Smth new assassination
