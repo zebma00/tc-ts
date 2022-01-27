@@ -17,17 +17,18 @@ export default [
     ['D2']
   ),
   new Talent('Improved Intimidating Shout', 'ability_golemthunderclap', ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'], 2, [[1, 2]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: true,
-    isChanged: false,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   null,
 ]

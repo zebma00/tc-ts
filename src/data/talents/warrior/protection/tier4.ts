@@ -7,16 +7,17 @@ export default [
   new Talent('Improved Shield Bash', 'ability_warrior_shieldbash', ['Gives your Shield Bash a ', '% chance to silence the target for 2 sec.'], 2, [
     [50, 100],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: false,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
 ]

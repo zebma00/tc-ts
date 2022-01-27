@@ -14,7 +14,8 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }
@@ -31,16 +32,17 @@ export default [
   ),
   null,
   new Talent('Improved Devotion Aura', 'spell_holy_devotionaura', ['Increases the armor bonus of your Devotion Aura by ', '%.'], 3, [[10, 20, 30]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

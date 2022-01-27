@@ -28,7 +28,8 @@ export default [
     null,
     null,
     ['D2'],
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

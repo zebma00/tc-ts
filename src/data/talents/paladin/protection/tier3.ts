@@ -31,16 +31,17 @@ export default [
     [{ x: 0, y: 2 }]
   ),
   new Talent('Anticipation', 'spell_magic_lesserinvisibilty', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

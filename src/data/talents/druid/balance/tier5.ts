@@ -14,11 +14,12 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }
-    ),
+  ),
   new Talent(
     "Nature's Grace",
     'spell_nature_naturesblessing',
@@ -34,7 +35,8 @@ export default [
     null,
     null,
     ['D1'],
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

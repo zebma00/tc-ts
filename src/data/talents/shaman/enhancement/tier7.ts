@@ -15,7 +15,8 @@ export default [
     'Instant',
     '12 sec cooldown',
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

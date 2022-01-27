@@ -17,7 +17,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: false,
       isMoved: true
     }

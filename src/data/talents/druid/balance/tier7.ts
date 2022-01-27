@@ -17,7 +17,8 @@ export default [
     'Instant',
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

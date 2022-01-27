@@ -25,16 +25,17 @@ export default [
   new Talent('Gore', 'ability_druid_ravage', ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'], 3, [
     [10, 20, 30],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: true,
-    isChanged: false,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

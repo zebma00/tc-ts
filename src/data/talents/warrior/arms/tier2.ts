@@ -4,32 +4,34 @@ export default [
   new Talent('Improved Hamstring', 'ability_shockwave', ['Gives your Hamstring a ', '% chance to immobilize the target for 5 sec.'], 3, [
     [10, 20, 30],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: false,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent('Tactical Mastery', 'spell_nature_enchantarmor', ['You retain up to ', ' rage points when you change stances.'], 5, [
     [5, 10, 15, 20, 25],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   null,
   new Talent(
@@ -48,7 +50,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

@@ -5,16 +5,17 @@ export default [
   new Talent('Mental Agility', 'ability_hibernation', ['Reduces the mana cost of your instant cast spells by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   null,
   new Talent('Improved Mana Burn', 'spell_shadow_manaburn', ['Reduces the casting time of your Mana Burn spell by ', ' sec.'], 2, [[0.5, 1]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
 ]

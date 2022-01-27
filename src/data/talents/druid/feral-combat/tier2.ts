@@ -14,13 +14,14 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }
   ),
   new Talent('Brutal Impact', 'ability_druid_bash', ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'], 2, [[0.5, 1]],
-  null,),
+    null),
   new Talent('Thick Hide', 'inv_misc_pelt_bear_03', ['Increases your Armor contribution from items by ', '%'], 3, [[4, 7, 10]],
     null,
     null,
@@ -29,11 +30,12 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }
-    ),
+  ),
   new Talent(
     'Feline Fury',
     'ability_druid_predatoryinstincts',
@@ -47,7 +49,8 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }

@@ -32,22 +32,24 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }
   ),
   new Talent('Anticipation', 'spell_nature_mirrorimage', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true
+    }
   ),
 ]

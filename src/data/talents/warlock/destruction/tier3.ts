@@ -22,7 +22,7 @@ export default [
     null,
     null,
     ['D2']
-    ),
+  ),
   new Talent(
     'Shadowburn',
     'spell_shadow_scourgebuild',
@@ -38,4 +38,4 @@ export default [
     'Instant',
     '15 sec cooldown'
   ),
-  ]
+]

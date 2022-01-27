@@ -20,16 +20,17 @@ export default [
   ),
   null,
   new Talent('Lightning Reflexes', 'spell_nature_invisibilty', ['Increases your dodge chance by ', '%.'], 5, [[1, 2, 3, 4, 5]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: false,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
 ]

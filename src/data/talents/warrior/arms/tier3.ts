@@ -3,17 +3,18 @@ import { Talent } from '../../Classes'
 export default [
   new Talent('Improved Overpower', 'inv_sword_05', ['Increases the critical strike chance of your Overpower by ', '%.'], 2, [[25, 50]]),
   new Talent('Anger Management', 'spell_holy_blessingofstamina', ['Generates 1 rage per 3 seconds while in combat.'], 1, [[1]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Deep Wounds',

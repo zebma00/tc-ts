@@ -1,20 +1,21 @@
 import { Talent } from '../../Classes'
 
 export default [
-    new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
+  new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [
     [4, 8, 12],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: false,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent(
     'Spiritual Focus',
@@ -29,11 +30,12 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }
-    ),
+  ),
   new Talent(
     'Improved Seal of Righteousness',
     'ability_thunderbolt',

@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-    new Talent('Improved Mind Blast', 'spell_shadow_unholyfrenzy', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [
+  new Talent('Improved Mind Blast', 'spell_shadow_unholyfrenzy', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [
     [0.5, 1, 1.5, 2, 2.5],
   ]),
   new Talent(

@@ -44,7 +44,7 @@ export default [
       '%.',
     ],
     3,
-    [[5, 10 ,15]],
+    [[5, 10, 15]],
     null,
     null,
     null,
@@ -52,7 +52,8 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }

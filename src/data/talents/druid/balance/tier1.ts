@@ -4,17 +4,18 @@ export default [
   new Talent('Starlight Wrath', 'spell_nature_abolishmagic', ['Reduces the cast time of your Wrath and Starfire spells by ', ' sec.'], 5, [
     [0.1, 0.2, 0.3, 0.4, 0.5],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }),
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }),
   new Talent(
     "Nature's Grasp",
     'spell_nature_natureswrath',
@@ -40,15 +41,16 @@ export default [
     [{ x: 0, y: 1 }]
   ),
   new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: true,
-    isChanged: false,
-    isMoved: false
-  }),
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false
+    }),
 ]

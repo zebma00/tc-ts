@@ -36,7 +36,7 @@ export default [
     null,
     {
       isNew: false,
-      isChanged: true,
+      isChanged: false,
       isMoved: true
     }
   ),

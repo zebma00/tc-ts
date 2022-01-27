@@ -2,17 +2,18 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent('Improved Cleave', 'ability_warrior_cleave', ['Increases the damage done by your Cleave ability by ', '%'], 3, [[40, 80, 120]],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: false,
-    isMoved: true
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true
+    }
   ),
   new Talent(
     'Death Wish',
@@ -47,7 +48,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

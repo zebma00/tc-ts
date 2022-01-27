@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-    new Talent(
+  new Talent(
     'Molten Blood',
     'spell_fire_moltenblood',
     [
@@ -17,7 +17,8 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }

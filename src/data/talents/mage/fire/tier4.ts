@@ -11,7 +11,7 @@ export default [
     3,
     [[33, 67, 100]]
   ),
-    new Talent(
+  new Talent(
     'Fire Warding',
     'spell_fire_firearmor',
     ['Increases your Fire resistance by ', ' and gives your Fire Ward a ', '% chance to reflect Fire spells and effects while active.'],
@@ -27,7 +27,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

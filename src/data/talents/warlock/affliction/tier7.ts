@@ -17,7 +17,8 @@ export default [
     '2 sec cast',
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }

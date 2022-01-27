@@ -4,17 +4,18 @@ export default [
   new Talent('Improved Curse of Weakness', 'spell_shadow_curseofmannoroth', ['Increases the effect of your Curse of Weakness by ', '%.'], 2, [
     [15, 30],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: false,
-    isChanged: true,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false
+    }
   ),
   new Talent(
     'Improved Drain Soul',
@@ -45,7 +46,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

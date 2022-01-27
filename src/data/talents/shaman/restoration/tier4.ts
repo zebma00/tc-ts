@@ -15,7 +15,8 @@ export default [
     null,
     null,
     ['D3'],
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }

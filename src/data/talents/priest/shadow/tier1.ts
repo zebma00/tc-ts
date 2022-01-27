@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 export default [
   null,
-    new Talent(
+  new Talent(
     'Spirit Tap',
     'spell_shadow_requiem',
     [

@@ -17,16 +17,17 @@ export default [
   new Talent('Melee Weapon Specialization', 'inv_sword_05', ['Increases the damage you deal with melee attacks and abilities by ', '%.'], 3, [
     [5, 10, 15],
   ],
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  null,
-  { isNew: true,
-    isChanged: false,
-    isMoved: false
-  }
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
 ]

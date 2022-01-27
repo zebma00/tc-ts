@@ -8,7 +8,7 @@ export default [
     2,
     [
       [15, 30],
-      [25,50],
+      [25, 50],
     ],
     null,
     null,
@@ -17,7 +17,8 @@ export default [
     null,
     null,
     null,
-    { isNew: false,
+    {
+      isNew: false,
       isChanged: true,
       isMoved: false
     }
