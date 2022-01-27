@@ -140,14 +140,18 @@ export const checkEnoughPointsRow = (specData: ClassSpecType | null, x: number, 
   }
 }
 
-export const checkEnoughPointsForRightClick = (specData: ClassSpecType) => {
+export const checkEnoughPointsForRightClick = (specData: ClassSpecType, x: number) => {
   const lastRowWithPts = specData?.map(row => checkRowHasPoints(row)).lastIndexOf(true)
 
   const ptsInLastRow = checkPointsPerRow(specData[lastRowWithPts])
 
   const pointsInTree = checkPointsPerTree(specData)
 
-  if (pointsInTree - ptsInLastRow! >= lastRowWithPts * 5) {
+  if (lastRowWithPts === x) {
+    return true
+  }
+
+  if (pointsInTree - ptsInLastRow! >= lastRowWithPts * 5 + 1) {
     return true
   } else {
     return false
@@ -219,7 +223,7 @@ export const rightClick = (talentData: ClassTalentType, i: number, x: number, y:
 
   const requiringTalentsAreZero = checkRequiringTalentsAreZero(talentData[i], x, y)
 
-  const enoughPtsForRightCLick = checkEnoughPointsForRightClick(talentData[i])
+  const enoughPtsForRightCLick = checkEnoughPointsForRightClick(talentData[i], x)
 
   if (enoughPointsLeft && !isZeroValue && requiringTalentsAreZero && enoughPointsRows && enoughPtsForRightCLick) {
     return true

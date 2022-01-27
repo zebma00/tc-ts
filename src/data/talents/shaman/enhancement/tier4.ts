@@ -11,14 +11,14 @@ export default [
     [{ x: 1, y: 1 }]
   ),
   new Talent(
-    'Shamanistic Focus',
-    'spell_nature_elementalabsorption',
+    'Ancestral Fortitude',
+    'spell_holy_devotion',
+    ['Increases your armor by ', '% and reduces the duration of movement slowing effects on you by ', '%.'],
+    5,
     [
-      'After landing a melee critical strike, you have a ',
-      '% chance to enter a focused state. The focused state reduces the mana cost of your next Shock spell by 60%.',
+      [2, 4, 6, 8, 10],
+      [10, 20, 30, 40, 50],
     ],
-    2,
-    [[50, 100]],
     null,
     null,
     null,
@@ -26,8 +26,9 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
-      isChanged: false,
+    {
+      isNew: false,
+      isChanged: true,
       isMoved: false
     }
   ),

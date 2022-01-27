@@ -11,12 +11,12 @@ export default [
   null,
   new Talent('Two-Handed Axes and Maces', 'inv_axe_10', ['Allows you to use Two-Handed Axes and Two-Handed Maces.'], 1, [[]]),
   new Talent(
-    'Improved Elemental Shields',
-    'spell_nature_lightningshield',
+    'Empowered Elemental Shields',
+    'spell_nature_elementalshields',
     ['Your attacks have a ', '% chance to expend a Lightning or Water Shield orb.'],
-    3,
+    2,
     [
-      [10, 20, 30],
+      [15, 30],
     ],
     null,
     null,
@@ -25,7 +25,8 @@ export default [
     null,
     null,
     null,
-    { isNew: true,
+    {
+      isNew: true,
       isChanged: false,
       isMoved: false
     }

@@ -10,7 +10,7 @@ export default [
     ],
     1,
     [[]],
-    null,
+    [{ x: 4, y: 1 }],
     null,
     'Instant',
     '3 min cooldown'
