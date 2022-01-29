@@ -27,7 +27,7 @@ const TalentCalculator: React.FC = () => {
     displayIsMoved
   }
 
-  const toggleChangedObj ={ 
+  const toggleChangedObj = {
     toggleIsChanged,
     toggleIsNew,
     toggleIsMoved
@@ -36,7 +36,7 @@ const TalentCalculator: React.FC = () => {
   return (
     <div className={styles.tcWrapper}>
       <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
-      <ChangedSelect toggleChangedObj={toggleChangedObj}/>
+      <ChangedSelect toggleChangedObj={toggleChangedObj} displayChanged={displayChanged} />
       <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
     </div>
   )

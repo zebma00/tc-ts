@@ -31,15 +31,15 @@ export class Talent {
     valueIteration: number[][],
     required?:
       | {
-          x: number | null
-          y: number | null
-        }[]
+        x: number | null
+        y: number | null
+      }[]
       | null,
     requiring?:
       | {
-          x: number | null
-          y: number | null
-        }[]
+        x: number | null
+        y: number | null
+      }[]
       | null,
     manaCost?: string | null,
     range?: string | null,

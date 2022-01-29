@@ -13,17 +13,21 @@
 ### Mage
 - Something elemental @ frost
 
-### Shaman
-- Replace imp ankh with a WF/RB enh synergize
-- water totem pulse on attack?
-	
+### Priest
+- Smth new Shadow
 
 ### Rogue
 - Smth new assassination
 
+### Shaman
+- Rename empowered elemental shields
+
 ### Hunter
 - Smth mongoose bite
+- Smth new marksmanship
+- Surefooted t1 or t2?
 
 ### Warrior
 - 11pt arms 2 boring: victory rush?
 - Commanding shout?
+- Hit talent?

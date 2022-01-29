@@ -6,7 +6,19 @@ export default [
     'ability_creature_poison_06',
     ['Increases the damage done by your bleed effects by an additional ', '% for each poison effect on the target, up to a maximum or 30%.'],
     2,
-    [[3, 6]]
+    [[3, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false
+    }
   ),
   new Talent(
     'Cold Blood',

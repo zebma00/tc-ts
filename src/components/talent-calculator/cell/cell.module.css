@@ -270,14 +270,14 @@
 .changedIcon {
   height: 7px;
   width: 7px;
-  background-color: red;
+  background-color: #C41E3B;
   border-radius: 50%;
 }
 
 .changedIcon:nth-child(2) {
-  background-color: yellow;
+  background-color: #fff468;
 }
 
 .changedIcon:nth-child(3) {
-  background-color: blue;
+  background-color: #2359ff;
 }

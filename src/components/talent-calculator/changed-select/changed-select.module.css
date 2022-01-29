@@ -5,5 +5,22 @@
     margin: 0 auto 1rem;
 }
 
+
 .changedSelectSingle {
+    cursor: pointer;
+}
+
+.changedSelectSingleNew {
+    cursor: pointer;
+    text-decoration: underline 2px #C41E3B;
+}
+
+.changedSelectSingleChanged {
+    cursor: pointer;
+    text-decoration: underline 2px #fff468;
+}
+
+.changedSelectSingleMoved {
+    cursor: pointer;
+    text-decoration: underline 2px #2359ff;
 }

@@ -54,7 +54,7 @@ export default [
   new Talent(
     'Mana Feed',
     'spell_shadow_manafeed',
-    ['When you gain mana from Drain mana or Life Tap spells, your pet gains ', '% of the mana you gain.'],
+    ['When you gain mana from any source, your pet gains ', '% of the mana you gain.'],
     3,
     [[33, 66, 100]],
     null,
