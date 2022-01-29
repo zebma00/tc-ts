@@ -7,16 +7,16 @@ import NavBar from './components/nav-bar'
 import styles from './index.module.css'
 
 const App = () => {
-  return (
-    <div id={styles.app}>
-      <Router>
-        <NavBar />
-        <Route exact path='/' component={PatchNotes} />
-        <Route path='/tc' component={TalentCalculator} />
-        <Route path='/items' component={ExampleItems} />
-      </Router>
-    </div>
-  )
+	return (
+		<div id={styles.app}>
+			<Router>
+				<NavBar />
+				<Route exact path='/' component={PatchNotes} />
+				<Route path='/tc' component={TalentCalculator} />
+				<Route path='/items' component={ExampleItems} />
+			</Router>
+		</div>
+	)
 }
 
 export default App

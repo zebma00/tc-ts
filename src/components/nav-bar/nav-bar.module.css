@@ -1,20 +1,20 @@
 .navBar {
-  margin: 0 auto;
-  padding: 1rem;
-  width: fit-content;
-  display: flex;
-  gap: 1rem;
-  justify-content: space-between;
+	margin: 0 auto;
+	padding: 1rem;
+	width: fit-content;
+	display: flex;
+	gap: 1rem;
+	justify-content: space-between;
 }
 
 .navLink {
-  color: #ffd100;
-  text-decoration: none;
+	color: #ffd100;
+	text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
-  .navBar {
-    gap: 0;
-    width: 100%;
-  }
+	.navBar {
+		gap: 0;
+		width: 100%;
+	}
 }
