@@ -1,10 +1,18 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier1 = [
 	new Talent(
 		'Improved Eviscerate',
 		'ability_rogue_eviscerate',
 		['Increases the damage done by your Eviscerate ability by ', '%.'],
+=======
+export default [
+	new Talent(
+		'Improved Eviscerate',
+		'ability_rogue_eviscerate',
+		['Increases the damage done by your Eviscerate ability by ', ' %.'],
+>>>>>>> 1ddb4f1 (patch notes)
 		3,
 		[[5, 10, 15]]
 	),
@@ -12,6 +20,7 @@ const tier1 = [
 		'Remorseless Attacks',
 		'ability_fiegndead',
 		[
+<<<<<<< HEAD
 			'After an opponent that yields experience or honor dies while affected by your poisons, gives you a ',
 			'% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Shiv, or Ghostly Strike. Lasts 20 sec.',
 		],
@@ -25,6 +34,13 @@ const tier1 = [
 		null,
 		null,
 		{ isNew: false, isChanged: true, isMoved: false }
+=======
+			'After an enemy that yields experience or honor is killed while effected by one of your poisons, you gain ',
+			'% increased critical strike chance on your next Sinister Strike, Backstab, Ambush or Ghostly Strike. Lasts 20 sec.',
+		],
+		2,
+		[[15, 30]]
+>>>>>>> 1ddb4f1 (patch notes)
 	),
 	new Talent(
 		'Malice',

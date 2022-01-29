@@ -1,7 +1,14 @@
 .tcWrapper {
+<<<<<<< HEAD
   width: 100%;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin-top: 1rem;
+=======
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+>>>>>>> 1ddb4f1 (patch notes)
 }

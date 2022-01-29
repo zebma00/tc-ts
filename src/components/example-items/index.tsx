@@ -5,6 +5,7 @@ import SingleItem from './single-item'
 import styles from './index.module.css'
 
 const ExampleItems: React.FC = () => {
+<<<<<<< HEAD
 	return (
 		<div className={styles.exampleItems}>
 			{exampleItems.map((item, index) => {
@@ -42,6 +43,9 @@ const ExampleItems: React.FC = () => {
 			})}
 		</div>
 	)
+=======
+	return <div className={styles.exampleItems}>Example items</div>
+>>>>>>> 1ddb4f1 (patch notes)
 }
 
 export default ExampleItems

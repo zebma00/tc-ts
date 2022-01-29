@@ -1,6 +1,10 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier4 = [
+=======
+export default [
+>>>>>>> 1ddb4f1 (patch notes)
 	new Talent(
 		'Improved Kick',
 		'ability_kick',
@@ -9,7 +13,11 @@ const tier4 = [
 		[[50, 100]]
 	),
 	new Talent(
+<<<<<<< HEAD
 		'Close Quarters Combat',
+=======
+		'Close Combat Specialization',
+>>>>>>> 1ddb4f1 (patch notes)
 		'inv_weapon_shortblade_05',
 		['Increases your critical strike chance and critical strike damage with daggers and fist weapons by ', '%.'],
 		5,
@@ -22,6 +30,7 @@ const tier4 = [
 		null,
 		null,
 		{
+<<<<<<< HEAD
 			isNew: true,
 			isChanged: false,
 			isMoved: false,
@@ -59,6 +68,19 @@ const tier4 = [
 			[3, 6],
 			[35, 70],
 		],
+=======
+			isNew: false,
+			isChanged: true,
+			isMoved: false,
+		}
+	),
+	new Talent(
+		'Blade Twisting',
+		'ability_rogue_bladetwisting',
+		['Gives your Sinister Strike, Backstab and Hemorrhage abilities a ', '% chance to daze the target for 8 sec.'],
+		2,
+		[[10, 20]],
+>>>>>>> 1ddb4f1 (patch notes)
 		null,
 		null,
 		null,
@@ -72,6 +94,10 @@ const tier4 = [
 			isMoved: false,
 		}
 	),
+<<<<<<< HEAD
+=======
+	null,
+>>>>>>> 1ddb4f1 (patch notes)
 ]
 
 export default tier4

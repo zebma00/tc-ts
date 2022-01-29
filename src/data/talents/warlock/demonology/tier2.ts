@@ -1,5 +1,6 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier2 = [
 	new Talent(
 		'Improved Demon Armor',
@@ -7,6 +8,15 @@ const tier2 = [
 		['Causes your Demon Armor to also retore mana equal to ', '% the restored health.'],
 		2,
 		[[50, 100]],
+=======
+export default [
+	new Talent(
+		'Improved Demon Armor',
+		'spell_shadow_ragingscream',
+		['Causes your Demon armor to also restore ', '% of your total mana every 3 sec.'],
+		2,
+		[[0.5, 1]],
+>>>>>>> 1ddb4f1 (patch notes)
 		null,
 		null,
 		null,
@@ -54,17 +64,30 @@ const tier2 = [
 		}
 	),
 	new Talent(
+<<<<<<< HEAD
 		'Improved Firestone',
 		'inv_ammo_firetar',
 		[
 			'Increases the bonus fire damage of your Firestone by ',
 			'%. In addition, your Firestone increases your chance to hit with Fire spells by ',
+=======
+		'Improved Fire Stone',
+		'inv_ammo_firetar',
+		[
+			'Your Firestone also increases your chance to hit with Fire spells by ',
+			'% and reduces threat caused by your Fire spells by ',
+>>>>>>> 1ddb4f1 (patch notes)
 			'%.',
 		],
 		2,
 		[
+<<<<<<< HEAD
 			[25, 50],
 			[1, 2],
+=======
+			[2, 4],
+			[15, 30],
+>>>>>>> 1ddb4f1 (patch notes)
 		],
 		null,
 		null,

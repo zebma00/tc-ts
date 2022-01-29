@@ -1,4 +1,5 @@
 export default {
+<<<<<<< HEAD
   title: 'Druid',
   note: 'Druid note',
   content: [
@@ -8,4 +9,12 @@ export default {
     'Soothe Animal can no longer be resisted.',
     'Reduced the mana cost of Mark of the Wild and Gift of the Wild.',
   ],
+=======
+	title: 'Druid',
+	content: [
+		'Tiger’s Fury reworked: now returns 40 energy and increases the damage of your next ability while in cat form by 25%. 45 sec cooldown.',
+		'Innervate is now a balance spell, allowing it to be cast in Moonkin Form.',
+		'Soothe Animal can no longer be resisted.',
+	],
+>>>>>>> 1ddb4f1 (patch notes)
 }

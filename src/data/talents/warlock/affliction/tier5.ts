@@ -1,6 +1,10 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier5 = [
+=======
+export default [
+>>>>>>> 1ddb4f1 (patch notes)
 	new Talent(
 		'Malediction',
 		'spell_shadow_curseofachimonde',

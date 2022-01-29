@@ -1,6 +1,10 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier3 = [
+=======
+export default [
+>>>>>>> 1ddb4f1 (patch notes)
 	new Talent(
 		'Improved Curse of Agony',
 		'spell_shadow_curseofsargeras',
@@ -15,8 +19,25 @@ const tier3 = [
 			'Gives you a ',
 			'% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.',
 		],
+<<<<<<< HEAD
 		5,
 		[[14, 28, 42, 56, 70]]
+=======
+		3,
+		[[23, 47, 70]],
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		null,
+		{
+			isNew: false,
+			isChanged: true,
+			isMoved: false,
+		}
+>>>>>>> 1ddb4f1 (patch notes)
 	),
 	new Talent(
 		'Amplify Curse',
@@ -31,7 +52,11 @@ const tier3 = [
 		null,
 		null,
 		'Instant',
+<<<<<<< HEAD
 		'3 min cooldown',
+=======
+		'3min cooldown',
+>>>>>>> 1ddb4f1 (patch notes)
 		['D2']
 	),
 	null,

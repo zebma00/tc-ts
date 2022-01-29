@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import styles from './nav-bar.module.css'
 
 const NavBar: React.FC = () => {
+<<<<<<< HEAD
   return (
     <div className={styles.navBar}>
       <Link className={styles.navLink} to={location => ({ ...location, pathname: '/tc/druid' })}>
@@ -17,6 +18,21 @@ const NavBar: React.FC = () => {
       </Link>
     </div>
   )
+=======
+	return (
+		<div className={styles.navBar}>
+			<Link className={styles.navLink} to=''>
+				Patch notes
+			</Link>
+			<Link className={styles.navLink} to='tc'>
+				Talent Calculator
+			</Link>
+			<Link className={styles.navLink} to='items'>
+				Example Items
+			</Link>
+		</div>
+	)
+>>>>>>> 1ddb4f1 (patch notes)
 }
 
 export default NavBar

@@ -1,6 +1,10 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier4 = [
+=======
+export default [
+>>>>>>> 1ddb4f1 (patch notes)
 	new Talent(
 		'Improved Inner Fire',
 		'spell_holy_innerfire',

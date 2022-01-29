@@ -5,6 +5,7 @@ export default [
 		'Ferocious Inspiration',
 		'ability_hunter_ferociousinspiration',
 		[
+<<<<<<< HEAD
 			'When your pet scores a critical hit, all party members have their damage increased by ',
 			"% and all party members' pets and summons have their damage increased by ",
 			'% for 10 sec.',
@@ -14,6 +15,13 @@ export default [
 			[1, 2, 3],
 			[5, 10, 15],
 		],
+=======
+			'When your pet scores a Critical hit, all party member have their damage and healing increased by ',
+			'% for 10 sec.',
+		],
+		3,
+		[[1, 2, 3]],
+>>>>>>> 1ddb4f1 (patch notes)
 		null,
 		null,
 		null,
@@ -38,7 +46,11 @@ export default [
 		[{ x: null, y: null }],
 		[{ x: 6, y: 1 }],
 		'8% of base mana',
+<<<<<<< HEAD
 		'100 yd range',
+=======
+		'100yd range',
+>>>>>>> 1ddb4f1 (patch notes)
 		'Instant',
 		'1 min cooldown',
 		['D2']

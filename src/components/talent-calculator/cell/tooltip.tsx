@@ -4,9 +4,15 @@ import styles from './cell.module.css'
 
 interface TooltipProps {
 	value: number
+<<<<<<< HEAD
 	description: string[] | ReactNode[]
 	maxValue: number
 	valueIteration: number[][] | string[][]
+=======
+	description: string[]
+	maxValue: number
+	valueIteration: number[][]
+>>>>>>> 1ddb4f1 (patch notes)
 	manaCost: string | null
 	range: string | null
 	castTime: string | null
@@ -53,7 +59,11 @@ const Tooltip: React.FC<TooltipProps> = ({
 		<div
 			className={styles.tooltipStyle}
 			style={{
+<<<<<<< HEAD
 				backgroundImage: `url("${process.env.PUBLIC_URL}/img/background/tooltip.png")`,
+=======
+				backgroundImage: "url('/img/background/tooltip.png')",
+>>>>>>> 1ddb4f1 (patch notes)
 				backgroundSize: 'cover',
 				backgroundPosition: 'center center',
 				backgroundRepeat: 'no-repeat',
