@@ -16,6 +16,8 @@
 ### Hunter
 
 - Smth mongoose bite
+- rmv misdirection, add aspect of viper
+- imp arcane shot mana reduce
 
 ### Shaman
 
