@@ -13,14 +13,32 @@
 
 ## Classes
 
+### Druid
+- revert NS linked talents
+- reorganize feral for moonkin armor / AP build
+- moonkin mana regen on ATK
+
 ### Hunter
 
 - Smth mongoose bite
 - rmv misdirection, add aspect of viper
 - wyvern sting
 
+### Mage
+- revert winters chill
+- aoe dmg talent
+
+### Paladin
+- lasting judgement return -> inc effect of wisdom / light judge / seals
+- take look at normalizing midtier ret talents
+
+### rogue
+- smth improved sleight of hand (energy cost reduce)
+
+### priest
+- smth imp fade
+
 ### Shaman
 
 - Rename empowered elemental shields
-- Big question:
-  - Imp enh totems + WoAir versus current
+- revert flametongue to prev iteration
