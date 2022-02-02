@@ -48,6 +48,7 @@
 
 ### Warrior
 - slight nerf slam spec
+- re add arrow tactical mastery
 - imp berserker rage
 - commanding shout
 - booming voice revert
