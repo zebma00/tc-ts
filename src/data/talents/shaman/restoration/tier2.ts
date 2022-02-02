@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 export default [
   new Talent(
     'Improved Reincarnation',
-    'spell_nature_magicimmunity',
+    'spell_nature_reincarnation',
     [
       'Reduces the cooldown of your reincarnation spell by ',
       ' min and increases the amount of health and mana you reincarnate with by an additional ',
