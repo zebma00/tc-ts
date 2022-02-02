@@ -20,7 +20,6 @@
 
 ### Hunter
 
-- Smth mongoose bite
 - rmv misdirection, add aspect of viper
 - wyvern sting
 
@@ -53,4 +52,4 @@
 - commanding shout
 - booming voice revert
 - buff imp demo shout
-- 1h wpn spec to 25%
+- revert 1h wpn
