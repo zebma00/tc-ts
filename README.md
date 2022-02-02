@@ -40,5 +40,17 @@
 
 ### Shaman
 
+- ???
 - Rename empowered elemental shields
 - revert flametongue to prev iteration
+
+### warlock
+- fel concentration revert to 5
+
+### Warrior
+- slight nerf slam spec
+- imp berserker rage
+- commanding shout
+- booming voice revert
+- buff imp demo shout
+- 1h wpn spec to 25%
