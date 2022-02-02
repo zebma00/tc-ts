@@ -21,16 +21,4 @@ export type PatchNotesContent = {
   content: string
 }
 
-export type Stats = [{ stamina?: number; intellect?: number; strength?: number; agility?: number; spirit?: number }]
-
-export type Item = {
-  name: string
-  quality: 'epic' | 'rare'
-  slot: string
-  itemType: string
-  damage?: string | null
-  speed?: string | null
-  dps?: string | null
-  stats?: Stats | null
-  description?: string | null
-}
+export type Stats = { stamina: number; intellect: number; strength: number; agility: number; spirit: number }
