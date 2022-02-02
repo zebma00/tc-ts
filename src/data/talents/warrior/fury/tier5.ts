@@ -2,6 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
+<<<<<<< HEAD
     'Improved Intercept',
     'ability_rogue_sprint',
     ['Reduces the rage cost of your Intercept by ', ' rage points and reduces the cooldown by ', ' sec.'],
@@ -10,6 +11,13 @@ const tier5 = [
       [5, 10],
       [5, 10],
     ],
+=======
+    'Improved Cleave',
+    'ability_warrior_cleave',
+    ['Reduces the rage cost of your Cleave ability by ', '.'],
+    2,
+    [[2, 4]],
+>>>>>>> 8b33b65 (update talents + item class)
     null,
     null,
     null,
@@ -17,7 +25,15 @@ const tier5 = [
     null,
     null,
     null,
+<<<<<<< HEAD
     { isNew: false, isChanged: true, isMoved: false }
+=======
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true,
+    }
+>>>>>>> 8b33b65 (update talents + item class)
   ),
   new Talent(
     'Death Wish',

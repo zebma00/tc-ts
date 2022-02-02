@@ -37,6 +37,7 @@ const tier2 = [
   ),
   null,
   new Talent(
+<<<<<<< HEAD
     'Toughness',
     'spell_holy_devotion',
     ['Increases your armor by ', '% and reduces the duration of movement slowing effects on you by ', '%.'],
@@ -45,6 +46,13 @@ const tier2 = [
       [2, 4, 6, 8, 10],
       [10, 20, 30, 40, 50],
     ],
+=======
+    'Divine Purpose',
+    'spell_holy_divinepurpose',
+    ['Increases the Holy damage you deal to enemies that are stunned or incapacitated by ', '%.'],
+    2,
+    [[10, 20]],
+>>>>>>> 8b33b65 (update talents + item class)
     null,
     null,
     null,

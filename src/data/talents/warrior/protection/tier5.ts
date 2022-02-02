@@ -1,7 +1,14 @@
 import { Talent } from '../../Classes'
 
+<<<<<<< HEAD
 const tier5 = [
   new Talent('Improved Shield Wall', 'ability_warrior_shieldwall', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [[3, 5]]),
+=======
+export default [
+  new Talent('Improved Shield Wall', 'ability_warrior_shieldwall', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [
+    [3, 5],
+  ]),
+>>>>>>> 8b33b65 (update talents + item class)
   new Talent(
     'Concussion Blow',
     'ability_thunderbolt',
@@ -16,6 +23,7 @@ const tier5 = [
     '45 sec cooldown',
     ['D2']
   ),
+<<<<<<< HEAD
   new Talent('Improved Shield Bash', 'ability_warrior_shieldbash', ['Gives your Shield Bash a ', '% chance to silence the target for 2 sec.'], 2, [[50, 100]]),
   new Talent(
     'Focus Rage',
@@ -25,6 +33,16 @@ const tier5 = [
     ],
     1,
     [[]],
+=======
+  new Talent(
+    'Improved Intimidating Shout',
+    'ability_golemthunderclap',
+    ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'],
+    2,
+    [[1, 2]],
+    null,
+    null,
+>>>>>>> 8b33b65 (update talents + item class)
     null,
     null,
     null,

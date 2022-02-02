@@ -3,7 +3,29 @@ import { Talent } from '../../Classes'
 <<<<<<< HEAD
 const tier3 = [
   new Talent('Improved Overpower', 'inv_sword_05', ['Increases the critical strike chance of your Overpower by ', '%.'], 2, [[25, 50]]),
+<<<<<<< HEAD
   new Talent('Anger Management', 'spell_holy_blessingofstamina', ['Generate 1 Rage per 3 seconds while in combat.'], 1, [[1]]),
+=======
+  new Talent(
+    'Anger Management',
+    'spell_holy_blessingofstamina',
+    ['Increases the time required for your rage to decay while out of combat by 30%.'],
+    1,
+    [[1]],
+    [{ x: 1, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
+  ),
+>>>>>>> 8b33b65 (update talents + item class)
   new Talent(
     'Deep Wounds',
     'ability_backstab',

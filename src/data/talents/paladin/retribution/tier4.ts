@@ -3,6 +3,7 @@ import { Talent } from '../../Classes'
 <<<<<<< HEAD
 const tier4 = [
   new Talent(
+<<<<<<< HEAD
     'Eye for an Eye',
     'spell_holy_eyeforaneye',
     ['All spell criticals against you cause ', "% of the damage to be taken by the caster as well. The damage caused by Eye for an Eye will not exceed more than 50% of the Paladin's total health."],
@@ -64,6 +65,27 @@ export default [
 		}
 	),
 >>>>>>> 1ddb4f1 (patch notes)
+=======
+    'Two-Handed Weapon Specialization',
+    'inv_hammer_04',
+    ['Increases the damage you deal with two-handed melee weapons by ', '%.'],
+    3,
+    [[2, 4, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true,
+    }
+  ),
+  null,
+>>>>>>> 8b33b65 (update talents + item class)
 ]
 
 export default tier4

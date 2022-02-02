@@ -2,8 +2,13 @@ export default {
 <<<<<<< HEAD
   title: 'Paladin',
   content: [
+<<<<<<< HEAD
     'Consecration is now baseline and also heals party members. Learned at lvl 20.',
     'Judgement mana cost removed.',
+=======
+    "New ability: Spiritual Attunement: A passive ability that gives the Paladin mana when healed by other friendly targets' spells. The amount of mana gained is equal to 10% of the amount healed. Learned at lvl 50",
+    'Consecration is now baseline and also heals party members. Learned at lvl 20',
+>>>>>>> 8b33b65 (update talents + item class)
     'Seal of the crusader reworked: Successful attacks increase your attack speed by 8%. Stacks up to 5 times and lasts 12 sec. Judgement effect remains the same.',
     'Seal of justice now stuns up to two nearby enemies.',
     'Judgement of Justice now also caps the target’s movement speed at 100%.',

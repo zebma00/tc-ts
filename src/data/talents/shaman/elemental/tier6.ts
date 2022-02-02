@@ -36,6 +36,7 @@ const tier6 = [
   null,
 =======
 export default [
+<<<<<<< HEAD
 	null,
 	null,
 	new Talent(
@@ -62,6 +63,33 @@ export default [
 	),
 	null,
 >>>>>>> 1ddb4f1 (patch notes)
+=======
+  null,
+  null,
+  new Talent(
+    'Unleashed Elements',
+    'spell_nature_elementalprecision_1',
+    [
+      "Causes your critical hits from offensive spells to increase all party members' casting speed by ",
+      '% if within 20 yards of the Shaman. Lasts 10 sec.',
+    ],
+    5,
+    [[2, 4, 6, 8, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
+  null,
+>>>>>>> 8b33b65 (update talents + item class)
 ]
 
 export default tier6

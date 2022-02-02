@@ -15,7 +15,12 @@ export default {
 =======
 
 export default {
+<<<<<<< HEAD
 	title: 'Patch notes',
 	sections: [general, pveContent, pvpContent, classChanges, raceChanges, factions, itemization, professions],
 >>>>>>> 1ddb4f1 (patch notes)
+=======
+  title: 'Patch notes',
+  sections: [general, pveContent, pvpContent, classChanges, raceChanges, factions, itemization, professions],
+>>>>>>> 8b33b65 (update talents + item class)
 }

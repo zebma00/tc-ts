@@ -24,6 +24,7 @@
 
 ## Classes
 
+<<<<<<< HEAD
 ### Mage
 
 - Something elemental @ frost
@@ -35,10 +36,16 @@
 ### Rogue
 
 - Smth new assassination
+=======
+### priest
+
+- smth imp fade
+>>>>>>> 8b33b65 (update talents + item class)
 
 ### Shaman
 
 - Rename empowered elemental shields
+<<<<<<< HEAD
 
 ### Hunter
 
@@ -52,3 +59,9 @@
 - Commanding shout?
 - Hit talent?
 >>>>>>> 1ddb4f1 (patch notes)
+=======
+
+### Warrior
+
+- imp berserker rage
+>>>>>>> 8b33b65 (update talents + item class)
