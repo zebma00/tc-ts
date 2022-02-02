@@ -17,15 +17,15 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true
+      isMoved: true,
     }
   ),
   new Talent(
     'Improved Demoralizing Shout',
     'ability_warrior_warcry',
     ['Increases the melee attack power reduction of Demoralizing Shout by ', '%.'],
-    3,
-    [[10, 20, 30]],
+    5,
+    [[12, 24, 36, 42, 60]],
     null,
     null,
     null,
@@ -36,7 +36,7 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
   new Talent(

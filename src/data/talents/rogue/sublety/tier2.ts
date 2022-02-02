@@ -4,14 +4,28 @@ export default [
   new Talent(
     'Sleight of Hand',
     'ability_rogue_feint',
-    ['Reduces the chance you are hit by enemy melee and ranged attacks by ', '% and increases the threat reduction of your feint by ', '%.'],
+    ['Reduces the chance you are hit by enemy melee and ranged attacks by ', '% and reduces the energy cost of your Feint by ', '.'],
     2,
     [
       [1, 2],
-      [10, 20],
-    ]
+      [4, 8],
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
   ),
-  new Talent('Elusiveness', 'spell_magic_lesserinvisibilty', ['Reduces the cooldown of you Vanish and Blind abilities by ', ' sec.'], 2, [[45, 90]]),
+  new Talent('Elusiveness', 'spell_magic_lesserinvisibilty', ['Reduces the cooldown of you Vanish and Blind abilities by ', ' sec.'], 2, [
+    [45, 90],
+  ]),
   new Talent(
     'Camouflage',
     'ability_stealth',
@@ -25,7 +39,10 @@ export default [
   new Talent(
     'Setup',
     'spell_nature_mirrorimage',
-    ['Gives you a ', '% chance to add a combo point to the target after dodging or parrying an attack or fully resisting one of their spells.'],
+    [
+      'Gives you a ',
+      '% chance to add a combo point to the target after dodging or parrying an attack or fully resisting one of their spells.',
+    ],
     2,
     [[25, 50]],
     null,
@@ -38,7 +55,7 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true
+      isMoved: true,
     }
   ),
 ]

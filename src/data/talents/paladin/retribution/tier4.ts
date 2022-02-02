@@ -22,16 +22,6 @@ export default [
   ),
   null,
   new Talent(
-    'Eye for an Eye',
-    'spell_holy_eyeforaneye',
-    [
-      'All spell criticals against you cause ',
-      "% of the damage to be taken by the caster as well. The damage caused by Eye for an Eye will not exceed more than 50% of the Paladin's total health.",
-    ],
-    2,
-    [[25, 50]]
-  ),
-  new Talent(
     'Two-Handed Weapon Specialization',
     'inv_hammer_04',
     ['Increases the damage you deal with two-handed melee weapons by ', '%.'],
@@ -50,4 +40,5 @@ export default [
       isMoved: true,
     }
   ),
+  null,
 ]

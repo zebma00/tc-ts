@@ -6,7 +6,7 @@ export default [
     'ability_warrior_decisivestrike',
     ['Your Slam increases damage dealt by your next Slam by ', '% for 10 sec. This effect stacks up to 3 times.'],
     2,
-    [[5, 10]],
+    [[3, 5]],
     [{ x: 1, y: 0 }],
     null,
     null,
@@ -17,7 +17,7 @@ export default [
     {
       isNew: true,
       isChanged: false,
-      isMoved: false
+      isMoved: false,
     }
   ),
   new Talent(
@@ -39,7 +39,11 @@ export default [
     3,
     [[1, 2, 3]]
   ),
-  new Talent('Improved Battle shout', 'ability_warrior_battleshout', ['Increases the melee attack power bonus of your Battle Shout by ', '%.'], 5, [
-    [5, 10, 15, 20, 25],
-  ]),
+  new Talent(
+    'Improved Battle shout',
+    'ability_warrior_battleshout',
+    ['Increases the melee attack power bonus of your Battle Shout by ', '%.'],
+    5,
+    [[5, 10, 15, 20, 25]]
+  ),
 ]

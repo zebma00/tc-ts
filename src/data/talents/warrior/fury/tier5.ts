@@ -4,9 +4,9 @@ export default [
   new Talent(
     'Improved Cleave',
     'ability_warrior_cleave',
-    ['Increases the damage done by your Cleave ability by ', '%'],
-    3,
-    [[40, 80, 120]],
+    ['Reduces the rage cost of your Cleave ability by ', '.'],
+    2,
+    [[2, 4]],
     null,
     null,
     null,
@@ -16,7 +16,7 @@ export default [
     null,
     {
       isNew: false,
-      isChanged: false,
+      isChanged: true,
       isMoved: true,
     }
   ),

@@ -5,12 +5,9 @@ export default [
   new Talent(
     'Booming Voice',
     'spell_nature_purge',
-    ['Increases the area of effect and duration of your Battle Shout and Demoralizing Shout by ', '% and reduces the rage cost by ', '.'],
+    ['Increases the area of effect and duration of your Battle Shout, Commanding Shout and Demoralizing Shout by ', '%.'],
     5,
-    [
-      [10, 20, 30, 40, 50],
-      [1, 2, 3, 4, 5],
-    ],
+    [[10, 20, 30, 40, 50]],
     null,
     null,
     null,
@@ -21,7 +18,7 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
   new Talent('Cruelty', 'ability_rogue_eviscerate', ['Increases your chance to get a critical strike with melee weapons by ', '%.'], 5, [

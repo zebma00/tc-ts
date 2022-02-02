@@ -8,7 +8,7 @@ export default [
     ['Increases the time required for your rage to decay while out of combat by 30%.'],
     1,
     [[1]],
-    null,
+    [{ x: 1, y: 1 }],
     null,
     null,
     null,

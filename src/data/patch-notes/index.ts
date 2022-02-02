@@ -8,6 +8,6 @@ import itemization from './itemization'
 import raceChanges from './race-changes'
 
 export default {
-	title: 'Patch notes',
-	sections: [general, pveContent, pvpContent, classChanges, raceChanges, factions, itemization, professions],
+  title: 'Patch notes',
+  sections: [general, pveContent, pvpContent, classChanges, raceChanges, factions, itemization, professions],
 }
