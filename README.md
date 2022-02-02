@@ -31,6 +31,7 @@
 
 - lasting judgement return -> inc effect of wisdom / light judge / seals
 - take look at normalizing midtier ret talents
+- divine purpose to 2/2 10/20%
 
 ### rogue
 
@@ -44,6 +45,7 @@
 
 - Rename empowered elemental shields
 - revert flametongue to prev iteration --> only increase dmg of flametongue totem
+- unleashed elements only offensive crits
 
 ### warlock
 
