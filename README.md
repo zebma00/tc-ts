@@ -20,7 +20,3 @@
 ### Shaman
 
 - Rename empowered elemental shields
-
-### Warrior
-
-- imp berserker rage

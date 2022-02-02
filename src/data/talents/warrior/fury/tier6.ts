@@ -1,7 +1,28 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Berserker Rage', 'spell_nature_ancestralguardian', ['Berserker Rage generates ', ' rage when used.'], 2, [[5, 10]]),
+  new Talent(
+    'Improved Berserker Rage',
+    'spell_nature_ancestralguardian',
+    ['Reduces the cooldown of your Berserker Rage by ', ' sec and causes your Berserker Rage to generate ', ' rage when used.'],
+    2,
+    [
+      [5, 10],
+      [5, 10],
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
+  ),
   null,
   new Talent(
     'Flurry',
