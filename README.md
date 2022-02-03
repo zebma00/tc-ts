@@ -21,3 +21,7 @@
 ### Shaman
 
 - Rename empowered elemental shields: discharge
+
+### Warrior
+
+- 11pt should be classic one ye
