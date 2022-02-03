@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier1 = [
   null,
   new Talent('Improved Devotion Aura', 'spell_holy_devotionaura', ['Increases the armor bonus of your Devotion Aura by ', '%.'], 5, [
     [5, 10, 15, 20, 25],
@@ -21,3 +21,5 @@ export default [
   ),
   null,
 ]
+
+export default tier1

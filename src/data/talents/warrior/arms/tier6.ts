@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier6 = [
   new Talent(
     'Blood Frenzy',
     'ability_warrior_bloodfrenzy',
@@ -42,3 +42,5 @@ export default [
   ),
   null,
 ]
+
+export default tier6

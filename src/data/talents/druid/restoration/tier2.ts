@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Improved Healing Touch',
     'spell_nature_healingtouch',
@@ -37,3 +37,5 @@ export default [
   new Talent('Improved Enrage', 'ability_druid_enrage', ['The Enrage ability now instantly generates ', ' rage.'], 2, [[5, 10]]),
   null,
 ]
+
+export default tier2

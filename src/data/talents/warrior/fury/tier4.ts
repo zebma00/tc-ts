@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier4 = [
   new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage done by your off-hand weapon by ', '%.'], 5, [
     [5, 10, 15, 20, 25],
   ]),
@@ -21,3 +21,5 @@ export default [
   ),
   null,
 ]
+
+export default tier4

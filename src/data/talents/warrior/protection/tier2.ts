@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Improved Bloodrage',
     'ability_racial_bloodrage',
@@ -35,10 +35,15 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
-  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Reduces your damage taken by ', '%.'], 3, [[1, 2, 3]],
+  new Talent(
+    'Anticipation',
+    'spell_nature_mirrorimage',
+    ['Reduces your damage taken by ', '%.'],
+    3,
+    [[1, 2, 3]],
     null,
     null,
     null,
@@ -49,7 +54,9 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true
+      isMoved: true,
     }
   ),
 ]
+
+export default tier2

@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier1 = [
   new Talent(
     'Frost Warding',
     'spell_frost_frostward',
@@ -35,3 +35,5 @@ export default [
   ),
   null,
 ]
+
+export default tier1

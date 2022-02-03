@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent('Improved Overpower', 'inv_sword_05', ['Increases the critical strike chance of your Overpower by ', '%.'], 2, [[25, 50]]),
   new Talent(
     'Anger Management',
@@ -37,3 +37,5 @@ export default [
   ),
   null,
 ]
+
+export default tier3

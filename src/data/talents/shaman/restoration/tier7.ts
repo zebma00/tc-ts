@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier7 = [
   null,
   new Talent(
     'Torrent Totem',
@@ -26,3 +26,5 @@ export default [
   null,
   null,
 ]
+
+export default tier7

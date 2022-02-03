@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent('Wand Specialization', 'inv_wand_01', ['Increases the damage you deal with wands by ', '%.'], 2, [[13, 25]]),
   new Talent(
     'Magic Absorbtion',
@@ -33,3 +33,5 @@ export default [
   ),
   null,
 ]
+
+export default tier2

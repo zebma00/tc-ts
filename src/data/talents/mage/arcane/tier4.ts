@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier4 = [
   new Talent(
     'Improved Mana Shield',
     'spell_shadow_detectlesserinvisibility',
@@ -36,3 +36,5 @@ export default [
     }
   ),
 ]
+
+export default tier4

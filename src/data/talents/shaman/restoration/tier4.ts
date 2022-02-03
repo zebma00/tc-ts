@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier4 = [
   null,
   new Talent(
     'Restorative Totems',
@@ -30,3 +30,5 @@ export default [
   ),
   null,
 ]
+
+export default tier4

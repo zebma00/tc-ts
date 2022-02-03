@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent('Endurance', 'spell_shadow_shadowward', ['Reduces the cooldown of your Evasion and Sprint abilities by ', ' sec.'], 2, [
     [45, 90],
   ]),
@@ -52,3 +52,5 @@ export default [
     [[50, 100]]
   ),
 ]
+
+export default tier3

@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier1 = [
   null,
   new Talent('Master of Deception', 'spell_shadow_charm', ['Reduces the chance enemies can detect you while in stealth.'], 5, [[]]),
   new Talent(
@@ -12,3 +12,5 @@ export default [
   ),
   null,
 ]
+
+export default tier1

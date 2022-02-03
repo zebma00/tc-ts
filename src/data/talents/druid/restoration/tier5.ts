@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent(
     "Nature's Swiftness",
     'spell_nature_ravenform',
@@ -52,3 +52,5 @@ export default [
     }
   ),
 ]
+
+export default tier5

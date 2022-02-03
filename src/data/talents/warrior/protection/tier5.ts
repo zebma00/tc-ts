@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent('Improved Shield Wall', 'ability_warrior_shieldwall', ['Increases the duration of your Shield Wall by ', ' sec.'], 2, [
     [3, 5],
   ]),
@@ -39,3 +39,5 @@ export default [
   ),
   null,
 ]
+
+export default tier5

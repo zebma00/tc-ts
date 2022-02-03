@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Enhancing Totems',
     'spell_nature_earthbindtotem',
@@ -11,7 +11,7 @@ export default [
   null,
   new Talent('Two-Handed Axes and Maces', 'inv_axe_10', ['Allows you to use Two-Handed Axes and Two-Handed Maces.'], 1, [[]]),
   new Talent(
-    'Empowered Elemental Shields',
+    'Discharge',
     'spell_nature_elementalshields',
     ['Your attacks have ', ' chance based on weapon speed to expend a Lightning or Water Shield orb.'],
     2,
@@ -30,3 +30,5 @@ export default [
     }
   ),
 ]
+
+export default tier3

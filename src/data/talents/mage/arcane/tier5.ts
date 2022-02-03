@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent(
     'Arcane Impact',
     'spell_arcane_arcanetorrent',
@@ -40,3 +40,5 @@ export default [
   new Talent('Arcane Mind', 'spell_shadow_charm', ['Increases your maximum mana by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
   null,
 ]
+
+export default tier5

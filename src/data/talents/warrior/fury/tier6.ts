@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier6 = [
   new Talent(
     'Improved Berserker Rage',
     'spell_nature_ancestralguardian',
@@ -34,3 +34,5 @@ export default [
   ),
   null,
 ]
+
+export default tier6

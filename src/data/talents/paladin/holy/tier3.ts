@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Healing Light',
     'spell_holy_holybolt',
@@ -57,3 +57,5 @@ export default [
     }
   ),
 ]
+
+export default tier3

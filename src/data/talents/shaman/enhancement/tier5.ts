@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent(
     'Improved Weapon Totems',
     'spell_fire_enchantweapon',
@@ -49,3 +49,5 @@ export default [
   new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
   null,
 ]
+
+export default tier5

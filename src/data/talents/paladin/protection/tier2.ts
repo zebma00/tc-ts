@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Holy Guidance',
     'ability_rogue_ambush',
@@ -55,3 +55,5 @@ export default [
     }
   ),
 ]
+
+export default tier2

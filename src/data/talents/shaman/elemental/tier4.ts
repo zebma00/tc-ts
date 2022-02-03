@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier4 = [
   new Talent(
     'Improved Fire Totems',
     'spell_fire_sealoffire',
@@ -48,3 +48,5 @@ export default [
     [[3, 6, 9]]
   ),
 ]
+
+export default tier4

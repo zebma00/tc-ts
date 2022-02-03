@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Improved Dampen Magic',
     'spell_nature_abolishmagic',
@@ -43,3 +43,5 @@ export default [
   ),
   null,
 ]
+
+export default tier3

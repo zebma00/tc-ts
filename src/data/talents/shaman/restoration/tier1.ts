@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier1 = [
   null,
   new Talent(
     'Improved Healing Wave',
@@ -30,3 +30,5 @@ export default [
   ),
   null,
 ]
+
+export default tier1

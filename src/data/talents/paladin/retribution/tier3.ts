@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Eye for an Eye',
     'spell_holy_eyeforaneye',
@@ -60,3 +60,5 @@ export default [
     [[4, 8]]
   ),
 ]
+
+export default tier3

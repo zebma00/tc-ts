@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier1 = [
   new Talent(
     'Starlight Wrath',
     'spell_nature_abolishmagic',
@@ -46,3 +46,5 @@ export default [
   ),
   null,
 ]
+
+export default tier1

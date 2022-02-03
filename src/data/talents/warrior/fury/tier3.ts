@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Crushing Blows',
     'ability_warrior_decisivestrike',
@@ -47,3 +47,5 @@ export default [
     [[5, 10, 15, 20, 25]]
   ),
 ]
+
+export default tier3

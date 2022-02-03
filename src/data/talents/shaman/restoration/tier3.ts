@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [
     [1, 2, 3],
   ]),
@@ -34,3 +34,5 @@ export default [
     [5, 10, 15],
   ]),
 ]
+
+export default tier3

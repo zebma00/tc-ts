@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Blessing of Kings',
     'spell_magic_magearmor',
@@ -50,3 +50,5 @@ export default [
     }
   ),
 ]
+
+export default tier3

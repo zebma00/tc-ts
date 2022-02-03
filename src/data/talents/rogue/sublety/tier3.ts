@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent(
     'Initiative',
     'spell_shadow_fumble',
@@ -11,7 +11,9 @@ export default [
   new Talent(
     'Ghostly Strike',
     'spell_shadow_curse',
-    ['A strike that deals 150% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Cooldown 20 seconds'],
+    [
+      'A strike that deals 150% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Cooldown 20 seconds',
+    ],
     1,
     [[]],
     null,
@@ -21,10 +23,15 @@ export default [
     'Instant',
     '20 sec cooldown'
   ),
-  new Talent('Improved Ambush', 'ability_rogue_ambush', ['Increases the critical strike chance of your Ambush ability by ', '%.'], 3, [[15, 30, 45]]),
-  new Talent('Gore', 'ability_druid_ravage', ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'], 3, [
-    [10, 20, 30],
-  ],
+  new Talent('Improved Ambush', 'ability_rogue_ambush', ['Increases the critical strike chance of your Ambush ability by ', '%.'], 3, [
+    [15, 30, 45],
+  ]),
+  new Talent(
+    'Gore',
+    'ability_druid_ravage',
+    ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'],
+    3,
+    [[10, 20, 30]],
     null,
     null,
     null,
@@ -35,7 +42,9 @@ export default [
     {
       isNew: true,
       isChanged: false,
-      isMoved: false
+      isMoved: false,
     }
   ),
 ]
+
+export default tier3

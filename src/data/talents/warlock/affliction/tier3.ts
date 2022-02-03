@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent('Improved Curse of Agony', 'spell_shadow_curseofsargeras', ['Increases the damage done by your Curse of Agony by ', '%.'], 3, [
     [2, 4, 6],
   ]),
@@ -39,3 +39,5 @@ export default [
   ),
   null,
 ]
+
+export default tier3

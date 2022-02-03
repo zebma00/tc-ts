@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent('Ice Shards', 'spell_frost_iceshard', ['Increases the critical strike damage bonus of your Forst spells by ', '%.'], 5, [
     [20, 40, 60, 80, 100],
   ]),
@@ -32,3 +32,5 @@ export default [
     ]
   ),
 ]
+
+export default tier2

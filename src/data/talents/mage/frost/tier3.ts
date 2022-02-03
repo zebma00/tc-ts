@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier3 = [
   new Talent('Piercing Ice', 'spell_frost_frostbolt', ['Increases the damage done by your Frost splls by ', '%.'], 3, [[2, 4, 6]]),
   new Talent(
     'Icy Veins',
@@ -47,3 +47,4 @@ export default [
     }
   ),
 ]
+export default tier3

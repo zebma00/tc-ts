@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier7 = [
   null,
   new Talent(
     'Shield Slam',
@@ -20,9 +20,11 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
   null,
   null,
 ]
+
+export default tier7

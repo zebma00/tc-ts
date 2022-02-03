@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier6 = [
   null,
   null,
   new Talent(
@@ -24,3 +24,5 @@ export default [
   ),
   null,
 ]
+
+export default tier6

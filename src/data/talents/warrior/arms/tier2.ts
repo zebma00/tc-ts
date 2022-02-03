@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Improved Charge',
     'ability_warrior_charge',
@@ -66,3 +66,5 @@ export default [
     }
   ),
 ]
+
+export default tier2

@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent(
     'Improved Cleave',
     'ability_warrior_cleave',
@@ -60,3 +60,5 @@ export default [
     }
   ),
 ]
+
+export default tier5

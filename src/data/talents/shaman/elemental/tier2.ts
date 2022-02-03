@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     "Earth's Grasp",
     'spell_nature_stoneclawtotem',
@@ -51,3 +51,5 @@ export default [
     }
   ),
 ]
+
+export default tier2

@@ -1,9 +1,14 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier6 = [
   null,
   null,
-  new Talent('Deadliness', 'inv_weapon_crossbow_11', ['Increases your attack power against bleeding targets by ', '%.'], 5, [[4, 8, 12, 16, 20]],
+  new Talent(
+    'Deadliness',
+    'inv_weapon_crossbow_11',
+    ['Increases your attack power against bleeding targets by ', '%.'],
+    5,
+    [[4, 8, 12, 16, 20]],
     null,
     null,
     null,
@@ -14,8 +19,10 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
   null,
 ]
+
+export default tier6

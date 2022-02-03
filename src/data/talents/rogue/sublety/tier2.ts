@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Sleight of Hand',
     'ability_rogue_feint',
@@ -59,3 +59,5 @@ export default [
     }
   ),
 ]
+
+export default tier2

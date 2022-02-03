@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Improved Reincarnation',
     'spell_nature_reincarnation',
@@ -62,3 +62,5 @@ export default [
   ),
   null,
 ]
+
+export default tier2

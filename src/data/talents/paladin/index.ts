@@ -2,4 +2,6 @@ import holy from './holy'
 import protection from './protection'
 import retribution from './retribution'
 
-export default { class: 'paladin', specs: [holy, protection, retribution] }
+const paladin = { class: 'paladin', specs: [holy, protection, retribution] }
+
+export default paladin

@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier4 = [
   new Talent(
     'Unyielding Faith',
     'spell_holy_unyieldingfaith',
@@ -46,3 +46,5 @@ export default [
   ),
   null,
 ]
+
+export default tier4

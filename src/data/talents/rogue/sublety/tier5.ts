@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier5 = [
   new Talent(
     'Heightened Senses',
     'ability_ambush',
@@ -22,9 +22,13 @@ export default [
     '10 min cooldown',
     ['D2']
   ),
-  new Talent('Dirty Deeds', 'spell_shadow_summonsuccubus', ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'], 2, [
-    [10, 20],
-  ]),
+  new Talent(
+    'Dirty Deeds',
+    'spell_shadow_summonsuccubus',
+    ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'],
+    2,
+    [[10, 20]]
+  ),
   new Talent(
     'Hemorrhage',
     'spell_shadow_lifedrain',
@@ -43,7 +47,9 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
 ]
+
+export default tier5
