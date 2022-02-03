@@ -16,8 +16,3 @@
 ### priest
 
 - smth imp fade: reduces threat over time
-- rmv new disc thing
-
-### Shaman
-
-- Rename empowered elemental shields: discharge
