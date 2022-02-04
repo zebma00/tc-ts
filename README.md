@@ -16,3 +16,7 @@
 ### priest
 
 - smth imp fade: reduces threat over time
+
+### hunter
+
+- arcanr shot revert
