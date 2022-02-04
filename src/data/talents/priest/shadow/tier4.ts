@@ -10,7 +10,15 @@ const tier4 = [
     [
       [3, 6],
       [13, 25],
-    ]
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent('Shadow Reach', 'spell_shadow_chilltouch', ['Increases the range of your Shadow damage spells by ', '%.'], 3, [[6, 13, 20]]),
   new Talent(
