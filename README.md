@@ -16,6 +16,7 @@
 ### priest
 
 - smth imp fade: reduces threat over time
+- spell hit from holy dmg talent
 
 ### hunter
 
