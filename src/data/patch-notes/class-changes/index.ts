@@ -11,7 +11,7 @@ import warlockDemons from './classes/warlock-demons'
 import warrior from './classes/warrior'
 
 export default {
-	title: 'Class changes',
-	note: 'Note',
-	content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warlockDemons, warrior],
+  title: 'Class changes',
+  note: 'Note TBD',
+  content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warlockDemons, warrior],
 }

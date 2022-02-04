@@ -1,5 +1,5 @@
 export default {
   title: 'Phases',
-  note: 'Note',
+  note: 'TBD',
   content: [''],
 }

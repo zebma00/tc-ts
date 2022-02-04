@@ -43,7 +43,7 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
     <div
       className={styles.tooltipStyle}
       style={{
-        backgroundImage: "url('/img/background/tooltip.png')",
+        backgroundImage: `url("${process.env.PUBLIC_URL}/img/background/tooltip.png")`,
         backgroundSize: 'cover',
         backgroundPosition: 'center center',
         backgroundRepeat: 'no-repeat',

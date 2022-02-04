@@ -21,11 +21,11 @@ const SelectWrapper: React.FC<SelectWrapperProps> = ({ classes, selectedClass, s
               border: isSelected ? '4px solid rgba(255, 209, 0, 0.8)' : '4px solid transparent',
               filter: isSelected ? 'none' : 'brightness(50%)',
             }}>
-            <div className={styles.iconBorder} style={{ backgroundImage: `url(${process.env.PUBLIC_URL}'/img/icons/border.png')` }} />
+            <div className={styles.iconBorder} style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/icons/border.png")` }} />
             <div
               className={styles.iconClass}
               style={{
-                background: `url(${process.env.PUBLIC_URL}"/img/icons/${singleClass}.jpg") 0 0 no-repeat`,
+                background: `url("${process.env.PUBLIC_URL}/img/icons/${singleClass}.jpg") 0 0 no-repeat`,
               }}>
               <button
                 className={styles.selectButton}

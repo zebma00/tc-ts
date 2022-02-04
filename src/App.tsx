@@ -9,14 +9,14 @@ import styles from './index.module.css'
 const App = () => {
   return (
     <div id={styles.app}>
-      {/* <HashRouter> */}
-      <Router>
+      <HashRouter>
+        {/* <Router> */}
         <NavBar />
         <Route exact path='/' component={PatchNotes} />
         <Route path='/tc' component={TalentCalculator} />
         <Route path='/items' component={ExampleItems} />
-      </Router>
-      {/* </HashRouter> */}
+        {/* </Router> */}
+      </HashRouter>
     </div>
   )
 }

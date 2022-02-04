@@ -7,7 +7,10 @@ import styles from './index.module.css'
 const SingleItemIcon: React.FC<{ img: string }> = ({ img }) => {
   return (
     <div className={styles.singleItemIconWrapper}>
-      <div className={styles.singleItemHighlight} style={{ backgroundImage: "url('/img/icons/border-large.png')" }} />
+      <div
+        className={styles.singleItemHighlight}
+        style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/icons/border-large.png")` }}
+      />
       <div
         className={styles.singleItemIcon}
         style={{ background: `url("https://wow.zamimg.com/images/wow/icons/large/${img}.jpg") 0 0 no-repeat` }}
@@ -75,7 +78,9 @@ const SingleItem: React.FC<Item> = ({ name, img, quality, slot, itemType, damage
   return (
     <div className={styles.singleItemWrapper}>
       <SingleItemIcon img={img} />
-      <div className={styles.singleItemDescription} style={{ backgroundImage: `url('/img/background/tooltip.png')` }}>
+      <div
+        className={styles.singleItemDescription}
+        style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/background/tooltip.png")` }}>
         <ItemName name={name} quality={quality} />
         <ItemSlot slot={slot} itemType={itemType} />
         {hasDmg && <ItemDmg damage={damage} speed={speed} dps={dps} />}

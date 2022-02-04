@@ -1,6 +1,6 @@
 export default {
   title: 'Itemization',
-  note: 'Note',
+  note: 'Note TBD',
   content: [
     'Many 2, 3, 4 and 5-part sets have been added, along with single items. Many of these sets and items encourage niche and uncommon builds.',
     'Existing class sets have been reworked to better fit their class and spec.',

@@ -34,7 +34,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, dis
         set_showTooltip(false)
       }}>
       <ChangedBar displayChanged={displayChanged} changed={changed} />
-      <div className={styles.cellHighlight} style={{ backgroundImage: "url('/img/icons/border.png')" }} />
+      <div className={styles.cellHighlight} style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/icons/border.png")` }} />
       <div
         style={{
           background: `url("https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg") 0 0 no-repeat`,
