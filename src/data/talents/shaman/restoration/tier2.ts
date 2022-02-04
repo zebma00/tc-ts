@@ -60,7 +60,25 @@ const tier2 = [
       isMoved: true,
     }
   ),
-  null,
+  new Talent(
+    'Spiritual Blessing',
+    'spell_nature_natureblessing',
+    ['Increases your healing received by ', '%.'],
+    2,
+    [[5, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
 ]
 
 export default tier2
