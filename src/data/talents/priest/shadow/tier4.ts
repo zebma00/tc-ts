@@ -2,7 +2,16 @@ import { Talent } from '../../Classes'
 
 const tier4 = [
   null,
-  new Talent('Improved Fade', 'spell_magic_lesserinvisibilty', ['Reduces the cooldown of your Fade spell by ', ' sec.'], 2, [[3, 6]]),
+  new Talent(
+    'Improved Fade',
+    'spell_magic_lesserinvisibilty',
+    ['Reduces the cooldown of your Fade spell by ', ' sec. and reduces your threat generated while fade is active by ', '%.'],
+    2,
+    [
+      [3, 6],
+      [13, 25],
+    ]
+  ),
   new Talent('Shadow Reach', 'spell_shadow_chilltouch', ['Increases the range of your Shadow damage spells by ', '%.'], 3, [[6, 13, 20]]),
   new Talent(
     'Shadow Weaving',

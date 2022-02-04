@@ -25,12 +25,9 @@ const tier3 = [
   new Talent(
     'Searing Light',
     'spell_holy_searinglightpriest',
-    ['Increases the damage done by your Smite and Holy Fire spells by ', '% an increases their chance to hit by ', '%.'],
+    ['Increases the damage done by your Smite and Holy Fire spells by ', '%.'],
     2,
-    [
-      [5, 10],
-      [2, 4],
-    ],
+    [[5, 10]],
     [{ x: 1, y: 2 }],
     null,
     null,
@@ -40,7 +37,7 @@ const tier3 = [
     null,
     {
       isNew: false,
-      isChanged: true,
+      isChanged: false,
       isMoved: true,
     }
   ),
