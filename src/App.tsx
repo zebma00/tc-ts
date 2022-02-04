@@ -10,10 +10,12 @@ const App = () => {
   return (
     <div id={styles.app}>
       <HashRouter>
+        {/* <Router> */}
         <NavBar />
         <Route exact path='/' component={PatchNotes} />
         <Route path='/tc' component={TalentCalculator} />
         <Route path='/items' component={ExampleItems} />
+        {/* </Router> */}
       </HashRouter>
     </div>
   )
