@@ -20,4 +20,5 @@
 
 ### hunter
 
-- arcanr shot revert
+- arcan shot revert
+- melee spec 3/6/9 dmg
