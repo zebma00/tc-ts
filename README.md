@@ -11,8 +11,7 @@
 
 - Something for casters to compete with gnomes (10% wand damage / crit?)
 
-## Classes
+### Items
 
-### priest
-
-- smth imp fade: reduces threat over time
+- Some druid weapon / mace
+- Ring / trinket: 2% hit & 2% spellhit
