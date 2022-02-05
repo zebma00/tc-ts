@@ -9,19 +9,7 @@ const tier3 = [
     'spell_shadow_fingerofdeath',
     ['Gives you a ', '% chance to avoid interruption caused by damage while casting Drain Life, Drain Mana and Drain Soul spells.'],
     5,
-    [[14, 28, 42, 56, 70]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    [[14, 28, 42, 56, 70]]
   ),
   new Talent(
     'Amplify Curse',
