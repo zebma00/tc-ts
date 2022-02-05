@@ -19,7 +19,7 @@ const tier4 = [
     ]
   ),
   new Talent(
-    'Elemental Volition',
+    'Elemental Volatility',
     'ability_dualwieldspecialization',
     [
       'Critical strikes from your Frost spells increase the critical strike chance of your next Fire spell by ',
