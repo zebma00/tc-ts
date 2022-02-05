@@ -6,7 +6,7 @@ const tier3 = [
     'spell_nature_abolishmagic',
     ['Increases your chance to resist spells by ', '% while Dampen Magic is active.'],
     2,
-    [[2, 4]],
+    [[3, 6]],
     null,
     null,
     null,

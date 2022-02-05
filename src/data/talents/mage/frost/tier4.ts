@@ -19,12 +19,22 @@ const tier4 = [
     ]
   ),
   new Talent(
-    'Shatter',
-    'spell_frost_frostshock',
-    ['Increases the critical strike chance of all your spells against frozen targets by ', '%.'],
-    5,
-    [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 2 }]
+    'Elemental Volition',
+    'ability_dualwieldspecialization',
+    [
+      'Critical strikes from your Frost spells increase the critical strike chance of your next Fire spell by ',
+      '%. This effect lasts 30 sec or when you have caused a ciritcal strike with a Fire spell.',
+    ],
+    3,
+    [[5, 10, 15]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
 ]

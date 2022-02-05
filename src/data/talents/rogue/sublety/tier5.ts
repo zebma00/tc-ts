@@ -25,7 +25,7 @@ const tier5 = [
   new Talent(
     'Dirty Deeds',
     'spell_shadow_summonsuccubus',
-    ['Reduces the energy cost of your Cheap Shot and Garrote abilites by ', '.'],
+    ['Reduces the Energy cost of your Cheap Shot and Garrote abilites by ', '.'],
     2,
     [[10, 20]]
   ),

@@ -14,12 +14,12 @@ const tier2 = [
     2,
     [[2, 4]],
     [{ x: null, y: null }],
-    [{ x: 3, y: 2 }],
+    [{ x: 2, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2']
+    ['D1']
   ),
   new Talent(
     'Permafrost',

@@ -4,7 +4,7 @@ const tier2 = [
   new Talent(
     'Improved Psychic Scream',
     'spell_shadow_psychicscream',
-    ['Reduces the cooldown of psychic scream by ', ' sec'],
+    ['Reduces the cooldown of psychic scream by ', ' sec.'],
     2,
     [[2, 4]],
     [{ x: null, y: null }],

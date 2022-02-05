@@ -23,7 +23,7 @@ const tier2 = [
   new Talent(
     'Brutal Impact',
     'ability_druid_bash',
-    ['Increases the stun duration of your Bash and Pounce abilites by ', 'sec.'],
+    ['Increases the stun duration of your Bash and Pounce abilites by ', ' sec.'],
     2,
     [[0.5, 1]],
     null

@@ -11,7 +11,7 @@ const tier4 = [
   new Talent(
     'Improved Counterspell',
     'spell_frost_iceshock',
-    ['Gives your counterspell a ', ' chance to silence the target for 4 sec.'],
+    ['Gives your counterspell a ', '% chance to silence the target for 4 sec.'],
     2,
     [[50, 100]]
   ),

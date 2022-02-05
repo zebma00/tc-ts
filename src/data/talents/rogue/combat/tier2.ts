@@ -7,7 +7,7 @@ const tier2 = [
   new Talent(
     'Precision',
     'ability_marksmanship',
-    ['Increases your chance to hit with melee weapons by ', '%'],
+    ['Increases your chance to hit with melee weapons by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
     [{ x: null, y: null }],

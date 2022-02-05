@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Vigor',
     'spell_nature_earthbindtotem',
-    ['Increases your maximum energy by 10 and reduces the energy cost of your finishing moves by 5.'],
+    ['Increases your maximum Energy by 10 and reduces the Energy cost of your finishing moves by 5.'],
     1,
     [[]],
     null,

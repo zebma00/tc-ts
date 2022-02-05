@@ -3,27 +3,26 @@ import { Talent } from '../../Classes'
 const tier3 = [
   new Talent('Piercing Ice', 'spell_frost_frostbolt', ['Increases the damage done by your Frost splls by ', '%.'], 3, [[2, 4, 6]]),
   new Talent(
-    'Icy Veins',
-    'spell_frost_coldhearted',
-    [
-      'Hastens your spellcasting, increasing spell casting speed by 20% and gives you 100% chance to avoid interruption caused by damage while casting. lasts 20 sec.',
-    ],
+    'Cold Snao',
+    'spell_frost_wizardmark',
+    ['When activated, this spell finishes the cooldown of all your Frost spells.'],
     1,
     [[]],
     null,
     null,
-    '3% of base mana',
+    null,
     null,
     'Instant',
-    '3 min cooldown',
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    '10 min cooldown'
   ),
-  null,
+  new Talent(
+    'Shatter',
+    'spell_frost_frostshock',
+    ['Increases the critical strike chance of all your spells against frozen targets by ', '%.'],
+    5,
+    [[10, 20, 30, 40, 50]],
+    [{ x: 1, y: 2 }]
+  ),
   new Talent(
     'Improved Blizzard',
     'spell_frost_icestorm',

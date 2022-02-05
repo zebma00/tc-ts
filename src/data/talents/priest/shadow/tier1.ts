@@ -12,7 +12,7 @@ const tier1 = [
     5,
     [[20, 40, 60, 80, 100]]
   ),
-  new Talent('Blackout', 'spell_shadow_gathershadows', ['Your Shadow spells have a .', '% chance to stun the target for 3 sec.'], 5, [
+  new Talent('Blackout', 'spell_shadow_gathershadows', ['Your Shadow spells have a ', '% chance to stun the target for 3 sec.'], 5, [
     [2, 4, 6, 8, 10],
   ]),
   null,

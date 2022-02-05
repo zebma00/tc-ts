@@ -5,6 +5,6 @@ import miscellaneous from './general/miscellaneous'
 
 export default {
   title: 'General',
-  note: 'Note TBD',
+  note: 'Note TBD; based on classic (not SoM)',
   content: [heroic, badgeOfJustice, worldBuffs, miscellaneous],
 }

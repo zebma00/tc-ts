@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier1 = [
-  new Talent('Improved Eviscerate', 'ability_rogue_eviscerate', ['Increases the damage done by your Eviscerate ability by ', ' %.'], 3, [
+  new Talent('Improved Eviscerate', 'ability_rogue_eviscerate', ['Increases the damage done by your Eviscerate ability by ', '%.'], 3, [
     [5, 10, 15],
   ]),
   new Talent(

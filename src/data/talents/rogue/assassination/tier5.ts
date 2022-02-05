@@ -5,7 +5,7 @@ const tier5 = [
     'Envenom',
     'ability_creature_poison_06',
     [
-      'Increases the damage done by your bleed effects by an additional ',
+      'Increases the damage done by your Eviscerate and Rupture by an additional ',
       '% for each poison effect on the target, up to a maximum or 30%.',
     ],
     2,

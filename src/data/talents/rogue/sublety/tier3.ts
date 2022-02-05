@@ -12,7 +12,7 @@ const tier3 = [
     'Ghostly Strike',
     'spell_shadow_curse',
     [
-      'A strike that deals 150% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Cooldown 20 seconds',
+      'A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point. Cooldown 20 seconds',
     ],
     1,
     [[]],
@@ -27,11 +27,14 @@ const tier3 = [
     [15, 30, 45],
   ]),
   new Talent(
-    'Gore',
-    'ability_druid_ravage',
-    ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'],
-    3,
-    [[10, 20, 30]],
+    'Setup',
+    'spell_nature_mirrorimage',
+    [
+      'Gives you a ',
+      '% chance to add a combo point to the target after dodging or parrying an attack or fully resisting one of their spells.',
+    ],
+    2,
+    [[25, 50]],
     null,
     null,
     null,
@@ -40,9 +43,9 @@ const tier3 = [
     null,
     null,
     {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
+      isNew: false,
+      isChanged: true,
+      isMoved: true,
     }
   ),
 ]

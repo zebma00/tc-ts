@@ -1,7 +1,25 @@
 import { Talent } from '../../Classes'
 
 export default [
-  null,
+  new Talent(
+    'Melee Weapon Specialization',
+    'inv_sword_05',
+    ['Increases the damage you deal with melee attacks and abilities by ', '%.'],
+    3,
+    [[3, 6, 9]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent(
     'Surefooted',
     'ability_kick',
@@ -32,7 +50,7 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
 ]

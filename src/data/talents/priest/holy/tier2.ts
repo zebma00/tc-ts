@@ -42,7 +42,7 @@ const tier2 = [
   new Talent(
     'Divine Fury',
     'spell_holy_sealofwrath',
-    ['Reduces the casting time of your Heal, Greater Heal, Smite and Holy Fire spells by ', '%.'],
+    ['Reduces the casting time of your Heal, Greater Heal, Smite and Holy Fire spells by ', ' sec.'],
     5,
     [[0.1, 0.2, 0.3, 0.4, 0.5]],
     [{ x: null, y: null }],

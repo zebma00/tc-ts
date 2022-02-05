@@ -1,7 +1,9 @@
 import { Talent } from '../../Classes'
 
 const tier2 = [
-  new Talent('Improved Judgement', 'spell_holy_righteousfury', ['Decreases the cooldown of your Judgement spell by ', 'sec.'], 2, [[1, 2]]),
+  new Talent('Improved Judgement', 'spell_holy_righteousfury', ['Decreases the cooldown of your Judgement spell by ', ' sec.'], 2, [
+    [1, 2],
+  ]),
   new Talent(
     'Improved Seal of the Crusader',
     'spell_holy_holysmite',

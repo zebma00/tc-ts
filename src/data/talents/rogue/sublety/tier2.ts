@@ -37,14 +37,11 @@ const tier2 = [
     ]
   ),
   new Talent(
-    'Setup',
-    'spell_nature_mirrorimage',
-    [
-      'Gives you a ',
-      '% chance to add a combo point to the target after dodging or parrying an attack or fully resisting one of their spells.',
-    ],
-    2,
-    [[25, 50]],
+    'Gore',
+    'ability_druid_ravage',
+    ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'],
+    3,
+    [[10, 20, 30]],
     null,
     null,
     null,
@@ -53,9 +50,9 @@ const tier2 = [
     null,
     null,
     {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
     }
   ),
 ]

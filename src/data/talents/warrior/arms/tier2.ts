@@ -26,7 +26,7 @@ const tier2 = [
   new Talent(
     'Tactical Mastery',
     'spell_nature_enchantarmor',
-    ['You retain up to an additional', ' rage points when you change stances.'],
+    ['You retain up to an additional ', ' rage points when you change stances.'],
     3,
     [[5, 10, 15]],
     [{ x: null, y: null }],

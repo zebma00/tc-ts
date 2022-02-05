@@ -12,7 +12,7 @@ const tier1 = [
   new Talent(
     'Improved Corruption',
     'spell_shadow_abominationexplosion',
-    ['Reduces the cast time of your Corruption spell by ', 'sec.'],
+    ['Reduces the cast time of your Corruption spell by ', ' sec.'],
     5,
     [[0.4, 0.8, 1.2, 1.6, 2]]
   ),

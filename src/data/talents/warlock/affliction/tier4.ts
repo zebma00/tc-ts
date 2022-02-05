@@ -18,7 +18,15 @@ const tier4 = [
     'spell_shadow_siphonmana',
     ['Causes ', '% of the Mana drained by your Drain Mana spell to drain health as well.'],
     2,
-    [[15, 30]]
+    [[15, 30]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
 ]
 
