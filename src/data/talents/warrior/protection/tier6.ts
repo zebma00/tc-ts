@@ -6,9 +6,9 @@ const tier6 = [
   new Talent(
     'One-Handed Weapon Specialization',
     'inv_sword_20',
-    ['Increases you deal with one-handed melee weapons by ', '%.'],
+    ['Increases your rage generated from attacks with One-Handed weapons by ', '%.'],
     5,
-    [[2, 4, 6, 8, 10]],
+    [[4, 8, 12, 16, 20]],
     null,
     null,
     null,
