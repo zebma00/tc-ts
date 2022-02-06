@@ -12,6 +12,10 @@
 
 ### Hunter
 - BM talents --> pets instead of pet
+- imp (M)end pet typo
+- fero inspiration typo
+- revert trueshot
+- revert hawk aspect
 
 ### Mage
 - smth amplify / dampen, fix arcane accordingly
