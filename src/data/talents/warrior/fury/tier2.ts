@@ -25,19 +25,7 @@ const tier2 = [
     'ability_warrior_warcry',
     ['Increases the melee attack power reduction of Demoralizing Shout by ', '%.'],
     5,
-    [[12, 24, 36, 42, 60]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    [[18, 16, 24, 32, 40]]
   ),
   new Talent(
     'Unbridled Wrath',
