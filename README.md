@@ -10,6 +10,9 @@
 ### Druid
 - smth barkskin
 
+### Hunter
+- BM talents --> pets instead of pet
+
 ### Mage
 - smth amplify / dampen, fix arcane accordingly
 - arcane: increase arcane dmg when gaining mana / absorb or smth
