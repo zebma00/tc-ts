@@ -21,7 +21,14 @@ const tier3 = [
     ['Increases the critical strike chance of all your spells against frozen targets by ', '%.'],
     5,
     [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 2 }]
+    [{ x: 1, y: 2 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: false, isMoved: true }
   ),
   new Talent(
     'Improved Blizzard',
