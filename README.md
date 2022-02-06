@@ -7,6 +7,9 @@
 
 ## Classes
 
+### Druid
+- smth barkskin
+
 ### Mage
 - smth amplify / dampen, fix arcane accordingly
 - arcane: increase arcane dmg when gaining mana / absorb or smth
