@@ -1,6 +1,6 @@
 import { Talent } from '../../Classes'
 
-export default [
+const tier2 = [
   new Talent(
     'Spirit Bond',
     'classic_ability_druid_demoralizingroar',
@@ -23,9 +23,12 @@ export default [
   new Talent(
     'Endurance Training',
     'spell_nature_reincarnation',
-    ['Increases the health of your pets by ', '%.'],
+    ['Increases the health of your pets by ', '% and your total health by ', '%.'],
     3,
-    [[5, 10, 15]],
+    [
+      [5, 10, 15],
+      [1, 2, 3],
+    ],
     null,
     null,
     null,
@@ -40,11 +43,14 @@ export default [
     }
   ),
   new Talent(
-    'Unleashed Fury',
-    'ability_bullrush',
-    ['Increases the damage done by your pets by ', '%.'],
-    5,
-    [[4, 8, 12, 16, 20]],
+    'Thick Hide',
+    'inv_misc_pelt_bear_03',
+    ['Increases the armor rating of your pets by ', '% and reduces area of effect damage taken by your pet by ', '%.'],
+    3,
+    [
+      [10, 20, 30],
+      [20, 40, 60],
+    ],
     null,
     null,
     null,
@@ -54,7 +60,7 @@ export default [
     null,
     {
       isNew: false,
-      isChanged: false,
+      isChanged: true,
       isMoved: true,
     }
   ),
@@ -75,3 +81,5 @@ export default [
     ]
   ),
 ]
+
+export default tier2
