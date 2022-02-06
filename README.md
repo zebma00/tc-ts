@@ -5,12 +5,17 @@
 - Phases
 - World Buffs
 
+## Classes
+
+### Shaman
+- revert storm reach
+- call of thunder 3pts
+
 ### Items
 
 - Some druid weapon / mace
-- Shaman totem --> WF attacks cause no additional threat
-- Shaman totem --> fire / frost dmg increase
+- Shaman totem --> fire / frost dmg increase or crit chance
 - Weapon enchant --> increase AP; reduce crit chance
-- Ring / trinket: 2% hit & 2% spellhit
+- Ring: 2% hit & 2% spellhit
 - Daybreak
-- Druid idol --> increase spell dmg + healing crit value
+- Druid idol --> increase spell dmg + healing crit value?
