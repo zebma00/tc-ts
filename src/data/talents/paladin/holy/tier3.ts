@@ -11,7 +11,7 @@ const tier3 = [
   new Talent(
     'Aura Mastery',
     'spell_holy_auramastery',
-    ['Increases the range of you Auras to 40 yards and increases their effect by 10%.'],
+    ['Increases the range of you Auras to 40 yards.'],
     1,
     [[]],
     null,

@@ -5,8 +5,8 @@ const tier5 = [
     'Celestial Spark',
     'ability_druid_dreamstate',
     ['Your successful Starfire hits reduce the cooldown of your Innervate and Hurricane spells by ', ' sec.'],
-    2,
-    [[0.5, 1]],
+    3,
+    [[0.5, 1, 1.5]],
     null,
     null,
     null,
@@ -23,9 +23,7 @@ const tier5 = [
   new Talent(
     "Nature's Grace",
     'spell_nature_naturesblessing',
-    [
-      'All spell criticals grace you with a blessing of nature, returning 25% of their mana cost and reducing the casting time of your next two spells by 0.5 sec.',
-    ],
+    ['All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec.'],
     1,
     [[1]],
     [{ x: null, y: null }],
@@ -34,12 +32,7 @@ const tier5 = [
     null,
     null,
     null,
-    ['D1'],
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    ['D1']
   ),
   new Talent(
     'Moonglow',
