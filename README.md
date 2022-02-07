@@ -15,7 +15,7 @@
 - imp (M)end pet typo
 - fero inspiration typo
 - revert trueshot
-- revert hawk aspect
+- melee wpn reword
 
 ### Mage
 - smth amplify / dampen, fix arcane accordingly
@@ -26,7 +26,10 @@
 - revert mana tide
 - call of thunder 3pts
 
-### Items
+### Warlock
+- demon(s) check
+
+## Items
 
 - Some druid weapon / mace
 - Shaman totem --> fire / frost dmg increase or crit chance
