@@ -16,6 +16,7 @@
 - fero inspiration typo
 - revert trueshot
 - melee wpn reword
+- entrapment isChanged
 
 ### Mage
 - smth amplify / dampen, fix arcane accordingly
