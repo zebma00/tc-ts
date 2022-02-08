@@ -9,6 +9,7 @@
 
 ### Druid
 - smth barkskin
+- healing receieve by
 
 ### Hunter
 - BM talents --> pets instead of pet
@@ -26,6 +27,7 @@
 - revert storm reach
 - revert mana tide
 - call of thunder 3pts
+- healing thrat reduce to 20%
 
 ### Warlock
 - demon(s) check
