@@ -29,7 +29,7 @@ const ItemName: React.FC<{ name: string; quality: string }> = ({ name, quality }
   )
 }
 
-const ItemSlot: React.FC<{ slot: string; itemType: string }> = ({ slot, itemType }) => {
+const ItemSlot: React.FC<{ slot: string; itemType: string | null | undefined }> = ({ slot, itemType }) => {
   return (
     <div className={styles.singleItemFlex}>
       <div>{slot}</div>
@@ -85,7 +85,7 @@ const SingleItem: React.FC<Item> = ({ name, img, quality, slot, itemType, damage
         <ItemSlot slot={slot} itemType={itemType} />
         {hasDmg && <ItemDmg damage={damage} speed={speed} dps={dps} />}
         {stats && <ItemStats stats={stats} />}
-        <div className={styles.itemDescription}>{description}</div>
+        <div className={styles.itemDescription}>{description && description.map((line, i) => <div key={i}>{line}</div>)}</div>
       </div>
     </div>
   )

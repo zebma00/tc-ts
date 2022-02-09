@@ -4,12 +4,9 @@ const tier5 = [
   new Talent(
     'Arcane Impact',
     'spell_arcane_arcanetorrent',
-    [
-      'Gives your arcane spells a ',
-      '% chance to apply the Arcane Impact effect, which increases the damage of arcane spells done to the target by 1%. Stacks up to 10 times.',
-    ],
+    ['Increases the damage done by your arcane spells by ', '% for 10 sec after resisting or fully absorbing spell damage.'],
     2,
-    [[50, 100]],
+    [[13, 25]],
     null,
     null,
     null,

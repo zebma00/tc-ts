@@ -26,7 +26,7 @@ export default [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false
+      isMoved: false,
     }
   ),
   new Talent('Survivalist', 'spell_shadow_twilight', ['Increases total health by ', '%.'], 5, [[2, 4, 6, 8, 10]]),

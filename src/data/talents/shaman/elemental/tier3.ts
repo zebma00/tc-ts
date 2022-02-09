@@ -17,15 +17,16 @@ const tier3 = [
     'Call of Thunder',
     'spell_nature_callstorm',
     ['Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional ', '%.'],
-    5,
-    [[1, 2, 3, 4, 6]],
+    3,
+    [[2, 4, 6]],
     [{ x: null, y: null }],
     [{ x: 3, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   null,
 ]

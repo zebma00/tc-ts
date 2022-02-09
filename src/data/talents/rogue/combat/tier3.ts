@@ -36,13 +36,7 @@ const tier3 = [
     '10 Energy',
     'Melee range',
     'Instant',
-    '6 sec cooldown',
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
+    '6 sec cooldown'
   ),
   new Talent(
     'Improved Sprint',

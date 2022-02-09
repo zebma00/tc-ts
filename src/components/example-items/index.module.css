@@ -1,7 +1,12 @@
 .exampleItems {
   padding: 1rem;
-  max-width: 726px;
+  max-width: 750px;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .singleItemWrapper {

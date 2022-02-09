@@ -1,27 +1,27 @@
 .patchNotes {
-	padding: 1rem;
-	max-width: 726px;
-	margin: 0 auto;
+  padding: 1rem;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 .section {
-	margin-top: 1.5rem;
+  margin-top: 1.5rem;
 }
 
 .sectionHeader {
-	display: flex;
-	align-items: center;
-	text-align: center;
+  display: flex;
+  align-items: center;
+  text-align: center;
 }
 
 .sectionHeader:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .sectionTitle {
-	margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 .paragraph {
-	margin-top: 1rem;
+  margin-top: 1rem;
 }

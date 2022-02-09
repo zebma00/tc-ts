@@ -3,10 +3,10 @@ import { Talent } from '../../Classes'
 const tier7 = [
   null,
   new Talent(
-    'Torrent Totem',
+    'Mana Tide Totem',
     'spell_frost_summonwaterelemental',
     [
-      "Summons a torrent totem at the feet of the caster with health equal to 20% of the shaman's for 12 sec. The torrent totem restores 120 mana to all party members within 20 yards every 3 sec.",
+      'Summons a torrent totem at the feet of the caster with 5 health for 12 sec that restores 170 mana to all party members within 20 yards every 3 sec.',
     ],
     1,
     [[1]],
@@ -15,13 +15,7 @@ const tier7 = [
     '20 Mana',
     null,
     'Instant',
-    '3 min cooldown',
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    '5 min cooldown'
   ),
   null,
   null,

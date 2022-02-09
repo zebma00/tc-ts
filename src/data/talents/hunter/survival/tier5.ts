@@ -20,7 +20,7 @@ export default [
     {
       isNew: true,
       isChanged: false,
-      isMoved: false
+      isMoved: false,
     }
   ),
   new Talent(

@@ -4,7 +4,7 @@ const tier2 = [
   new Talent(
     'Spirit Bond',
     'classic_ability_druid_demoralizingroar',
-    ['Increases the damage you and your pet deal by ', '% while within 10 yards of each other.'],
+    ['Increases the damage you and your pets deal by ', '% while within 10 yards of each other.'],
     2,
     [[2, 4]],
     null,

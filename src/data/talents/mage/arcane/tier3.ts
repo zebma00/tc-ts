@@ -2,11 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier3 = [
   new Talent(
-    'Improved Dampen Magic',
+    'Magic Attunement',
     'spell_nature_abolishmagic',
-    ['Increases your chance to resist spells by ', '% while Dampen Magic is active.'],
+    ['Increases the effect of your Amplify Magic and Dampen Magic spells by ', '%.'],
     2,
-    [[3, 6]],
+    [[25, 50]],
     null,
     null,
     null,

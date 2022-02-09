@@ -20,7 +20,7 @@ const tier4 = [
   new Talent(
     'Improved Rejuvenation',
     'spell_nature_rejuvenation',
-    ['Causes your Rejuvenation to increase healing done to the target by ', '%. This effect does not stack.'],
+    ['Causes your Rejuvenation to increase healing received by the target by ', '%. This effect does not stack.'],
     3,
     [[4, 7, 10]],
     null,

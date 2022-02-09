@@ -9,7 +9,19 @@ export default [
       '% chance to entrap the target, preventing them from moving for 5 sec.',
     ],
     3,
-    [[8, 16, 25]]
+    [[8, 16, 25]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
   ),
   new Talent(
     'Savage Strikes',

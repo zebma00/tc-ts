@@ -7,10 +7,10 @@ const tier6 = [
     'ability_racial_avatar',
     [
       'Gives you a ',
-      '% bonus to your physical and Holy damage after dealing a critical strike from a weapon swing, spell, or ability. This effect stacks up to 3 times. Lasts 15 sec.',
+      '% bonus to your physical and Holy damage and healing after dealing a critical strike from a weapon swing, spell, or ability.',
     ],
     5,
-    [[2, 4, 6, 8, 10]],
+    [[3, 6, 9, 12, 15]],
     [{ x: 2, y: 1 }],
     null,
     null,

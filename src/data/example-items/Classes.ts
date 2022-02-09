@@ -5,29 +5,29 @@ export class Item {
   img: string
   quality: 'epic' | 'rare'
   slot: string
-  itemType: string
+  itemType?: string | null
   damage: string | null
   speed: string | null
   dps: string | null
   stats: Stats | null
-  description: string | null
+  description: string[] | null
   constructor(
     name: string,
     img: string,
     quality: 'epic' | 'rare',
     slot: string,
-    itemType: string,
+    itemType?: string | null,
     damage?: string | null,
     speed?: string | null,
     dps?: string | null,
     stats?: Stats | null,
-    description?: string | null
+    description?: string[] | null
   ) {
     this.name = name
     this.img = img
     this.quality = quality
     this.slot = slot
-    this.itemType = itemType
+    this.itemType = itemType ? itemType : null
     this.damage = damage ? damage : null
     this.speed = speed ? speed : null
     this.dps = dps ? dps : null

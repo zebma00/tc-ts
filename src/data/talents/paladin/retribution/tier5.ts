@@ -2,28 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Crusade',
-    'spell_holy_crusade',
-    ['Your damaging melee attacks have a ', '% chance to refresh all Judgements on the target.'],
-    2,
-    [[50, 100]],
-    [
-      {
-        x: 3,
-        y: 0,
-      },
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    'Two-Handed Weapon Specialization',
+    'inv_hammer_04',
+    ['Increases the damage you deal with two-handed melee weapons by ', '%.'],
+    3,
+    [[2, 4, 6]]
   ),
   null,
   new Talent(
