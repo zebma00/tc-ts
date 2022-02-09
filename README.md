@@ -4,12 +4,19 @@
 
 - Phases
 - World Buffs
+- world pvp:
+Zones with X towers / locations. Cap towers like hellfire peninsula. Triggers once every 2 hours. Mini bosses nearby: killing these increases your factions cap speed. When all towers are capped, players in that zone gain honor.
+azshara, silithus, epl, blasted land
+- specify rep gain:
+Major city rep tabard: heroics and world pvp
+BG faction tabard: any bg and world pvp
+
 
 ## Classes
 
 ### Druid
-- smth barkskin
-- healing receieve by
+- smth barkskin: remove penalties, increase cd
+- healing receieve by rename @ imp rejuv
 
 ### Hunter
 - BM talents --> pets instead of pet
@@ -30,7 +37,8 @@
 - healing thrat reduce to 20%
 
 ### Warlock
-- demon(s) check
+- demon(s) written check
+- consume shadows gain mana?
 
 ## Items
 
