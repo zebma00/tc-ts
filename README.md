@@ -10,6 +10,7 @@ azshara, silithus, epl, blasted land
 - specify rep gain:
 Major city rep tabard: heroics and world pvp
 BG faction tabard: any bg and world pvp
+Here world pvp means: capping a tower, killing mini boss, winning event
 
 
 ## Classes
