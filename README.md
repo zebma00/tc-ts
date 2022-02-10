@@ -18,6 +18,9 @@
 ### Mage
 - Smth damoen / amplify
 
+### Paladin
+- Revert imp crusader position
+
 ### Shaman
 - Revert totemic focus / tidal focus
 
