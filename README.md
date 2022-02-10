@@ -15,6 +15,12 @@
 
 ## Classes
 
+### Mage
+- Smth damoen / amplify
+
+### Shaman
+- Revert totemic focus / tidal focus
+
 ## Items
 
 - Some druid weapon / mace
