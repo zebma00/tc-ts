@@ -7,6 +7,9 @@
 
 ## Classes
 
+### Druid
+- barkskin 2 min cd
+
 ### mage
 - smth dampen / amplify
 
