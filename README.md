@@ -7,8 +7,17 @@
 
 ## Classes
 
+### mage
+- smth dampen / amplify
+
+### Warlock
+- revert mama return from demons
+
 ### Warrior
-- imo hamstring isNotMoved
+- imp hamstring isNotMoved
+- revert imp rend
+- revert imp charge
+- swap imp int shout + imp shield bash; imp shield bash isNotMoved
 
 ## Items
 
