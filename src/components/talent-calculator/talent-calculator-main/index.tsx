@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import TCFooter from '../talent-calculator-footer'
 import { ClassTalentType } from '../../../types/'
-import { talentCalcMaker, specNameMaker, checkTotalPoints, rightClick, leftClick } from '../helpers'
+import { talentCalcMaker, specMaker, checkTotalPoints, rightClick, leftClick } from '../helpers'
 import Grid from '../grid/'
 import styles from './index.module.css'
 
@@ -18,11 +18,14 @@ interface TalentCalculatorMain {
 const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, displayChanged }) => {
 	const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
 	const [specNames, setSpecNames] = useState<string[] | null>(null)
+	const [specIcons, setSpecIcons] = useState<string[] | null>(null)
 	const classData = require(`../../../data/talents/${selectedClass}`)
 
 	useEffect(() => {
+		const { specNames, specIcons } = specMaker(classData.default.specs)
 		setTalentData(talentCalcMaker(classData.default.specs))
-		setSpecNames(specNameMaker(classData.default.specs))
+		setSpecNames(specNames)
+		setSpecIcons(specIcons)
 	}, [classData])
 
 	const pointsLeft = 51 - checkTotalPoints(talentData!)!
@@ -80,6 +83,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, d
 							pointsLeft={pointsLeft!}
 							selectedClass={selectedClass}
 							specName={specNames![i]}
+							specIcon={specIcons![i]}
 							clickHandler={clickHandler}
 							resetTree={resetTree}
 						/>
