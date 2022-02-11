@@ -7,6 +7,9 @@
 
 ## Classes
 
+### Warrior
+- imo hamstring isNotMoved
+
 ## Items
 
 - Some druid weapon / mace
