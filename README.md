@@ -22,8 +22,17 @@
 ### mage
 - smth dampen / amplify; revert for now
 
+### paladin
+- rmv mana attune
+- gain mana on block prot
+
 ### rogue
 - imp poisons; combine with poison master
+
+### shaman
+- rmv water shield
+- imp lightning shield orbs return mana
+- discharge can proc on offensive spells
 
 ### Warlock
 - revert mama return from demons
