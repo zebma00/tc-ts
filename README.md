@@ -4,6 +4,11 @@
 
 - Phases(?)
 - World Buffs
+- hc bosses drop ~some~ ...
+- additional zones for pvp, bg, raid, lvling
+- all players that participated gain a mark of honor
+- gurubashi no mark of honor; just resources
+- participating; not doing
 
 ## Classes
 
@@ -14,7 +19,6 @@
 - smth dampen / amplify; revert for now
 
 ### rogue
-- shiv
 - imp poisons; combine with poison master
 
 ### Warlock
