@@ -19,23 +19,11 @@ const tier5 = [
     ['D2']
   ),
   new Talent(
-    'Improved Intimidating Shout',
-    'ability_golemthunderclap',
-    ['Reduces the cooldown of Intimidating Shout by ', ' minutes.'],
+    'Improved Shield Bash',
+    'ability_warrior_shieldbash',
+    ['Gives your Shield Bash a ', '% chance to silence the target for 2 sec.'],
     2,
-    [[1, 2]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    [[50, 100]]
   ),
   null,
 ]

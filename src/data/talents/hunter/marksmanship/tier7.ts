@@ -10,16 +10,7 @@ export default [
     [[]],
     [{ x: 4, y: 1 }],
     null,
-    '325 Mana',
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    '325 Mana'
   ),
   null,
   null,
