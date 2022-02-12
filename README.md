@@ -11,10 +11,11 @@
 - barkskin 2 min cd
 
 ### mage
-- smth dampen / amplify
+- smth dampen / amplify; revert for now
 
 ### Warlock
 - revert mama return from demons
+- ~major~ healstone @ ritual of souls
 
 ### Warrior
 - imp hamstring isNotMoved
