@@ -15,6 +15,10 @@
 ### Druid
 - barkskin 2 min cd
 
+### Hunter
+- rmv aspect of viper
+- arcane shot returns mana equal to % of dmg
+
 ### mage
 - smth dampen / amplify; revert for now
 
