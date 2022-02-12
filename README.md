@@ -13,6 +13,10 @@
 ### mage
 - smth dampen / amplify; revert for now
 
+### rogue
+- shiv
+- imp poisons; combine with poison master
+
 ### Warlock
 - revert mama return from demons
 - ~major~ healstone @ ritual of souls
