@@ -15,27 +15,11 @@
 ### Druid
 - barkskin 2 min cd
 
-### Hunter
-- rmv aspect of viper
-- arcane shot returns mana equal to % of dmg
-
 ### mage
 - smth dampen / amplify; revert for now
 
-### paladin
-- rmv mana attune
-- gain mana on block prot
-
-### rogue
-- imp poisons; combine with poison master
-
-### shaman
-- rmv water shield
-- imp lightning shield orbs return mana
-- discharge can proc on offensive spells
-
 ### Warlock
-- revert mama return from demons
+- revert mama return from demon abilities
 - ~major~ healstone @ ritual of souls
 
 ### Warrior
