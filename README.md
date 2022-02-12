@@ -26,6 +26,7 @@
 - revert imp rend
 - revert imp charge
 - swap imp int shout + imp shield bash; imp shield bash isNotMoved
+- rmv commanding shout
 
 ## Items
 
