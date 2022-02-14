@@ -23,11 +23,10 @@ const tier2 = [
   new Talent(
     'Endurance Training',
     'spell_nature_reincarnation',
-    ['Increases the health of your pets by ', '% and your total health by ', '%.'],
+    ['Increases the health of your pets by ', '%.'],
     3,
     [
       [5, 10, 15],
-      [1, 2, 3],
     ],
     null,
     null,
