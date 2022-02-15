@@ -11,3 +11,12 @@
 - rmv dat shaman totem
 - Some druid weapon / mace
 - Druid idol --> some useless spell?
+
+## Classes
+
+### Paladin
+- holy verdict to 5/10/15%
+
+### Shaman
+- stormstrike debuff 30 sec; 2x 20% nature dmg
+- sham focus @ discharge
