@@ -17,6 +17,10 @@
 ### Druid
 - starfire mana cost reduced
 
+### Mage
+- unstable misseles: reduce cast time. Lasts 8 sec
+- frost dps increase
+
 ### Paladin
 - holy verdict to 5/10/15%
 
