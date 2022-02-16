@@ -14,9 +14,14 @@
 
 ## Classes
 
+### Druid
+- starfire mana cost reduced
+
 ### Paladin
 - holy verdict to 5/10/15%
 
 ### Shaman
-- stormstrike debuff 30 sec; 2x 20% nature dmg
-- sham focus @ discharge
+- stormstrike debuff 20 sec; 10% overall
+
+### Warrior
+- rend dmg increase wpn dmg
