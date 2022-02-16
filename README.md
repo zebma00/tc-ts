@@ -22,6 +22,9 @@
 - frost dps increase
 - crit chance frostbolt 2/4%
 
+### Priest
+- fear ward & chastise
+
 ### Paladin
 - holy verdict to 5/10/15%
 
