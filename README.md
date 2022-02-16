@@ -20,6 +20,7 @@
 ### Mage
 - unstable misseles: reduce cast time. Lasts 8 sec
 - frost dps increase
+- crit chance frostbolt 2/4%
 
 ### Paladin
 - holy verdict to 5/10/15%
