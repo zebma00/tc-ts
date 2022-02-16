@@ -21,6 +21,7 @@
 - unstable misseles: reduce cast time. Lasts 8 sec
 - piercing ice: crit chance (& crit dmg)
 - fix cone of cold mistake
+- fix frost warding mistake
 
 ### Priest
 - fear ward & chastise
