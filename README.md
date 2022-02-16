@@ -22,6 +22,7 @@
 - piercing ice: crit chance (& crit dmg)
 - fix cone of cold mistake
 - fix frost warding mistake
+- ele volatility to 10/20 or 10/20/30%
 
 ### Priest
 - fear ward & chastise
