@@ -6,40 +6,40 @@ import styles from './index.module.css'
 import ChangedSelect from './changed-select'
 
 const TalentCalculator: React.FC = () => {
-	const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
-	const [selectedClass, setSelectedClass] = useState<string>(classes[0])
+  const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
+  const [selectedClass, setSelectedClass] = useState<string>(classes[0])
 
-	const selectClass = (i: number) => {
-		setSelectedClass(classes[i])
-	}
+  const selectClass = (i: number) => {
+    setSelectedClass(classes[i])
+  }
 
-	const [displayIsNew, setIsNew] = useState<boolean>(false)
-	const [displayIsChanged, setIsChanged] = useState<boolean>(false)
-	const [displayIsMoved, setIsMoved] = useState<boolean>(false)
+  const [displayIsNew, setIsNew] = useState<boolean>(true)
+  const [displayIsChanged, setIsChanged] = useState<boolean>(true)
+  const [displayIsMoved, setIsMoved] = useState<boolean>(true)
 
-	const toggleIsNew = () => setIsNew(!displayIsNew)
-	const toggleIsChanged = () => setIsChanged(!displayIsChanged)
-	const toggleIsMoved = () => setIsMoved(!displayIsMoved)
+  const toggleIsNew = () => setIsNew(!displayIsNew)
+  const toggleIsChanged = () => setIsChanged(!displayIsChanged)
+  const toggleIsMoved = () => setIsMoved(!displayIsMoved)
 
-	const displayChanged = {
-		displayIsNew,
-		displayIsChanged,
-		displayIsMoved,
-	}
+  const displayChanged = {
+    displayIsNew,
+    displayIsChanged,
+    displayIsMoved,
+  }
 
-	const toggleChangedObj = {
-		toggleIsChanged,
-		toggleIsNew,
-		toggleIsMoved,
-	}
+  const toggleChangedObj = {
+    toggleIsChanged,
+    toggleIsNew,
+    toggleIsMoved,
+  }
 
-	return (
-		<div className={styles.tcWrapper}>
-			<SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
-			<ChangedSelect toggleChangedObj={toggleChangedObj} displayChanged={displayChanged} />
-			<TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
-		</div>
-	)
+  return (
+    <div className={styles.tcWrapper}>
+      <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
+      <ChangedSelect toggleChangedObj={toggleChangedObj} displayChanged={displayChanged} />
+      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
+    </div>
+  )
 }
 
 export default TalentCalculator

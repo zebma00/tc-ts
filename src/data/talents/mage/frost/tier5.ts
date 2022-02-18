@@ -24,7 +24,7 @@ const tier5 = [
     ['D2']
   ),
   new Talent('Improved Cone of Cold', 'spell_frost_glacier', ['Increases the damage done by your Cone of Cold spell by ', '%.'], 3, [
-    [5, 10, 15],
+    [15, 30, 45],
   ]),
   null,
 ]

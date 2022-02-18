@@ -20,8 +20,8 @@ const tier6 = [
     'Unstable Missiles',
     'spell_nature_starfall',
     [
-      'Casting Arcane Missiles increases the damage and Mana cost of your Arcane Missiles by ',
-      '%. This effect stacks up to 3 times and lasts 12 sec.',
+      'Casting Arcane Missiles reduces the casting time and increases the Mana cost of your Arcane Missiles by ',
+      '%. This effect stacks up to 3 times and lasts 8 sec.',
     ],
     5,
     [[2, 4, 6, 8, 10]],

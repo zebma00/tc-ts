@@ -42,7 +42,7 @@ const tier3 = [
     'spell_holy_fanaticism',
     ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
     2,
-    [[10, 20]],
+    [[5, 10]],
     null,
     null,
     null,

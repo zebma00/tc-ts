@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier2 = [
-  new Talent(
-    'Improved Slam',
-    'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', ' sec.'],
-    5,
-    [[0.2, 0.4, 0.6, 0.8, 1]],
-    [{ x: null, y: null }],
-    [{ x: 2, y: 0 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1'],
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
-  ),
+  null,
   new Talent(
     'Improved Demoralizing Shout',
     'ability_warrior_warcry',

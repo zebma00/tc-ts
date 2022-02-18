@@ -5,12 +5,12 @@ const tier2 = [
     [10, 20, 30],
   ]),
   new Talent(
-    'Precision',
-    'ability_marksmanship',
-    ['Increases your chance to hit with melee weapons by ', '%.'],
+    'Deflection',
+    'ability_parry',
+    ['Increases your parry chance by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
-    [{ x: null, y: null }],
+    null,
     [{ x: 2, y: 1 }],
     null,
     null,
@@ -18,26 +18,21 @@ const tier2 = [
     null,
     ['D1']
   ),
-  null,
   new Talent(
-    'Lightning Reflexes',
-    'spell_nature_invisibilty',
-    ['Increases your dodge chance by ', '%.'],
+    'Precision',
+    'ability_marksmanship',
+    ['Increases your chance to hit with melee weapons by ', '%.'],
     5,
     [[1, 2, 3, 4, 5]],
+    [{ x: null, y: null }],
+    [{ x: 3, y: 2 }],
     null,
     null,
     null,
     null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
+    ['D2']
   ),
+  null,
 ]
 
 export default tier2

@@ -5,25 +5,6 @@ const tier3 = [
     [45, 90],
   ]),
   new Talent(
-    'Dual Wield Specialization',
-    'ability_dualwield',
-    ['Increases the damage of your off-hand weapon by ', '%.'],
-    5,
-    [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
-  ),
-  new Talent(
     'Riposte',
     'ability_warrior_challange',
     [
@@ -31,13 +12,14 @@ const tier3 = [
     ],
     1,
     [[]],
-    [{ x: 0, y: 2 }],
+    [{ x: 1, y: 1 }],
     null,
     '10 Energy',
     'Melee range',
     'Instant',
     '6 sec cooldown'
   ),
+  null,
   new Talent(
     'Improved Sprint',
     'ability_rogue_sprint',

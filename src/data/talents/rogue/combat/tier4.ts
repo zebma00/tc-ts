@@ -22,6 +22,14 @@ const tier4 = [
     }
   ),
   new Talent(
+    'Dual Wield Specialization',
+    'ability_dualwield',
+    ['Increases the damage of your off-hand weapon by ', '%.'],
+    5,
+    [[10, 20, 30, 40, 50]],
+    [{ x: 1, y: 2 }]
+  ),
+  new Talent(
     'Blade Twisting',
     'ability_rogue_bladetwisting',
     ['Gives your Sinister Strike, Backstab and Hemorrhage abilities a ', '% chance to daze the target for 8 sec.'],
@@ -40,7 +48,6 @@ const tier4 = [
       isMoved: false,
     }
   ),
-  null,
 ]
 
 export default tier4

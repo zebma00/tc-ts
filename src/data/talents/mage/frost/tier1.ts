@@ -4,7 +4,7 @@ const tier1 = [
   new Talent(
     'Frost Warding',
     'spell_frost_frostward',
-    ['Increases your Fire resistance by ', ' and gives your Fire Ward a ', '% chance to reflect Fire spells and effects while active.'],
+    ['Increases your frost resistance by ', ' and gives your Frost Ward a ', '% chance to reflect frost spells and effects while active.'],
     2,
     [
       [20, 40],

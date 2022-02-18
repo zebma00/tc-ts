@@ -2,11 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Improved Cleave',
-    'ability_warrior_cleave',
-    ['Reduces the rage cost of your Cleave ability by ', '.'],
-    2,
-    [[2, 4]],
+    'Improved Slam',
+    'ability_warrior_decisivestrike',
+    ['Reduces the casting time of your Slam ability by ', '%.'],
+    5,
+    [[0.2, 0.4, 0.6, 0.8, 1]],
     null,
     null,
     null,
@@ -17,7 +17,7 @@ const tier5 = [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true,
+      isMoved: false,
     }
   ),
   new Talent(

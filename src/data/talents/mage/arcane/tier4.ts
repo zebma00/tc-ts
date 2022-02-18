@@ -16,25 +16,9 @@ const tier4 = [
     [[50, 100]]
   ),
   null,
-  new Talent(
-    'Arcane Meditation',
-    'spell_shadow_siphonmana',
-    ['Allows ', '% of your Mana regeneration to continue while casting.'],
-    3,
-    [[10, 20, 30]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Arcane Meditation', 'spell_shadow_siphonmana', ['Allows ', '% of your Mana regeneration to continue while casting.'], 3, [
+    [5, 10, 15],
+  ]),
 ]
 
 export default tier4

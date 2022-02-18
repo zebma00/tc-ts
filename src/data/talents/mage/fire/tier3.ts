@@ -14,7 +14,7 @@ const tier3 = [
     ['Increases the critical strike chance of your Flamestrike spell by ', '% and reduces the cast time by ', ' sec.'],
     2,
     [
-      [10, 20],
+      [5, 10],
       [0.5, 1],
     ],
     null,
