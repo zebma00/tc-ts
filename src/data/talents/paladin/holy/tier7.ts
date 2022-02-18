@@ -6,7 +6,7 @@ const tier7 = [
     'Holy Shock',
     'spell_holy_searinglight',
     [
-      'Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally. Damage and healing is doubled on targets that have less than 20% health.',
+      'Blasts the target with Holy energy, causing 204 to 220 Holy damage to an enemy, or 204 to 220 healing to an ally. Damage and healing is doubled on targets that have less than 30% health.',
     ],
     1,
     [[1]],
