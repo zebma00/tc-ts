@@ -5,25 +5,7 @@ const tier1 = [
   new Talent('Improved Sinister Strike', 'spell_shadow_ritualofsacrifice', ['Reduces the energy cost of your Sinister Strike ', '.'], 2, [
     [3, 5],
   ]),
-  new Talent(
-    'Lightning Reflexes',
-    'spell_nature_invisibilty',
-    ['Increases your dodge chance by ', '%.'],
-    5,
-    [[1, 2, 3, 4, 5]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
-  ),
+  new Talent('Lightning Reflexes', 'spell_nature_invisibilty', ['Increases your dodge chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
 ]
 
