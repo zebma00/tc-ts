@@ -3,25 +3,9 @@ import { Talent } from '../../Classes'
 const tier6 = [
   null,
   null,
-  new Talent(
-    'One-Handed Weapon Specialization',
-    'inv_sword_20',
-    ['Increases your rage generated from attacks with One-Handed weapons by ', '%.'],
-    5,
-    [[4, 8, 12, 16, 20]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('One-Handed Weapon Specialization', 'inv_sword_20', ['Increases the damage you deal with One-Handed weapons by ', '%.'], 5, [
+    [2, 4, 6, 8, 10],
+  ]),
   null,
 ]
 

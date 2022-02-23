@@ -11,7 +11,7 @@ export default [
   new Item('Daybreak', 'inv_hammer_04', 'epic', 'Two-hand', 'Mace', 'Speed 3.00', '131 - 255 Damage', '(59.33 damage per second)', null, [
     'Chance on hit: Physical damage taken by target increased by 10% for 8 sec.',
   ]),
-  new Item('Totem of Frostfire', 'inv_jewelry_amulet_06', 'rare', 'Relic', 'Totem', null, null, null, null, [
-    'Increases the damage done by your Flamtongue Weapon and Frostbrand Weapon effects by up to 50.',
+  new Item('Totem of Tempest', 'inv_jewelry_amulet_06', 'epic', 'Relic', 'Totem', null, null, null, null, [
+    'Reduces the threat of your additional attacks from Windury Weapon by 75%.',
   ]),
 ]

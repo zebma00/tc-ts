@@ -25,7 +25,25 @@ const tier5 = [
     2,
     [[50, 100]]
   ),
-  null,
+  new Talent(
+    'Focused Rage',
+    'ability_warrior_focusedrage',
+    ['Increases your damage done by ', '% for each unspent rage point.'],
+    3,
+    [[0.1, 0.2, 0.3]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
 ]
 
 export default tier5

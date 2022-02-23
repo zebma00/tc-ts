@@ -4,9 +4,17 @@ const tier5 = [
   new Talent(
     'Improved Prayer of Healing',
     'spell_holy_prayerofhealing02',
-    ['Reduces the Mana cost of your Prayer of Healing spell by ', '%.'],
+    ['Reduces the Mana cost of your Prayer of Healing, Holy Nova and Lightwell spells by ', '%.'],
     2,
-    [[10, 20]]
+    [[10, 20]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent(
     'Spirit of Redemption',

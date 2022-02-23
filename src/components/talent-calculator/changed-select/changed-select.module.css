@@ -1,25 +1,25 @@
 .changedSelect {
-	display: flex;
-	justify-content: space-between;
-	width: min(240px, 100%);
-	margin: 0 auto 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: min(240px, 100%);
+  margin: 0 auto 1rem;
 }
 
 .changedSelectSingle {
-	cursor: pointer;
+  cursor: pointer;
 }
 
-.changedSelectSingleNew {
-	cursor: pointer;
-	text-decoration: underline 2px #c41e3b;
+.changedSelectSingleRed {
+  cursor: pointer;
+  text-decoration: underline 2px #c41e3b;
 }
 
-.changedSelectSingleChanged {
-	cursor: pointer;
-	text-decoration: underline 2px #fff468;
+.changedSelectSingleYellow {
+  cursor: pointer;
+  text-decoration: underline 2px #fff468;
 }
 
-.changedSelectSingleMoved {
-	cursor: pointer;
-	text-decoration: underline 2px #2359ff;
+.changedSelectSingleBlue {
+  cursor: pointer;
+  text-decoration: underline 2px #2359ff;
 }

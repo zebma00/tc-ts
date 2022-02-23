@@ -3,13 +3,13 @@ import { Talent } from '../../Classes'
 const tier5 = [
   new Talent(
     'Molten Blood',
-    'spell_fire_moltenblood',
+    'spell_fire_burningspeed',
     [
-      'After being hit by a melee or ranged critical strike, deal fire damage equal to ',
-      "% of the damage taken to the attacker. The damage caused by Molten Blood will not exceed more than 50% of the mage's total health. This damage causes no threat.",
+      'Gives you a ',
+      '% chance when hit by a melee or ranged attack to increase your movement speed by 50% and dispel all movement impairing effects. This effect lasts 8 sec.',
     ],
     2,
-    [[15, 30]],
+    [[5, 10]],
     null,
     null,
     null,

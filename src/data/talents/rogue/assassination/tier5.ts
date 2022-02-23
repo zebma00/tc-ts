@@ -40,17 +40,9 @@ const tier5 = [
   new Talent(
     'Improved Kidney Shot',
     'ability_rogue_kidneyshot',
-    ['Your Kidney Shot also increases critical strike chance of physical attacks on the target by ', '%.'],
+    ['While affected by your your Kidney Shot ability, the target receives an additional ', '% damage from all sources.'],
     3,
-    [[3, 6, 9]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
+    [[3, 6, 9]]
   ),
   null,
 ]

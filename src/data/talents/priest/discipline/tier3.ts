@@ -20,19 +20,14 @@ const tier3 = [
     'spell_nature_sleep',
     ['Allows ', '% of your mana regeneration to continue while casting.'],
     3,
-    [[10, 20, 30]],
+    [[5, 10, 15]],
     [{ x: null, y: null }],
     [{ x: 4, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2'],
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    ['D2']
   ),
   null,
 ]
