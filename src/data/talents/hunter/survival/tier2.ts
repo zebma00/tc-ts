@@ -8,20 +8,8 @@ export default [
       'Gives your Immolation Trap, Frost trap and Explosive Trap a ',
       '% chance to entrap the target, preventing them from moving for 5 sec.',
     ],
-    3,
-    [[8, 16, 25]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    5,
+    [[5, 10, 15, 20, 25]]
   ),
   new Talent(
     'Savage Strikes',
