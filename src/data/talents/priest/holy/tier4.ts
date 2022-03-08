@@ -10,11 +10,23 @@ const tier4 = [
     [[10, 20]]
   ),
   new Talent(
-    'Improved Healing',
-    'spell_holy_heal02',
-    ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'],
-    3,
-    [[5, 10, 15]]
+    'Spiritual Guidance',
+    'spell_holy_spiritualguidence',
+    ['Increases healing and spell damage by ', '% of your total Spirit.'],
+    5,
+    [[3, 6, 9, 12, 15]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true,
+    }
   ),
   null,
 ]

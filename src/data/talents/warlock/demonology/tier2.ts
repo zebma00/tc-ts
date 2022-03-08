@@ -52,12 +52,9 @@ const tier2 = [
   new Talent(
     'Improved Fire Stone',
     'inv_ammo_firetar',
-    ['Your Firestone also increases your chance to hit with Fire spells by ', '% and reduces threat caused by your Fire spells by ', '%.'],
+    ['Your Firestone also reduces threat caused by your Fire spells by ', '%.'],
     2,
-    [
-      [2, 4],
-      [15, 30],
-    ],
+    [[15, 30]],
     null,
     null,
     null,

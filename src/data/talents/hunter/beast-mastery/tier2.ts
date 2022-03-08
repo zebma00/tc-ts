@@ -25,9 +25,7 @@ const tier2 = [
     'spell_nature_reincarnation',
     ['Increases the health of your pets by ', '%.'],
     3,
-    [
-      [5, 10, 15],
-    ],
+    [[5, 10, 15]],
     null,
     null,
     null,
@@ -44,7 +42,7 @@ const tier2 = [
   new Talent(
     'Thick Hide',
     'inv_misc_pelt_bear_03',
-    ['Increases the armor rating of your pets by ', '% and reduces area of effect damage taken by your pet by ', '%.'],
+    ['Increases the armor rating of your pets by ', '% and reduces area of effect damage taken by your pets by ', '%.'],
     3,
     [
       [10, 20, 30],

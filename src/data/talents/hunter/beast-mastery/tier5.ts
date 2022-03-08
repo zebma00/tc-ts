@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Ferocious Inspiration',
     'ability_hunter_ferociousinspiration',
-    ['When your pet scores a Critical hit, all party members have their damage and healing increased by ', '% for 10 sec.'],
+    ['When your pet scores a critical hit, all party members have their damage and healing increased by ', '% for 10 sec.'],
     3,
     [[1, 2, 3]],
     null,

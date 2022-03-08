@@ -15,7 +15,21 @@ const tier5 = [
   new Talent("Nature's Swiftness", 'spell_nature_ravenform', ['When activated, your next Nature spell becomes an instant cast spell.'], 1, [
     [],
   ]),
-  null,
+  new Talent(
+    'Improved Tranquil Air Totem',
+    'spell_nature_brilliance',
+    ['Your Tranquil Air Totem also reduces threat caused by critical strikes and spell critical strikes by an additional ', '%.'],
+    2,
+    [[10, 20]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
 ]
 
 export default tier5

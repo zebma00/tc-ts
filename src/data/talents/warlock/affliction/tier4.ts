@@ -16,17 +16,9 @@ const tier4 = [
   new Talent(
     'Improved Drain Mana',
     'spell_shadow_siphonmana',
-    ['Causes ', '% of the Mana drained by your Drain Mana spell to drain health as well.'],
+    ['Causes ', '% of the Mana drained by your Drain Mana spell to damage the target.'],
     2,
-    [[15, 30]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
+    [[15, 30]]
   ),
 ]
 

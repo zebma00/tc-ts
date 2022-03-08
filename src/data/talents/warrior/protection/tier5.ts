@@ -26,11 +26,14 @@ const tier5 = [
     [[50, 100]]
   ),
   new Talent(
-    'Focused Rage',
-    'ability_warrior_focusedrage',
-    ['Increases your damage done by ', '% for each unspent rage point.'],
-    3,
-    [[0.1, 0.2, 0.3]],
+    'Spell Reflection',
+    'ability_warrior_shieldreflection',
+    [
+      'While Shield Block is active, you have a ',
+      "% chance to reflect one spell. The damage of this spell is reduced by 50% and will not exceed 50% of the Warrior's total health.",
+    ],
+    2,
+    [[25, 50]],
     null,
     null,
     null,

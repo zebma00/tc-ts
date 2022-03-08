@@ -2,11 +2,14 @@ import { Talent } from '../../Classes'
 
 const tier2 = [
   new Talent(
-    'Spiritual Guidance',
-    'spell_holy_spiritualguidence',
-    ['Increases healing and spell damage by ', '% of your total Spirit.'],
-    5,
-    [[3, 6, 9, 12, 15]],
+    'Surge of Light',
+    'spell_holy_surgeoflight',
+    [
+      'Your offensive spell criticals have a ',
+      '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.',
+    ],
+    2,
+    [[25, 50]],
     null,
     null,
     null,
@@ -15,9 +18,9 @@ const tier2 = [
     null,
     null,
     {
-      isNew: false,
+      isNew: true,
       isChanged: false,
-      isMoved: true,
+      isMoved: false,
     }
   ),
   new Talent(

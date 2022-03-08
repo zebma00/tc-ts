@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Improved Slam',
     'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', '%.'],
+    ['Reduces the casting time of your Slam ability by ', ' sec.'],
     5,
     [[0.2, 0.4, 0.6, 0.8, 1]],
     null,
@@ -40,11 +40,11 @@ const tier5 = [
   new Talent(
     'Improved Intercept',
     'ability_rogue_sprint',
-    ['Reduces the cooldown of your Intercept ability by ', ' sec and increased its range by ', ' yards'],
+    ['Reduces the cooldown of your Intercept ability by ', ' sec and increased the stun duration by ', ' sec.'],
     2,
     [
       [5, 10],
-      [3, 6],
+      [1, 2],
     ],
     null,
     null,

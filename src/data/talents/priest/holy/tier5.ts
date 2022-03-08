@@ -33,14 +33,11 @@ const tier5 = [
     ['D2']
   ),
   new Talent(
-    'Surge of Light',
-    'spell_holy_surgeoflight',
-    [
-      'Your offensive spell criticals have a ',
-      '% chance to heal a nearby party or raid member with low health by 30% of the damage dealt.',
-    ],
-    2,
-    [[25, 50]],
+    'Improved Healing',
+    'spell_holy_heal02',
+    ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'],
+    3,
+    [[5, 10, 15]],
     null,
     null,
     null,
@@ -48,11 +45,7 @@ const tier5 = [
     null,
     null,
     null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    { isNew: false, isChanged: false, isMoved: true }
   ),
   null,
 ]

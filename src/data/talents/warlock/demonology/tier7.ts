@@ -6,7 +6,7 @@ const tier7 = [
     'Soul Link',
     'spell_shadow_gathershadows',
     [
-      'While active, 20% of all damage taken by the Warlock is transferred to the active demon. In addition, both the Warlock and the demon cause 5% more damage. Active as long as a demon is active.',
+      'While active, 30% of all damage taken by the Warlock is transferred to the active demon. In addition, both the Warlock and the demon cause 3% more damage. Active as long as a demon is active.',
     ],
     1,
     [[]],
