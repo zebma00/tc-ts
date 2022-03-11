@@ -5,8 +5,8 @@ const tier5 = [
     'Improved Weapon Totems',
     'spell_fire_enchantweapon',
     [
-      'Causes your Windfury Totem to also increase attack speed by ',
-      '% and your Flametongue Totem to also increase spell damage by ',
+      'Causes your Windfury Totem effect to also increase attack speed by ',
+      '% and your Flametongue Totem effect to also increase spell damage by ',
       '%.',
     ],
     2,

@@ -11,11 +11,11 @@ const tier3 = [
   null,
   new Talent('Two-Handed Axes and Maces', 'inv_axe_10', ['Allows you to use Two-Handed Axes and Two-Handed Maces.'], 1, [[]]),
   new Talent(
-    'Discharge',
-    'spell_nature_elementalshields',
-    ['Your attacks have ', ' chance based on weapon speed to expend a Lightning or Water Shield orb.'],
-    2,
-    [['a', 'an increased']],
+    'Anticipation',
+    'spell_nature_mirrorimage',
+    ['Reduces your damage taken by ', '%.'],
+    3,
+    [[1, 2, 3]],
     null,
     null,
     null,
@@ -24,8 +24,8 @@ const tier3 = [
     null,
     null,
     {
-      isNew: true,
-      isChanged: false,
+      isNew: false,
+      isChanged: true,
       isMoved: false,
     }
   ),

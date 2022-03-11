@@ -9,7 +9,7 @@ const tier4 = [
       '% chance to cause your target to be vulnerable to Fire damage. This vulnaribility increases Fire damage taken by the target by 3% and lasts 30 sec. Stacks  up to 5 times.',
     ],
     3,
-    [[33, 67, 100]]
+    [[33, 66, 100]]
   ),
   new Talent(
     'Master of Elements',

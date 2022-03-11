@@ -31,28 +31,9 @@ const tier2 = [
   new Talent(
     'Improved Elemental Shields',
     'spell_nature_lightningshield',
-    [
-      'Increases the damage done by your Lightning Shield orbs by ',
-      '% and increases the amount of mana gained from your Water Shield orbs by ',
-      '%.',
-    ],
+    ['Increases the damage done by your Lightning Shield orbs by ', '%.'],
     3,
-    [
-      [5, 10, 15],
-      [5, 10, 15],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    [[5, 10, 15]]
   ),
 ]
 

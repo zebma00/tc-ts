@@ -24,7 +24,7 @@ const tier4 = [
     'spell_fire_soulburn',
     ['Increases the critical strike chance of your Searing Pain spell by ', '%.'],
     3,
-    [[3, 6, 9]],
+    [[4, 7, 10]],
     null,
     null,
     null,

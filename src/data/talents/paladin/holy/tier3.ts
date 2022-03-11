@@ -38,23 +38,11 @@ const tier3 = [
     [[15, 30]]
   ),
   new Talent(
-    'Holy Verdict',
-    'spell_holy_fanaticism',
-    ['Increases the damage and critical strike chance of your damaging Holy Shock and damaging Judgement spells by ', '%.'],
+    'Unyielding Faith',
+    'spell_holy_unyieldingfaith',
+    ['Increases your chance to resist Fear and Disorient effect by an additional ', '%.'],
     2,
-    [[5, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    [[5, 10]]
   ),
 ]
 

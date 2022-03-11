@@ -37,28 +37,7 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent(
-    'Improved Intercept',
-    'ability_rogue_sprint',
-    ['Reduces the cooldown of your Intercept ability by ', ' sec and increased the stun duration by ', ' sec.'],
-    2,
-    [
-      [5, 10],
-      [1, 2],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Intercept', 'ability_rogue_sprint', ['Reduces the cooldown of your Intercept ability by ', ' sec.'], 2, [[5, 10]]),
 ]
 
 export default tier5

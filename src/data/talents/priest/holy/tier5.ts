@@ -2,9 +2,9 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Improved Prayer of Healing',
+    'Radiant Healing',
     'spell_holy_prayerofhealing02',
-    ['Reduces the Mana cost of your Prayer of Healing, Holy Nova and Lightwell spells by ', '%.'],
+    ['Reduces the Mana cost of your Prayer of Healing and Holy Nova spells by ', '%.'],
     2,
     [[10, 20]],
     null,
@@ -30,7 +30,8 @@ const tier5 = [
     null,
     null,
     null,
-    ['D2']
+    ['D2'],
+    { isNew: false, isChanged: false, isMoved: false }
   ),
   new Talent(
     'Improved Healing',

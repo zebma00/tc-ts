@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  new Talent(
-    'Unyielding Faith',
-    'spell_holy_unyieldingfaith',
-    ['Increases your chance to resist Fear and Disorient effect by an additional ', '%.'],
-    2,
-    [[5, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
-  ),
+  null,
   new Talent(
     'Illumination',
     'spell_holy_greaterheal',

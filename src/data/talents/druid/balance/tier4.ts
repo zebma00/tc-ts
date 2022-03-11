@@ -11,11 +11,18 @@ const tier4 = [
     [{ x: 1, y: 1 }]
   ),
   new Talent(
-    'Improved Starfire',
+    'Celestial Focus',
     'spell_arcane_starfire',
-    ['Gives you Starfire a ', '% chance to stun the target for 3 sec and return 50% of the mana cost.'],
+    [
+      'Gives you Starfire a ',
+      "% chance to stun the target for 3 sec and increases the chance you'll resist spell interruption when casting your Wrath spell by ",
+      '%.',
+    ],
     3,
-    [[5, 10, 15]],
+    [
+      [5, 10, 15],
+      [25, 50, 75],
+    ],
     null,
     null,
     null,
