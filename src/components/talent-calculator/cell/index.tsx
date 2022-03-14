@@ -25,14 +25,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, dis
   const { value, maxValue, icon, manaCost, range, castTime, cooldown, name, arrows, changed } = cellData
 
   return (
-    <div
-      className={styles.cellWrapper}
-      onMouseEnter={() => {
-        set_showTooltip(true)
-      }}
-      onMouseLeave={() => {
-        set_showTooltip(false)
-      }}>
+    <div className={styles.cellWrapper}>
       <ChangedBar displayChanged={displayChanged} changed={changed} />
       <div className={styles.cellHighlight} style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/icons/border.png")` }} />
       <div
@@ -49,6 +42,12 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, dis
           }}
           onContextMenu={(e: React.MouseEvent<HTMLElement>) => {
             clickHandler(i, x, y, e)
+          }}
+          onMouseEnter={() => {
+            set_showTooltip(true)
+          }}
+          onMouseLeave={() => {
+            set_showTooltip(false)
           }}>
           <div className={styles.cellPointsStyle} style={{ color: color ? 'white' : '#787878' }}>
             {`${value}/${maxValue}`}
