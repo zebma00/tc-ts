@@ -12,6 +12,6 @@ export default [
     'Chance on hit: Physical damage taken by target increased by 10% for 8 sec.',
   ]),
   new Item('Totem of Tempest', 'inv_jewelry_amulet_06', 'epic', 'Relic', 'Totem', null, null, null, null, [
-    'Reduces the threat of your additional attacks from Windury Weapon by 75%.',
+    'Reduces the threat of additional attacks from your Windury Weapon by 75%.',
   ]),
 ]

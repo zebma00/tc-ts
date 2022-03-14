@@ -18,9 +18,9 @@ const tier5 = [
   new Talent(
     'Improved Tranquil Air Totem',
     'spell_nature_brilliance',
-    ['Your Tranquil Air Totem also reduces threat caused by critical strikes and spell critical strikes by an additional ', '%.'],
+    ['Increases the effect of your Tranquil Air Totem by ', '%.'],
     2,
-    [[10, 20]],
+    [[5, 10]],
     null,
     null,
     null,

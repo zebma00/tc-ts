@@ -1,9 +1,28 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [
-    [1, 2, 3],
-  ]),
+  new Talent(
+    'Improved Reincarnation',
+    'spell_nature_reincarnation',
+    [
+      'Reduces the cooldown of your reincarnation spell by ',
+      ' min and increases the amount of health and mana you reincarnate with by an additional ',
+      '%.',
+    ],
+    2,
+    [
+      [10, 20],
+      [10, 20],
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: false, isMoved: true }
+  ),
   new Talent(
     'Healing Focus',
     'spell_nature_healingwavelesser',

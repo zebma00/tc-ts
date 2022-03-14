@@ -1,6 +1,7 @@
 export default {
   title: 'Miscellaneous',
   content: [
+    'A "duel as party" option has been added from the character dropdown menu. This allows parties to duel each other.',
     'Quest log size increased to 25.',
     'Many new class quests have been added.',
     'Normal, elite and boss target dummies have been added to all major cities. Attacking these dummies does not increase weapon skill.',
