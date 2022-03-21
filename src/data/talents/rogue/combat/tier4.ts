@@ -30,11 +30,11 @@ const tier4 = [
     [{ x: 1, y: 2 }]
   ),
   new Talent(
-    'Blade Twisting',
-    'ability_rogue_bladetwisting',
-    ['Gives your Sinister Strike, Backstab and Hemorrhage abilities a ', '% chance to daze the target for 8 sec.'],
+    'Throwing Weapon Specialization',
+    'inv_throwingknife_01',
+    ['Gives you a ', '% chance to throw two additional times when using throwing weapons.'],
     2,
-    [[10, 20]],
+    [[25, 50]],
     null,
     null,
     null,

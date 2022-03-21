@@ -31,9 +31,17 @@ const tier2 = [
   new Talent(
     'Improved Elemental Shields',
     'spell_nature_lightningshield',
-    ['Increases the damage done by your Lightning Shield orbs by ', '%.'],
-    3,
-    [[5, 10, 15]]
+    ['Your Lightning Shield orbs heal you for ', '% of the damage dealt.'],
+    2,
+    [[10, 20]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
 ]
 

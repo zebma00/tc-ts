@@ -19,11 +19,11 @@ const tier4 = [
     ]
   ),
   new Talent(
-    'Elemental Volatility',
-    'ability_dualwieldspecialization',
+    'Ice Flows',
+    'spell_frost_arcticwinds',
     [
-      'Critical strikes from your Frost spells increase the critical strike chance of your next Fire spell by ',
-      '%. This effect lasts 30 sec or when you have caused a ciritcal strike with a Fire spell.',
+      'Gives your Frostbolt a ',
+      '% chance to grant you the Ice Flows effect, which treats your next two Firebals, Frostbolts and Arcane Missiles cast as if the target were frozen. Lasts 15 sec.',
     ],
     2,
     [[10, 20]],

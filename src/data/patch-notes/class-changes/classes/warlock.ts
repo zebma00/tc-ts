@@ -6,5 +6,6 @@ export default {
     'Warlocks can now summon party and raid members from within a dungeon or raid.',
     'Health Funnel is now instant cast, while still lasting 10 sec. It now has a 30 sec cooldown and 40 yard range.',
     "All demons will now receive a percentage of their master's Health, Mana, armor, spell resistances and their spell damage and attack power is increased by a percentage of their master’s spell damage.",
+    'Soul Shards now stack up to 10 per bag slot',
   ],
 }

@@ -10,7 +10,7 @@ export default {
     'Tallstriders can now also learn Screech.',
     'Charge (boar) now also immobilizes the target for 2 sec.',
     'Furious Howl (wolf) cooldown and focus cost decreased.',
-    'Screech (bat, carrion beard, owl, tailstrider) now also silences the target for 1 sec. Cooldown increased.',
+    'Screech (bat, carrion beard, owl, tailstrider) now silences the target for 1 sec. Cooldown increased.',
     'Shell shield (turtle) now also does an area of effect taunt and has increased cooldown.',
     'Thunderstomp (gorilla) now also reduces attack speed of affected targets by 10%.',
   ],

@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 const tier3 = [
   new Talent('Piercing Ice', 'spell_frost_frostbolt', ['Increases the damage done by your Frost splls by ', '%.'], 3, [[2, 4, 6]]),
   new Talent(
-    'Cold Snao',
+    'Cold Snap',
     'spell_frost_wizardmark',
     ['When activated, this spell finishes the cooldown of all your Frost spells.'],
     1,

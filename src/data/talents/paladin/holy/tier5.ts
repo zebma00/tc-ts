@@ -1,24 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    "Light's Grace",
-    'spell_holy_lightsgrace',
-    [
-      'Gives your Holy Light spell a ',
-      '% chance to reduce the cast time of your next Holy Light spell by 0.5 sec. This effect lasts 15 sec.',
-    ],
-    3,
-    [[33, 66, 100]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
   new Talent(
     'Divine Favor',
     'spell_holy_heal',
@@ -37,10 +20,14 @@ const tier5 = [
   new Talent(
     'Lasting Judgement',
     'spell_holy_healingaura',
-    ['Increases the effect of your Judgement of Wisdom and Judgement of Light by ', '% and increases the duration by ', ' sec.'],
+    [
+      'Reduces the Mana cost of your Seal of Light and Seal of Wisdom by ',
+      '% and increases the duration of your Judgement of Light and Judgement of Wisdom by ',
+      ' sec.',
+    ],
     2,
     [
-      [10, 20],
+      [25, 50],
       [10, 20],
     ],
     null,

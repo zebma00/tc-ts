@@ -36,11 +36,14 @@ const tier2 = [
   ),
   null,
   new Talent(
-    'Divine Purpose',
-    'spell_holy_divinepurpose',
-    ['Increases the Holy damage you deal to enemies that are stunned or incapacitated by ', '%.'],
-    2,
-    [[10, 20]],
+    'Toughness',
+    'spell_holy_devotion',
+    ['Increases your armor by ', '% and reduces the duration of movement slowing effects on you by ', '%.'],
+    5,
+    [
+      [2, 4, 6, 8, 10],
+      [10, 20, 30, 40, 50],
+    ],
     null,
     null,
     null,
@@ -49,8 +52,8 @@ const tier2 = [
     null,
     null,
     {
-      isNew: true,
-      isChanged: false,
+      isNew: false,
+      isChanged: true,
       isMoved: false,
     }
   ),

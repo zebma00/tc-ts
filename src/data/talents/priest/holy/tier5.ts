@@ -31,7 +31,7 @@ const tier5 = [
     null,
     null,
     ['D2'],
-    { isNew: false, isChanged: false, isMoved: false }
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent(
     'Improved Healing',

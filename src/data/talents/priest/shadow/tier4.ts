@@ -5,7 +5,7 @@ const tier4 = [
   new Talent(
     'Improved Fade',
     'spell_magic_lesserinvisibilty',
-    ['Reduces the cooldown of your Fade spell by ', ' sec. and reduces your threat generated while fade is active by ', '%.'],
+    ['Reduces the cooldown of your Fade spell by ', ' sec and reduces your threat generated while fade is active by ', '%.'],
     2,
     [
       [3, 6],
