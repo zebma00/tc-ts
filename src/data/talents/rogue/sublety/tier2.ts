@@ -7,7 +7,7 @@ const tier2 = [
     ['Reduces the chance you are hit by enemy melee and ranged attacks by ', '% and reduces the energy cost of your Feint by ', '.'],
     2,
     [
-      [1, 2],
+      [2, 4],
       [3, 5],
     ],
     null,

@@ -6,7 +6,7 @@ const tier1 = [
   new Talent(
     'Opportunity',
     'ability_warrior_warcry',
-    ['Increases the damage when striking from behind with your Backstab, Ambush and garrote abilities by ', '%.'],
+    ['Increases the damage when striking from behind with your Backstab, Ambush and Garrote abilities by ', '%.'],
     5,
     [[4, 8, 12, 16, 20]]
   ),
