@@ -8,7 +8,7 @@ const tier2 = [
     'Improved Seal of the Crusader',
     'spell_holy_holysmite',
     [
-      'In addition to the normal effect, your Judgement of the Crusader spell will also increase the critical strike chance of all attacks made against that target by an additional ',
+      'In addition to the normal effect, your Judgement of the Crusader spell will also increase the critical strike chance of all attacks and spells made against that target by an additional ',
       '%.',
     ],
     3,

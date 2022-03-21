@@ -23,7 +23,7 @@ const tier4 = [
     'spell_frost_arcticwinds',
     [
       'Gives your Frostbolt a ',
-      '% chance to grant you the Ice Flows effect, which treats your next two Firebals, Frostbolts and Arcane Missiles cast as if the target were frozen. Lasts 15 sec.',
+      '% chance to grant you the Ice Flows effect, which treats your next two spells cast as if the target were frozen. Lasts 15 sec.',
     ],
     2,
     [[10, 20]],

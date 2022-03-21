@@ -32,9 +32,16 @@ const tier4 = [
   new Talent(
     'Throwing Weapon Specialization',
     'inv_throwingknife_01',
-    ['Gives you a ', '% chance to throw two additional times when using throwing weapons.'],
+    [
+      'Increases your range with throwing weapons by ',
+      ' yards and gives you a ',
+      '% chance to throw an additional time when using throwing weapons.',
+    ],
     2,
-    [[25, 50]],
+    [
+      [3, 6],
+      [25, 50],
+    ],
     null,
     null,
     null,
