@@ -54,7 +54,23 @@ const tier5 = [
     { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
-  null,
+  new Talent(
+    'Shamanistic Rage',
+    'spell_nature_shamanrage',
+    [
+      'Reduces all damage taken by 30% and gives your succesful melee attacks a chance to generate mana equal to 30% of your attack power. Lasts 15 sec.',
+    ],
+    1,
+    [[]],
+    null,
+    null,
+    'Instant',
+    '2 min cooldown',
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
 ]
 
 export default tier5

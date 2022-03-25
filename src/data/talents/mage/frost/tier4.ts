@@ -19,8 +19,8 @@ const tier4 = [
     ]
   ),
   new Talent(
-    'Ice Flows',
-    'spell_frost_arcticwinds',
+    'Fingers of Frost',
+    'spell_frost_manarecharge',
     [
       'Gives your Frostbolt a ',
       '% chance to grant you the Ice Flows effect, which treats your next two spells cast as if the target were frozen. Lasts 15 sec.',

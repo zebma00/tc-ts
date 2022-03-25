@@ -37,7 +37,7 @@ const tier2 = [
     ]
   ),
   new Talent(
-    'Gore',
+    'Bloodshed',
     'ability_druid_ravage',
     ['Damage from your Garrote and Rupture has a ', '% chance to add a combo point to the target.'],
     3,
