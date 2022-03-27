@@ -8,6 +8,7 @@ import Grid from '../grid/'
 import styles from './index.module.css'
 import { useHistory, useLocation, useParams } from 'react-router-dom'
 import { useURLParams } from '../../../lib/talents-url'
+import classTalents from '../../../data/talents'
 
 interface TalentCalculatorMainProps {
   selectedClass: string
@@ -16,24 +17,18 @@ interface TalentCalculatorMainProps {
     displayIsChanged: boolean
     displayIsMoved: boolean
   }
+  classData: any
 }
 
-const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged }) => {
-  const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
-  const [specNames, setSpecNames] = useState<string[] | null>(null)
-  const [specIcons, setSpecIcons] = useState<string[] | null>(null)
-  const classData = require(`../../../data/talents/${selectedClass}`)
+const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged, classData }) => {
+  const { specNames, specIcons } = specMaker(classData.specs)
+  const [talentData, setTalentData] = useState<ClassTalentType>(talentCalcMaker(classData.specs))
 
   useURLParams(talentData)
 
-  useEffect(() => {
-    const { specNames, specIcons } = specMaker(classData.default.specs)
-    setTalentData(talentCalcMaker(classData.default.specs))
-    setSpecNames(specNames)
-    setSpecIcons(specIcons)
-  }, [classData])
-
   const pointsLeft = 51 - checkTotalPoints(talentData!)!
+
+  console.log('RENDER', talentData)
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()

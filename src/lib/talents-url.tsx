@@ -7,7 +7,8 @@ const flattenSpec = (specData: ClassSpecType) => {
   return specData.flatMap(row => row)
 }
 
-const flattenTalents = (talentData: ClassTalentType) => {
+const flattenTalents = (talentData: ClassTalentType | null) => {
+  if (!talentData) return []
   return talentData.flatMap(flattenSpec)
 }
 
@@ -17,26 +18,27 @@ const getTruthyTalents = (talentData: ClassTalentType | null) => {
 }
 
 const loopURLTalents = (flatTalents: (Talent | null)[], talentsFromUrl: string) => {
-  console.log('L', flatTalents.length, talentsFromUrl.length)
-  if (flatTalents.length !== talentsFromUrl.length) return 0
+  let stringIndex: number = 0
 
   for (let i = 0; i < flatTalents.length; i++) {
-    flatTalents[i]?.setValue(parseInt(talentsFromUrl[i]))
-    console.log('???')
+    if (!!flatTalents[i]) {
+      flatTalents[i]?.setValue(parseInt(talentsFromUrl[stringIndex]))
+      stringIndex++
+    }
   }
 }
 
-// http://localhost:3000/tc-ts#/tc/druid/1111111111111111111111111111111111111111111111111
+// http://localhost:3000/tc-ts#/tc/druid/0140003000000000050023011000000000055003115010000
 
 export const useURLParams = (talentData: ClassTalentType | null) => {
-  console.log('DATA', talentData)
   const { playerClass, talentPoints } = useParams<URLParams>()
   const history = useHistory()
-  const flatTalents = getTruthyTalents(talentData)
+  const flatTalents = flattenTalents(talentData)
 
   useEffect(() => {
+    console.log('TRIGGER')
     loopURLTalents(flatTalents, talentPoints)
-  }, [])
+  }, [talentData])
 
   useEffect(() => {
     return () => {}
