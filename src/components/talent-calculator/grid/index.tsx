@@ -1,7 +1,8 @@
 import React from 'react'
 
 import { Talent } from '../../../data/talents/Classes'
-import { enabledChecker, checkPointsPerTree, capitalizer } from '../helpers/'
+import { capitalizer, enabledChecker } from '../../../lib/ui-utils'
+import { checkPointsPerTree } from '../../../lib/handle-talents'
 import Cell from '../cell'
 import styles from './grid.module.css'
 
