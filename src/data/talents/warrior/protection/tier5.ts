@@ -28,7 +28,7 @@ const tier5 = [
   new Talent(
     'Magic Block',
     'ability_warrior_shieldmastery',
-    ['While your Shield Block is active, your chance to resist spells is increased by .', '%, but will only resist one spell.'],
+    ['While your Shield Block is active, your chance to resist spells is increased by ', '%, but will only resist one spell.'],
     2,
     [[25, 50]],
     null,

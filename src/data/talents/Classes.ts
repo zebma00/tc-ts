@@ -86,4 +86,7 @@ export class Talent {
   reset() {
     this.value = 0
   }
+  setValue(value: number) {
+    if (value <= this.maxValue) this.value = value
+  }
 }

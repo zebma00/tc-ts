@@ -6,8 +6,10 @@ import { talentCalcMaker, specMaker } from '../../../lib/create-talents'
 import { checkTotalPoints, rightClick, leftClick } from '../../../lib/handle-talents'
 import Grid from '../grid/'
 import styles from './index.module.css'
+import { useHistory, useLocation, useParams } from 'react-router-dom'
+import { useURLParams } from '../../../lib/talents-url'
 
-interface TalentCalculatorMain {
+interface TalentCalculatorMainProps {
   selectedClass: string
   displayChanged: {
     displayIsNew: boolean
@@ -16,11 +18,13 @@ interface TalentCalculatorMain {
   }
 }
 
-const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, displayChanged }) => {
+const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged }) => {
   const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
   const [specNames, setSpecNames] = useState<string[] | null>(null)
   const [specIcons, setSpecIcons] = useState<string[] | null>(null)
   const classData = require(`../../../data/talents/${selectedClass}`)
+
+  useURLParams(talentData)
 
   useEffect(() => {
     const { specNames, specIcons } = specMaker(classData.default.specs)
