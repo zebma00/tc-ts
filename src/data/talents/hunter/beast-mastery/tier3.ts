@@ -10,23 +10,5 @@ export default [
   ),
   new Talent('Bestial Swiftness', 'ability_druid_dash', ['Increases the outdoor movement speed of your pets by 30%.'], 1, [[]]),
   new Talent('Unleashed Fury', 'ability_bullrush', ['Increases the damage done by your pets by ', '%.'], 5, [[4, 8, 12, 16, 20]]),
-  new Talent(
-    'Aspect Mastery',
-    'spell_holy_blessingofagility',
-    ['Increases the effect of your Aspects by ', '%.'],
-    2,
-    [[10, 20]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  null,
 ]
