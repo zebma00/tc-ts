@@ -2,9 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier1 = [
   null,
-  new Talent('Improved Devotion Aura', 'spell_holy_devotionaura', ['Increases the armor bonus of your Devotion Aura by ', '%.'], 5, [
-    [5, 10, 15, 20, 25],
-  ]),
+  new Talent('Improved Devotion Aura', 'spell_holy_devotionaura', ['Increases the armor bonus of your Devotion Aura by ', '%.'], 5, [[8, 16, 24, 32, 40]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   new Talent(
     'Redoubt',
     'ability_defend',

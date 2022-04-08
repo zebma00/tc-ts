@@ -23,9 +23,7 @@ const tier5 = [
   new Talent(
     'Death Wish',
     'spell_shadow_deathpact',
-    [
-      'When activated, increases your damage done by 20% and makes you immune to fear effects, but reduces your armor and resistances by 20% for 30 sec.',
-    ],
+    ['When activated, increases your damage done by 20% and makes you immune to fear effects, but reduces your armor and resistances by 20% for 30 sec.'],
     1,
     [[]],
     [{ x: null, y: null }],
@@ -37,7 +35,21 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent('Improved Intercept', 'ability_rogue_sprint', ['Reduces the cooldown of your Intercept ability by ', ' sec.'], 2, [[5, 10]]),
+  new Talent(
+    'Improved Intercept',
+    'ability_rogue_sprint',
+    ['Gives you a ', '% chance to reset the cooldown of your intercept after killing a target that yields experience or honor.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
+  ),
 ]
 
 export default tier5

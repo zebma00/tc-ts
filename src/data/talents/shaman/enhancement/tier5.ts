@@ -4,11 +4,7 @@ const tier5 = [
   new Talent(
     'Improved Weapon Totems',
     'spell_fire_enchantweapon',
-    [
-      'Causes your Windfury Totem effect to also increase attack speed by ',
-      '% and your Flametongue Totem effect to also increase spell damage by ',
-      '%.',
-    ],
+    ['Causes your Windfury Totem effect to also increase attack speed by ', '% and your Flametongue Totem effect to also increase spell damage by ', '%.'],
     2,
     [
       [2, 4],
@@ -54,24 +50,7 @@ const tier5 = [
     { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
-  new Talent(
-    'Shamanistic Focus',
-    'spell_nature_elementalabsorption',
-    [
-      'After landing a melee critical strike, you enter a Focused state. The Focused state reduces the mana cost of your next Shock spell by ',
-      '%.',
-    ],
-    2,
-    [[25, 50]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
 ]
 
 export default tier5

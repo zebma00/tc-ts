@@ -9,9 +9,12 @@ import classTalents from '../../data/talents'
 const TalentCalculator: React.FC = () => {
   const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
   const [selectedClass, setSelectedClass] = useState<string>(classes[0])
-  const classData = classTalents.find(thing => thing.class === selectedClass)
+  // const [classData, setClassData] = useState<any>(classTalents.find(thing => thing.class === selectedClass))
+  // const classData = require(`../../../data/talents/${selectedClass}`)
 
   const selectClass = (i: number) => {
+    const newClassData = classTalents.find(thing => thing.class === selectedClass)
+    // setClassData(newClassData)
     setSelectedClass(classes[i])
   }
 
@@ -39,7 +42,7 @@ const TalentCalculator: React.FC = () => {
     <div className={styles.tcWrapper}>
       <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
       <ChangedSelect toggleChangedObj={toggleChangedObj} displayChanged={displayChanged} />
-      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} classData={classData} />
+      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
     </div>
   )
 }

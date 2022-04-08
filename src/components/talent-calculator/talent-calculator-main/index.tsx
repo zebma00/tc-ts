@@ -17,18 +17,24 @@ interface TalentCalculatorMainProps {
     displayIsChanged: boolean
     displayIsMoved: boolean
   }
-  classData: any
 }
 
-const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged, classData }) => {
-  const { specNames, specIcons } = specMaker(classData.specs)
-  const [talentData, setTalentData] = useState<ClassTalentType>(talentCalcMaker(classData.specs))
+const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged }) => {
+  const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
+  const [specNames, setSpecNames] = useState<string[] | null>(null)
+  const [specIcons, setSpecIcons] = useState<string[] | null>(null)
+  const classData = require(`../../../data/talents/${selectedClass}`)
+
+  useEffect(() => {
+    const { specNames, specIcons } = specMaker(classData.default.specs)
+    setTalentData(talentCalcMaker(classData.default.specs))
+    setSpecNames(specNames)
+    setSpecIcons(specIcons)
+  }, [classData])
 
   useURLParams(talentData)
 
   const pointsLeft = 51 - checkTotalPoints(talentData!)!
-
-  console.log('RENDER', talentData)
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()

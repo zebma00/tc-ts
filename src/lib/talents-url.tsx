@@ -36,8 +36,7 @@ export const useURLParams = (talentData: ClassTalentType | null) => {
   const flatTalents = flattenTalents(talentData)
 
   useEffect(() => {
-    console.log('TRIGGER')
-    loopURLTalents(flatTalents, talentPoints)
+    // loopURLTalents(flatTalents, talentPoints)
   }, [talentData])
 
   useEffect(() => {

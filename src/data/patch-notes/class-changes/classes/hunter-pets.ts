@@ -6,9 +6,7 @@ export default {
     'Crocolisks can now learn Crushing Jaw, which has a 100% crit chance and 12 sec cooldown.',
     'Hyenas can now also learn Gore, a damaging ability that has a 50% chance to deal dubble damage.',
     'Raptors can now also learn Gore, a damaging ability that has a 50% chance to deal dubble damage.',
-    'Spiders can now also learn Web, a short range ability that immobilizes the target for 1 sec.',
+    'Spiders can now also learn Spider Poison, which has the same effect as Scorpid Poison.',
     'Tallstriders can now also learn Screech.',
-    'Shell shield (turtle) now also does an area of effect taunt.',
-    'Thunderstomp (gorilla) now also reduces attack speed of affected targets by 10%.',
   ],
 }
