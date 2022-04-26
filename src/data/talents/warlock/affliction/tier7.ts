@@ -12,7 +12,7 @@ const tier7 = [
     null,
     'Instant',
     '40 yd range',
-    '1 min cooldown',
+    '30 sec cooldown',
     null,
     null,
     {

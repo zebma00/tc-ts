@@ -1,16 +1,10 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Feline Swiftness',
-    'spell_nature_spiritwolf',
-    ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'],
-    2,
-    [
-      [15, 30],
-      [2, 4],
-    ]
-  ),
+  new Talent('Feline Swiftness', 'spell_nature_spiritwolf', ['Increases your movement speed while outdoors in Cat Form by ', '% and increases your chance to dodge in Cat Form by ', '%.'], 2, [
+    [15, 30],
+    [2, 4],
+  ]),
   new Talent(
     'Feral Charge',
     'ability_hunter_pet_bear',
@@ -27,7 +21,7 @@ const tier3 = [
   new Talent(
     'Sharpened Claws',
     'inv_misc_monsterclaw_04',
-    ['Increases your critical strike chance while in Cat, Bear or Dire Bear Form by ', '%.'],
+    ['Increases your critical strike chance while shapeshifted by ', '%.'],
     3,
     [[2, 4, 6]],
     [{ x: null, y: null }],
@@ -39,7 +33,8 @@ const tier3 = [
     null,
     null,
     null,
-    ['D1', 'R1D1']
+    ['D1', 'R1D1'],
+    { isChanged: true, isNew: false, isMoved: false }
   ),
   null,
 ]

@@ -1,4 +1,4 @@
-import { HashRouter, Route } from 'react-router-dom'
+import { HashRouter, Redirect, Route } from 'react-router-dom'
 
 import TalentCalculator from './components/talent-calculator'
 import PatchNotes from './components/patch-notes'
@@ -11,8 +11,11 @@ const App = () => {
     <div id={styles.app}>
       <HashRouter>
         <NavBar />
-        <Route exact path='/' component={PatchNotes} />
+        <Route exact path='/'>
+          <Redirect to='/tc/druid' />
+        </Route>
         <Route path='/tc/:playerClass/:talentPoints?' component={TalentCalculator} />
+        <Route exact path='/patch-notes' component={PatchNotes} />
         <Route path='/items' component={ExampleItems} />
       </HashRouter>
     </div>

@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  null,
+  new Talent('Improved Tranquil Air Totem', 'spell_nature_brilliance', ['Increases the effect of your Tranquil Air Totem by ', '%.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Restorative Totems',
     'spell_nature_manaregentotem',
@@ -21,13 +25,7 @@ const tier4 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Tidal Mastery',
-    'spell_nature_tranquility',
-    ['Increases the critical effect chance of your Healing and Lightning spells by ', '%.'],
-    5,
-    [[1, 2, 3, 4, 5]]
-  ),
+  new Talent('Tidal Mastery', 'spell_nature_tranquility', ['Increases the critical effect chance of your Healing and Lightning spells by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
   null,
 ]
 
