@@ -1,7 +1,21 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  null,
+  new Talent(
+    'Devotion',
+    'spell_shadow_focusedpower',
+    ['Increases the duration and reduces the cooldown of your Priest racial abilities by ', '%.'],
+    2,
+    [[10, 20]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
   new Talent(
     'Inner Focus',
     'spell_frost_windwalkon',

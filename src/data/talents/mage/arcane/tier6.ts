@@ -19,12 +19,9 @@ const tier6 = [
   new Talent(
     'Unstable Missiles',
     'spell_arcane_starfire',
-    [
-      'Casting Arcane Missiles reduces the casting time and increases the Mana cost of your Arcane Missiles by ',
-      '%. This effect stacks up to 3 times and lasts 8 sec.',
-    ],
-    5,
-    [[2, 4, 6, 8, 10]],
+    ['Casting Arcane Missiles reduces the casting time and increases the Mana cost of your Arcane Missiles by ', '%. This effect stacks up to 3 times and lasts 8 sec.'],
+    3,
+    [[5, 10, 15]],
     null,
     null,
     null,

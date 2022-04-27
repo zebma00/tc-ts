@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Radiant Healing',
     'spell_holy_prayerofhealing02',
-    ['Reduces the Mana cost of your Prayer of Healing and Holy Nova spells by ', '%.'],
+    ['Reduces the Mana cost and increases the effect of your Prayer of Healing and Holy Nova spells by ', '%.'],
     2,
     [[10, 20]],
     null,

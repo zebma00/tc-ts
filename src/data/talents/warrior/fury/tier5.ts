@@ -2,11 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Improved Slam',
-    'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', ' sec.'],
-    5,
-    [[0.2, 0.4, 0.6, 0.8, 1]],
+    'Improved Intercept',
+    'ability_rogue_sprint',
+    ['Gives you a ', '% chance to reset the cooldown of your intercept after killing a target that yields experience or honor.'],
+    2,
+    [[50, 100]],
     null,
     null,
     null,
@@ -14,11 +14,7 @@ const tier5 = [
     null,
     null,
     null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent(
     'Death Wish',
@@ -36,19 +32,23 @@ const tier5 = [
   ),
   null,
   new Talent(
-    'Improved Intercept',
-    'ability_rogue_sprint',
-    ['Gives you a ', '% chance to reset the cooldown of your intercept after killing a target that yields experience or honor.'],
+    'Crushing Blows',
+    'ability_warrior_devastate',
+    ['Your Slam increases the damage of your next Slam within 5 sec by ', '%.'],
     2,
-    [[50, 100]],
+    [[10, 20]],
+    [{ x: 3, y: 3 }],
     null,
     null,
     null,
     null,
     null,
     null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
   ),
 ]
 

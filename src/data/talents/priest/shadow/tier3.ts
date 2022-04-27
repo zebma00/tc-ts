@@ -2,9 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier3 = [
   null,
-  new Talent('Improved Mind Blast', 'spell_shadow_unholyfrenzy', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [
-    [0.5, 1, 1.5, 2, 2.5],
-  ]),
+  new Talent('Improved Mind Blast', 'spell_shadow_unholyfrenzy', ['Reduces the cooldown of your Mind Blast by ', ' sec.'], 5, [[0.5, 1, 1.5, 2, 2.5]]),
   new Talent(
     'Mind Flay',
     'spell_shadow_siphonmana',
@@ -17,7 +15,11 @@ const tier3 = [
     '20 yd range',
     'Channeled (3 sec cast)'
   ),
-  null,
+  new Talent('Misery', 'spell_shadow_misery', ['Your Shadow Word: Pain also causes the target to take an additional ', '% spell damage.'], 3, [[1, 2, 3]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier3

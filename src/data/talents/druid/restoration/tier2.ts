@@ -22,7 +22,11 @@ const tier2 = [
     5,
     [[14, 28, 42, 56, 70]]
   ),
-  new Talent('Improved Enrage', 'ability_druid_enrage', ['The Enrage ability now instantly generates ', ' rage.'], 2, [[5, 10]]),
+  new Talent('Improved Rejuvenation', 'spell_nature_rejuvenation', ['Increases the effect of your Rejuvenation spell by ', '%.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
   null,
 ]
 

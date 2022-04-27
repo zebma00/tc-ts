@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent('Arcanist', 'spell_arcane_arcanepotency', ['Increases the damage done by your Arcane spells by ', '%.'], 3, [[3, 6, 9]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Presence of Mind',
     'spell_nature_enchantarmor',
@@ -16,7 +20,11 @@ const tier5 = [
     '3 min cooldown',
     ['D1']
   ),
-  new Talent('Arcane Mind', 'spell_shadow_charm', ['Increases your maximum mana by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
+  new Talent('Arcane Mind', 'spell_shadow_charm', ['Increases your Intellect by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }], null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   null,
 ]
 
