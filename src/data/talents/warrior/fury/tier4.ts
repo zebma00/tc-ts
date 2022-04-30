@@ -36,7 +36,7 @@ const tier4 = [
     {
       isNew: false,
       isChanged: true,
-      isMoved: false,
+      isMoved: true,
     }
   ),
 ]

@@ -2,30 +2,22 @@ import { Talent } from '../../Classes'
 
 const tier2 = [
   new Talent(
-    'Spirit Bond',
-    'classic_ability_druid_demoralizingroar',
-    ['Increases the damage you and your pets deal by ', '% while within 10 yards of each other.'],
+    'Improved Revive Pet',
+    'ability_hunter_beastsoothe',
+    ["Revive Pet's casting time is reduced by ", ' sec, mana cost is reduced by ', '%, and increases the health your pet returns with by an additional ', '%.'],
     2,
-    [[2, 4]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
+    [
+      [3, 6],
+      [20, 40],
+      [15, 30],
+    ]
   ),
   new Talent(
-    'Endurance Training',
-    'spell_nature_reincarnation',
-    ['Increases the health of your pets by ', '%.'],
-    3,
-    [[5, 10, 15]],
+    'Improved Aspect of the Monkey',
+    'ability_hunter_aspectofthemonkey',
+    ['Aspect of the Monkey also increases your critical strike chance with melee attacks and abilities by ', '%.'],
+    5,
+    [[2, 4, 6, 8, 10]],
     null,
     null,
     null,
@@ -61,22 +53,7 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Improved Revive Pet',
-    'ability_hunter_beastsoothe',
-    [
-      "Revive Pet's casting time is reduced by ",
-      ' sec, mana cost is reduced by ',
-      '%, and increases the health your pet returns with by an additional ',
-      '%.',
-    ],
-    2,
-    [
-      [3, 6],
-      [20, 40],
-      [15, 30],
-    ]
-  ),
+  null,
 ]
 
 export default tier2

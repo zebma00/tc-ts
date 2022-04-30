@@ -2,12 +2,7 @@ import React from 'react'
 
 import styles from './changed-select.module.css'
 
-const ChangedSelectSingle: React.FC<{ display: boolean; text: string; onClick: () => void; cn: string }> = ({
-  display,
-  text,
-  onClick,
-  cn,
-}) => {
+const ChangedSelectSingle: React.FC<{ display: boolean; text: string; onClick: () => void; cn: string }> = ({ display, text, onClick, cn }) => {
   const styleObj: { [key: string]: string } = {
     red: styles.changedSelectSingleRed,
     yellow: styles.changedSelectSingleYellow,
@@ -37,17 +32,17 @@ const ChangedSelect: React.FC<{
   const { toggleIsNew, toggleIsChanged, toggleIsMoved } = toggleChangedObj
   const { displayIsNew, displayIsChanged, displayIsMoved } = displayChanged
 
-  const toggleNewAndChanged = () => {
-    toggleIsChanged()
-    toggleIsNew()
-  }
+  // const toggleNewAndChanged = () => {
+  //   toggleIsChanged()
+  //   toggleIsNew()
+  // }
 
-  const displayNewAndChanged = displayIsNew || displayIsChanged
+  // const displayNewAndChanged = displayIsNew || displayIsChanged
 
   return (
     <div className={styles.changedSelect}>
-      <ChangedSelectSingle display={displayNewAndChanged} onClick={toggleNewAndChanged} text='New or changed' cn='red' />
-      {/* <ChangedSelectSingle display={displayIsChanged} onClick={toggleIsChanged} text='Changed' /> */}
+      <ChangedSelectSingle display={displayIsNew} onClick={toggleIsNew} text='New' cn='red' />
+      <ChangedSelectSingle display={displayIsChanged} onClick={toggleIsChanged} text='Changed' cn='blue' />
       <ChangedSelectSingle display={displayIsMoved} onClick={toggleIsMoved} text='Moved' cn='yellow' />
     </div>
   )

@@ -37,7 +37,7 @@ export default [
   ),
   new Talent('Mortal Shots', 'ability_piercedamage', ['Increases your ranged critical strike damage bonus by ', '%.'], 3, [[10, 20, 30]], [{ x: 0, y: 2 }], null, null, null, null, null, null, {
     isNew: false,
-    isChanged: false,
+    isChanged: true,
     isMoved: true,
   }),
   null,

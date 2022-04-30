@@ -8,7 +8,7 @@ const tier2 = [
     2,
     [
       [2, 4],
-      [3, 5],
+      [5, 10],
     ],
     null,
     null,
@@ -23,19 +23,11 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent('Elusiveness', 'spell_magic_lesserinvisibilty', ['Reduces the cooldown of you Vanish and Blind abilities by ', ' sec.'], 2, [
-    [45, 90],
+  new Talent('Elusiveness', 'spell_magic_lesserinvisibilty', ['Reduces the cooldown of you Vanish and Blind abilities by ', ' sec.'], 2, [[45, 90]]),
+  new Talent('Camouflage', 'ability_stealth', ['Increases your speed while stealthed by ', '% and reduces the cooldown of your Stealth ability by ', ' sec.'], 5, [
+    [3, 6, 9, 12, 15],
+    [1, 2, 3, 4, 5],
   ]),
-  new Talent(
-    'Camouflage',
-    'ability_stealth',
-    ['Increases your speed while stealthed by ', '% and reduces the cooldown of your Stealth ability by ', ' sec.'],
-    5,
-    [
-      [3, 6, 9, 12, 15],
-      [1, 2, 3, 4, 5],
-    ]
-  ),
   new Talent(
     'Bloodshed',
     'ability_druid_ravage',

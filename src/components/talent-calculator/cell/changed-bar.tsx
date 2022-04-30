@@ -23,13 +23,13 @@ const ChangedBar: React.FC<ChangedBarProps> = ({ changed, displayChanged }) => {
   const { isNew, isChanged, isMoved } = changed
   const { displayIsNew, displayIsChanged, displayIsMoved } = displayChanged
 
-  const isNewOrChanged = isNew || isChanged
-  const displayNewOrChanged = displayIsNew || displayIsChanged
+  // const isNewOrChanged = isNew || isChanged
+  // const displayNewOrChanged = displayIsNew || displayIsChanged
 
   return (
     <div className={styles.changedBar}>
-      <ChangedIcon isActive={isNewOrChanged && displayNewOrChanged} />
-      {/* <ChangedIcon isActive={isChanged && displayIsChanged} /> */}
+      <ChangedIcon isActive={isNew && displayIsNew} />
+      <ChangedIcon isActive={isChanged && displayIsChanged} />
       <ChangedIcon isActive={isMoved && displayIsMoved} />
     </div>
   )
