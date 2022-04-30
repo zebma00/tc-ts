@@ -5,6 +5,7 @@ import styles from './changed-select.module.css'
 const ChangedSelectSingle: React.FC<{ display: boolean; text: string; onClick: () => void; cn: string }> = ({ display, text, onClick, cn }) => {
   const styleObj: { [key: string]: string } = {
     red: styles.changedSelectSingleRed,
+    blue: styles.changedSelectSingleBlue,
     yellow: styles.changedSelectSingleYellow,
   }
 
@@ -42,8 +43,8 @@ const ChangedSelect: React.FC<{
   return (
     <div className={styles.changedSelect}>
       <ChangedSelectSingle display={displayIsNew} onClick={toggleIsNew} text='New' cn='red' />
-      <ChangedSelectSingle display={displayIsChanged} onClick={toggleIsChanged} text='Changed' cn='blue' />
-      <ChangedSelectSingle display={displayIsMoved} onClick={toggleIsMoved} text='Moved' cn='yellow' />
+      <ChangedSelectSingle display={displayIsChanged} onClick={toggleIsChanged} text='Changed' cn='yellow' />
+      <ChangedSelectSingle display={displayIsMoved} onClick={toggleIsMoved} text='Moved' cn='blue' />
     </div>
   )
 }

@@ -278,6 +278,6 @@
   background-color: #fff468;
 }
 
-/* .changedIcon:nth-child(3) {
-	background-color: #2359ff;
-} */
+.changedIcon:nth-child(3) {
+  background-color: #2359ff;
+}

@@ -28,7 +28,7 @@ const tier2 = [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true,
+      isMoved: false,
     }
   ),
   new Talent(
