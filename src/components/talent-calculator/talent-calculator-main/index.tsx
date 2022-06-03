@@ -9,6 +9,7 @@ import styles from './index.module.css'
 import { useHistory, useLocation, useParams } from 'react-router-dom'
 import { useURLParams } from '../../../lib/talents-url'
 import classTalents from '../../../data/talents'
+import TcPatchNotes from '../tc-patch-notes'
 
 interface TalentCalculatorMainProps {
   selectedClass: string
@@ -95,6 +96,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
             />
           )
         })}
+        <TcPatchNotes selectedClass={selectedClass} />
       </div>
       <TCFooter pointsLeft={pointsLeft} resetPoints={resetPoints} selectedClass={selectedClass} talentData={talentData} />
     </>

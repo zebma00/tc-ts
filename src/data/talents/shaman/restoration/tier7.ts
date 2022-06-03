@@ -6,7 +6,7 @@ const tier7 = [
     'Mana Tide Totem',
     'spell_frost_summonwaterelemental',
     [
-      'Summons a Mana Tide Totem at the feet of the caster with 5 health for 12 sec that restores 170 mana to all party members within 20 yards every 3 sec.',
+      "Summons a Mana Tide Totem at the feet of the caster with health equal to 20% of the Shaman's health for 12 sec that restores 170 mana and health to all party members within 20 yards every 3 sec.",
     ],
     1,
     [[1]],
@@ -15,7 +15,9 @@ const tier7 = [
     '20 Mana',
     null,
     'Instant',
-    '5 min cooldown'
+    '5 min cooldown',
+    null,
+    { isChanged: true, isMoved: false, isNew: false }
   ),
   null,
   null,

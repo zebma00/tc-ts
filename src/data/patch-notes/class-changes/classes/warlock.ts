@@ -8,6 +8,6 @@ export default {
     "Curse of Weakness now reduces the target's attack power instead of flat damage.",
     'Warlocks can now summon party and raid members from within a dungeon or raid.',
     "All demons will now receive a percentage of their master's Health, Mana, armor, spell resistances and their spell damage and attack power is increased by a percentage of their master’s spell damage.",
-    'Soul Shards now stack up to 10 per bag slot',
+    'Soul Shards now stack up to 10 per bag slot.',
   ],
 }
