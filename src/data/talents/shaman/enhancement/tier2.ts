@@ -23,7 +23,7 @@ const tier2 = [
   new Talent(
     'Improved Elemental Shields',
     'spell_nature_lightningshield',
-    ['Your melee attacks have ', ' chance to expend a Lightning Shield or Water Shield orb. Slower weapons have an increased chance.'],
+    ['Causes your melee attacks to have ', ' chance to expend a Lightning Shield or Water Shield globe. Slower weapons have an increased chance.'],
     2,
     [['a', 'an increased']],
     null,
