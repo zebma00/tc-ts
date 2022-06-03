@@ -14,21 +14,7 @@ const tier3 = [
     'Instant',
     '10 min cooldown'
   ),
-  new Talent(
-    'Improved Shield Block',
-    'ability_defend',
-    ['Allows your Shield Block to block an additional attack and increases the duration by ', ' seconds. In addition, when you block an attack, you generate additional threat.'],
-    2,
-    [[0.5, 1, 2]],
-    [{ x: 0, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
-  ),
+  new Talent('Improved Shield Block', 'ability_defend', ['Allows your Shield Block to block an additional attack and increases the duration by ', ' seconds.'], 2, [[0.5, 1, 2]], [{ x: 0, y: 1 }]),
   new Talent('Improved Revenge', 'ability_warrior_revenge', ['Gives your Revenge a ', '% chance to stun the target for 3 sec.'], 3, [[15, 30, 45]]),
   new Talent(
     'Defiance',

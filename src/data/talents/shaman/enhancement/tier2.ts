@@ -20,25 +20,7 @@ const tier2 = [
     ['D2']
   ),
   new Talent('Improved Ghost Wolf', 'spell_nature_spiritwolf', ['Reduces the cast time of your Ghost Wolf spell by ', ' sec.'], 2, [[1, 2]]),
-  new Talent(
-    'Improved Elemental Shields',
-    'spell_nature_lightningshield',
-    ['Causes your melee attacks to have ', ' chance to expend a Lightning Shield or Water Shield globe. Slower weapons have an increased chance.'],
-    2,
-    [['a', 'an increased']],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Elemental Shields', 'spell_nature_lightningshield', ['Increases the damage of your Lightning orbs by ', '%.'], 3, [[5, 10, 15]]),
 ]
 
 export default tier2
