@@ -1,16 +1,10 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Mace Specialization',
-    'inv_mace_01',
-    ['Increases your skill with maces by ', ' and gives you a ', '% chance to stun your target for 3 sec with a mace.'],
-    5,
-    [
-      [1, 2, 3, 4, 5],
-      [1, 2, 3, 4, 6],
-    ]
-  ),
+  new Talent('Mace Specialization', 'inv_mace_01', ['Increases your skill with maces by ', ' and gives you a ', '% chance to stun your target for 3 sec with a mace.'], 5, [
+    [1, 2, 3, 4, 5],
+    [1, 2, 3, 4, 6],
+  ]),
   new Talent(
     'Blade Flurry',
     'ability_warrior_punishingblow',
@@ -25,14 +19,22 @@ const tier5 = [
     'Instant',
     ['D1']
   ),
+  new Talent('Sword Specialization', 'inv_sword_27', ['Gives you a ', '% chance to trigger an additional attack against the same target when using swords.'], 5, [[1, 2, 3, 4, 5]]),
   new Talent(
-    'Sword Specialization',
-    'inv_sword_27',
-    ['Gives you a ', '% chance to trigger an additional attack against the same target when using swords.'],
-    5,
-    [[1, 2, 3, 4, 5]]
+    'Shiv',
+    'inv_throwingknife_04',
+    ['Performs an instant off-hand weapon attack that automatically applies the poison from your off-hand weapon to the target. Slower weapons require more Energy. Awards 1 combo point.'],
+    1,
+    [[]],
+    null,
+    null,
+    '20 Energy',
+    'Instant',
+    'Melee Range',
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
-  null,
 ]
 
 export default tier5

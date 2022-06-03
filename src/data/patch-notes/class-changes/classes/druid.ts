@@ -6,5 +6,6 @@ export default {
     'Innervate is now a balance spell, allowing it to be cast in Moonkin Form.',
     'You now retain combo points when you untarget an enemy while in Cat Form.',
     'Soothe Animal can no longer be resisted.',
+    'Reduced the mana cost of Mark of the Wild and Gift of the Wild.',
   ],
 }

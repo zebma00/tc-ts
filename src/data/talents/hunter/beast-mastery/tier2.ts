@@ -17,7 +17,7 @@ const tier2 = [
     'ability_hunter_aspectofthemonkey',
     ['Aspect of the Monkey also increases your critical strike chance with melee attacks and abilities by ', '%.'],
     5,
-    [[2, 4, 6, 8, 10]],
+    [[1, 2, 3, 4, 5]],
     null,
     null,
     null,
@@ -53,7 +53,25 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  null,
+  new Talent(
+    'Spirit Bond',
+    'classic_ability_druid_demoralizingroar',
+    ['While your pet is active, you and your pet will regenerate ', '% of total health every 10 sec.'],
+    2,
+    [[2, 4]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true,
+    }
+  ),
 ]
 
 export default tier2

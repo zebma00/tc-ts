@@ -32,7 +32,7 @@ const tier5 = [
     null,
     null,
     null,
-    { isNew: false, isChanged: true, isMoved: false }
+    { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
 ]

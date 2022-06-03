@@ -20,12 +20,9 @@ const tier4 = [
   new Talent(
     'Improved Slam',
     'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', ' sec. In addition, your Slam ability increases the damage of your next Slam within 5 sec by ', '%.'],
+    ['Reduces the casting time of your Slam ability by ', ' sec.'],
     5,
-    [
-      [0.2, 0.4, 0.6, 0.8, 1],
-      [5, 10, 15, 20, 25],
-    ],
+    [[0.2, 0.4, 0.6, 0.8, 1]],
     null,
     [{ x: 4, y: 3 }],
     null,

@@ -1,23 +1,26 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  null,
   new Talent(
-    'Vengeance',
-    'spell_nature_purge',
-    ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'],
-    5,
-    [[20, 40, 60, 80, 100]],
-    [{ x: 1, y: 1 }]
+    'Improved Innervate',
+    'spell_nature_lightning',
+    ['When you cast Innervate on a friendly target, there is a ', '% chance you gain the Innervate effect as well.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
+  new Talent('Vengeance', 'spell_nature_purge', ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'], 5, [[20, 40, 60, 80, 100]], [{ x: 1, y: 1 }]),
   new Talent(
     'Celestial Focus',
     'spell_arcane_starfire',
-    [
-      'Gives you Starfire a ',
-      "% chance to stun the target for 3 sec and increases the chance you'll resist spell interruption when casting your Wrath spell by ",
-      '%.',
-    ],
+    ['Gives you Starfire a ', "% chance to stun the target for 3 sec and increases the chance you'll resist spell interruption when casting your Wrath spell by ", '%.'],
     3,
     [
       [5, 10, 15],

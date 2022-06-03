@@ -20,13 +20,9 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Improved Void Walker',
-    'spell_shadow_summonvoidwalker',
-    ["Increases the effect of your Void Walker's Torment, Sacrifice, Consume Shadows and Suffering spells by ", '%.'],
-    3,
-    [[10, 20, 30]]
-  ),
+  new Talent('Improved Void Walker', 'spell_shadow_summonvoidwalker', ["Increases the effect of your Void Walker's Torment, Sacrifice, Consume Shadows and Suffering spells by ", '%.'], 3, [
+    [10, 20, 30],
+  ]),
   new Talent(
     'Fel Power',
     'spell_holy_magicalsentry',
@@ -52,9 +48,12 @@ const tier2 = [
   new Talent(
     'Improved Fire Stone',
     'inv_ammo_firetar',
-    ['Your Firestone also reduces threat caused by your Fire spells by ', '%.'],
+    ['Increases the effect of your Firestone by ', '%. In addition, your Firestone reduces the additional threat caused by your Searing Pain by ', '%.'],
     2,
-    [[15, 30]],
+    [
+      [25, 50],
+      [50, 100],
+    ],
     null,
     null,
     null,

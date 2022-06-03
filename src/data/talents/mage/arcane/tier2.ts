@@ -4,9 +4,9 @@ const tier2 = [
   new Talent(
     'Wand Specialization',
     'inv_wand_01',
-    ['Increases the damage you deal with wands by ', '% while you have less than 30% of your total mana.'],
+    ['When you deal damage with your wand, you have ', ' chance to return 20% of the damage dealt as mana to you.'],
     2,
-    [[25, 50]],
+    [['a', 'an increased']],
     null,
     null,
     null,

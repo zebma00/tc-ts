@@ -21,9 +21,17 @@ const tier5 = [
   new Talent(
     'Reckoning',
     'spell_holy_blessingofstrength',
-    ['Gives you a ', '% chance to gain an extra attack after being the victim of a critical strike.'],
+    ['Gives you a ', '% chance after being hit by any damaging attack that the next 4 weapon swings within 8 sec will generate an additional attack.'],
     5,
-    [[20, 40, 60, 80, 100]]
+    [[2, 4, 6, 8, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   null,
 ]

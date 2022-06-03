@@ -4,11 +4,7 @@ const tier3 = [
   new Talent(
     'Improved Succubus',
     'spell_shadow_summonsuccubus',
-    [
-      "Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ",
-      '% and increases the duration of Seduction and Invisibility by ',
-      '%.',
-    ],
+    ["Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ", '% and increases the duration of Seduction and Invisibility by ', '%.'],
     3,
     [
       [10, 20, 30],
@@ -56,7 +52,7 @@ const tier3 = [
     'spell_shadow_manafeed',
     ['When you gain mana from any source, your active demon gains ', '% of the mana you gain.'],
     3,
-    [[33, 66, 100]],
+    [[20, 40, 60]],
     null,
     null,
     null,

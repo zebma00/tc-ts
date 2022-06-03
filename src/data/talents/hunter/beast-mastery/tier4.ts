@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Spirit Bond',
-    'classic_ability_druid_demoralizingroar',
-    ['Increases the damage you and your pets deal by ', '% while within 10 yards of each other.'],
-    2,
-    [[2, 4]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
-  ),
+  null,
   new Talent('Improved Mend Pet', 'ability_hunter_mendpet', ['Gives your Mend Pet spell a ', '% chance to remove 1 poison, disease, curse of magic effect from your pet each tick.'], 2, [[15, 30]]),
   new Talent(
     'Ferocity',

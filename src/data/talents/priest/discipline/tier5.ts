@@ -1,7 +1,21 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent(
+    'Focused Will',
+    'spell_nature_focusedmind',
+    ['When activated, causes your next Flash Heal, Heal, Greater Heal, Renew, Power Word: Shield or Power Infusion cast on a friendly target to effect you as well.'],
+    1,
+    [[1]],
+    null,
+    null,
+    null,
+    null,
+    'Instant',
+    '1 min cooldown',
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
   new Talent(
     'Force of Will',
     'spell_nature_slowingtotem',
@@ -24,27 +38,7 @@ const tier5 = [
       isMoved: true,
     }
   ),
-  new Talent(
-    'Divine Spirit',
-    'spell_holy_divinespirit',
-    [
-      'Holy power infuses the target, increasing their spirit by 17 and increasing their spell damage by an amount equal to 10% of their spirit for 30 min.',
-    ],
-    1,
-    [[]],
-    [{ x: 2, y: 2 }],
-    null,
-    '140 Mana',
-    '30 yd range',
-    'Instant',
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Divine Spirit', 'spell_holy_divinespirit', ['Holy power infuses the target, increasing their spirit by 17.'], 1, [[]], [{ x: 2, y: 2 }], null, '70 Mana', '30 yd range', 'Instant'),
   null,
 ]
 

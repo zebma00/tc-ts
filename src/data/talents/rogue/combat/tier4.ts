@@ -22,28 +22,7 @@ const tier4 = [
     }
   ),
   new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage of your off-hand weapon by ', '%.'], 5, [[10, 20, 30, 40, 50]], [{ x: 1, y: 2 }]),
-  new Talent(
-    'Throwing Weapon Specialization',
-    'inv_throwingknife_01',
-    ['Increases your range with throwing weapons by ', ' yards and increases your critical strike chance with trowing weapons by ', '%.'],
-    2,
-    [
-      [3, 6],
-      [25, 50],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  null,
 ]
 
 export default tier4

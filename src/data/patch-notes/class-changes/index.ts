@@ -7,11 +7,11 @@ import priest from './classes/priest'
 import rogue from './classes/rogue'
 import shaman from './classes/shaman'
 import warlock from './classes/warlock'
-import warlockDemons from './classes/warlock-demons'
+// import warlockDemons from './classes/warlock-demons'
 import warrior from './classes/warrior'
 
 export default {
   title: 'Class changes',
   note: 'Note TBD',
-  content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warlockDemons, warrior],
+  content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warrior],
 }

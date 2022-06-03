@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Improved Intercept',
     'ability_rogue_sprint',
-    ['Gives you a ', '% chance to reset the cooldown of your intercept after killing a target that yields experience or honor.'],
+    ['Gives you a ', '% chance to reset the cooldown and remove the Rage cost of your intercept after killing a target that yields experience or honor.'],
     2,
     [[50, 100]],
     null,

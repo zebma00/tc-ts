@@ -4,10 +4,7 @@ const tier5 = [
   new Talent(
     'Envenom',
     'ability_creature_poison_06',
-    [
-      'Increases the damage done by your Eviscerate and Rupture by an additional ',
-      '% for each poison effect on the target, up to a maximum or 30%.',
-    ],
+    ['Increases the damage done by your Eviscerate and Rupture by an additional ', '% for each poison effect on the target, up to a maximum or 30%.'],
     2,
     [[3, 6]],
     null,
@@ -37,14 +34,22 @@ const tier5 = [
     '3 min cooldown',
     ['D1']
   ),
+  new Talent('Improved Kidney Shot', 'ability_rogue_kidneyshot', ['While affected by your your Kidney Shot ability, the target receives an additional ', '% damage from all sources.'], 3, [[3, 6, 9]]),
   new Talent(
-    'Improved Kidney Shot',
-    'ability_rogue_kidneyshot',
-    ['While affected by your your Kidney Shot ability, the target receives an additional ', '% damage from all sources.'],
-    3,
-    [[3, 6, 9]]
+    'Find Weakness',
+    'ability_rogue_findweakness',
+    ['Your finishing moves increase the damage of your offensive abilities by ', '% for 10 sec.'],
+    2,
+    [[5, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
-  null,
 ]
 
 export default tier5
