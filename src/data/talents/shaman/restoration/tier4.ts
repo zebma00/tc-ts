@@ -1,11 +1,25 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  new Talent('Improved Tranquil Air Totem', 'spell_nature_brilliance', ['Increases the effect of your Tranquil Air Totem by ', '%.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent(
+    'Tidal Strikes',
+    'spell_shaman_tidalwaves',
+    ['Your melee attacks have ', ' chance to trigger a tick from your active Mana Spring or Healing Stream Totem.'],
+    2,
+    [['a', 'an increased']],
+    [{ x: 3, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent(
     'Restorative Totems',
     'spell_nature_manaregentotem',
@@ -13,12 +27,15 @@ const tier4 = [
     3,
     [[10, 20, 30]],
     [{ x: null, y: null }],
-    [{ x: 6, y: 1 }],
+    [
+      { x: 3, y: 0 },
+      { x: 6, y: 1 },
+    ],
     null,
     null,
     null,
     null,
-    ['D3'],
+    ['D3', 'L1'],
     {
       isNew: false,
       isChanged: true,

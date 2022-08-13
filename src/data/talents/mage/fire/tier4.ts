@@ -12,13 +12,24 @@ const tier4 = [
     [[33, 66, 100]]
   ),
   new Talent(
-    'Master of Elements',
-    'spell_fire_masterofelements',
-    ['Your Fire and Frost spell criticals refund ', '% of their base mana cost.'],
-    3,
-    [[10, 20, 30]]
+    'Hot Streak',
+    'ability_mage_hotstreak',
+    [
+      'Any time you score two spell criticals in a row Fire Blast or Scorch, you have a ',
+      '% chance to reduce the cast time of your next Pyroblast or Flamestrike spell by 3 sec. This effect lasts 10 sec.',
+    ],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
-  null,
+  new Talent('Master of Elements', 'spell_fire_masterofelements', ['Your Fire and Frost spell criticals refund ', '% of their base mana cost.'], 3, [[10, 20, 30]]),
 ]
 export default tier4

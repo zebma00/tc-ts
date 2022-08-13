@@ -1,35 +1,8 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Incinerate',
-    'spell_fire_flameshock',
-    ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'],
-    2,
-    [[2, 4]]
-  ),
-  new Talent(
-    'Improved Flamestrike',
-    'spell_fire_selfdestruct',
-    ['Increases the critical strike chance of your Flamestrike spell by ', '% and reduces the cast time by ', ' sec.'],
-    2,
-    [
-      [5, 10],
-      [0.5, 1],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Incinerate', 'spell_fire_flameshock', ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'], 2, [[2, 4]]),
+  new Talent('Improved Flamestrike', 'spell_fire_selfdestruct', ['Increases the critical strike chance of your Flamestrike spell by ', '%.'], 3, [[5, 10, 15]]),
   new Talent(
     'Pyroblast',
     'spell_fire_fireball02',
@@ -47,11 +20,7 @@ const tier3 = [
   new Talent(
     'Burning Soul',
     'spell_fire_fire',
-    [
-      'Gives your Fire spells a ',
-      '% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by ',
-      '%.',
-    ],
+    ['Gives your Fire spells a ', '% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by ', '%.'],
     2,
     [
       [35, 70],

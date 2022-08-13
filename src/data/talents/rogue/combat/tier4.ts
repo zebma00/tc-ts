@@ -21,7 +21,21 @@ const tier4 = [
       isMoved: false,
     }
   ),
-  new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage of your off-hand weapon by ', '%.'], 5, [[10, 20, 30, 40, 50]], [{ x: 1, y: 2 }]),
+  new Talent(
+    'Improved Sprint',
+    'ability_rogue_sprint',
+    ['Gives a ', '% chance to remove all movement impairing effects when you activate your Sprint ability.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: false, isMoved: true }
+  ),
   null,
 ]
 

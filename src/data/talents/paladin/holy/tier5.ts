@@ -22,7 +22,7 @@ const tier5 = [
     ['Your Judgement returns ', '% of the mana cost of the judged seal. In addition, increases range of your Judgement by ', ' yards.'],
     2,
     [
-      [25, 50],
+      [35, 70],
       [5, 10],
     ],
     null,
