@@ -15,7 +15,7 @@ const tier4 = [
     'Hot Streak',
     'ability_mage_hotstreak',
     [
-      'Any time you score two spell criticals in a row Fire Blast or Scorch, you have a ',
+      'Any time you score two spell criticals in a row with Fire Blast or Scorch, you have a ',
       '% chance to reduce the cast time of your next Pyroblast or Flamestrike spell by 3 sec. This effect lasts 10 sec.',
     ],
     2,

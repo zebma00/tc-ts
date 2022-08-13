@@ -13,7 +13,7 @@ const tier4 = [
     'ability_dualwieldspecialization',
     [
       'Critical strikes from your Frost spells increase the critical strike chance of your next two Fire spell by ',
-      '%. This effect stacks up to 3 times and lasts 30 sec or when you have caused two critical strike with a Fire spell.',
+      '%. This effect stacks up to 3 times and lasts 30 sec or when you have caused two critical strikes with a Fire spell.',
     ],
     2,
     [[5, 10]],
