@@ -12,11 +12,15 @@ const tier4 = [
     'Elemental Volatility',
     'ability_dualwieldspecialization',
     [
-      'Critical strikes from your Frost spells increase the critical strike chance of your next two Fire spell by ',
-      '%. This effect stacks up to 3 times and lasts 30 sec or when you have caused two critical strikes with a Fire spell.',
+      'Critical strikes from your Frost spells increase the critical strike chance of your Fire spells by ',
+      '%. Critical strikes from your Fire spells increase the critical strike chance of your Frost spells by .',
+      '%. This effect lasts 12 sec.',
     ],
     2,
-    [[5, 10]],
+    [
+      [5, 10],
+      [5, 10],
+    ],
     null,
     null,
     null,

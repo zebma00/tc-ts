@@ -1,7 +1,20 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent('Incinerate', 'spell_fire_flameshock', ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'], 2, [[2, 4]]),
+  new Talent(
+    'Incinerate',
+    'spell_fire_flameshock',
+    ['Increases the critical strike chance of your Scorch and Fire Blast spells by ', '%.'],
+    2,
+    [[2, 4]],
+    null,
+    [{ x: 3, y: 0 }],
+    null,
+    null,
+    null,
+    null,
+    ['D1']
+  ),
   new Talent('Improved Flamestrike', 'spell_fire_selfdestruct', ['Increases the critical strike chance of your Flamestrike spell by ', '%.'], 3, [[5, 10, 15]]),
   new Talent(
     'Pyroblast',

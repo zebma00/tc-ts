@@ -24,10 +24,10 @@ const tier2 = [
     'Magic Absorbtion',
     'spell_nature_astralrecalgroup',
     ['Increases all resistances by ', ' and causes you to restore ', '% mana after fully resisting or fully absorbing spell damage. 8 sec cooldown.'],
-    3,
+    2,
     [
-      [4, 7, 10],
-      [2, 4, 6],
+      [5, 10],
+      [2, 4],
     ],
     null,
     null,
