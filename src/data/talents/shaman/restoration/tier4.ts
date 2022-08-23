@@ -3,11 +3,14 @@ import { Talent } from '../../Classes'
 const tier4 = [
   new Talent(
     'Tidal Strikes',
-    'spell_shaman_tidalwaves',
-    ['Your melee attacks have ', ' chance to trigger a tick from your active Mana Spring or Healing Stream Totem.'],
+    'spell_nature_unrelentingstorm',
+    ['Your melee and spell critical strikes reduce the cast time of your next Chain Heal or Chain Lightning by ', ' sec and reduce the mana cost by ', '%. This effect stacks up to 5 times.'],
     2,
-    [['a', 'an increased']],
-    [{ x: 3, y: 1 }],
+    [
+      [0.25, 0.5],
+      [5, 10],
+    ],
+    null,
     null,
     null,
     null,
@@ -27,15 +30,12 @@ const tier4 = [
     3,
     [[10, 20, 30]],
     [{ x: null, y: null }],
-    [
-      { x: 3, y: 0 },
-      { x: 6, y: 1 },
-    ],
+    [{ x: 6, y: 1 }],
     null,
     null,
     null,
     null,
-    ['D3', 'L1'],
+    ['D3'],
     {
       isNew: false,
       isChanged: true,

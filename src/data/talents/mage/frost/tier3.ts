@@ -7,8 +7,8 @@ const tier3 = [
     'Shatter',
     'spell_frost_frostshock',
     ['Increases the critical strike chance of all your spells against frozen targets by ', '%.'],
-    5,
-    [[10, 20, 30, 40, 50]],
+    3,
+    [[17, 34, 50]],
     [{ x: 1, y: 2 }],
     null,
     null,
@@ -16,7 +16,7 @@ const tier3 = [
     null,
     null,
     null,
-    { isNew: false, isChanged: false, isMoved: true }
+    { isNew: false, isChanged: true, isMoved: true }
   ),
   new Talent(
     'Improved Blizzard',

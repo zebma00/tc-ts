@@ -9,6 +9,24 @@ export default [
     5,
     [[1, 2, 3, 4, 5]]
   ),
-  new Talent('Endurance Training', 'spell_nature_reincarnation', ['Increases the health of your pets by ', '%.'], 5, [[3, 6, 9, 12, 15]]),
+  new Talent(
+    'Improved Aspect of the Monkey',
+    'ability_hunter_aspectofthemonkey',
+    ['While Aspect of the Money is active, all normal melee attacks have a ', '% chance to increase your critical strike chance with melee attacks by 20% for 8 sec.'],
+    5,
+    [[2, 4, 6, 8, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true,
+    }
+  ),
   null,
 ]

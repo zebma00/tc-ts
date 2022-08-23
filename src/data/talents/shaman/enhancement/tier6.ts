@@ -4,14 +4,11 @@ const tier6 = [
   null,
   null,
   new Talent(
-    'Unleashed Rage',
-    'spell_nature_unleashedrage',
-    [
-      "Causes your critical hits with melee attacks to increase all party members' attack speed by ",
-      '% if within 20 yards of the Shaman. Lasts 10 sec.',
-    ],
+    'Totemic Fury',
+    'spell_fire_totemofwrath',
+    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 6 sec.'],
     5,
-    [[2, 4, 6, 8, 10]],
+    [[10, 20, 30, 40, 50]],
     null,
     null,
     null,
