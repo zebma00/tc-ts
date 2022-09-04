@@ -48,7 +48,7 @@ const tier2 = [
   new Talent(
     'Improved Fire Stone',
     'inv_ammo_firetar',
-    ['Increases the effect of your Firestone by ', '%. In addition, your Firestone reduces the additional threat caused by your Searing Pain by ', '%.'],
+    ['Increases the bonus fire damage of your Firestone by ', '%.'],
     2,
     [
       [25, 50],
