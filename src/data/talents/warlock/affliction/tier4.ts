@@ -19,8 +19,8 @@ const tier4 = [
     ['Increases your spell damage by ', '% but reduces your spell critical strike chance by ', '%.'],
     3,
     [
-      [4, 8, 12],
       [3, 6, 9],
+      [2, 4, 6],
     ],
     null,
     null,

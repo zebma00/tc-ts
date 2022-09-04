@@ -19,11 +19,11 @@ const tier5 = [
   new Talent(
     'Vigilance',
     'spell_holy_purifyingpower',
-    ['Your Judgement returns ', '% of the mana cost of the judged seal. In addition, increases range of your Judgement by ', ' yards.'],
+    ['Increases range of your Judgement by ', ' yards. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
     2,
     [
-      [35, 70],
       [5, 10],
+      [50, 100],
     ],
     null,
     null,
