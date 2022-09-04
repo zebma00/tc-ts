@@ -2,13 +2,13 @@ import { Talent } from '../../Classes'
 
 const tier4 = [
   new Talent(
-    'Tidal Strikes',
-    'spell_nature_unrelentingstorm',
-    ['Your melee and spell critical strikes reduce the cast time of your next Chain Heal or Chain Lightning by ', ' sec and reduce the mana cost by ', '%. This effect stacks up to 5 times.'],
+    'Improved Reincarnation',
+    'spell_nature_reincarnation',
+    ['Reduces the cooldown of your reincarnation spell by ', ' min and increases the amount of health and mana you reincarnate with by an additional ', '%.'],
     2,
     [
-      [0.25, 0.5],
-      [5, 10],
+      [15, 30],
+      [15, 30],
     ],
     null,
     null,
@@ -17,11 +17,7 @@ const tier4 = [
     null,
     null,
     null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
+    { isNew: false, isChanged: true, isMoved: true }
   ),
   new Talent(
     'Restorative Totems',

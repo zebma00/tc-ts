@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent('Blessed Soul', 'spell_holy_holyprotection', ['Allows two Auras to be active at the same time.'], 1, [[]], null, null, null, null, null, null, null, {
+    isMoved: false,
+    isChanged: false,
+    isNew: true,
+  }),
   new Talent(
     'Blessing of Protection',
     'spell_nature_lightningshield',

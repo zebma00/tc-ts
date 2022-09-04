@@ -26,7 +26,7 @@ const tier2 = [
   new Talent('Spiritual Warding', 'spell_nature_spiritarmor', ['Reduces the damage taken from Frost, Fire and Nature spells and effects by ', '%.'], 3, [[4, 7, 10]]),
   new Talent('Call of Flame', 'spell_fire_immolation', ['Increases damage done by your Fire Totems by ', '%'], 3, [[5, 10, 15]]),
   new Talent(
-    'Storm and Thunder',
+    'Static Charge',
     'spell_shaman_staticshock',
     ['Your Lightning spells increase the critical strike chance of all attacks and spells made against the target by ', '%. Lasts 12 sec.'],
     3,

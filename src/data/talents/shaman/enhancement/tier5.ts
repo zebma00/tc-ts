@@ -50,7 +50,25 @@ const tier5 = [
     { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
-  null,
+  new Talent(
+    'Totemic Fury',
+    'spell_fire_totemofwrath',
+    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 6 sec.'],
+    2,
+    [[25, 50]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
 ]
 
 export default tier5

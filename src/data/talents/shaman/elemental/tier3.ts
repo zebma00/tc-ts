@@ -16,7 +16,7 @@ const tier3 = [
     null,
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Reverberation', 'spell_frost_frostward', ['Reduces the cooldown of your Shock spells by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
+  new Talent('Reverberation', 'spell_frost_frostward', ['Reduces the cooldown of your Shock spells by ', ' sec.'], 5, [[0.2, 0.4, 0.6, 0.8, 1]]),
   new Talent(
     'Call of Thunder',
     'spell_nature_callstorm',
