@@ -28,7 +28,7 @@ const tier2 = [
   new Talent(
     'Static Charge',
     'spell_shaman_staticshock',
-    ['Your Lightning spells increase the critical strike chance of all attacks and spells made against the target by ', '%. Lasts 12 sec.'],
+    ['Your Lightning spells increase the critical strike chance of all spells made against the target by ', '%. This effect lasts 12 sec.'],
     3,
     [[1, 2, 3]],
     null,

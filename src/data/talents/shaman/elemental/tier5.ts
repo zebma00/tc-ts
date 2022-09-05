@@ -1,7 +1,10 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent('Storm Reach', 'spell_nature_stormreach', ['Increases the range of your Lightning Bolt and Chain Lightning spells by ', ' yards.'], 2, [[3, 6]]),
+  new Talent('Storm Reach', 'spell_nature_stormreach', ['Reduces the threat caused by your Lightning Bolt and Chain Lightning spells by ', ' % and Increases the range by yards.'], 2, [
+    [15, 30],
+    [3, 6],
+  ]),
   new Talent(
     'Elemental Fury',
     'spell_fire_volcano',
