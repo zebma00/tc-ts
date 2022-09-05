@@ -7,15 +7,16 @@ const tier4 = [
     'Enrage',
     'spell_shadow_unholyfrenzy',
     ['Gives you a ', '% damage increase for 12 sec or a maximum of 12 swings after being the victim of a critical strike.'],
-    5,
-    [[5, 10, 15, 20, 25]],
+    3,
+    [[10, 20, 30]],
     [{ x: null, y: null }],
     [{ x: 5, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2']
+    ['D2'],
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent(
     'Improved Slam',
