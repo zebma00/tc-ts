@@ -53,9 +53,9 @@ const tier5 = [
   new Talent(
     'Totemic Fury',
     'spell_fire_totemofwrath',
-    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 6 sec.'],
+    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 8 sec.'],
     2,
-    [[25, 50]],
+    [[15, 30]],
     null,
     null,
     null,

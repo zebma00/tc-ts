@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Envenom',
-    'ability_creature_poison_06',
-    ['Increases the damage done by your Eviscerate and Rupture by an additional ', '% for each poison effect on the target, up to a maximum or 30%.'],
-    2,
-    [[3, 6]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  null,
   new Talent(
     'Cold Blood',
     'spell_ice_lament',

@@ -5,9 +5,7 @@ const tier7 = [
   new Talent(
     'Lightwell',
     'spell_holy_summonlightwell',
-    [
-      'Creates a holy Lightwell on the target location. The Lightwell lasts heals a nearby party member with low health for 330 every 2 sec. Lightwell lasts 12 seconds.',
-    ],
+    ['Creates a holy Lightwell on the target location. The Lightwell heals a nearby party member with low health for 330 every 2 sec. Lightwell lasts 12 seconds.'],
     1,
     [[]],
     [{ x: 4, y: 1 }],

@@ -7,6 +7,6 @@ export default {
     "Players can also earn reputation with capital cities by wearing the city's tabard while participating in dungeons or raids.",
     'Reputation gained from leveling quests has been adjusted.',
     'Battleground faction vendors now sell additional equipment, in exchange for Marks of Honor in addition to gold.',
-    'Players can earn additional reputation with battleground factions by wearing the faction’s tabard while participating in any battleground or world PvP objectives.',
+    'Players can earn additional reputation with battleground factions by wearing the faction’s tabard while gaining honor.',
   ],
 }
