@@ -10,7 +10,7 @@ export default [
     'Equip: Increases your chance to hit with spells by 2%.',
   ]),
   new Item('Daybreak', 'inv_hammer_04', 'epic', 'Two-hand', 'Mace', 'Speed 3.00', '131 - 255 Damage', '(59.33 damage per second)', null, [
-    'Chance on hit: Physical damage taken by target increased by 10% for 8 sec.',
+    'Chance on hit: physical damage taken by target increased by 10% for 8 sec.',
   ]),
   // new Item('Idle of the World Tree', 'inv_qirajidol_life', 'epic', 'Relic', 'Idol', null, null, null, null, [
   //   'When you cast Innervate on a friendly target, you gain Innervate as well, but reduces the duration of your Innervate by 50%.',
