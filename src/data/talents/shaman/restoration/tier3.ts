@@ -2,14 +2,14 @@ import { Talent } from '../../Classes'
 
 const tier3 = [
   new Talent(
-    'Ancestral Focus',
-    'spell_nature_giftofthewaterspirit',
-    ['Your melee and spell critical strikes reduce the cast time of your next Chain Heal by ', ' sec and reduce the mana cost by ', '%. This effect stacks up to 5 times.'],
-    2,
+    'Tidal Waves',
+    'spell_shaman_tidalwaves',
     [
-      [0.25, 0.5],
-      [5, 10],
+      'When you score a melee or spell critical hit, you have a ',
+      '% chance to to lower the cast time of your next Chain Heal by 40%, reduce the mana cost of your next Healing Wave by 30% or increase the effect of your next Lesser Healing Wave by 25%.',
     ],
+    2,
+    [[15, 30]],
     null,
     null,
     null,

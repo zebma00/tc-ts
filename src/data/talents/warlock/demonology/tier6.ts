@@ -7,10 +7,10 @@ const tier6 = [
     'Master Demonologist',
     'spell_shadow_shadowpact',
     [
-      'Gives the Warlock and the summoned Demon an effect as long as the Demon is active. Imp: Increases Fire damage by ',
+      'Gives the Warlock and the summoned Demon an effect as long as the Demon is active. Imp: increases Fire damage by ',
       '%. Void Walker: reduces physical damage taken by ',
       '%. Succubus: increases Shadow damage by ',
-      '%. Felhunter: Increases healing received by ',
+      '%. Felhunter: increases healing received by ',
       '%.',
     ],
     5,

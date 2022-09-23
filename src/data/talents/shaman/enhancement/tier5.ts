@@ -41,30 +41,41 @@ const tier5 = [
       [5, 10],
     ],
     [{ x: null, y: null }],
-    [{ x: 4, y: 2 }],
+    [{ x: 6, y: 1 }],
     null,
     null,
     null,
     null,
-    ['R1'],
+    ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
+  new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
   new Talent(
-    'Stormstrike',
-    'spell_holy_sealofmight',
-    ['Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec.'],
-    1,
-    [[]],
-    [{ x: 4, y: 1 }],
+    'Totemic Fury',
+    'spell_fire_totemofwrath',
+    [
+      'Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ',
+      '% for 8 sec and reduce the cooldown of your totems that are on cooldown by ',
+      ' sec.',
+    ],
+    2,
+    [
+      [15, 30],
+      [0.5, 1],
+    ],
     null,
-    '21% of base mana',
-    'Melee range',
-    'Instant',
-    '20 sec cooldown',
     null,
-    { isNew: false, isChanged: false, isMoved: true }
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
   ),
-  null,
 ]
 
 export default tier5

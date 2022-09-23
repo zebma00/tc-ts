@@ -27,7 +27,7 @@ const tier5 = [
     'Demonic Sacrifice',
     'spell_shadow_psychicscream',
     [
-      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: Reduces physical damage you take by 15%. Succubus: increases your Shadow damage 15%. Felhunter: Increases your healing received by 15%.',
+      'Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. Imp: increases your Fire damage by 15%. Void Walker: reduces physical damage you take by 15%. Succubus: increases your Shadow damage 15%. Felhunter: Increases your healing received by 15%.',
     ],
     1,
     [[]],
