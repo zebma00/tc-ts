@@ -3,6 +3,7 @@ export default {
   content: [
     'Feedback (Human) increased the amount of mana drained.',
     'Feedback (Human) now also does shadow damage and burns mana when dispelled.',
+    'Dear Ward (Dwarf) is now a discipline spell.',
     'Elune’s Grace (Night Elf) now reduces the chance you are hit by melee or ranged attacks by 25% for 15 sec.',
     'Starshards (Night Elf) is now instant cast, lasts 10 sec and has a 30 sec cooldown.',
     'Damage absorbed by your Power Word: Shield now increases with apell healing.',

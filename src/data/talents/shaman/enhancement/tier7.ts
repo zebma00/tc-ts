@@ -3,17 +3,19 @@ import { Talent } from '../../Classes'
 const tier7 = [
   null,
   new Talent(
-    'Stormstrike',
-    'spell_holy_sealofmight',
-    ['Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec.'],
+    'Bloodlust',
+    'spell_nature_bloodlust',
+    ['Imbues the target with power, increasing their attack speed by 20% for 15 sec.'],
     1,
     [[]],
-    [{ x: 4, y: 1 }],
     null,
-    '21% of base mana',
-    'Melee range',
+    null,
+    '20% of base mana',
+    '30 yd range',
     'Instant',
-    '20 sec cooldown'
+    '3 min cooldown',
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
   null,

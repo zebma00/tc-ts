@@ -26,7 +26,7 @@ const tier3 = [
     [{ x: 4, y: 2 }],
     '125 Mana',
     '35 yd range',
-    '6sec cast',
+    '6 sec cast',
     null,
     ['D2']
   ),

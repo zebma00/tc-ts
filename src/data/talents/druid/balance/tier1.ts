@@ -35,11 +35,7 @@ const tier1 = [
     ['R1']
   ),
   new Talent("Improved Nature's Grasp", 'spell_nature_natureswrath', ["Increases the chance for your Nature's Grasp to entangle an enemy by ", '%.'], 4, [[15, 30, 45, 65]], [{ x: 0, y: 1 }]),
-  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  null,
 ]
 
 export default tier1

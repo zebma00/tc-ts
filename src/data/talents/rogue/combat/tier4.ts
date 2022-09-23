@@ -21,12 +21,20 @@ const tier4 = [
       isMoved: false,
     }
   ),
+  new Talent('Endurance', 'spell_shadow_shadowward', ['Reduces the cooldown of your Evasion and Sprint abilities by ', ' sec.'], 2, [[45, 90]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
   new Talent(
-    'Improved Sprint',
-    'ability_rogue_sprint',
-    ['Gives a ', '% chance to remove all movement impairing effects when you activate your Sprint ability.'],
+    'Thrown Specialization',
+    'ability_throw',
+    ['Increases your range with thrown weapons by ', ' yards and increases the damage you deal with thrown weapons by ', '%.'],
     2,
-    [[50, 100]],
+    [
+      [3, 6],
+      [10, 20],
+    ],
     null,
     null,
     null,
@@ -34,9 +42,12 @@ const tier4 = [
     null,
     null,
     null,
-    { isNew: false, isChanged: false, isMoved: true }
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
   ),
-  null,
 ]
 
 export default tier4

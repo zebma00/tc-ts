@@ -30,28 +30,7 @@ const tier5 = [
     { isNew: false, isChanged: true, isMoved: false }
   ),
   new Talent('Ruin', 'spell_shadow_shadowwordpain', ['Increases the critical strike damage bonus of your Destruction spells by 100%.'], 1, [[]], [{ x: 2, y: 2 }]),
-  new Talent(
-    'Havoc',
-    'spell_fire_playingwithfire',
-    [
-      'Critical strikes from your Fire spells increase the damage of the next non-perodic Fire damage dealt to the target by ',
-      '% until non-periodic damage sources are applied. Lasts a maximum of 12 sec.',
-    ],
-    2,
-    [[5, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  null,
 ]
 
 export default tier5

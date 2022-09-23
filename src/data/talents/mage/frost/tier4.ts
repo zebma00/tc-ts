@@ -16,10 +16,10 @@ const tier4 = [
       '%. Critical strikes from your Fire spells increase the critical strike chance of your Frost spells by ',
       '%. This effect lasts 18 sec.',
     ],
-    3,
+    2,
     [
-      [5, 10, 15],
-      [5, 10, 15],
+      [5, 10],
+      [5, 10],
     ],
     null,
     null,

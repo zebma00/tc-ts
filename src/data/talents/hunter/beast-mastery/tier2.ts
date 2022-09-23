@@ -2,11 +2,15 @@ import { Talent } from '../../Classes'
 
 const tier2 = [
   new Talent(
-    'Spirit Bond',
-    'classic_ability_druid_demoralizingroar',
-    ['Increases the physical damage you and your pets deal by ', '% while within 10 yards of each other.'],
+    'Improved Eyea of the Beast',
+    'ability_eyeoftheowl',
+    ['Increases the duration of your Eyes of the Beast by ', ' sec. In addition, while Eyes of the Beast is active, your pet deals ', '% additional damage and generates ', ' additional focus.'],
     2,
-    [[2, 4]],
+    [
+      [30, 60],
+      [5, 10],
+      [10, 20],
+    ],
     null,
     null,
     null,
@@ -17,7 +21,7 @@ const tier2 = [
     {
       isNew: false,
       isChanged: true,
-      isMoved: true,
+      isMoved: false,
     }
   ),
   new Talent('Endurance Training', 'spell_nature_reincarnation', ['Increases the health of your pets by ', '%.'], 5, [[3, 6, 9, 12, 15]], null, null, null, null, null, null, null, {
@@ -47,7 +51,25 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  null,
+  new Talent(
+    'Spirit Bond',
+    'classic_ability_druid_demoralizingroar',
+    ['Increases the physical damage you and your pets deal by ', '% while within 10 yards of each other.'],
+    2,
+    [[2, 4]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: true,
+    }
+  ),
 ]
 
 export default tier2

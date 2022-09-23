@@ -12,6 +12,14 @@ import warrior from './classes/warrior'
 
 export default {
   title: 'Class changes',
-  note: 'Note TBD',
+  note: (
+    <>
+      Note TBD. I took some inspiration from{' '}
+      <a href='https://turtle-wow.org/#/home' target='_blank'>
+        turtlewow
+      </a>{' '}
+      for a number of class changes.
+    </>
+  ),
   content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warrior],
 }

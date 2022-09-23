@@ -21,7 +21,7 @@ const tier3 = [
     2,
     [
       [5, 10],
-      [2, 4],
+      [1, 2],
     ],
     [{ x: 1, y: 2 }],
     null,
@@ -32,7 +32,7 @@ const tier3 = [
     null,
     {
       isNew: false,
-      isChanged: false,
+      isChanged: true,
       isMoved: true,
     }
   ),

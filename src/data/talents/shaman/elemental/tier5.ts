@@ -4,11 +4,11 @@ const tier5 = [
   new Talent(
     'Storm Reach',
     'spell_nature_stormreach',
-    ['Reduces the threat caused by your Lightning Bolt and Chain Lightning spells by ', '% and Increases the range by yards.'],
+    ['Increases the range of your Lightning Bolt and Chain Lightning spells by ', ' yards. In addition, reduces the damage penalty from your Chain Lightning on multiple targets by ', '%.'],
     2,
     [
-      [15, 30],
       [3, 6],
+      [50, 100],
     ],
     null,
     null,
