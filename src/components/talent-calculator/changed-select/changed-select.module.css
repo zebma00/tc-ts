@@ -2,12 +2,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.5rem;
+  gap: 1rem;
   margin: 0 2rem 1rem;
 }
 
 .changedSelectSingle {
   flex: 1;
+  margin: 0;
   position: relative;
   text-align: center;
   min-width: 112px;
