@@ -10,10 +10,11 @@
   flex: 1;
   position: relative;
   text-align: center;
-  min-width: 120px;
-  max-width: 120px;
+  min-width: 112px;
+  max-width: 112px;
   cursor: pointer;
   padding: 4px;
+  color: white;
   background: #282828;
   border: 1px solid #484848;
 }

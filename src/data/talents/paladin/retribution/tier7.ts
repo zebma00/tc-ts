@@ -5,9 +5,7 @@ const tier7 = [
   new Talent(
     'Repentance',
     'spell_holy_prayerofhealing',
-    [
-      'Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.',
-    ],
+    ['Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec. Any damage caused will awaken the target. Only works against Humanoids.'],
     1,
     [[]],
     null,
@@ -15,7 +13,7 @@ const tier7 = [
     '60 Mana',
     '20 yd range',
     'Instant',
-    '30 sec cooldown'
+    '60 sec cooldown'
   ),
 ]
 

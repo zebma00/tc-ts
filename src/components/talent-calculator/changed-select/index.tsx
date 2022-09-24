@@ -18,9 +18,9 @@ const ChangedSelectSingle: React.FC<{ display: boolean; text: string; onClick: (
   const colorCn: string = !!display ? styleObjActive[cn] : styleObjInactive[cn]
 
   return (
-    <div className={`${colorCn} ${styles.changedSelectSingle}`} onClick={onClick}>
+    <p className={`${colorCn} ${styles.changedSelectSingle}`} onClick={onClick}>
       {text}
-    </div>
+    </p>
   )
 }
 

@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 import styles from './cell.module.css'
 
 interface TooltipProps {
   value: number
-  description: string[]
+  description: string[] | ReactNode[]
   maxValue: number
   valueIteration: number[][] | string[][]
   manaCost: string | null

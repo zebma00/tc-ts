@@ -27,10 +27,26 @@ const tier5 = [
     'Elemental Weapons',
     'spell_fire_flametounge',
     [
-      'Grants an additional effect to your weapon enhancements. Rockbiter: reduces physical damage taken by ',
-      '%. Windfury: increases attack speed by ',
-      '%. Flametongue: increases spell damage by ',
-      "%. Frostbrand: your Frostbrand effect also reduces the target's attack speed by ",
+      <>
+        Grants an additional effect to your weapon enhancements. <br />
+        <br />
+        Rockbiter: reduces physical damage taken by{' '}
+      </>,
+      <>
+        %. <br />
+        <br />
+        Windfury: increases attack speed by{' '}
+      </>,
+      <>
+        %. <br />
+        <br />
+        Flametongue: increases spell damage by{' '}
+      </>,
+      <>
+        %. <br />
+        <br />
+        Frostbrand: your Frostbrand effect also reduces the target's attack speed by{' '}
+      </>,
       '%.',
     ],
     2,
