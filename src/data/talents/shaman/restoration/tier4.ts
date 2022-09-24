@@ -2,14 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier4 = [
   new Talent(
-    'Improved Reincarnation',
-    'spell_nature_reincarnation',
-    ['Reduces the cooldown of your reincarnation spell by ', ' min and increases the amount of health and mana you reincarnate with by an additional ', '%.'],
+    'Tidal Strikes',
+    'spell_shaman_tidalwaves',
+    ['Your melee attacks have ', ' chance to trigger a tick of your active Mana Spring, Healing Stream, Poison Cleansing or Disease Cleansing Totem.'],
     2,
-    [
-      [15, 30],
-      [15, 30],
-    ],
+    [['a', 'an increased']],
     null,
     null,
     null,
@@ -17,7 +14,11 @@ const tier4 = [
     null,
     null,
     null,
-    { isNew: false, isChanged: true, isMoved: true }
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
   ),
   new Talent(
     'Restorative Totems',

@@ -26,7 +26,8 @@ const tier6 = [
     null,
     null,
     null,
-    ['D1']
+    ['D1'],
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   null,
 ]

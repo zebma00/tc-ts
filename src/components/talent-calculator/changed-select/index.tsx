@@ -3,16 +3,22 @@ import React from 'react'
 import styles from './changed-select.module.css'
 
 const ChangedSelectSingle: React.FC<{ display: boolean; text: string; onClick: () => void; cn: string }> = ({ display, text, onClick, cn }) => {
-  const styleObj: { [key: string]: string } = {
-    red: styles.changedSelectSingleRed,
-    blue: styles.changedSelectSingleBlue,
-    yellow: styles.changedSelectSingleYellow,
+  const styleObjActive: { [key: string]: string } = {
+    red: styles.changedSelectSingleRedActive,
+    blue: styles.changedSelectSingleBlueActive,
+    yellow: styles.changedSelectSingleYellowActive,
   }
 
-  const className: string = !!display ? styleObj[cn] : styles.changedSelectSingle
+  const styleObjInactive: { [key: string]: string } = {
+    red: styles.changedSelectSingleRedInactive,
+    blue: styles.changedSelectSingleBlueInactive,
+    yellow: styles.changedSelectSingleYellowInactive,
+  }
+
+  const colorCn: string = !!display ? styleObjActive[cn] : styleObjInactive[cn]
 
   return (
-    <div className={className} onClick={onClick}>
+    <div className={`${colorCn} ${styles.changedSelectSingle}`} onClick={onClick}>
       {text}
     </div>
   )

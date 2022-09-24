@@ -1,28 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Tidal Waves',
-    'spell_shaman_tidalwaves',
-    [
-      'When you score a melee or spell critical hit, you have a ',
-      '% chance to to lower the cast time of your next Chain Heal by 40%, reduce the mana cost of your next Healing Wave by 30% or increase the effect of your next Lesser Healing Wave by 25%.',
-    ],
-    2,
-    [[15, 30]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
   new Talent('Healing Focus', 'spell_nature_healingwavelesser', ['Gives you a ', '% chance to avoid interruption caused by damage while casting any healing spell.'], 5, [[14, 28, 42, 56, 70]]),
   new Talent('Totemic Mastery', 'spell_nature_nullward', ['Increases the radius of your totems that affect friendly targets to 30 yards.'], 1, [[]]),
   new Talent(

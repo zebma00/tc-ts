@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Stormstrike',
     'spell_holy_sealofmight',
-    ['Gives you an extra attack. In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%. Lasts 12 sec.'],
+    ['Gives you an extra attack. In addition, increases nature damage dealt to the target by 10%. Lasts 20 sec.'],
     1,
     [[]],
     [{ x: 4, y: 1 }],
@@ -13,7 +13,9 @@ const tier7 = [
     '21% of base mana',
     'Melee range',
     'Instant',
-    '20 sec cooldown'
+    '20 sec cooldown',
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
   null,
   null,

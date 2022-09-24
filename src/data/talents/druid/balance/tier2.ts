@@ -27,7 +27,7 @@ const tier2 = [
     ['Increases the damage you deal with physical attacks in all forms by ', '% and increases your chance to hit with spells and melee attacks by ', '%.'],
     3,
     [
-      [3, 6, 9],
+      [4, 7, 19],
       [1, 2, 3],
     ],
     [{ x: null, y: null }],
