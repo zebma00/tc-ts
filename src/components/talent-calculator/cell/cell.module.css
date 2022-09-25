@@ -90,6 +90,7 @@
   color: #9d9d9d;
   font-size: 14px;
   line-height: 19px;
+  white-space: nowrap;
 }
 
 .tooltipNextRank {

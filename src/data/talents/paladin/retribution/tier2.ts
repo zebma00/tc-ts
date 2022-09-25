@@ -21,7 +21,7 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent('Deflection', 'ability_parry', ['Increases your parry chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
+  new Talent('Deflection', 'ability_parry', ['Increases your parry chance by ', '%.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
   null,
 ]
 

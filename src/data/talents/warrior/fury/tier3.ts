@@ -1,25 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Improved Cleave',
-    'ability_warrior_cleave',
-    ['Reduces the rage cost of your Cleave ability by ', '.'],
-    2,
-    [[2, 4]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Cleave', 'ability_warrior_cleave', ['Reduces the rage cost of your Cleave ability by ', '.'], 2, [[2, 4]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   new Talent(
     'Piercing Howl',
     'spell_shadow_deathscream',
@@ -37,15 +23,17 @@ const tier3 = [
     'spell_shadow_summonimp',
     ['Regenerate ', '% of your total health over 6 sec after being the victim of a critical strike or dealing a critical strike.'],
     3,
-    [[1, 2, 3]]
+    [[2, 4, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent(
-    'Improved Battle shout',
-    'ability_warrior_battleshout',
-    ['Increases the melee attack power bonus of your Battle Shout by ', '%.'],
-    5,
-    [[5, 10, 15, 20, 25]]
-  ),
+  new Talent('Improved Battle shout', 'ability_warrior_battleshout', ['Increases the melee attack power bonus of your Battle Shout by ', '%.'], 5, [[5, 10, 15, 20, 25]]),
 ]
 
 export default tier3

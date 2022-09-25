@@ -1,10 +1,8 @@
 import { Talent } from '../../Classes'
 
 const tier1 = [
-  new Talent('Improved Heroic Strike', 'ability_rogue_ambush', ['Reduces the cost of your Heroic Strike by ', ' rage point.'], 3, [
-    [1, 2, 3],
-  ]),
-  new Talent('Deflection', 'ability_parry', ['Increases your Parry chance by ', '%.'], 5, [[1, 2, 3, 4, 5]]),
+  new Talent('Improved Heroic Strike', 'ability_rogue_ambush', ['Reduces the cost of your Heroic Strike by ', ' rage points.'], 3, [[1, 2, 3]]),
+  new Talent('Deflection', 'ability_parry', ['Increases your parry chance by ', '%.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
   new Talent(
     'Improved Rend',
     'ability_gouge',
