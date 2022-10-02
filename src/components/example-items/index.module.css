@@ -41,17 +41,17 @@
 
 .singleItemDescription {
   margin-left: 70px;
-  padding: 0.35rem;
+  padding: 8px;
   min-width: 270px;
   max-width: 270px;
   background-size: cover;
   background-position: center center;
-  background-pepeat: no-repeat;
+  background-repeat: no-repeat;
 }
 
 .itemName {
   font-size: 14px;
-  ine-height: 17px;
+  line-height: 17px;
 }
 
 .singleItemFlex {
@@ -65,4 +65,10 @@
   font-size: 12px;
   line-height: 17px;
   color: #1eff00;
+}
+
+.singleItemPlayerClass {
+  font-size: 12px;
+  line-height: 17px;
+
 }

@@ -49,7 +49,7 @@
   left: 50px;
   bottom: 50px;
   min-width: 15rem;
-  padding: 8px 4px 4px 9px;
+  padding: 8px;
   position: absolute;
   border: 1px solid black;
   z-index: 3;
