@@ -8,7 +8,7 @@ const tier6 = [
     'inv_sword_20',
     ['Increases all damage you deal while wielding One-Handed melee weapons by ', '%.'],
     5,
-    [[1, 2, 3, 4, 5]],
+    [[2, 4, 6, 8, 10]],
     null,
     null,
     null,

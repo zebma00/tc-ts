@@ -34,7 +34,21 @@ const tier5 = [
     ['D2']
   ),
   null,
-  null,
+  new Talent(
+    'Static Charge',
+    'spell_shaman_staticshock',
+    ['Your Lightning spells increase the critical strike chance of all spells made against the target by ', '%. This effect lasts 12 sec.'],
+    3,
+    [[1, 2, 3]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
 ]
 
 export default tier5

@@ -3,11 +3,6 @@ import { Talent } from '../../Classes'
 const tier5 = [
   new Talent('Two-Handed Weapon Specialization', 'inv_hammer_04', ['Increases the damage you deal with two-handed melee weapons by ', '%.'], 3, [[2, 4, 6]]),
   null,
-  new Talent('Blessed Fervor', 'spell_holy_blessedresillience', ['Allows multiple Judgement effects to be active on a target.'], 1, [[]], null, [{ x: 5, y: 2 }], null, null, null, null, ['D1'], {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
   new Talent(
     'Seal of Command',
     'ability_warrior_innerrage',
@@ -30,6 +25,25 @@ const tier5 = [
       isNew: false,
       isChanged: false,
       isMoved: true,
+    }
+  ),
+  new Talent(
+    'Holy Fervor',
+    'spell_holy_crusade',
+    ['Your Judgement has a ', '% chance to refresh all Judgement effects on the target and increase the effect of Judgement effects on the target by 30% for 8 sec.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
     }
   ),
 ]
