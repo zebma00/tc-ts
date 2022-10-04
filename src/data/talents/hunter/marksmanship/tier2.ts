@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Improved Concussive Shot',
-    'spell_frost_stun',
-    ['Gives your Concussive Shot a ', '% chance to stun the target for 3 sec.'],
-    5,
-    [[4, 8, 12, 16, 20]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
-  ),
+  null,
   new Talent(
     'Improved Arcane Shot',
     'ability_impalingbolt',

@@ -45,7 +45,7 @@ const tier4 = [
   new Talent(
     'Natural Guardian',
     'ability_druid_kingofthejungle',
-    ['Whenever a damaging attack brings you below 30% health, your maximum health is increased by ', '% for 10 sec. 2 minute cooldown.'],
+    ['Whenever a damaging attack brings you below 30% health, your maximum health is increased by ', '% for 10 sec. 1 minute cooldown.'],
     2,
     [[10, 20]],
     null,

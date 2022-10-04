@@ -15,8 +15,8 @@ const tier1 = [
     null,
     null,
     {
-      isNew: false,
-      isChanged: true,
+      isNew: true,
+      isChanged: false,
       isMoved: false,
     }
   ),
