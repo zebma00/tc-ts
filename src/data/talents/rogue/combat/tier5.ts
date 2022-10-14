@@ -15,8 +15,8 @@ const tier5 = [
     [{ x: 5, y: 1 }],
     '25 Energy',
     null,
-    '2 min cooldown',
     'Instant',
+    '2 min cooldown',
     ['D1']
   ),
   new Talent('Sword Specialization', 'inv_sword_27', ['Gives you a ', '% chance to trigger an additional attack against the same target when using swords.'], 5, [[1, 2, 3, 4, 5]]),

@@ -35,7 +35,7 @@ const tier3 = [
     'spell_holy_divinepurpose',
     ['Increases the Holy damage you deal to enemies that are stunned or incapacitated by ', '%.'],
     2,
-    [[10, 20]],
+    [[15, 30]],
     null,
     null,
     null,

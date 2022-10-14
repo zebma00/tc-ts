@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent('Blessed Focus', 'spell_holy_holyprotection', ['Allows you to have two active auras at the same time.'], 1, [[]], null, null, null, null, null, null, null, {
+  new Talent('Blessed Focus', 'spell_holy_holyprotection', ['Allows you to have two auras active at the same time.'], 1, [[]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

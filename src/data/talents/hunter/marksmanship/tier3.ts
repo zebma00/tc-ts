@@ -12,5 +12,23 @@ export default [
     isChanged: true,
     isMoved: true,
   }),
-  new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
+  new Talent(
+    'Improved Mult-Shot',
+    'ability_upgrademoonglaive',
+    ['Causes your Multi-Shot to return ', '% of its mana cost when hitting one target.'],
+    3,
+    [[20, 40, 60]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
 ]
