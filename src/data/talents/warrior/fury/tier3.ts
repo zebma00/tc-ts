@@ -21,7 +21,7 @@ const tier3 = [
   new Talent(
     'Blood Craze',
     'spell_shadow_summonimp',
-    ['Regenerate ', '% of your total health over 6 sec after being the victim of a critical strike or dealing a critical strike.'],
+    ['Regenerate ', '% of your total health over 6 sec after being the victim of a critical strike critical strike.'],
     3,
     [[2, 4, 6]],
     null,

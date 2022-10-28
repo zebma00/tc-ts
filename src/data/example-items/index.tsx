@@ -22,18 +22,18 @@ export default [
     'Use: Increases the damage and critical strike chance of your active pets and summons by 10% for 15 sec. (3 min cooldown)',
   ]),
   new Item('Totem of Tidal Orbs', 'inv_qirajidol_life', 'epic', 'Relic', 'Totem', null, null, null, null, ['Damage from your Lightning Shield returns mana equal to 60% of the damage dealt.']),
-  new Item(
-    'Breastplate of Victory',
-    'inv_chest_plate07',
-    'rare',
-    'Chest',
-    'Plate',
-    null,
-    null,
-    null,
-    { armor: 463, stamina: 5, strength: 5, intellect: 0, spirit: 0, agility: 0 },
-    ['Gain 10 rage and 10% health after killing an opponent that yields experience or honor.'],
-    'Warrior',
-    42
-  ),
+  // new Item(
+  //   'Breastplate of Victory',
+  //   'inv_chest_plate07',
+  //   'rare',
+  //   'Chest',
+  //   'Plate',
+  //   null,
+  //   null,
+  //   null,
+  //   { armor: 463, stamina: 5, strength: 5, intellect: 0, spirit: 0, agility: 0 },
+  //   ['Gain 10 rage and 10% health after killing an opponent that yields experience or honor.'],
+  //   'Warrior',
+  //   42
+  // ),
 ]

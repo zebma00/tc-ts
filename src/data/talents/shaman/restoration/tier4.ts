@@ -4,9 +4,9 @@ const tier4 = [
   new Talent(
     'Tidal Strikes',
     'spell_shaman_tidalwaves',
-    ['Your melee attacks have ', ' chance to trigger a tick of your active Mana Spring, Healing Stream, Poison Cleansing or Disease Cleansing Totem.'],
+    ['Your melee and spell critical strikes have a ', '% chance to reduce the cast time of your next Chain Heal by 0.5 sec and reduce the mana cost by 20%. This effect stacks up to 5 times.'],
     2,
-    [['a', 'an increased']],
+    [[50, 100]],
     null,
     null,
     null,

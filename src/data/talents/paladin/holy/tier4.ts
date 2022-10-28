@@ -1,7 +1,24 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  null,
+  new Talent(
+    'Divine Insight',
+    'spell_holy_healingfocus',
+    ['Increases range of your Judgement by ', ' yards and increases the duration of your Judgement effects by ', ' sec.'],
+    2,
+    [
+      [5, 10],
+      [5, 10],
+    ],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
   new Talent(
     'Illumination',
     'spell_holy_greaterheal',

@@ -39,11 +39,14 @@ const tier2 = [
     }
   ),
   new Talent(
-    'Anticipation',
-    'spell_nature_mirrorimage',
-    ['Reduces your damage taken by ', '%.'],
-    3,
-    [[1, 2, 3]],
+    'Rushing Victories',
+    'ability_warrior_devastate',
+    ['Gain ', ' rage points and ', '% health after killing an opponent that yields experience or honor.'],
+    2,
+    [
+      [5, 10],
+      [5, 10],
+    ],
     null,
     null,
     null,
@@ -52,9 +55,9 @@ const tier2 = [
     null,
     null,
     {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
     }
   ),
 ]

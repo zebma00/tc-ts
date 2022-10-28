@@ -6,7 +6,7 @@ export default [
     'Wyvern Sting',
     'inv_spear_02',
     [
-      'A stinging shot that causes the target to fall asleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 380 damage over 12 sec. Only one sting can be active per hunter at a time.',
+      'A stinging shot that causes the target to fall asleep for 12 sec. Any damage will cancel the effect. When the target wakes up, the Sting causes 300 damage over 12 sec. Only one sting can be active per hunter at a time.',
     ],
     1,
     [[]],
