@@ -1,7 +1,9 @@
+import { ReactNode } from 'react'
+
 export class Talent {
   name: string
   icon: string
-  description: string[]
+  description: string[] | ReactNode[]
   value: number
   maxValue: number
   valueIteration: number[][] | string[][]
