@@ -1,37 +1,12 @@
 export default {
-<<<<<<< HEAD
-<<<<<<< HEAD
   title: 'Itemization',
   note: 'Note TBD',
-=======
-  title: 'Itemization',
-  note: 'Note',
->>>>>>> 8b33b65 (update talents + item class)
   content: [
     'Many 2, 3, 4 and 5-part sets have been added, along with single items. Many of these sets and items encourage niche and uncommon builds.',
     'Existing class sets have been reworked to better fit their class and spec.',
     'Additional items and sets rewarded for honor have been added or changed to better fit various classes and specs.',
-<<<<<<< HEAD
     'Throwingn weapons items no longer stack, but lose durability when thrown instead. These throwing weapons can be repaired. Some throwing weapons have unique effects, like poisoning the target, or bouncing off of enemies.',
     "Several weapons that increase a druid's attack power while in cat, bear, dire bear and moonkin forms have been added.",
     'Incomplete items and recipes can now be obtained from various sources, like bosses, chests and world drops. Collect resources and complete quests to obtain the complete items and recipes.',
   ],
-=======
-	title: 'Itemization',
-	note: 'Note',
-	content: [
-		'Many 2, 3, 4 and 5-part sets have been added, along with single items. Many of these sets and items encourage niche and uncommon builds.',
-		'Existing class sets have been reworked to better fit their class and spec.',
-		'Additional items and sets rewarded for honor have been added or changed to better fit various classes and specs.',
-		'Thrown weapon items no longer stack, but lose durability when thrown instead. These throwing weapons can be repaired. Some throwing weapons have unique effects, like poisoning the target, or bouncing off of enemies.',
-		"Several weapons that increase a druid's attack power while in cat, bear, dire bear and moonkin forms have been added.",
-		'Incomplete items and recipes can now be obtained from various sources, like bosses, chests and world drops. Collect resources and complete quests to obtain the complete items and recipes.',
-	],
->>>>>>> 1ddb4f1 (patch notes)
-=======
-    'Thrown weapon items no longer stack, but lose durability when thrown instead. These throwing weapons can be repaired. Some throwing weapons have unique effects, like poisoning the target, or bouncing off of enemies.',
-    "Several weapons that increase a druid's attack power while in cat, bear, dire bear and moonkin forms have been added.",
-    'Incomplete items and recipes can now be obtained from various sources, like bosses, chests and world drops. Collect resources and complete quests to obtain the complete items and recipes.',
-  ],
->>>>>>> 8b33b65 (update talents + item class)
 }
