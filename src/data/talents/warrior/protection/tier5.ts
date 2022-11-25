@@ -21,7 +21,7 @@ const tier5 = [
     'Focus Rage',
     'ability_warrior_focusedrage',
     [
-      'While active, basic attacks consume rage points based on attack speed, dealing additional damage per rage point spent. Attacks deal additional threat while in defensive stance. Lasts 10 sec or until cancelled.',
+      'While active, basic attacks consume up to 20 rage points based on weapon speed, dealing 10% additional damage per rage point spent. Attacks deal additional threat while in defensive stance. Lasts 10 sec or until cancelled.',
     ],
     1,
     [[]],

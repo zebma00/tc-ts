@@ -1,11 +1,25 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent('Blessed Focus', 'spell_holy_holyprotection', ['Allows you to have two auras active at the same time.'], 1, [[]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent(
+    'Blessed Focus',
+    'spell_holy_holyprotection',
+    ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to deal increased threat while Righteous Fury is active.'],
+    1,
+    [[]],
+    null,
+    null,
+    null,
+    null,
+    'Instant',
+    '30 sec cooldown',
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent(
     'Blessing of Protection',
     'spell_nature_lightningshield',

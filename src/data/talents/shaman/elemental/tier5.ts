@@ -1,24 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Storm Reach',
-    'spell_nature_stormreach',
-    ['Increases the range of your Lightning Bolt and Chain Lightning spells by ', ' yards. In addition, reduces the damage penalty from your Chain Lightning on multiple targets by ', '%.'],
-    2,
-    [
-      [3, 6],
-      [50, 100],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
-  ),
+  new Talent('Storm Reach', 'spell_nature_stormreach', ['Increases the range of your Lightning Bolt and Chain Lightning spells by ', ' yards.'], 2, [[3, 6]]),
   new Talent(
     'Elemental Fury',
     'spell_fire_volcano',
@@ -35,11 +18,11 @@ const tier5 = [
   ),
   null,
   new Talent(
-    'Static Charge',
-    'spell_shaman_staticshock',
-    ['Your Lightning spells increase the critical strike chance of all spells made against the target by ', '%. This effect lasts 12 sec.'],
-    3,
-    [[1, 2, 3]],
+    'Ice and Fire',
+    'spell_fire_masterofelements',
+    ['Increases the ciritical strike chance of your Fire and Frost spells and effects by ', '%.'],
+    2,
+    [[2, 4]],
     null,
     null,
     null,

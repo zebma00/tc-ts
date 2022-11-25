@@ -23,19 +23,11 @@ const tier4 = [
   ),
   null,
   new Talent(
-    'Improved Elemental Devastation',
-    'spell_fire_elementaldevastation',
-    ['Spell criticals from your Fire Totems and weapon enhancements have a ', '% chance to grant Elemental Devastation.'],
-    2,
-    [[15, 30]],
-    [{ x: 2, y: 3 }],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
+    'Elemental Devastation',
+    'classic_spell_fire_elementaldevastation',
+    ['Causes your offensive spell crits to increase your chance to get a critical strike with melee attacks by ', '% for 10 sec.'],
+    3,
+    [[3, 6, 9]]
   ),
 ]
 

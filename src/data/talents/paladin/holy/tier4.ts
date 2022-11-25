@@ -4,11 +4,11 @@ const tier4 = [
   new Talent(
     'Divine Insight',
     'spell_holy_healingfocus',
-    ['Increases range of your Judgement by ', ' yards and increases the duration of your Judgement effects by ', ' sec.'],
+    ['Increases the duration of your Judgement effects by ', ' sec. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
     2,
     [
-      [5, 10],
-      [5, 10],
+      [15, 30],
+      [50, 100],
     ],
     null,
     null,

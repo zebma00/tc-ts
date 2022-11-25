@@ -3,29 +3,21 @@ import { Talent } from '../../Classes'
 const tier7 = [
   null,
   new Talent(
-    'Moonkin Form',
-    'spell_nature_forceofnature',
-    [
-      <>
-        Transforms the druid into Moonkin Form. While in this form the armor contribution of all items is increased by 360% and all party members within 30 yards have their spell critical strike
-        increased by 5%. The druid can only cast Balance spells, Innervate, Remove Curse and Abolish Poison while shapeshifted.
-        <br />
-        <br />
-        The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects.
-      </>,
-    ],
+    'Lunar Flare',
+    'spell_arcane_arcanetorrent',
+    ['When activated, grants 100% spell critical strike chance to your next two spells that are capable of critical hits.'],
     1,
     [[]],
     null,
     null,
-    '35% of base mana',
+    null,
     null,
     'Instant',
-    null,
+    '3 min cooldown',
     null,
     {
-      isNew: false,
-      isChanged: true,
+      isNew: true,
+      isChanged: false,
       isMoved: false,
     }
   ),

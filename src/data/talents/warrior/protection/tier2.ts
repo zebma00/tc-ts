@@ -38,28 +38,11 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Rushing Victories',
-    'ability_warrior_devastate',
-    ['Gain ', ' rage points and ', '% health after killing an opponent that yields experience or honor.'],
-    2,
-    [
-      [5, 10],
-      [5, 10],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Increases your rage generation by ', '% while below 10 rage.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier2

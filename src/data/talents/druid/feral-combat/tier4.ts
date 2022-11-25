@@ -5,7 +5,7 @@ const tier4 = [
   new Talent(
     'Predatory Strikes',
     'ability_hunter_pet_cat',
-    ['Increases your melee attack power while shapeshifted by ', '% of your level.'],
+    ['Increases your melee attack power while in Bear, Dire Bear or Cat Form by ', '% of your level.'],
     3,
     [
       [50, 100, 150],
@@ -17,8 +17,7 @@ const tier4 = [
     null,
     null,
     null,
-    ['D2'],
-    { isNew: false, isChanged: true, isMoved: false }
+    ['D2']
   ),
   new Talent(
     'Primal Fury',

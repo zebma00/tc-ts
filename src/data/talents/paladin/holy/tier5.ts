@@ -1,24 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Vigilance',
-    'spell_holy_purifyingpower',
-    ['Your Judgement has a ', '% chance to not consume your active seal.'],
-    2,
-    [
-      [5, 10],
-      [50, 100],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
   new Talent(
     'Divine Favor',
     'spell_holy_heal',

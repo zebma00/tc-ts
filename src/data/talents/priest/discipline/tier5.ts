@@ -2,22 +2,23 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Devotion',
+    'Focus Power',
     'ability_paladin_infusionoflight',
-    ["Your damaging spells reduce the target's attributes by ", "% for 10 sec. Your healing spells increase the target's attributes by ", '% for 10 sec.'],
-    2,
-    [
-      [5, 10],
-      [5, 10],
-    ],
+    ["When activated, your next damaging spell reduces the target's attributes by 25% for 8 sec or your next healing spell increases the target's attributes by 25% for 8 sec."],
+    1,
+    [[]],
     null,
     null,
     null,
     null,
+    'Instant',
+    '1 min cooldown',
     null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
   ),
   new Talent(
     'Force of Will',

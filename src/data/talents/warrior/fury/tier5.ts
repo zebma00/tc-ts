@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Improved Intercept',
     'ability_rogue_sprint',
-    ['Reduces the rage cost of your Intercept by ', ' rage points and reduces the cooldown by ', 'sec.'],
+    ['Reduces the rage cost of your Intercept by ', ' rage points and reduces the cooldown by ', ' sec.'],
     2,
     [
       [5, 10],
@@ -36,8 +36,8 @@ const tier5 = [
   null,
   new Talent(
     'Crushing Blows',
-    'spell_holy_fistofjustice',
-    ['Your Slam increases the damage of your next Slam within 5 sec by ', '%.'],
+    'ability_warrior_devastate',
+    ['Your Slam increases the damage of your next Slam within 3 sec by ', '%.'],
     2,
     [[10, 20]],
     [{ x: 3, y: 3 }],

@@ -21,7 +21,7 @@ const tier3 = [
   new Talent(
     'Sharpened Claws',
     'inv_misc_monsterclaw_04',
-    ['Increases your critical strike chance while shapeshifted by ', '%.'],
+    ['Increases your critical strike chance while in Bear, Dire Bear or Cat Form by ', '%.'],
     3,
     [[2, 4, 6]],
     [{ x: null, y: null }],
@@ -30,8 +30,7 @@ const tier3 = [
     null,
     null,
     null,
-    ['D1'],
-    { isChanged: true, isNew: false, isMoved: false }
+    ['D1']
   ),
   new Talent(
     'Feline Fury',
