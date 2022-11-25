@@ -24,25 +24,11 @@ const tier1 = [
       isMoved: true,
     }
   ),
-  new Talent(
-    'Catactlysm',
-    'spell_fire_windsofwoe',
-    ['Reduces the mana cost of your Destruction spells by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Catactlysm', 'spell_fire_windsofwoe', ['Reduces the mana cost of your Destruction spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   null,
 ]
 

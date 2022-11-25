@@ -2,13 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier1 = [
   null,
-  new Talent(
-    'Ferocity',
-    'ability_hunter_pet_hyena',
-    ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', ' Rage or Energy.'],
-    5,
-    [[1, 2, 3, 4, 5]]
-  ),
+  new Talent('Ferocity', 'ability_hunter_pet_hyena', ['Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by ', ' Rage or Energy.'], 5, [[1, 2, 3, 4, 5]]),
   new Talent(
     'Feral Aggression',
     'classic_ability_druid_demoralizingroar',

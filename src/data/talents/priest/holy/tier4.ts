@@ -2,13 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier4 = [
   null,
-  new Talent(
-    'Holy Reach',
-    'spell_holy_purify',
-    ['ncreases the range of Smite and Holy Fire and the radius of Holy Nova and Prayer of Healing by ', '%.'],
-    2,
-    [[10, 20]]
-  ),
+  new Talent('Holy Reach', 'spell_holy_purify', ['ncreases the range of Smite and Holy Fire and the radius of Holy Nova and Prayer of Healing by ', '%.'], 2, [[10, 20]]),
   new Talent(
     'Spiritual Guidance',
     'spell_holy_spiritualguidence',

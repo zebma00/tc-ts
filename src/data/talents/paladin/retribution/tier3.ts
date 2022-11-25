@@ -53,13 +53,9 @@ const tier3 = [
       isMoved: true,
     }
   ),
-  new Talent(
-    'Pursuit of Justice',
-    'spell_holy_persuitofjustice',
-    ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'],
-    2,
-    [[4, 8]]
-  ),
+  new Talent('Pursuit of Justice', 'spell_holy_persuitofjustice', ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'], 2, [
+    [4, 8],
+  ]),
 ]
 
 export default tier3

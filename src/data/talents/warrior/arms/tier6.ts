@@ -21,9 +21,7 @@ const tier6 = [
     }
   ),
   null,
-  new Talent('Improved Hamstring', 'ability_shockwave', ['Gives your Hamstring a ', '% chance to immobilize the target for 5 sec.'], 3, [
-    [10, 20, 30],
-  ]),
+  new Talent('Improved Hamstring', 'ability_shockwave', ['Gives your Hamstring a ', '% chance to immobilize the target for 5 sec.'], 3, [[10, 20, 30]]),
   null,
 ]
 

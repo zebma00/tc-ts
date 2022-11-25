@@ -53,13 +53,7 @@ const tier5 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Sword Specialization',
-    'inv_sword_27',
-    ['Gives you a ', '% chance to get an additional attack against the same target when using a Sword.'],
-    5,
-    [[1, 2, 3, 4, 5]]
-  ),
+  new Talent('Sword Specialization', 'inv_sword_27', ['Gives you a ', '% chance to get an additional attack against the same target when using a Sword.'], 5, [[1, 2, 3, 4, 5]]),
 ]
 
 export default tier5

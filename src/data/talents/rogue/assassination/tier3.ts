@@ -1,16 +1,8 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Relentless Strikes',
-    'ability_warrior_decisivestrike',
-    ['Your Finishing Moves have a 20% chance per combo point to restore 25 energy.'],
-    1,
-    [[]]
-  ),
-  new Talent('Improved Expose Armor', 'ability_warrior_riposte', ['Increases the armor reduction by your Expose Armor by ', '%.'], 2, [
-    [25, 50],
-  ]),
+  new Talent('Relentless Strikes', 'ability_warrior_decisivestrike', ['Your Finishing Moves have a 20% chance per combo point to restore 25 energy.'], 1, [[]]),
+  new Talent('Improved Expose Armor', 'ability_warrior_riposte', ['Increases the armor reduction by your Expose Armor by ', '%.'], 2, [[25, 50]]),
   new Talent(
     'Lethality',
     'ability_criticalstrike',
