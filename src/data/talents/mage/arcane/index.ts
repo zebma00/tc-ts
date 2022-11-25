@@ -6,14 +6,10 @@ import tier5 from './tier5'
 import tier6 from './tier6'
 import tier7 from './tier7'
 
-<<<<<<< HEAD
 const arcane = {
-	spec: 'arcane',
-	icon: 'spell_holy_magicalsentry',
-	talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7],
+  spec: 'arcane',
+  icon: 'spell_holy_magicalsentry',
+  talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7],
 }
 
 export default arcane
-=======
-export default { spec: 'arcane', talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7] }
->>>>>>> 1ddb4f1 (patch notes)

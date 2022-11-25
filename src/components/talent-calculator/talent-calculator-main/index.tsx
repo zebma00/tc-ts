@@ -11,7 +11,6 @@ import { useURLParams } from '../../../lib/talents-url'
 import classTalents from '../../../data/talents'
 import TcPatchNotes from '../tc-patch-notes'
 
-<<<<<<< HEAD
 interface TalentCalculatorMainProps {
   selectedClass: string
   displayChanged: {
@@ -37,70 +36,47 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
   useURLParams(talentData)
 
   const pointsLeft = 51 - checkTotalPoints(talentData!)!
-=======
-interface TalentCalculatorMain {
-	selectedClass: string
-	displayChanged: {
-		displayIsNew: boolean
-		displayIsChanged: boolean
-		displayIsMoved: boolean
-	}
-}
 
-const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, displayChanged }) => {
-	const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
-	const [specNames, setSpecNames] = useState<string[] | null>(null)
-	const classData = require(`../../../data/talents/${selectedClass}`)
+  const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
+    e.preventDefault()
+    const newData = [...talentData!]
 
-	useEffect(() => {
-		setTalentData(talentCalcMaker(classData.default.specs))
-		setSpecNames(specNameMaker(classData.default.specs))
-	}, [classData])
+    if (e.type === 'click') {
+      const canLeftClick = leftClick(newData, i, x, y)
+      canLeftClick && newData[i][x][y]!.increment()
+    } else if (e.type === 'contextmenu') {
+      const canRightClick = rightClick(newData, i, x, y)
+      canRightClick && newData[i][x][y]!.decrement()
+    }
+    setTalentData(newData)
+  }
 
-	const pointsLeft = 51 - checkTotalPoints(talentData!)!
->>>>>>> 1ddb4f1 (patch notes)
+  const resetTree = (i: number) => {
+    const newData = [...talentData!]
+    newData[i].forEach(row => {
+      row.forEach(cell => {
+        if (cell) {
+          cell.reset()
+        }
+      })
+    })
+    setTalentData(newData)
+  }
 
-	const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
-		e.preventDefault()
-		const newData = [...talentData!]
+  const resetPoints = () => {
+    const newData = [...talentData!]
+    newData.forEach(grid => {
+      grid.forEach(row => {
+        row.forEach(cell => {
+          if (cell) {
+            cell.reset()
+          }
+        })
+      })
+    })
+    setTalentData(newData)
+  }
 
-		if (e.type === 'click') {
-			const canLeftClick = leftClick(newData, i, x, y)
-			canLeftClick && newData[i][x][y]!.increment()
-		} else if (e.type === 'contextmenu') {
-			const canRightClick = rightClick(newData, i, x, y)
-			canRightClick && newData[i][x][y]!.decrement()
-		}
-		setTalentData(newData)
-	}
-
-	const resetTree = (i: number) => {
-		const newData = [...talentData!]
-		newData[i].forEach((row) => {
-			row.forEach((cell) => {
-				if (cell) {
-					cell.reset()
-				}
-			})
-		})
-		setTalentData(newData)
-	}
-
-	const resetPoints = () => {
-		const newData = [...talentData!]
-		newData.forEach((grid) => {
-			grid.forEach((row) => {
-				row.forEach((cell) => {
-					if (cell) {
-						cell.reset()
-					}
-				})
-			})
-		})
-		setTalentData(newData)
-	}
-
-<<<<<<< HEAD
   return (
     <>
       <div className={styles.tcContainer}>
@@ -125,35 +101,6 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMain> = ({ selectedClass, d
       <TCFooter pointsLeft={pointsLeft} resetPoints={resetPoints} selectedClass={selectedClass} talentData={talentData} />
     </>
   )
-=======
-	return (
-		<>
-			<div className={styles.tcContainer}>
-				{talentData?.map((gridData: any, i: number) => {
-					return (
-						<Grid
-							displayChanged={displayChanged}
-							key={i}
-							i={i}
-							gridData={gridData}
-							pointsLeft={pointsLeft!}
-							selectedClass={selectedClass}
-							specName={specNames![i]}
-							clickHandler={clickHandler}
-							resetTree={resetTree}
-						/>
-					)
-				})}
-			</div>
-			<TCFooter
-				pointsLeft={pointsLeft}
-				resetPoints={resetPoints}
-				selectedClass={selectedClass}
-				talentData={talentData}
-			/>
-		</>
-	)
->>>>>>> 1ddb4f1 (patch notes)
 }
 
 export default TalentCalculatorMain

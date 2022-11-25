@@ -1,5 +1,4 @@
 .exampleItems {
-<<<<<<< HEAD
   padding: 1rem;
   max-width: 750px;
   margin: 0 auto;
@@ -8,11 +7,6 @@
   align-items: flex-start;
   gap: 1rem;
   flex-wrap: wrap;
-=======
-	padding: 1rem;
-	max-width: 726px;
-	margin: 0 auto;
->>>>>>> 1ddb4f1 (patch notes)
 }
 
 .singleItemWrapper {
@@ -76,5 +70,4 @@
 .singleItemPlayerClass {
   font-size: 12px;
   line-height: 17px;
-
 }

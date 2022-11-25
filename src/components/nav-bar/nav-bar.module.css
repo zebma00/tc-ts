@@ -1,5 +1,4 @@
 .navBar {
-<<<<<<< HEAD
   margin: 0 auto;
   padding: 1rem;
   width: 100%;
@@ -11,24 +10,16 @@
   background-color: #242424;
   z-index: 999;
   border-bottom: 2px solid #ebdec2;
-=======
-	margin: 0 auto;
-	padding: 1rem;
-	width: fit-content;
-	display: flex;
-	gap: 1rem;
-	justify-content: space-between;
->>>>>>> 1ddb4f1 (patch notes)
 }
 
 .navLink {
-	color: #ffd100;
-	text-decoration: none;
+  color: #ffd100;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 500px) {
-	.navBar {
-		gap: 0;
-		width: 100%;
-	}
+  .navBar {
+    gap: 0;
+    width: 100%;
+  }
 }

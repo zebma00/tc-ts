@@ -6,14 +6,10 @@ import tier5 from './tier5'
 import tier6 from './tier6'
 import tier7 from './tier7'
 
-<<<<<<< HEAD
 const frost = {
-	spec: 'frost',
-	icon: 'spell_frost_frostbolt02',
-	talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7],
+  spec: 'frost',
+  icon: 'spell_frost_frostbolt02',
+  talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7],
 }
 
 export default frost
-=======
-export default { spec: 'frost', talents: [tier1, tier2, tier3, tier4, tier5, tier6, tier7] }
->>>>>>> 1ddb4f1 (patch notes)

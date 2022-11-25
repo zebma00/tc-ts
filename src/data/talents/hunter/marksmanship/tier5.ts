@@ -1,7 +1,6 @@
 import { Talent } from '../../Classes'
 
 export default [
-<<<<<<< HEAD
   new Talent(
     'Improved Mult-Shot',
     'ability_upgrademoonglaive',
@@ -48,36 +47,4 @@ export default [
     '30 sec cooldown'
   ),
   new Talent('Ranger', 'ability_hunter_mastermarksman', ['Increases the damage of your Auto Shot by ', '% every second while your target is further than 30 yards away, up to 10%. '], 2, [[0.5, 1]]),
-=======
-	null,
-	new Talent(
-		'Barrage',
-		'ability_upgrademoonglaive',
-		['Increases the damage done by your Multishot and Volley spells by ', '%.'],
-		3,
-		[[5, 10, 15]],
-		[{ x: null, y: null }],
-		[{ x: 6, y: 1 }],
-		null,
-		null,
-		null,
-		null,
-		['D2']
-	),
-	new Talent(
-		'Scatter Shot',
-		'ability_golemstormbolt',
-		[
-			'A short-range shot that deals 50% weapon damage and disorients the target for 4 sec. Any damage caused will remove the effect. Turns off your attack when used.',
-		],
-		1,
-		[[]],
-		null,
-		null,
-		'8% of base mana',
-		'15 yd range',
-		'30 sec cooldown'
-	),
-	null,
->>>>>>> 1ddb4f1 (patch notes)
 ]
