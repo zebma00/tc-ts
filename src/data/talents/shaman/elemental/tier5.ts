@@ -17,21 +17,11 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent(
-    'Ice and Fire',
-    'spell_fire_masterofelements',
-    ['Increases the ciritical strike chance of your Fire and Frost spells and effects by ', '%.'],
-    2,
-    [[2, 4]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases your Fire and Frost damage done by ', '%.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier5

@@ -2,9 +2,9 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   new Talent(
-    'Blessed Focus',
+    'Righteous Focus',
     'spell_holy_holyprotection',
-    ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to deal increased threat while Righteous Fury is active.'],
+    ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to not incur its cooldown.'],
     1,
     [[]],
     null,

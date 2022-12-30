@@ -34,25 +34,11 @@ const tier3 = [
     null,
     ['D3']
   ),
-  new Talent(
-    'Sanctity Aura',
-    'spell_holy_mindvision',
-    ['Increases Holy damage done by party members within 30 yards by 10%. Only one Aura can be active per paladin at a time.'],
-    1,
-    [[]],
-    null,
-    null,
-    null,
-    null,
-    'Instant',
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: false,
-      isMoved: true,
-    }
-  ),
+  new Talent('Sanctity', 'spell_holy_mindvision', ['Your auras also ncrease Holy damage done by party members within 30 yards by 10%.'], 1, [[]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: true,
+  }),
   new Talent('Pursuit of Justice', 'spell_holy_persuitofjustice', ['Increases movement speed and mounted movement speed by ', '%. Does not stack with other movement increasing effects.'], 2, [
     [4, 8],
   ]),

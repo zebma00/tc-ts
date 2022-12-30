@@ -46,5 +46,19 @@ export default [
     '15 yd range',
     '30 sec cooldown'
   ),
-  new Talent('Ranger', 'ability_hunter_mastermarksman', ['Increases the damage of your Auto Shot by ', '% every second while your target is further than 30 yards away, up to 10%. '], 2, [[0.5, 1]]),
+  new Talent(
+    'Ranger',
+    'ability_hunter_mastermarksman',
+    ['While in combat, increases the damage of your Auto Shot by ', '% every second while your target is further than 30 yards away, up to 10%. '],
+    2,
+    [[0.5, 1]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
 ]

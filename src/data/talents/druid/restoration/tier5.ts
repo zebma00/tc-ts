@@ -24,7 +24,7 @@ const tier5 = [
   new Talent(
     'Cycle of Life',
     'spell_nature_tranquility',
-    ['Reduces the cooldown of Tranquility by ', ' minutes and Rebirth by ', ' minutes and reduces their mana cost by ', '%.'],
+    ['Reduces the cooldown of Tranquility and Innervate by ', ' minutes and Rebirth by ', ' minutes and reduces their mana cost by ', '%.'],
     2,
     [
       [1, 2],

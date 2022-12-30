@@ -2,16 +2,16 @@ import { Talent } from '../../Classes'
 
 const tier3 = [
   new Talent(
-    'Shiv',
-    'inv_throwingknife_04',
-    ['Performs an instant off-hand weapon attack that automatically applies the poison from your off-hand weapon to the target. Slower weapons require more Energy. Awards 1 combo point.'],
-    1,
-    [[]],
+    'Brutal Assault',
+    'spell_shadow_deathpact',
+    ['When you add a combo point using a different ability from your previously added combo point, you have a ', '% chance to regain the energy cost.'],
+    2,
+    [[10, 20]],
     null,
     null,
-    '20 Energy',
-    'Instant',
-    'Melee Range',
+    null,
+    null,
+    null,
     null,
     null,
     { isNew: true, isChanged: false, isMoved: false }

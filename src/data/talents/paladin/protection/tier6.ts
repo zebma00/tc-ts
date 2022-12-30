@@ -1,14 +1,32 @@
 import { Talent } from '../../Classes'
 
 const tier6 = [
-  null,
+  new Talent(
+    'Improved Blessing of Freedoom',
+    'spell_holy_sealofvalor',
+    ['Reduces the cooldown of your Blessing of Freedom by ', ' sec. In addition, your Blessing of Freedom reduces the threat of targets that are not affected by Righteous Fury.'],
+    3,
+    [[2, 4, 6]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   null,
   new Talent(
     'One-Handed Weapon Specialization',
     'inv_sword_20',
     ['Increases all damage you deal while wielding One-Handed melee weapons by ', '%.'],
-    5,
-    [[2, 4, 6, 8, 10]],
+    2,
+    [[5, 10]],
     null,
     null,
     null,

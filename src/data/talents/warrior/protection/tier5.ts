@@ -20,14 +20,12 @@ const tier5 = [
   new Talent(
     'Focus Rage',
     'ability_warrior_focusedrage',
-    [
-      'While active, basic attacks consume up to 20 rage points based on weapon speed, dealing 10% additional damage per rage point spent. Attacks deal additional threat while in defensive stance. Lasts 10 sec or until cancelled.',
-    ],
+    ['While active, basic attacks deal 50% additional damage. Attacks cause additional threat while in defensive stance. Lasts 10 sec.'],
     1,
     [[]],
     null,
     null,
-    null,
+    '60 Rage',
     null,
     'Instant cast',
     '30 sec cooldown',

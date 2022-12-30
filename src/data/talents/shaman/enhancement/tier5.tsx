@@ -45,7 +45,7 @@ const tier5 = [
       <>
         %. <br />
         <br />
-        Frostbrand: your Frostbrand effect also reduces the target's attack speed by{' '}
+        Frostbrand: your Frostbrand effect also reduces the mana cost of your spells by{' '}
       </>,
       '%.',
     ],

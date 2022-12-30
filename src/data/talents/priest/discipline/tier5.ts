@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Focus Power',
     'ability_paladin_infusionoflight',
-    ["When activated, your next damaging spell reduces the target's attributes by 25% for 8 sec or your next healing spell increases the target's attributes by 25% for 8 sec."],
+    ["When activated, your next damaging spell reduces the target's attributes by 25% for 5 sec or your next healing spell increases the target's attributes by 25% for 5 sec."],
     1,
     [[]],
     null,
