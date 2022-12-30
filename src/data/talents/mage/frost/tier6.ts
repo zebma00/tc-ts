@@ -4,7 +4,7 @@ const tier6 = [
   new Talent(
     'Arctic Bolts',
     'spell_frost_arcticwinds',
-    ['Gives your Frostbolt spell a ', '% chance to increase the critical strike damage of your Frostbolt by 6%. This effect stacks up to 5 times.'],
+    ['Gives your Frostbolt spell a ', '% chance to increase the critical strike damage of your Frostbolt by 10%. This effect stacks up to 5 times.'],
     2,
     [[50, 100]],
     null,
