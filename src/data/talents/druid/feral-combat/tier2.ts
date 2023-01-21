@@ -22,7 +22,7 @@ const tier2 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent('Improved Enrage', 'ability_druid_enrage', ['The Enrage ability now instantly generates ', ' rage.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
+  new Talent('Improved Enrage', 'ability_druid_enrage', ['Your Enrage ability now instantly generates ', ' rage.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
     isNew: false,
     isChanged: false,
     isMoved: true,

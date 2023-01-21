@@ -12,5 +12,5 @@ export default [
     isChanged: true,
     isMoved: true,
   }),
-  null,
+  new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
 ]

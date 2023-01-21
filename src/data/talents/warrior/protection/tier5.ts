@@ -5,7 +5,7 @@ const tier5 = [
   new Talent(
     'Concussion Blow',
     'ability_thunderbolt',
-    ['Stuns the target for 5 sec.'],
+    ['Stuns the target for 5 sec. Causes high threat while in defensive stance.'],
     1,
     [[]],
     [{ x: null, y: null }],
@@ -14,21 +14,26 @@ const tier5 = [
     'Melee Range',
     'Instant cast',
     '45 sec cooldown',
-    ['D2']
+    ['D2'],
+    { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Improved Shield Bash', 'ability_warrior_shieldbash', ['Gives your Shield Bash a ', '% chance to silence the target for 2 sec.'], 2, [[50, 100]]),
+  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Gain ', ' rage when you take damage. 3 sec cooldown.'], 2, [[5, 1]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
-    'Focus Rage',
+    'Ignore Pain',
     'ability_warrior_focusedrage',
-    ['While active, basic attacks deal 50% additional damage. Attacks cause additional threat while in defensive stance. Lasts 10 sec.'],
+    ['Removes all movement impairing effects and all effects which cause loss of control of your character.'],
     1,
     [[]],
     null,
     null,
-    '60 Rage',
+    null,
     null,
     'Instant cast',
-    '30 sec cooldown',
+    '5 min cooldown',
     null,
     {
       isNew: true,

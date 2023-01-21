@@ -8,6 +8,7 @@ export default {
     'Elune’s Grace (Night Elf) now reduces the chance you are hit by melee or ranged attacks by 25% for 15 sec.',
     'Starshards (Night Elf) is now instant cast, lasts 10 sec and has a 30 sec cooldown.',
     'Shadowguard (Troll) can now be cast on friendly targets. Can only be active on one target at a time.',
+    'Touch of Weakness effect now stacks up to 3 times but lasts only 30 sec.',
     'Touch of Weakness (Undead) effect increased.',
     'Damage absorbed by your Power Word: Shield now increases with apell healing.',
     'Mind Soothe can no longer be resisted.',

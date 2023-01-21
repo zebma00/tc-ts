@@ -7,7 +7,7 @@ const tier4 = [
     ['Increases the duration of your Seals by ', ' sec. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
     2,
     [
-      [15, 30],
+      [10, 20],
       [50, 100],
     ],
     null,
