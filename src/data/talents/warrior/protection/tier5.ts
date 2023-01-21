@@ -17,7 +17,7 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Gain ', ' rage when you take damage. 3 sec cooldown.'], 2, [[5, 1]], null, null, null, null, null, null, null, {
+  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Gain ', ' rage when you take damage. 5 sec cooldown.'], 2, [[5, 1]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
