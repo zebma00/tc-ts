@@ -54,7 +54,7 @@ const tier2 = [
     'ability_mage_potentspirit',
     [
       'Your Arcane Missiles, Fireball, Frostbolt and Scorch increase the damage done by your Arcane Missiles, Fireball, Frostbolt and Scorch by ',
-      '% for 30 sec. This effect stacks up to 5 times. This effect is lost when casting the same spell consecutively.',
+      '% for 30 sec. This effect stacks up to 5 times. This effect is lost when casting the same spell twice in a row.',
     ],
     2,
     [[2, 4]],

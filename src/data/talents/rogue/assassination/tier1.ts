@@ -7,7 +7,7 @@ const tier1 = [
     'ability_fiegndead',
     [
       'After an opponent that yields experience or honor dies while affected by your poisons, gives you a ',
-      '% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, Shiv, or Ghostly Strike. Lasts 20 sec.',
+      '% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec.',
     ],
     2,
     [[20, 40]],

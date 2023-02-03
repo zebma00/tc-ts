@@ -7,9 +7,9 @@ export default {
     'Spellstone now increases your spell damage by a small amount and spell hit chance by 2%.',
     'Increased the health gained from Demon Armor.',
     'Health Funnel is now instant cast, while still lasting 10 sec. It now has a 30 sec cooldown and 30 yard range.',
-    "Curse of Weakness now reduces the target's attack power instead of flat damage.",
+    "Curse of Weakness now reduces the target's damage done by 5%. Only one rank available.",
     'Warlocks can now summon party and raid members from within a dungeon or raid.',
     "All demons will now receive a percentage of their master's Health, Mana, armor, spell resistances and their spell damage and attack power is increased by a percentage of their master’s spell damage.",
-    'Soul Shards now stack up to 10 per bag slot.',
+    'Soul Shards now stack up to 20 per bag slot.',
   ],
 }

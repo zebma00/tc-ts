@@ -4,7 +4,7 @@ const tier6 = [
   new Talent(
     'Improved Blessing of Freedoom',
     'spell_holy_sealofvalor',
-    ['Reduces the cooldown of your Blessing of Freedom by ', ' sec. In addition, your Blessing of Freedom also reduces threat while the target is not affected by Righteous Fury.'],
+    ['Reduces the cooldown of your Blessing of Freedom by ', ' sec. In addition, your Blessing of Freedom also reduces threat if the target is not affected by Righteous Fury.'],
     3,
     [[2, 4, 6]],
     null,

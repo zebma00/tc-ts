@@ -4,7 +4,7 @@ const tier4 = [
   new Talent(
     'Divine Insight',
     'spell_holy_healingfocus',
-    ['Increases the duration of your Seals by ', ' sec. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
+    ['Increases the duration of your seals spells by ', ' sec. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
     2,
     [
       [10, 20],
