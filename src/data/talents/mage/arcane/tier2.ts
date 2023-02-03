@@ -52,12 +52,9 @@ const tier2 = [
   new Talent(
     'Wizardry',
     'ability_mage_potentspirit',
-    [
-      'Your Arcane Missiles, Fireball, Frostbolt and Scorch increase the damage done by your Arcane Missiles, Fireball, Frostbolt and Scorch by ',
-      '% for 30 sec. This effect stacks up to 5 times. This effect is lost when casting the same spell twice in a row.',
-    ],
-    2,
-    [[2, 4]],
+    ['When you cast a damaging spell, your spell damage is increased by ', '% for 30 sec. This effect stacks up to 5 times. This effect is lost when casting the same spell twice in a row.'],
+    3,
+    [[1, 2, 3]],
     null,
     null,
     null,
