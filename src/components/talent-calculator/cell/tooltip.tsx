@@ -35,8 +35,6 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
       renderDescriptionNext.push(text)
       if (index < description.length - 1) {
         renderDescriptionNext.push(valueIteration[index][value])
-        renderDescription.push(<br />)
-        renderDescription.push(<br />)
       }
     })
   }
