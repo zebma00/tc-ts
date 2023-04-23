@@ -1,25 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier2 = [
-  new Talent(
-    'Wand Specialization',
-    'inv_wand_01',
-    ['When you deal damage with your wand, you have ', ' chance to return 20% of the damage dealt as mana to you.'],
-    2,
-    [['a', 'an increased']],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Wand Specialization', 'inv_wand_01', ['When you deal damage with your wand, you have ', ' chance to return 20% of the damage dealt as mana to you.'], 2, [['a', 'an increased']], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   new Talent(
     'Magic Absorbtion',
     'spell_nature_astralrecalgroup',
@@ -42,13 +28,9 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Arcane Concentration',
-    'spell_shadow_manaburn',
-    ['Gives you a ', '% chance of entering a clearcasting state after any damage spell hits a target. The clearcasting state reduces the mana cost of your next damage spell by 100%.'],
-    5,
-    [[2, 4, 6, 8, 10]]
-  ),
+  new Talent('Arcane Concentration', 'spell_shadow_manaburn', ['Gives you a ', '% chance of entering a clearcasting state after any damage spell hits a target. The clearcasting state reduces the mana cost of your next damage spell by 100%.'], 5, [
+    [2, 4, 6, 8, 10],
+  ]),
   new Talent(
     'Wizardry',
     'ability_mage_potentspirit',
