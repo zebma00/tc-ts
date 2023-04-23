@@ -14,39 +14,12 @@ const tier3 = [
     'Instant',
     '15 sec cooldown'
   ),
-  new Talent(
-    'Havoc',
-    'spell_fire_playingwithfire',
-    ['Critical strikes from your Fire spells increase Fire damage damage taken by the target by ', '% for 5 sec.'],
-    2,
-    [[5, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
-  new Talent(
-    'Devastation',
-    'spell_fire_flameshock',
-    ['Increases the critical strike chance of your Destruction spells by ', '%.'],
-    5,
-    [[1, 2, 3, 4, 5]],
-    [{ x: null, y: null }],
-    [{ x: 4, y: 2 }],
-    null,
-    null,
-    null,
-    null,
-    ['D2']
-  ),
+  new Talent('Havoc', 'spell_fire_playingwithfire', ['Critical strikes from your Fire spells increase ciritcal strike chance of Fire spells on the target by ', '% for 5 sec.'], 2, [[2, 4]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
+  new Talent('Devastation', 'spell_fire_flameshock', ['Increases the critical strike chance of your Destruction spells by ', '%.'], 5, [[1, 2, 3, 4, 5]], [{ x: null, y: null }], [{ x: 4, y: 2 }], null, null, null, null, ['D2']),
   null,
 ]
 
