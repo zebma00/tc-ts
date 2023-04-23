@@ -28,7 +28,7 @@ const tier2 = [
   new Talent(
     'Convulsion',
     'spell_holy_mindvision',
-    ['Your Shock spells increase the critical strike chance of your Shock spells by ', '%. This effect is reset when you score a critical hit with a Shock spell.'],
+    ['Your Shock spells increase the critical strike chance of your Shock spells by ', '%. This effect stacks but is reset when you score a critical hit with a Shock spell.'],
     2,
     [[3, 6]],
     null,

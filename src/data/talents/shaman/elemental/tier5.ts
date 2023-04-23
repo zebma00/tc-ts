@@ -17,7 +17,7 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases your Fire and Frost damage done by ', '%.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
+  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases your Fire and Frost damage done by ', '%.'], 2, [[8, 15]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
