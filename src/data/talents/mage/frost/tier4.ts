@@ -9,7 +9,7 @@ const tier4 = [
   new Talent(
     'Elemental Volatility',
     'ability_dualwieldspecialization',
-    ['Critical strikes from your Frost spells increase the damage of your Fire spells by ', '% for 8 sec. Critical strikes from your Fire spells increase the damage of your Frost spells by ', '% for 8 sec.'],
+    ['Critical strikes from your Frost spells increase the damage of your Fire spells by ', '% for 10 sec. Critical strikes from your Fire spells increase the damage of your Frost spells by ', '% for 10 sec.'],
     2,
     [
       [10, 20],

@@ -14,7 +14,7 @@ const tier3 = [
     'Instant',
     '15 sec cooldown'
   ),
-  new Talent('Havoc', 'spell_fire_playingwithfire', ['Critical strikes from your Fire spells increase ciritcal strike chance of Fire spells on the target by ', '% for 5 sec.'], 2, [[2, 4]], null, null, null, null, null, null, null, {
+  new Talent('Havoc', 'spell_fire_playingwithfire', ['Critical strikes from your Fire spells increase ciritcal strike chance of Fire spells on the target by ', '% for 8 sec.'], 2, [[2, 4]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
