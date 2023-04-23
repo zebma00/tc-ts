@@ -12,8 +12,8 @@ const tier4 = [
     ['Critical strikes from your Frost spells increase the damage of your Fire spells by ', '% for 8 sec. Critical strikes from your Fire spells increase the damage of your Frost spells by ', '% for 8 sec.'],
     2,
     [
-      [13, 25],
-      [13, 25],
+      [10, 20],
+      [10, 20],
     ],
     null,
     null,
