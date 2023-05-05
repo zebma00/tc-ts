@@ -8,8 +8,8 @@ const tier5 = [
       <>
         Modifies one of your Priest racial abilities. <br />
         <br /> Human: Allows Desperate Prayer to be cast on friendly target within 30 yard range. <br />
-        <br /> Dwarf: Chastise now reduces threat to the target. <br />
-        <br /> Night Elf: Starshards gains an additional charge. <br />
+        <br /> Dwarf: Chastise now reduces your threat to the target. <br />
+        <br /> Night Elf: Starshards deals 20% damage to enemies within 10 yard range of the target. <br />
         <br /> Troll: Allows Shadowguard to be cast on friendly targets within 30 yard range. Only one target can be affected at a time. <br />
         <br /> Undead: Devouring Plague now also reduces the movement, attack and cast speed of the target by 10%.
         <br />

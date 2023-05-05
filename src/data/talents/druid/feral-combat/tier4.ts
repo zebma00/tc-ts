@@ -44,9 +44,9 @@ const tier4 = [
   new Talent(
     'Natural Guardian',
     'ability_druid_kingofthejungle',
-    ['Whenever a damaging attack brings you below 30% health, your maximum health is increased by ', '% for 10 sec. 2 minute cooldown.'],
+    ['When you deal a melee critical strike, you have a ', '% chance to gain 5% armor for 5 sec. This effect stacks up to 5 times.'],
     2,
-    [[10, 20]],
+    [[50, 100]],
     null,
     null,
     null,

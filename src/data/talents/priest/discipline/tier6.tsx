@@ -31,7 +31,7 @@ const tier6 = [
         <br />
         Undead: Reduces the cooldown of Devouring Plague by{' '}
       </>,
-      <> sec,</>,
+      <> sec.</>,
     ],
     2,
     [

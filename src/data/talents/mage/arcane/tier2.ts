@@ -9,7 +9,7 @@ const tier2 = [
   new Talent(
     'Magic Absorbtion',
     'spell_nature_astralrecalgroup',
-    ['Increases all resistances by ', ' and causes you to restore ', '% mana after fully resisting or fully absorbing spell damage. 8 sec cooldown.'],
+    ['Increases all resistances by ', ' and causes you to restore ', '% mana after fully resisting or fully absorbing spell damage. 10 sec cooldown.'],
     2,
     [
       [5, 10],
