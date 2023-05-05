@@ -4,9 +4,9 @@ const tier6 = [
   new Talent(
     'Improved Soul Fire',
     'spell_fire_fireball02',
-    ['Critical strikes from your Fire spells increase the damage of your next Soul Fire by ', '%. This effect stacks up to 5 times.'],
+    ['Critical strikes from your Fire spells have a ', '% chance to increase the damage of your next Soul Fire by 10%. This effect stacks up to 10 times.'],
     2,
-    [[10, 20]],
+    [[50, 100]],
     null,
     null,
     null,
