@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier6 = [
   new Talent(
-    'Arctic Bolts',
+    'Glacial Bolts',
     'spell_frost_arcticwinds',
     ['Gives your Frostbolt critical strikes a ', '% chance to increase the critical strike damage of your Frostbolt by 10%. This effect stacks up to 10 times and lasts 15 sec.'],
     2,

@@ -12,7 +12,7 @@ const tier5 = [
     null,
     null,
     'Instant',
-    '30 sec cooldown',
+    '1 min cooldown',
     null,
     {
       isNew: true,

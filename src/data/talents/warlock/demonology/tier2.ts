@@ -1,28 +1,12 @@
 import { Talent } from '../../Classes'
 
 const tier2 = [
-  new Talent(
-    'Improved Demon Armor',
-    'spell_shadow_ragingscream',
-    ['Causes your Demon Armor to also retore mana equal to ', '% the restored health.'],
-    2,
-    [[50, 100]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
-  new Talent('Improved Void Walker', 'spell_shadow_summonvoidwalker', ["Increases the effect of your Void Walker's Torment, Sacrifice, Consume Shadows and Suffering spells by ", '%.'], 3, [
-    [10, 20, 30],
-  ]),
+  new Talent('Improved Demon Armor', 'spell_shadow_ragingscream', ['Causes your Demon Armor to also restore mana equal to ', '% the restored health.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
+  new Talent('Improved Void Walker', 'spell_shadow_summonvoidwalker', ["Increases the effect of your Void Walker's Torment, Sacrifice, Consume Shadows and Suffering spells by ", '%.'], 3, [[10, 20, 30]]),
   new Talent(
     'Fel Power',
     'spell_holy_magicalsentry',

@@ -24,10 +24,10 @@ const tier5 = [
   new Talent(
     'Improved Innervate',
     'spell_nature_lightning',
-    ['When cast on self, the effect of your Innervate is increased by ', '%. When cast on another target, you also gain an Innervate effect for ', ' sec.'],
+    ['When cast on self, the duration of your Innervate is increased by ', ' sec. When cast on another target, you also gain an Innervate effect for ', ' sec.'],
     2,
     [
-      [15, 30],
+      [3, 6],
       [3, 6],
     ],
     null,

@@ -22,9 +22,9 @@ const tier6 = [
     }
   ),
   new Talent(
-    'Crusade',
-    'spell_holy_blessedresillience',
-    ['Your Judgement of any seal has a ', '% chance to apply Judgement of the Crusader in addition to its usual effect.'],
+    'Holy Fervor',
+    'spell_holy_crusade',
+    ['Your Judgement has a ', '% chance to refresh all Judgement effects on the target and increase the effect of Judgement effects on the target by 30% for 8 sec.'],
     2,
     [[50, 100]],
     null,

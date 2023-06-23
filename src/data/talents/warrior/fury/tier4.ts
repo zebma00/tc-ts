@@ -18,25 +18,7 @@ const tier4 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent(
-    'Improved Slam',
-    'ability_warrior_decisivestrike',
-    ['Reduces the casting time of your Slam ability by ', ' sec.'],
-    5,
-    [[0.2, 0.4, 0.6, 0.8, 1]],
-    null,
-    [{ x: 4, y: 3 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1'],
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
-  ),
+  new Talent('Improved Slam', 'ability_warrior_decisivestrike', ['Reduces the casting time of your Slam ability by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]], null, [{ x: 4, y: 3 }], null, null, null, null, ['D1']),
 ]
 
 export default tier4

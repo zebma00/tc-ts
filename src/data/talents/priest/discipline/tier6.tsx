@@ -7,7 +7,7 @@ const tier6 = [
     [
       <>
         Improves one of your Priest racial abilities. <br />
-        <br /> Human: Reduces the cooldown of Desperate Prayer by{' '}
+        <br /> Human: the mana burned by Feedback by{' '}
       </>,
       <>
         {' '}
@@ -35,11 +35,11 @@ const tier6 = [
     ],
     2,
     [
-      [1, 2],
+      [25, 50],
       [15, 30],
       [0.5, 1],
       [2, 4],
-      [30, 60],
+      [3, 6],
     ],
     [{ x: 4, y: 0 }],
     null,

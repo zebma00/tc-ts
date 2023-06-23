@@ -6,7 +6,7 @@ const tier3 = [
     'spell_shadow_deathpact',
     ['When you add a combo point using a different ability from your previously added combo point, you have a ', '% chance to regain the energy cost.'],
     2,
-    [[10, 20]],
+    [[15, 30]],
     null,
     null,
     null,
@@ -29,21 +29,11 @@ const tier3 = [
     'Instant',
     '6 sec cooldown'
   ),
-  new Talent(
-    'Dual Wield Specialization',
-    'ability_dualwield',
-    ['Increases the damage of your off-hand weapon by ', '%.'],
-    5,
-    [[10, 20, 30, 40, 50]],
-    [{ x: 1, y: 2 }],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: false, isMoved: true }
-  ),
+  new Talent('Dual Wield Specialization', 'ability_dualwield', ['Increases the damage of your off-hand weapon by ', '%.'], 5, [[10, 20, 30, 40, 50]], [{ x: 1, y: 2 }], null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
   new Talent('Improved Sprint', 'ability_rogue_sprint', ['Gives a ', '% chance to remove all movement impairing effects when you activate your Sprint ability.'], 2, [[50, 100]]),
 ]
 
