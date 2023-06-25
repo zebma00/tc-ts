@@ -34,25 +34,11 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent(
-    'Crushing Blows',
-    'ability_warrior_devastate',
-    ['Your Slam increases the damage of your next Slam within 3 sec by ', '%.'],
-    2,
-    [[10, 20]],
-    [{ x: 3, y: 3 }],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent('Crushing Blows', 'ability_warrior_devastate', ['Your Slam increases the damage of your next Slam within 3 sec by ', '%.'], 2, [[15, 30]], [{ x: 3, y: 3 }], null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier5
