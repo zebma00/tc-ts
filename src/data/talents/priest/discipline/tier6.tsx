@@ -7,11 +7,11 @@ const tier6 = [
     [
       <>
         Improves one of your Priest racial abilities. <br />
-        <br /> Human: the mana burned by Feedback by{' '}
+        <br /> Human: Reduces the cooldown of Feedback by{' '}
       </>,
       <>
         {' '}
-        min. <br />
+        sec. <br />
         <br />
         Dwarf: Increases the damage of Chastise by{' '}
       </>,
@@ -29,13 +29,13 @@ const tier6 = [
       <>
         . <br />
         <br />
-        Undead: Reduces the cooldown of Devouring Plague by{' '}
+        Undead: Increases the duration of Devouring Plague by{' '}
       </>,
       <> sec.</>,
     ],
     2,
     [
-      [25, 50],
+      [20, 40],
       [15, 30],
       [0.5, 1],
       [2, 4],
