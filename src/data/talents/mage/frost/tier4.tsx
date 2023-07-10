@@ -6,21 +6,11 @@ const tier4 = [
     [5, 10, 15],
     [10, 20, 30],
   ]),
-  new Talent(
-    'Arctic Empowerement',
-    'ability_dualwieldspecialization',
-    ['Critical strikes from your Frostbolt have a ', '% chance to increase the damage of your next Fireball or Arcane Missiles by 30%.'],
-    2,
-    [[50, 100]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  new Talent('Shatter', 'spell_frost_frostshock', ['Increases the critical strike chance of all your spells against frozen targets by ', '%.'], 2, [[25, 50]], [{ x: 1, y: 2 }], null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   null,
 ]
 

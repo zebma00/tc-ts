@@ -12,7 +12,7 @@ const TalentCalculator: React.FC = () => {
   const history = useHistory()
 
   const selectClass = (clickedClass: PlayerClassParam) => {
-    history.push(`/tc/${clickedClass}`)
+    history.replace(`/tc/${clickedClass}`)
   }
 
   const [displayIsNew, setIsNew] = useState<boolean>(true)

@@ -1,7 +1,7 @@
 export default {
   title: 'Paladin',
   content: [
-    'Consecration is now baseline and also heals party members. Learned at lvl 20.',
+    'Consecration is now a baseline ability and also heals party members that stand on the consecrated ground. Learned at lvl 20.',
     'Judgement mana cost removed.',
     'Seal of the crusader reworked: Successful attacks increase your attack speed by 8%. Stacks up to 5 times and lasts 12 sec. Judgement effect remains the same.',
     'Seal of justice now stuns up to two nearby enemies.',

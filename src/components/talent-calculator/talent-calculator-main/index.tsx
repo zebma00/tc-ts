@@ -31,10 +31,10 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
     const flatTalents = flattenTalents(talentData).filter(talent => talent)
     if (!flatTalents || !talentPoints || flatTalents.length !== talentPoints.length) return
 
-    history.push(`/tc/${playerClass}/${talentPoints}`)
+    history.replace(`/tc/${playerClass}/${talentPoints}`)
     const newTalents = loopTalentsFromUrl(talentData, talentPoints)
     setTalentData(newTalents)
-  }, [talentPoints, talentData])
+  }, [talentPoints, talentData, history, playerClass])
 
   useEffect(() => {
     setTalentData(talentCalcMaker(classTalents[selectedClass].specs))
@@ -72,7 +72,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
   }
 
   const resetPoints = () => {
-    history.push(`/tc/${playerClass}/`)
+    history.replace(`/tc/${playerClass}/`)
     const newData = [...talentData!]
     newData.forEach(grid => {
       grid.forEach(row => {
