@@ -22,9 +22,9 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
   description.forEach((text, index) => {
     renderDescription.push(text)
     if (value === 0 && index < description.length - 1) {
-      renderDescription.push(<span key={index + 1}>{valueIteration[index][value]}</span>)
+      renderDescription.push(<span key={Math.random()}>{valueIteration[index][value]}</span>)
     } else if (index < description.length - 1) {
-      renderDescription.push(<span key={index + 1 * 3}>{valueIteration[index][value - 1]}</span>)
+      renderDescription.push(<span key={Math.random()}>{valueIteration[index][value - 1]}</span>)
     }
   })
 
@@ -32,9 +32,9 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
 
   if (value < maxValue && !!value) {
     description.forEach((text, index) => {
-      renderDescriptionNext.push(<span key={index + 1 * 6}>{text}</span>)
+      renderDescriptionNext.push(<span key={Math.random()}>{text}</span>)
       if (index < description.length - 1) {
-        renderDescriptionNext.push(<span key={index + 1 * 9}>{valueIteration[index][value]}</span>)
+        renderDescriptionNext.push(<span key={Math.random()}>{valueIteration[index][value]}</span>)
       }
     })
   }

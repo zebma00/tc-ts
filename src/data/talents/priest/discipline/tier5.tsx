@@ -30,7 +30,7 @@ const tier5 = [
       isMoved: false,
     }
   ),
-  new Talent('Mental Strength', 'spell_nature_enchantarmor', ['Increases your Intellect, Health and Spirit by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2'], {
+  new Talent('Mental Strength', 'spell_nature_enchantarmor', ['Increases your Intellect, Health and Spirit by ', '%.'], 3, [[3, 6, 9]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2'], {
     isNew: false,
     isChanged: true,
     isMoved: false,
