@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { useHistory, useLocation, useParams } from 'react-router-dom'
 
 import SelectWrapper from './talent-calculator-select'
 import TalentCalculatorMain from './talent-calculator-main/'
@@ -7,6 +8,9 @@ import ChangedSelect from './changed-select'
 import classTalents from '../../data/talents'
 
 const TalentCalculator: React.FC = () => {
+  const { search } = useLocation()
+  const params = useParams()
+  const history = useHistory()
   const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
   const [selectedClass, setSelectedClass] = useState<string>(classes[0])
   // const [classData, setClassData] = useState<any>(classTalents.find(thing => thing.class === selectedClass))
@@ -15,6 +19,7 @@ const TalentCalculator: React.FC = () => {
   const selectClass = (i: number) => {
     const newClassData = classTalents.find(thing => thing.class === selectedClass)
     // setClassData(newClassData)
+    history.push(`/tc/${classes[i]}`)
     setSelectedClass(classes[i])
   }
 

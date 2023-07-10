@@ -7,9 +7,14 @@ const flattenSpec = (specData: ClassSpecType) => {
   return specData.flatMap(row => row)
 }
 
-const flattenTalents = (talentData: ClassTalentType | null) => {
+export const flattenTalents = (talentData: ClassTalentType | null) => {
   if (!talentData) return []
   return talentData.flatMap(flattenSpec)
+}
+
+export const getFlattenedTalentValues = (talentData: ClassTalentType | null) => {
+  const flattenedTalents = flattenTalents(talentData)
+  return flattenedTalents.map(talent => talent?.value).filter(talent => !isNaN(talent!))
 }
 
 const getTruthyTalents = (talentData: ClassTalentType | null) => {

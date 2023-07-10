@@ -6,9 +6,7 @@ import { talentCalcMaker, specMaker } from '../../../lib/create-talents'
 import { checkTotalPoints, rightClick, leftClick } from '../../../lib/handle-talents'
 import Grid from '../grid/'
 import styles from './index.module.css'
-import { useHistory, useLocation, useParams } from 'react-router-dom'
 import { useURLParams } from '../../../lib/talents-url'
-import classTalents from '../../../data/talents'
 import TcPatchNotes from '../tc-patch-notes'
 
 interface TalentCalculatorMainProps {
@@ -81,20 +79,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
     <>
       <div className={styles.tcContainer}>
         {talentData?.map((gridData: any, i: number) => {
-          return (
-            <Grid
-              displayChanged={displayChanged}
-              key={i}
-              i={i}
-              gridData={gridData}
-              pointsLeft={pointsLeft!}
-              selectedClass={selectedClass}
-              specName={specNames![i]}
-              specIcon={specIcons![i]}
-              clickHandler={clickHandler}
-              resetTree={resetTree}
-            />
-          )
+          return <Grid displayChanged={displayChanged} key={i} i={i} gridData={gridData} pointsLeft={pointsLeft!} selectedClass={selectedClass} specName={specNames![i]} specIcon={specIcons![i]} clickHandler={clickHandler} resetTree={resetTree} />
         })}
         <TcPatchNotes selectedClass={selectedClass} />
       </div>
