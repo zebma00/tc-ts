@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from 'react'
 
 import TCFooter from '../talent-calculator-footer'
-import { ClassTalentType } from '../../../types/'
+import { ClassTalentType, PlayerClassParam, URLParams } from '../../../types/'
 import { talentCalcMaker, specMaker } from '../../../lib/create-talents'
 import { checkTotalPoints, rightClick, leftClick } from '../../../lib/handle-talents'
 import Grid from '../grid/'
 import styles from './index.module.css'
-import { useURLParams } from '../../../lib/talents-url'
+import { flattenTalents, loopTalentsFromUrl } from '../../../lib/talents-url'
 import TcPatchNotes from '../tc-patch-notes'
+import { useHistory, useParams } from 'react-router-dom'
+import classTalents from '../../../data/talents'
 
 interface TalentCalculatorMainProps {
-  selectedClass: string
+  selectedClass: PlayerClassParam
   displayChanged: {
     displayIsNew: boolean
     displayIsChanged: boolean
@@ -19,22 +21,32 @@ interface TalentCalculatorMainProps {
 }
 
 const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedClass, displayChanged }) => {
-  const [talentData, setTalentData] = useState<ClassTalentType | null>(null)
-  const [specNames, setSpecNames] = useState<string[] | null>(null)
-  const [specIcons, setSpecIcons] = useState<string[] | null>(null)
-  const classData = require(`../../../data/talents/${selectedClass}`)
+  const history = useHistory()
+  const { playerClass, talentPoints } = useParams<URLParams>()
+  const [talentData, setTalentData] = useState<ClassTalentType | null>(talentCalcMaker(classTalents[selectedClass].specs))
+  const [specNames, setSpecNames] = useState<string[] | null>(specMaker(classTalents[selectedClass].specs).specNames)
+  const [specIcons, setSpecIcons] = useState<string[] | null>(specMaker(classTalents[selectedClass].specs).specIcons)
 
   useEffect(() => {
-    const { specNames, specIcons } = specMaker(classData.default.specs)
-    setTalentData(talentCalcMaker(classData.default.specs))
+    const flatTalents = flattenTalents(talentData).filter(talent => talent)
+    if (!flatTalents || !talentPoints || flatTalents.length !== talentPoints.length) return
+
+    history.push(`/tc/${playerClass}/${talentPoints}`)
+    const newTalents = loopTalentsFromUrl(talentData, talentPoints)
+    setTalentData(newTalents)
+  }, [talentPoints, talentData])
+
+  useEffect(() => {
+    setTalentData(talentCalcMaker(classTalents[selectedClass].specs))
+    const { specNames, specIcons } = specMaker(classTalents[selectedClass].specs)
     setSpecNames(specNames)
     setSpecIcons(specIcons)
-  }, [classData])
-
-  useURLParams(talentData, setTalentData)
+  }, [selectedClass])
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()
+    if (!!talentPoints) return
+
     const newData = [...talentData!]
 
     if (e.type === 'click') {
@@ -60,6 +72,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
   }
 
   const resetPoints = () => {
+    history.push(`/tc/${playerClass}/`)
     const newData = [...talentData!]
     newData.forEach(grid => {
       grid.forEach(row => {

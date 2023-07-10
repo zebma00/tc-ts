@@ -1,10 +1,12 @@
 import React from 'react'
 
 import { Talent } from '../../../data/talents/Classes'
-import { capitalizer, enabledChecker } from '../../../lib/ui-utils'
+import { capitalizer, getBorderColor } from '../../../lib/ui-utils'
 import { checkPointsPerTree } from '../../../lib/handle-talents'
 import Cell from '../cell'
 import styles from './grid.module.css'
+import { URLParams } from '../../../types'
+import { useParams } from 'react-router-dom'
 
 interface GridProps {
   gridData: Talent[][]
@@ -22,19 +24,9 @@ interface GridProps {
   }
 }
 
-const Grid: React.FC<GridProps> = ({
-  gridData,
-  i,
-  pointsLeft,
-  selectedClass,
-  specName,
-  specIcon,
-  clickHandler,
-  resetTree,
-  displayChanged,
-}) => {
+const Grid: React.FC<GridProps> = ({ gridData, i, pointsLeft, selectedClass, specName, specIcon, clickHandler, resetTree, displayChanged }) => {
+  const { talentPoints } = useParams<URLParams>()
   const currentPoints = checkPointsPerTree(gridData)
-
   return (
     <div className={styles.tree}>
       <div className={styles.treeHeader}>
@@ -56,25 +48,12 @@ const Grid: React.FC<GridProps> = ({
           &#x2715;
         </div>
       </div>
-      <div
-        style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/background/${selectedClass}/${specName}.jpg")` }}
-        className={styles.grid}>
+      <div style={{ backgroundImage: `url("${process.env.PUBLIC_URL}/img/background/${selectedClass}/${specName}.jpg")` }} className={styles.grid}>
         {gridData.map((row, x) => {
           return row.map((cell, y) => {
             if (cell) {
-              const color = enabledChecker(gridData, x, y, currentPoints, pointsLeft)
-              return (
-                <Cell
-                  key={`${x}, ${y}`}
-                  i={i}
-                  x={x}
-                  y={y}
-                  cellData={cell}
-                  color={color}
-                  clickHandler={clickHandler}
-                  displayChanged={displayChanged}
-                />
-              )
+              const color = getBorderColor(gridData, x, y, currentPoints, pointsLeft, talentPoints)
+              return <Cell key={`${x}, ${y}`} i={i} x={x} y={y} cellData={cell} color={color} clickHandler={clickHandler} displayChanged={displayChanged} />
             } else {
               return <div key={`${x}, ${y}`} />
             }

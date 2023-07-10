@@ -1,7 +1,7 @@
 import balance from './balance'
-import feralComat from './feral-combat'
+import feralCombat from './feral-combat'
 import restoration from './restoration'
 
-const druid = { class: 'druid', specs: [balance, feralComat, restoration] }
+const druid = { specs: [balance, feralCombat, restoration] }
 
 export default druid

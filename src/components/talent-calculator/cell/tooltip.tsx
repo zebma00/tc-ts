@@ -22,9 +22,9 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
   description.forEach((text, index) => {
     renderDescription.push(text)
     if (value === 0 && index < description.length - 1) {
-      renderDescription.push(valueIteration[index][value])
+      renderDescription.push(<span key={index + 1}>{valueIteration[index][value]}</span>)
     } else if (index < description.length - 1) {
-      renderDescription.push(valueIteration[index][value - 1])
+      renderDescription.push(<span key={index + 1 * 3}>{valueIteration[index][value - 1]}</span>)
     }
   })
 
@@ -32,9 +32,9 @@ const Tooltip: React.FC<TooltipProps> = ({ value, description, maxValue, valueIt
 
   if (value < maxValue && !!value) {
     description.forEach((text, index) => {
-      renderDescriptionNext.push(text)
+      renderDescriptionNext.push(<span key={index + 1 * 6}>{text}</span>)
       if (index < description.length - 1) {
-        renderDescriptionNext.push(valueIteration[index][value])
+        renderDescriptionNext.push(<span key={index + 1 * 9}>{valueIteration[index][value]}</span>)
       }
     })
   }

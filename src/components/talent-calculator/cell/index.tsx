@@ -5,6 +5,8 @@ import Tooltip from './tooltip'
 import Arrow from './arrow'
 import styles from './cell.module.css'
 import ChangedBar from './changed-bar'
+import { useParams } from 'react-router-dom'
+import { URLParams } from '../../../types'
 
 interface CellProps {
   cellData: Talent
@@ -21,8 +23,14 @@ interface CellProps {
 }
 
 const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, displayChanged }) => {
+  const { talentPoints } = useParams<URLParams>()
   const [showTooltip, set_showTooltip] = useState<boolean>(false)
   const { value, maxValue, icon, manaCost, range, castTime, cooldown, name, arrows, changed } = cellData
+
+  const borderColor = !!color ? `2px solid ${color}` : `2px solid black`
+  const cellFilter = !color ? 'grayscale(100%)' : 'none'
+
+  // yes: value
 
   return (
     <div
@@ -38,8 +46,8 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, dis
       <div
         style={{
           background: `url("https://wow.zamimg.com/images/wow/icons/medium/${icon}.jpg") 0 0 no-repeat`,
-          border: !!color ? `2px solid ${color}` : `2px solid black`,
-          filter: !color ? 'grayscale(100%)' : 'none',
+          border: borderColor,
+          filter: cellFilter,
         }}
         className={styles.cellIconStyle}>
         <button
@@ -55,19 +63,7 @@ const Cell: React.FC<CellProps> = ({ cellData, i, x, y, color, clickHandler, dis
           </div>
         </button>
       </div>
-      {showTooltip && (
-        <Tooltip
-          value={cellData.value}
-          description={cellData.description}
-          maxValue={cellData.maxValue}
-          valueIteration={cellData.valueIteration}
-          manaCost={manaCost}
-          range={range}
-          castTime={castTime}
-          cooldown={cooldown}
-          name={name}
-        />
-      )}
+      {showTooltip && <Tooltip value={cellData.value} description={cellData.description} maxValue={cellData.maxValue} valueIteration={cellData.valueIteration} manaCost={manaCost} range={range} castTime={castTime} cooldown={cooldown} name={name} />}
       {arrows &&
         arrows.map((arrow, i) => {
           return <Arrow arrowData={arrow} color={color} key={i} />

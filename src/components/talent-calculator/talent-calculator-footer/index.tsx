@@ -3,12 +3,13 @@ import React, { useState } from 'react'
 import { capitalizer, getClassColor } from '../../../lib/ui-utils'
 import { checkPointsPerTree } from '../../../lib/handle-talents'
 import styles from './index.module.css'
-import { flattenTalents, getFlattenedTalentValues } from '../../../lib/talents-url'
+import { getFlattenedTalentValues } from '../../../lib/talents-url'
+import { PlayerClassParam } from '../../../types'
 
 interface TCFooterProps {
   pointsLeft: number
   resetPoints: () => void
-  selectedClass: string
+  selectedClass: PlayerClassParam
   talentData: any
 }
 

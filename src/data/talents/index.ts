@@ -8,6 +8,6 @@ import shaman from './shaman'
 import warlock from './warlock'
 import warrior from './warrior'
 
-const classTalents = [druid, hunter, mage, paladin, priest, rogue, shaman, warlock, warrior]
+const classTalents = { druid, hunter, mage, paladin, priest, rogue, shaman, warlock, warrior }
 
 export default classTalents

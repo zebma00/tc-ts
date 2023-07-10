@@ -1,14 +1,23 @@
-import { ClassSpecType } from '../types/'
+import { ClassSpecType, PlayerClassParam } from '../types/'
 import { checkMaxedValue, checkZeroValue, checkRequiredTalentsAreMaxed } from './handle-talents'
 
 // color checker
 
-export const enabledChecker = (specData: ClassSpecType, x: number, y: number, pointsPerTree: number, pointsLeft: number) => {
-  const isMaxValue = checkMaxedValue(specData[x][y])
-  const isZeroValue = checkZeroValue(specData[x][y])
+export const getBorderColor = (specData: ClassSpecType, x: number, y: number, pointsPerTree: number, pointsLeft: number, talentPoints: string) => {
+  const talent = specData[x][y]
+  const isMaxValue = checkMaxedValue(talent)
+  const isZeroValue = checkZeroValue(talent)
   const enoughPointsInTree = x * 5 <= pointsPerTree
   const noPointsLeft = pointsLeft === 0
   const requiredTalentsAreMaxed = checkRequiredTalentsAreMaxed(specData, x, y)
+
+  if (!!talentPoints && !!talent?.value) {
+    return 'rgba(255, 209, 0, 0.8)'
+  }
+
+  if (!!talentPoints && !talent?.value) {
+    return null
+  }
 
   if (isMaxValue) {
     return 'rgba(255, 209, 0, 0.8)'
@@ -23,8 +32,8 @@ export const capitalizer = (string: string) => {
   return string.charAt(0).toUpperCase() + string.slice(1).replace(/-/g, ' ')
 }
 
-export const getClassColor = (selectedClass: string) => {
-  const classColorObj: any = {
+export const getClassColor = (selectedClass: PlayerClassParam) => {
+  const classColorObj: Record<PlayerClassParam, string> = {
     druid: '#ff7c0a',
     hunter: '#aad372',
     mage: '#68ccef',

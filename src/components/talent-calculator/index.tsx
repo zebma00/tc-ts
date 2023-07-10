@@ -5,23 +5,14 @@ import SelectWrapper from './talent-calculator-select'
 import TalentCalculatorMain from './talent-calculator-main/'
 import styles from './index.module.css'
 import ChangedSelect from './changed-select'
-import classTalents from '../../data/talents'
-
-export const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
+import { PlayerClassParam, URLParams } from '../../types'
 
 const TalentCalculator: React.FC = () => {
-  const { search } = useLocation()
-  const params = useParams()
+  const { playerClass } = useParams<URLParams>()
   const history = useHistory()
-  const [selectedClass, setSelectedClass] = useState<string>(classes[0])
-  // const [classData, setClassData] = useState<any>(classTalents.find(thing => thing.class === selectedClass))
-  // const classData = require(`../../../data/talents/${selectedClass}`)
 
-  const selectClass = (i: number) => {
-    const newClassData = classTalents.find(thing => thing.class === selectedClass)
-    // setClassData(newClassData)
-    history.push(`/tc/${classes[i]}`)
-    setSelectedClass(classes[i])
+  const selectClass = (clickedClass: PlayerClassParam) => {
+    history.push(`/tc/${clickedClass}`)
   }
 
   const [displayIsNew, setIsNew] = useState<boolean>(true)
@@ -46,9 +37,9 @@ const TalentCalculator: React.FC = () => {
 
   return (
     <div className={styles.tcWrapper}>
-      <SelectWrapper classes={classes} selectClass={selectClass} selectedClass={selectedClass} />
+      <SelectWrapper selectClass={selectClass} selectedClass={playerClass} />
       <ChangedSelect toggleChangedObj={toggleChangedObj} displayChanged={displayChanged} />
-      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={selectedClass} />
+      <TalentCalculatorMain displayChanged={displayChanged} selectedClass={playerClass} />
     </div>
   )
 }

@@ -1,18 +1,19 @@
 import React from 'react'
 
 import styles from './index.module.css'
+import classTalents from '../../../data/talents'
+import { PlayerClassParam } from '../../../types'
 
 interface SelectWrapperProps {
-  classes: string[]
-  selectedClass: string
-  selectClass: (i: number) => void
+  selectedClass: PlayerClassParam
+  selectClass: (clickedClass: PlayerClassParam) => void
 }
 
-const SelectWrapper: React.FC<SelectWrapperProps> = ({ classes, selectedClass, selectClass }) => {
+const SelectWrapper: React.FC<SelectWrapperProps> = ({ selectedClass, selectClass }) => {
   return (
     <div className={styles.selectWrapper}>
-      {classes.map((singleClass: string, i: number) => {
-        const isSelected = i === classes.indexOf(selectedClass)
+      {Object.keys(classTalents).map((singleClass, i: number) => {
+        const isSelected = singleClass === selectedClass
         return (
           <div
             key={i}
@@ -30,7 +31,7 @@ const SelectWrapper: React.FC<SelectWrapperProps> = ({ classes, selectedClass, s
               <button
                 className={styles.selectButton}
                 onClick={() => {
-                  selectClass(i)
+                  selectClass(singleClass as PlayerClassParam)
                 }}
               />
             </div>
