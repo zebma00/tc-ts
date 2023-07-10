@@ -7,11 +7,12 @@ import styles from './index.module.css'
 import ChangedSelect from './changed-select'
 import classTalents from '../../data/talents'
 
+export const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
+
 const TalentCalculator: React.FC = () => {
   const { search } = useLocation()
   const params = useParams()
   const history = useHistory()
-  const classes = ['druid', 'hunter', 'mage', 'paladin', 'priest', 'rogue', 'shaman', 'warlock', 'warrior']
   const [selectedClass, setSelectedClass] = useState<string>(classes[0])
   // const [classData, setClassData] = useState<any>(classTalents.find(thing => thing.class === selectedClass))
   // const classData = require(`../../../data/talents/${selectedClass}`)

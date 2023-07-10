@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { useHistory, useParams } from 'react-router-dom'
 import { Talent } from '../data/talents/Classes'
 import { ClassSpecType, ClassTalentType, URLParams } from '../types'
+import { classes } from '../components/talent-calculator'
 
 const flattenSpec = (specData: ClassSpecType) => {
   return specData.flatMap(row => row)
@@ -35,16 +36,36 @@ const loopURLTalents = (flatTalents: (Talent | null)[], talentsFromUrl: string) 
 
 // http://localhost:3000/tc-ts#/tc/druid/0140003000000000050023011000000000055003115010000
 
-export const useURLParams = (talentData: ClassTalentType | null) => {
+const loopTalentsFromUrl = (talentData: ClassTalentType | null, talentPoints: string) => {
+  let stringIndex: number = 0
+  const newTalents = [...talentData!]
+
+  newTalents.forEach(spec => {
+    spec.forEach(row => {
+      row.forEach(talent => {
+        if (!!talent) {
+          talent.setValue(parseInt(talentPoints[stringIndex]))
+          stringIndex++
+        }
+      })
+    })
+  })
+
+  return newTalents
+}
+
+export const useURLParams = (talentData: ClassTalentType | null, setTalentData: (value: React.SetStateAction<ClassTalentType | null>) => void) => {
   const { playerClass, talentPoints } = useParams<URLParams>()
-  const history = useHistory()
-  const flatTalents = flattenTalents(talentData)
 
   useEffect(() => {
-    // loopURLTalents(flatTalents, talentPoints)
-  }, [talentData])
+    if (!talentData) return
 
-  useEffect(() => {
-    return () => {}
+    const flatTalents = flattenTalents(talentData).filter(talent => talent)
+    if (!flatTalents || !talentPoints || flatTalents.length !== talentPoints.length) return
+    if (!classes.includes(playerClass)) return
+
+    const newTalents = loopTalentsFromUrl(talentData, talentPoints)
+    console.log('N', newTalents)
+    // setTalentData(newTalents)
   }, [talentData])
 }

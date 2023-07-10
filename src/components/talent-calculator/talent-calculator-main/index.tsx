@@ -31,9 +31,7 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
     setSpecIcons(specIcons)
   }, [classData])
 
-  useURLParams(talentData)
-
-  const pointsLeft = 51 - checkTotalPoints(talentData!)!
+  useURLParams(talentData, setTalentData)
 
   const clickHandler = (i: number, x: number, y: number, e: React.MouseEvent<HTMLElement>) => {
     e.preventDefault()
@@ -74,6 +72,8 @@ const TalentCalculatorMain: React.FC<TalentCalculatorMainProps> = ({ selectedCla
     })
     setTalentData(newData)
   }
+
+  const pointsLeft = 51 - checkTotalPoints(talentData!)!
 
   return (
     <>
