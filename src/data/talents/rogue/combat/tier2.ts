@@ -7,20 +7,12 @@ const tier2 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent(
-    'Precision',
-    'ability_marksmanship',
-    ['Increases your chance to hit with melee weapons by ', '%.'],
-    5,
-    [[1, 2, 3, 4, 5]],
-    [{ x: null, y: null }],
-    [{ x: 2, y: 2 }],
-    null,
-    null,
-    null,
-    null,
-    ['D1']
-  ),
+  new Talent('Precision', 'ability_marksmanship', ['Increases your chance to hit with melee weapons by ', '%.'], 5, [[1, 2, 3, 4, 5]], [{ x: null, y: null }], [{ x: 2, y: 2 }], null, null, null, null, ['D1']),
+  new Talent('Endurance', 'spell_shadow_shadowward', ['Reduces the cooldown of your Evasion and Sprint abilities by ', ' sec.'], 2, [[45, 90]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
 ]
 
 export default tier2
