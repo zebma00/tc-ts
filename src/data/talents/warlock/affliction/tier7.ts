@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Dark Pact',
     'spell_shadow_darkritual',
-    ['Drains up to 520 mana from your Demon over 12 sec, increasing your spell damage by 50% of the mana drained for the duration.'],
+    ['Drains up to 520 mana from your Demon over 12 sec, increasing your spell damage by 50% of the mana drained over time.'],
     1,
     [[]],
     null,

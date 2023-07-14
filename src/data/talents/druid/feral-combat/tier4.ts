@@ -44,7 +44,7 @@ const tier4 = [
   new Talent(
     'Natural Guardian',
     'ability_druid_kingofthejungle',
-    ['When you deal a melee critical strike, you have a ', '% chance to gain 5% armor for 5 sec. This effect stacks up to 5 times.'],
+    ['When you deal a melee critical strike, you have a ', '% chance to gain 5% armor for 8 sec. This effect stacks up to 5 times.'],
     2,
     [[50, 100]],
     null,

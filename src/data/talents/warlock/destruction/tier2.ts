@@ -26,9 +26,9 @@ const tier2 = [
     }
   ),
   new Talent('Aftermath', 'spell_fire_fire', ['Gives your Destruction spells a ', '% chance to daze the target for 5 sec.'], 5, [[2, 4, 6, 8, 10]]),
-  new Talent('Improved Lash of Pain', 'spell_shadow_curse', ["Reduces the cooldown of your Succubus' Lash of Pain by ", ' sec.'], 2, [[3, 6]], null, null, null, null, null, null, null, {
+  new Talent('Improved Lash of Pain', 'spell_shadow_curse', ["Reduces the cooldown of your Succubus' Lash of Pain by ", ' sec.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
     isNew: false,
-    isChanged: false,
+    isChanged: true,
     isMoved: true,
   }),
 ]

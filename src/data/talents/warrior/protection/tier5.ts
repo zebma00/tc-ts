@@ -17,30 +17,12 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Increases your rage generation by ', '% while below 10 rage.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
+  new Talent('Ignore Pain', 'ability_warrior_focusedrage', ['Removes all movement impairing effects and all effects which cause loss of control of your character.'], 1, [[]], null, null, null, null, 'Instant cast', '5 min cooldown', null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
   }),
-  new Talent(
-    'Ignore Pain',
-    'ability_warrior_focusedrage',
-    ['Removes all movement impairing effects and all effects which cause loss of control of your character.'],
-    1,
-    [[]],
-    null,
-    null,
-    null,
-    null,
-    'Instant cast',
-    '5 min cooldown',
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  null,
 ]
 
 export default tier5

@@ -7,7 +7,7 @@ export default {
     'Sentry Totem now has stealth.',
     'Stoneskin Totem now also reduces damage taken from ranged attacks.',
     'Windwall Totem has been removed.',
-    'Stoneclaw Totem now has health equal to 20% of the Shaman’s health and has a 50% chance to stun enemies that attack it. After Stoneclaw Totem dies, attacking enemies have their threat reset.',
+    'Stoneclaw Totem now has health equal to 20% of the Shaman’s health and has a 50% chance to stun enemies that attack it.',
     'Duration of all Weapon Enhancements increased to 30 minutes.',
   ],
 }

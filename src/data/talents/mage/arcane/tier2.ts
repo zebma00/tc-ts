@@ -34,7 +34,7 @@ const tier2 = [
   new Talent(
     'Wizardry',
     'ability_mage_potentspirit',
-    ['When you cast a damaging spell, your spell damage is increased by ', '% for 30 sec. This effect stacks up to 5 times. This effect is lost when casting two damaging spells of the same school in a row.'],
+    ['When you deal damage with a spell, your spell damage is increased by ', '% for 30 sec. This effect stacks up to 5 times. This effect is lost when dealing damage with two spells of the same school in a row.'],
     2,
     [[2, 4]],
     null,
