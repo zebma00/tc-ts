@@ -13,7 +13,9 @@ const tier7 = [
     '60 Mana',
     '20 yd range',
     'Instant',
-    '60 sec cooldown'
+    '30 sec cooldown',
+    null,
+    { isNew: false, isChanged: true, isMoved: false }
   ),
 ]
 

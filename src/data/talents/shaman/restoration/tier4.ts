@@ -4,7 +4,7 @@ const tier4 = [
   new Talent(
     'Tidal Surge',
     'spell_shaman_tidalwaves',
-    ['Your crits from melee attacks and spells have a ', '% chance to cause your active Healing Stream Totem or Mana Spring Totem to pulse.'],
+    ['Your crits from melee attacks and spells have a ', '% chance to cause your active Healing Stream Totem or Mana Spring Totem to pulse. 3 sec cooldown.'],
     2,
     [[50, 100]],
     null,
