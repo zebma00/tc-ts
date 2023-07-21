@@ -4,7 +4,7 @@ const tier2 = [
   new Talent(
     'Surge of Light',
     'spell_holy_surgeoflight',
-    ['Your offensive spell criticals have a ', '% chance to heal a party member with low health within 30 yard range by 50% of the damage dealt.'],
+    ['Your offensive spell criticals have a ', '% chance to heal a party member within 30 yard range by 30% of the damage dealt. Prioritizes party members with low health.'],
     2,
     [[50, 100]],
     null,

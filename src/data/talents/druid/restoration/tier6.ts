@@ -21,7 +21,7 @@ const tier6 = [
     }
   ),
   null,
-  new Talent('Improved Regrowth', 'spell_nature_resistnature', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 5, [[10, 20, 30, 40, 50]]),
+  new Talent('Improved Regrowth', 'spell_nature_resistnature', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 3, [[17, 34, 50]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
   null,
 ]
 

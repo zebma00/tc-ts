@@ -27,8 +27,8 @@ const tier5 = [
     ['When cast on self, the duration of your Innervate is increased by ', ' sec. When cast on another target, you also gain an Innervate effect for ', ' sec.'],
     2,
     [
-      [3, 6],
-      [3, 6],
+      [5, 10],
+      [5, 10],
     ],
     null,
     null,

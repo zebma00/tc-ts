@@ -4,11 +4,11 @@ const tier1 = [
   new Talent(
     'Fire Warding',
     'spell_fire_firearmor',
-    ['Gives your Fire Ward a ', '% chance to reflect fire spells and effects while active and reduces the cooldown of your Fire Ward by ', ' sec.'],
+    ['Increases your fire resistance by ', ' and gives your Fire Ward a ', '% chance to reflect fire spells and effects while active.'],
     2,
     [
+      [20, 40],
       [10, 20],
-      [5, 1],
     ],
     null,
     null,

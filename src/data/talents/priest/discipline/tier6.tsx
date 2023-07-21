@@ -2,53 +2,30 @@ import { Talent } from '../../Classes'
 
 const tier6 = [
   new Talent(
-    'Reverence',
-    'ability_racial_avatar',
+    'Devotion',
+    'spell_holy_unyieldingfaith',
     [
+      <>Critical strikes from your heals have a </>,
       <>
-        Improves one of your Priest racial abilities. <br />
-        <br /> Human: Reduces the cooldown of Feedback by{' '}
-      </>,
-      <>
-        {' '}
-        sec. <br />
+        % chance to heal the target for 40% of the healing done over 4 sec. <br />
         <br />
-        Dwarf: Increases the damage of Chastise by{' '}
+        Critical strikes from your damaging spells have a{' '}
       </>,
-      <>
-        %. <br />
-        <br />
-        Night Elf: Reduces the cast time of Starshards by{' '}
-      </>,
-      <>
-        {' '}
-        sec. <br />
-        <br />
-        Troll: Inreases the number of Shadowguard orbs by{' '}
-      </>,
-      <>
-        . <br />
-        <br />
-        Undead: Increases the duration of Devouring Plague by{' '}
-      </>,
-      <> sec.</>,
+      <>% chance to deal Holy damage equal to 40% of the damage done over 4 sec.</>,
     ],
     2,
     [
-      [30, 60],
-      [15, 30],
-      [0.5, 1],
-      [2, 4],
-      [3, 6],
+      [50, 100],
+      [50, 100],
     ],
-    [{ x: 4, y: 0 }],
     null,
     null,
     null,
     null,
     null,
     null,
-    { isNew: true, isChanged: false, isMoved: false }
+    null,
+    { isNew: true, isMoved: false, isChanged: false }
   ),
   null,
   new Talent(

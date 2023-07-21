@@ -7,7 +7,7 @@ export default [
   new Item('Daybreak', 'inv_hammer_04', 'epic', 'Two-hand', 'Mace', 'Speed 3.00', '131 - 255 Damage', '(59.33 damage per second)', null, ['Chance on hit: physical damage taken by target increased by 10% for 8 sec.']),
   new Item('Idol of the World Tree', 'inv_qirajidol_night', 'rare', 'Relic', 'Idol', null, null, null, null, ['Increases the duration of your Rejuvenation and Regrowth spells by 4 sec.']),
   new Item('Jewel of Synergy', 'inv_jewelry_ring_64', 'epic', 'Trinket', null, null, null, null, null, ['Increases your spell damage by 10% for 8 sec after dealing damage from three different magic schools within 3 sec.']),
-  new Item('Book of Command', 'warlock_grimoireofcommand', 'epic', 'Trinket', null, null, null, null, null, ['Use: Increases the damage and critical strike chance of your active pets and summons by 20% for 15 sec. (3 min cooldown)']),
+  new Item('Book of Command', 'warlock_grimoireofcommand', 'epic', 'Trinket', null, null, null, null, null, ['Use: Increases the damage and critical strike chance of your active pets and summons by 25% for 15 sec. (3 min cooldown)']),
   // new Item('Totem of Tidal Orbs', 'inv_qirajidol_life', 'epic', 'Relic', 'Totem', null, null, null, null, ['Damage from your Lightning Shield returns mana equal to 60% of the damage dealt.']),
   // new Item(
   //   'Breastplate of Victory',
