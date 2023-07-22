@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Wild Assault', 'ability_warrior_punishingblow', ["Your pet's critical strikes have a ", '% chance to enable your Mongoose Bite.'], 2, [[15, 30]], null, null, null, null, null, null, null, {
+  new Talent('Wild Assault', 'ability_warrior_punishingblow', ["Your pet's critical strikes from abilities have a ", '% chance to enable your Mongoose Bite.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

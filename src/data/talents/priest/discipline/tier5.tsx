@@ -11,7 +11,7 @@ const tier5 = [
   new Talent(
     'Improved Divine Spirit',
     'spell_holy_prayerofspirit',
-    ["Your Divine Spirit and Prayer of Spirit spells also inrease the target's spell damage and healing by an amount equal to ", '% of their spirit.'],
+    ["Your Divine Spirit and Prayer of Spirit spells also increase the target's spell damage and healing by an amount equal to ", '% of their spirit.'],
     2,
     [[5, 10]],
     [{ x: 4, y: 2 }],

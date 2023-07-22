@@ -3,19 +3,19 @@ import { Talent } from '../../Classes'
 const tier7 = [
   null,
   new Talent(
-    'Stormstrike',
-    'spell_holy_sealofmight',
-    ['Gives you an extra attack. In addition, the next two sources of Fire, Frost or Nature damage dealt to the target are increased by 20%. Lasts 20 sec.'],
+    'Shamanistic Rage',
+    'spell_nature_shamanrage',
+    ['Reduces all damage taken by 30% and gices your succesful melee attacks a chance to regenerate mana equal to 30% of your attack power. Lasts 15 sec.'],
     1,
     [[]],
-    [{ x: 4, y: 1 }],
     null,
-    '21% of base mana',
-    'Melee range',
+    null,
     'Instant',
-    '20 sec cooldown',
+    '2 min cooldown',
     null,
-    { isNew: false, isChanged: true, isMoved: false }
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
   null,

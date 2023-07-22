@@ -21,28 +21,12 @@ const tier5 = [
   ),
   null,
   new Talent('Gift of Nature', 'spell_nature_protectionformnature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
-  new Talent(
-    'Improved Innervate',
-    'spell_nature_lightning',
-    ['When cast on self, the duration of your Innervate is increased by ', ' sec. When cast on another target, you also gain an Innervate effect for ', ' sec.'],
-    2,
-    [
-      [5, 10],
-      [5, 10],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Regrowth', 'spell_nature_resistnature', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 5, [[10, 20, 30, 40, 50]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
+  null,
 ]
 
 export default tier5

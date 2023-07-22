@@ -1,12 +1,21 @@
 import { Talent } from '../../Classes'
 
 const tier6 = [
+  new Talent('Revitalize', 'ability_druid_empoweredrejuvination', ['Your Rejuvenation and Regrowth spells have a ', '% chance to restore 8 Energy, 4 Rage or 1% Mana per tick.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
+  null,
   new Talent(
-    'Living Seed',
-    'ability_druid_empoweredrejuvination',
-    ['Causes your Rejuvenation and Regrowth spells to apply the Living Seed effect. The Living Seed effect Increases healing received by the target by ', '%. This effect does not stack.'],
+    'Improved Innervate',
+    'spell_nature_lightning',
+    ['When cast on self, the duration of your Innervate is increased by ', ' sec. When cast on another target, you also gain an Innervate effect for ', ' sec.'],
     2,
-    [[5, 10]],
+    [
+      [5, 10],
+      [5, 10],
+    ],
     null,
     null,
     null,
@@ -20,8 +29,6 @@ const tier6 = [
       isMoved: false,
     }
   ),
-  null,
-  new Talent('Improved Regrowth', 'spell_nature_resistnature', ['Increases the critical effect chance of your Regrowth spell by ', '%.'], 3, [[17, 34, 50]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
   null,
 ]
 

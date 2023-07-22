@@ -27,7 +27,7 @@ const tier5 = [
       isMoved: true,
     }
   ),
-  new Talent('Crusade', 'spell_holy_blessedresillience', ['Your Judgement of any seal has a ', '% chance to apply Judgement of the Crusader in addition to its usual effect.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
+  new Talent('Crusade', 'spell_holy_crusade', ['Your Judgement of any seal has a ', '% chance to apply Judgement of the Crusader in addition to its usual effect.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

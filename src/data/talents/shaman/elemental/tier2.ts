@@ -27,7 +27,7 @@ const tier2 = [
   new Talent('Call of Flame', 'spell_fire_immolation', ['Increases damage done by your Fire Totems by ', '%.'], 3, [[5, 10, 15]]),
   new Talent(
     'Resonance',
-    'spell_fire_masterofelements',
+    'spell_nature_slowingtotem',
     ['Your Shock spells increase the critical strike chance of your Shock spells by ', '%. This effect stacks but is reset when you score a critical hit with a Shock spell.'],
     2,
     [[5, 10]],

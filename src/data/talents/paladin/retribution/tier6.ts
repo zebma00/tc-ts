@@ -23,7 +23,7 @@ const tier6 = [
   ),
   new Talent(
     'Holy Fervor',
-    'spell_holy_crusade',
+    'spell_holy_blessedresillience',
     ['Your Judgement has a ', '% chance to refresh all Judgement effects on the target and increase the effect of Judgement effects on the target by 30% for 8 sec.'],
     2,
     [[50, 100]],

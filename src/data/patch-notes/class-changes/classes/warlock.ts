@@ -5,11 +5,12 @@ export default {
     'New ability: Soulshatter: Reduces threat on the target by 100%. Reagents: Soul Shard. 2 min cooldown.',
     'Firestone reworked: Bonus fire spell damage increased. No longer grants attacks a chance to deal fire damage. Instead Firestone removes the additional threat caused by Searing Pain.',
     'Spellstone now increases your spell damage by a small amount and increases spell hit chance by 2%.',
+    'Mana gained from Life Tap now scales with spirit.',
     'Increased the health gained from Demon Armor.',
     'Health Funnel is now instant cast, while still lasting 10 sec. It now has a 30 sec cooldown and 30 yard range.',
     "Curse of Weakness now reduces the target's damage done by 5%. Only one rank available.",
     'Warlocks can now summon party and raid members from within a dungeon or raid.',
-    "All demons will now receive a percentage of their master's Health, Mana, armor, spell resistances and their spell damage and attack power is increased by a percentage of their master’s spell damage.",
+    "All demons will now receive a percentage of their master's stats and their spell damage and attack power is increased by a percentage of their master’s spell damage.",
     'Soul Shards now stack up to 20 per bag slot.',
   ],
 }
