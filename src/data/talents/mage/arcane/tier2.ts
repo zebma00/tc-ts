@@ -12,7 +12,7 @@ const tier2 = [
     ['Increases all resistances by ', ' and causes you to restore ', '% mana after fully resisting or fully absorbing spell damage. 10 sec cooldown.'],
     2,
     [
-      [5, 10],
+      [10, 20],
       [2, 4],
     ],
     null,

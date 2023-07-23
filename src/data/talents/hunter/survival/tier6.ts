@@ -21,6 +21,6 @@ export default [
     }
   ),
   null,
-  new Talent('Lightning Reflexes', 'spell_nature_invisibilty', ['Increases our agility by ', '%.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
+  new Talent('Lightning Reflexes', 'spell_nature_invisibilty', ['Increases our agility by ', '%.'], 5, [[3, 6, 9, 12, 15]], null, null, null, null, null, null, null, { isNew: false, isChanged: true, isMoved: false }),
   null,
 ]

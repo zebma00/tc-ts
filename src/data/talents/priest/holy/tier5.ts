@@ -1,21 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Radiant Healing',
-    'spell_holy_prayerofhealing02',
-    ['Reduces the Mana cost and increases the effect of your Prayer of Healing and Holy Nova spells by ', '%.'],
-    2,
-    [[10, 20]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
-  ),
+  new Talent('Radiant Healing', 'spell_holy_holyprotection', ['Reduces the Mana cost and increases the effect of your Prayer of Healing and Holy Nova spells by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Spirit of Redemption',
     'inv_enchant_essenceeternallarge',
@@ -33,21 +23,11 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent(
-    'Improved Healing',
-    'spell_holy_heal02',
-    ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'],
-    3,
-    [[5, 10, 15]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: false, isMoved: true }
-  ),
+  new Talent('Improved Healing', 'spell_holy_heal02', ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: false,
+    isMoved: true,
+  }),
   null,
 ]
 

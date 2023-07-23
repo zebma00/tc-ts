@@ -10,7 +10,7 @@ const tier7 = [
     [[]],
     null,
     null,
-    '20 yd range',
+    null,
     null,
     'Instant',
     '2 min cooldown',

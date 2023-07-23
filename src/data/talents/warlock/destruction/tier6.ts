@@ -6,7 +6,7 @@ const tier6 = [
     'spell_fire_fireball02',
     ['Critical strikes from your Fire spells have a ', '% chance to increase the damage of your next Soul Fire by 10% and increase the cast time by 0.2 sec. This effect stacks up to 10 times.'],
     2,
-    [[25, 50]],
+    [[50, 100]],
     null,
     null,
     null,
