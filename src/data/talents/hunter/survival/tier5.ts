@@ -1,7 +1,25 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Resourcefulness', 'ability_hunter_mastertactitian', ['Allows one additional trap to be active at a time.'], 1, [[]], null, null, null, null, null, null, null, { isNew: true, isChanged: false, isMoved: false }),
+  new Talent(
+    'Expose Weakness',
+    'ability_rogue_findweakness',
+    ['Your melee and ranged critical strikes have a ', '% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by 25% of your agility for 7 sec.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent('Killer Instinct', 'spell_holy_blessingofstamina', ['Increases your critical strike chance with all attacks by ', '%.'], 3, [[1, 2, 3]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
   new Talent(
     'Counterattack',
