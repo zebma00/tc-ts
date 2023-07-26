@@ -2,11 +2,14 @@ import { Talent } from '../../Classes'
 
 const tier6 = [
   new Talent(
-    'Furious Outburst',
-    'ability_hunter_harass',
-    ['Increases the effect of your active Battle Shout and Demoralizing Roar by ', '% for 6 sec after scoring a critical hit. 12 sec cooldown.'],
+    'Victorious Surge',
+    'spell_nature_shamanrage',
+    ['After you or a nearby party member kills a target that yields experience or honor, you gain ', ' rage and ', '% of your missing health.'],
     2,
-    [[25, 50]],
+    [
+      [5, 10],
+      [5, 10],
+    ],
     null,
     null,
     null,
