@@ -4,9 +4,12 @@ const tier5 = [
   new Talent(
     'Celestial Spark',
     'ability_druid_dreamstate',
-    ['Your successful Starfire hits reduce the cooldown of your Barkskin, Hurricane and Innervate spells by ', ' sec.'],
+    ['Gives your Starfire hits a ', '% and your Wrath and Moonfire hits a ', '% chance to reduce the cooldown of your Barkskin, Hurricane and Innervate spells by 2 sec.'],
     2,
-    [[1, 2]],
+    [
+      [50, 100],
+      [25, 50],
+    ],
     null,
     null,
     null,
