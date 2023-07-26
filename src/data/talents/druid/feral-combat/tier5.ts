@@ -3,7 +3,11 @@ import { Talent } from '../../Classes'
 const tier5 = [
   new Talent('Savage Fury', 'ability_druid_ravage', ['Increases the damage caused by your Claw, Rake, Maul and Swipe abilites by ', '%.'], 2, [[10, 20]]),
   null,
-  new Talent('Faerie Fire (Feral)', 'spell_nature_faeriefire', ['Decrease the armor of the target by 175 for 40 sec. While affected, the target cannot stealth or turn invisible.'], 1, [[]]),
+  new Talent('Frenzy', 'ability_druid_primaltenacity', ['Increases your energy regeneration in Cat Form and your Rage regeneration in Bear and Dire Bear Form by 100% for 15 sec.'], 1, [[]], null, null, 'Instant', '5 min cooldown', null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   null,
 ]
 

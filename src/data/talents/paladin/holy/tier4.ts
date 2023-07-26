@@ -34,7 +34,11 @@ const tier4 = [
     ['D1']
   ),
   new Talent('Improved Blessing of Wisdom', 'spell_holy_sealofwisdom', ['Increases the effect of your Blessing of Wisdom spell by ', '%.'], 2, [[10, 20]]),
-  null,
+  new Talent('Sacred Seals', 'spell_holy_divinepurpose', ['Increases the effect of your Seal and Judgement of Light and Seal and Judgement of Wisdom spells by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier4

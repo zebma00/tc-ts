@@ -19,7 +19,7 @@ export default [
     '15 yd range',
     '30 sec cooldown'
   ),
-  new Talent('Ranger', 'ability_hunter_mastermarksman', ['Your Multi-Shot and Aimed Shot have a ', '% chance to increase the damage of your next Auto Shot by 50%.'], 2, [[15, 30]], null, null, null, null, null, null, null, {
+  new Talent('Ranger', 'ability_hunter_mastermarksman', ['Your Multi-Shot and Aimed Shot have a ', '% chance to increase the damage of your next Auto Shot by 100%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

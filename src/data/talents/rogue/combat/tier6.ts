@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier6 = [
-  null,
+  new Talent('Shadow Assault', 'inv_sword_11', ['Gives your Sinister Strike a ', '% chance to trigger an additional main-hand weapon attack.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent('Weapon Expertise', 'spell_holy_blessingofstrength', ['Increases your skill with Swords, Maces, Daggers and Fist Weapons by ', '.'], 2, [[2, 5]], [{ x: 4, y: 1 }], null, null, null, null, null, null, {
     isNew: false,
     isChanged: true,

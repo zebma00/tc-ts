@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Stormstrike',
     'spell_holy_sealofmight',
-    ['Returns 21% of your base mana and gives you an extra attack. In addition, the next two sources of direct Fire, Frost or Nature damage dealt to the target are increased by 20%. Lasts 20 sec.'],
+    ['Restores 21% of your base mana and gives you an extra attack. In addition, the next two sources of direct Fire, Frost or Nature damage dealt to the target are increased by 20%. Lasts 20 sec.'],
     1,
     [[]],
     [{ x: 4, y: 1 }],

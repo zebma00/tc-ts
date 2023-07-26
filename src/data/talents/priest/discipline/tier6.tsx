@@ -7,11 +7,11 @@ const tier6 = [
     [
       <>Critical strikes from your heals have a </>,
       <>
-        % chance to heal the target for 40% of the healing done over 4 sec. <br />
+        % chance to heal the target for 30% of the healing done over 4 sec. <br />
         <br />
         Critical strikes from your damaging spells have a{' '}
       </>,
-      <>% chance to deal Holy damage equal to 40% of the damage done over 4 sec.</>,
+      <>% chance to deal Holy damage equal to 30% of the damage done over 4 sec.</>,
     ],
     2,
     [

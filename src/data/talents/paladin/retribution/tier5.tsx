@@ -8,7 +8,7 @@ const tier5 = [
     'ability_warrior_innerrage',
     [
       <>
-        Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one seal can be active on than paladin at a time. Lasts 30 sec. <br />
+        Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one seal can be active on the paladin at a time. Lasts 30 sec. <br />
         <br /> Unleashing this Seal's energy will Judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 146 if the target is stunned or incapacitated.
       </>,
     ],
