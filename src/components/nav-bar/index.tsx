@@ -12,9 +12,9 @@ const NavBar: React.FC = () => {
       <Link className={styles.navLink} to='/patch-notes'>
         Patch notes
       </Link>
-      <Link className={styles.navLink} to='/items'>
+      {/* <Link className={styles.navLink} to='/items'>
         Example Items
-      </Link>
+      </Link> */}
     </div>
   )
 }
