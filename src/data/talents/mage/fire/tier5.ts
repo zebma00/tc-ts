@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent('Eruption', 'spell_fire_volcano', ['Increases your spell critical strike chance to targets affected by your Flamestrike or Blastwave by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+  new Talent('Searing Flames', 'spell_fire_firebolt', ['Causes the damage over time effect of your Fireball to stack up to ', ' times.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

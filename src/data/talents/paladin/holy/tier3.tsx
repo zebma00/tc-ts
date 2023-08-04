@@ -3,17 +3,22 @@ import { Talent } from '../../Classes'
 const tier3 = [
   new Talent('Healing Light', 'spell_holy_holybolt', ['Increases the amount healed by your Flash or Light and Holy Light spells by ', '%.'], 3, [[4, 8, 12]]),
   new Talent(
-    'Aura Mastery',
+    'Sanctify',
     'spell_holy_auramastery',
-    ['Causes your Concentration Aura to make all affected targets immune to Silence and Interrupt effects and increases the effect of all other auras by 100%. Lasts 6 sec.'],
+    [
+      <>
+        Sanctifies the land beneath the Paladin, doing 64 holy damage to enemies and healing for 64 to friendly targets who enter the area. <br />
+        <br /> Replaces Consecration.
+      </>,
+    ],
     1,
     [[]],
     null,
     null,
+    '135 Mana',
+    null,
     'Instant',
-    '2 min cooldown',
-    null,
-    null,
+    '8 sec cooldown',
     null,
     {
       isNew: true,

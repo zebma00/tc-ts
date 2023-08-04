@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 const tier5 = [
   new Talent(
     'Righteous Focus',
-    'spell_holy_holyprotection',
+    'spell_holy_powerinfusion',
     ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to not incur its cooldown.'],
     1,
     [[]],
@@ -36,21 +36,11 @@ const tier5 = [
     null,
     ['D2']
   ),
-  new Talent(
-    'Reckoning',
-    'spell_holy_blessingofstrength',
-    ['Gives you a ', '% chance after being hit by any damaging attack or spell that the next 4 weapon swings within 8 sec will generate an additional attack.'],
-    5,
-    [[2, 4, 6, 8, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
-  ),
+  new Talent('Reckoning', 'spell_holy_blessingofstrength', ['Gives you a ', '% chance to gain an extra attack after being the victim of a critical strike or parrying an attack.'], 5, [[10, 20, 30, 40, 50]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   null,
 ]
 

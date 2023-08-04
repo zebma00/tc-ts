@@ -10,16 +10,21 @@ const tier1 = [
   new Talent(
     'Redoubt',
     'ability_defend',
-    ['Increases your chance to block by ', '% after being the victim of a critical strike. Lasts 10 sec or 5 blocks.'],
+    ['Gives you a ', '% chance to increase your chance to block by 30% after being the victim of a critical strike or parrying an attack. Lasts 10 sec or 5 blocks.'],
     5,
-    [[6, 12, 18, 24, 30]],
+    [[10, 20, 30, 40, 50]],
     [{ x: null, y: null }],
     [{ x: 2, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2']
+    ['D2'],
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
   ),
   null,
 ]

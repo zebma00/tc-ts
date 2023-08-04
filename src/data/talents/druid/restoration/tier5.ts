@@ -20,7 +20,11 @@ const tier5 = [
     '3 min cooldown'
   ),
   null,
-  new Talent('Gift of Nature', 'spell_nature_protectionformnature', ['Increases the effect of all healing spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }]),
+  new Talent('Gift of Nature', 'spell_nature_protectionformnature', ['Increases the effect of all healing spells and the damage of your Nature spells by ', '%.'], 5, [[2, 4, 6, 8, 10]], [{ x: 2, y: 2 }], null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   new Talent(
     'Improved Innervate',
     'spell_nature_lightning',

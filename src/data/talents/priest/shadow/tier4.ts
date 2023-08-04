@@ -20,17 +20,25 @@ const tier4 = [
     null,
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Shadow Reach', 'spell_shadow_chilltouch', ['Increases the range of your Shadow damage spells by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
-    isNew: false,
-    isChanged: true,
-    isMoved: false,
-  }),
+  new Talent('Shadow Reach', 'spell_shadow_chilltouch', ['Increases the range of your Shadow damage spells by ', '%.'], 3, [[6, 13, 20]]),
   new Talent(
     'Shadow Weaving',
     'spell_shadow_blackplague',
     ['Your Shadow damage spells have a ', '% chance to cause the target to become vulnerable to Shadow damage, increasing Shadow damage taken by 3%. This effect stacks up to 5 sec. Lasts 15 sec.'],
-    5,
-    [[20, 40, 60, 80, 100]]
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: false,
+      isChanged: true,
+      isMoved: false,
+    }
   ),
 ]
 

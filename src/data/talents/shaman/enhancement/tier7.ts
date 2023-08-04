@@ -13,7 +13,7 @@ const tier7 = [
     'Melee range',
     null,
     'Instant',
-    '20 sec cooldown',
+    '12 sec cooldown',
     null,
     { isNew: false, isChanged: true, isMoved: false }
   ),

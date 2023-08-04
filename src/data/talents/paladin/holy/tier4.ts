@@ -1,24 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  new Talent(
-    'Divine Insight',
-    'spell_holy_healingfocus',
-    ['Increases the duration of your seals spells by ', ' sec. In addition, your Judgement has a ', '% chance to not consume your active seal.'],
-    2,
-    [
-      [10, 20],
-      [50, 100],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  new Talent('Sacred Seals', 'spell_holy_divinepurpose', ['Increases the effect of your Seal and Judgement of Light and Seal and Judgement of Wisdom spells by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Illumination',
     'spell_holy_greaterheal',
@@ -34,11 +21,7 @@ const tier4 = [
     ['D1']
   ),
   new Talent('Improved Blessing of Wisdom', 'spell_holy_sealofwisdom', ['Increases the effect of your Blessing of Wisdom spell by ', '%.'], 2, [[10, 20]]),
-  new Talent('Sacred Seals', 'spell_holy_divinepurpose', ['Increases the effect of your Seal and Judgement of Light and Seal and Judgement of Wisdom spells by ', '%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  null,
 ]
 
 export default tier4

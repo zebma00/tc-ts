@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent('Divine Insight', 'spell_holy_healingfocus', ['Your Judgement has a ', '% chance to increase your spell damage and healing by 10% for 10 sec.'], 2, [[25, 50]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Divine Favor',
     'spell_holy_heal',

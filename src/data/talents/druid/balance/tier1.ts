@@ -1,25 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier1 = [
-  new Talent(
-    'Starlight Wrath',
-    'spell_nature_abolishmagic',
-    ['Reduces the cast time of your Wrath and Starfire spells by ', ' sec.'],
-    5,
-    [[0.1, 0.2, 0.3, 0.4, 0.5]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Wrath', 'spell_nature_abolishmagic', ['Reduces the cast time of your Wrath spell by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]]),
   new Talent(
     "Nature's Grasp",
     'spell_nature_natureswrath',

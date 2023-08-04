@@ -7,7 +7,7 @@ const tier3 = [
     isMoved: false,
   }),
   new Talent('Conviction', 'spell_holy_retributionaura', ['Increases your chance to get a critical strike with Melee weapons by ', '%.'], 5, [[1, 2, 3, 4, 5]], [{ x: null, y: null }], [{ x: 5, y: 1 }], null, null, null, null, ['D3']),
-  new Talent('Sanctity', 'spell_holy_mindvision', ['Your auras also increase Holy damage done by party members within 30 yards by 10%.'], 1, [[]], null, null, null, null, null, null, null, {
+  new Talent('Sacred Seals', 'spell_holy_holyprotection', ['Increases the effect of your Seals by 10% and reduces the chance your Seals are dispelled by 100%.'], 1, [[]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
