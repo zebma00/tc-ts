@@ -7,7 +7,7 @@ const tier4 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent('Tidal Surge', 'spell_shaman_tidalwaves', ['Your crits from melee attacks and spells have a ', '% chance to expend a Water Shield globe if it is active.'], 2, [[50, 100]], [{ x: 2, y: 2 }], null, null, null, null, null, null, {
+  new Talent('Tidal Surge', 'spell_shaman_tidalwaves', ['Your crits from melee attacks and spells have a ', '% chance to expend a Water Shield globe if it is active.'], 2, [[25, 50]], [{ x: 2, y: 2 }], null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
