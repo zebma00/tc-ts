@@ -65,7 +65,11 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Parry', 'ability_parry', ['Allows you to parry enemy melee attacks.'], 1, [[]]),
+  new Talent('Enhanced Arms', 'ability_dualwieldspecialization', ['Allows you to parry enemy melee attacks. In addition, increases your spell damage and healng by 30% of your attack power.'], 1, [[]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Totemic Fury',
     'spell_fire_totemofwrath',
