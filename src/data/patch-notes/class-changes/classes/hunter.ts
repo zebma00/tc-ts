@@ -8,6 +8,6 @@ export default {
     'Volley damage is now based on attack power and spell damage and scales with both attack power and spell damage.',
     'Mend pet is now instant cast and has 40 yard range. It is still a heal over time effect.',
     'Aspect of the Beast now also greatly reduces the range at which hostile beasts will attack you and your pet.',
-    "All petes will now receive a percentage of their master's stats and their spell damage and attack power is increased by a percentage of their master’s attack power.",
+    "All pets will now receive a percentage of their master's stats and their spell damage and attack power is increased by a percentage of their master’s attack power.",
   ],
 }

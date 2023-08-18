@@ -3,8 +3,6 @@ export default {
   content: [
     'New ability: Totemic Recall: Removes all your totems and returns mana equal to 25% of their cost. Learned at lvl 4.',
     'Reduced the cast time of Lightning Bolt and Chain Lightning by 0.5 sec.',
-    'Increased the radius of totems that affect friendly targets to 30 yards.',
-    'Tranquil Air Totem effect increased to 30% threat reduction.',
     'Sentry Totem now has stealth.',
     'Stoneskin Totem now also reduces damage taken from ranged attacks.',
     'Windwall Totem has been removed.',

@@ -30,7 +30,7 @@ const tier2 = [
     'spell_nature_slowingtotem',
     ['Your Shock spells increase the critical strike chance of your Shock spells by ', '%. This effect stacks but is reset when you score a critical hit with a Shock spell.'],
     2,
-    [[5, 10]],
+    [[3, 6]],
     null,
     null,
     null,
