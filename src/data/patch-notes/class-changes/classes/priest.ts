@@ -1,6 +1,7 @@
 export default {
   title: 'Priest',
   content: [
+    'Increased the damage over time effect of Holy Fire.',
     'Fear Ward is now available to all races. Cooldown increased to 3 minutes, last 3 minutes. Fear Ward is now a discipline spell.',
     'Feedback (Human) reduced mana cost and now drains Health and Mana.',
     'Chastise (Dwarf): new spell: Deals Holy damage and immoblizes the target, causing low theat. 20 yd range, 30 sec cooldown.',

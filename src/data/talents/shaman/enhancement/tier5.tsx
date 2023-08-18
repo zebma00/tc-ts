@@ -45,16 +45,16 @@ const tier5 = [
       <>
         %. <br />
         <br />
-        Frostbrand: your Frostbrand effect also reduces the mana cost of your spells by{' '}
+        Frostbrand: reduces the mana cost of your spells by{' '}
       </>,
       '%.',
     ],
-    2,
+    3,
     [
-      [5, 10],
-      [5, 10],
-      [5, 10],
-      [5, 10],
+      [4, 7, 10],
+      [4, 7, 10],
+      [4, 7, 10],
+      [4, 7, 10],
     ],
     [{ x: null, y: null }],
     [{ x: 6, y: 1 }],
@@ -65,20 +65,12 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Enhanced Arms', 'ability_dualwieldspecialization', ['Allows you to parry enemy melee attacks. In addition, increases your spell damage and healng by 30% of your attack power.'], 1, [[]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
   new Talent(
     'Totemic Fury',
     'spell_fire_totemofwrath',
-    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 8 sec and reduce the cooldown of your totems that are on cooldown by ', ' sec.'],
-    2,
-    [
-      [15, 30],
-      [0.5, 1],
-    ],
+    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by 30% for 8 sec and reduce the cooldown of your totems that are on cooldown by 1 sec.'],
+    1,
+    [[]],
     null,
     null,
     null,
@@ -92,6 +84,7 @@ const tier5 = [
       isMoved: false,
     }
   ),
+  null,
 ]
 
 export default tier5
