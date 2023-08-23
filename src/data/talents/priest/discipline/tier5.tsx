@@ -2,7 +2,7 @@ import { Talent } from '../../Classes'
 
 const tier5 = [
   null,
-  new Talent('Mental Strength', 'spell_nature_enchantarmor', ['Increases your Intellect, Health and Spirit by ', '%.'], 3, [[3, 6, 9]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2'], {
+  new Talent('Mental Strength', 'spell_nature_enchantarmor', ['Increases your Intellect, Stamina and Spirit by ', '%.'], 3, [[3, 6, 9]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2'], {
     isNew: false,
     isChanged: true,
     isMoved: false,

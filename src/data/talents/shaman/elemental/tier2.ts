@@ -25,21 +25,7 @@ const tier2 = [
   ),
   new Talent('Spiritual Warding', 'spell_nature_spiritarmor', ['Reduces the damage taken from Frost, Fire and Nature spells and effects by ', '%.'], 3, [[4, 7, 10]]),
   new Talent('Call of Flame', 'spell_fire_immolation', ['Increases damage done by your Fire Totems by ', '%.'], 3, [[5, 10, 15]]),
-  new Talent(
-    'Resonance',
-    'spell_nature_slowingtotem',
-    ['Your Shock spells increase the critical strike chance of your Shock spells by ', '%. This effect stacks but is reset when you score a critical hit with a Shock spell.'],
-    2,
-    [[3, 6]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
 ]
 
 export default tier2

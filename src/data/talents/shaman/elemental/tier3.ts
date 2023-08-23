@@ -32,7 +32,11 @@ const tier3 = [
     ['D3'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  null,
+  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases the damage and critical strike chance of your Fire and Frost spells and effects by ', '%.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier3

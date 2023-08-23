@@ -6,7 +6,7 @@ export default [
   new Talent(
     'Improved Aspect of the Monkey',
     'ability_hunter_aspectofthemonkey',
-    ['While Aspect of the Money is active, all normal melee attacks have a ', '% chance to increase your critical strike chance with melee attacks by 15% for 8 sec.'],
+    ['While Aspect of the Money is active, all normal melee attacks have a ', '% chance to increase your critical strike chance with melee attacks by 10% for 8 sec.'],
     5,
     [[2, 4, 6, 8, 10]],
     null,
