@@ -3,7 +3,7 @@ import { Talent } from '../../Classes'
 const tier5 = [
   new Talent(
     'Righteous Focus',
-    'spell_holy_powerinfusion',
+    'spell_holy_spiritualguidence',
     ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to not incur its cooldown.'],
     1,
     [[]],
@@ -12,7 +12,7 @@ const tier5 = [
     null,
     null,
     'Instant',
-    '1 min cooldown',
+    '30 sec cooldown',
     null,
     {
       isNew: true,

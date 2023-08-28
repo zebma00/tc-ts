@@ -4,7 +4,7 @@ const tier4 = [
   new Talent(
     'Hot Streak',
     'ability_mage_hotstreak',
-    ['Your Fire Blast and Scorch criticals have a ', '% chance to reduce the cast time of your next Pyroblast or Flamestrike spell by 2 sec. This effect lasts 10 sec.'],
+    ['Your Fire Blast and Scorch criticals have a ', '% chance to reduce the cast time of your next Pyroblast or Flamestrike spell by 3 sec. This effect lasts 10 sec.'],
     2,
     [[25, 50]],
     [{ x: 2, y: 0 }],

@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent('Vindication', 'spell_holy_vindication', ["Gives the Paladin's damaging melee attacks a chance to reduce the target's attributes by ", '% for 10 sec.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
+  new Talent('Vindication', 'spell_holy_vindication', ["Gives the Paladin's damaging melee attacks a chance to deal Holy damage reduce the target's attributes by ", '% for 10 sec.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
     isNew: false,
     isChanged: true,
     isMoved: false,

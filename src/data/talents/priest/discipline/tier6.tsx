@@ -2,22 +2,11 @@ import { Talent } from '../../Classes'
 
 const tier6 = [
   new Talent(
-    'Devotion',
-    'spell_holy_unyieldingfaith',
-    [
-      <>Critical strikes from your heals have a </>,
-      <>
-        % chance to heal the target for 30% of the healing done over 4 sec. <br />
-        <br />
-        Critical strikes from your damaging spells have a{' '}
-      </>,
-      <>% chance to deal Holy damage equal to 30% of the damage done over 4 sec.</>,
-    ],
+    'Improved Dispel Magic',
+    'spell_holy_dispelmagic',
+    ['Gives a your Dispel Magic a ', '% chance to deal Holy damage for each beneficial effect dispelled and Heal for each harmful effect dispelled.'],
     2,
-    [
-      [50, 100],
-      [50, 100],
-    ],
+    [[50, 100]],
     null,
     null,
     null,
