@@ -8,7 +8,7 @@ const tier2 = [
     isMoved: false,
   }),
   null,
-  new Talent('Improved Thunder Clap', 'ability_thunderclap', ['Reduces the rage cost of your thunder clap by ', ' rage point.'], 3, [[1, 2, 3]]),
+  new Talent('Improved Thunder Clap', 'ability_thunderclap', ['Reduces the rage cost of your thunder clap by ', ' rage point.'], 3, [[1, 2, 3]], null, [{ x: 2, y: 3 }], null, null, null, null, ['D1']),
 ]
 
 export default tier2

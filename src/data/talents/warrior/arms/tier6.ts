@@ -7,11 +7,7 @@ const tier6 = [
     isMoved: false,
   }),
   null,
-  new Talent('Rolling Thunder', 'spell_nature_thunderclap', ['Increases the damage of your Thunder Clap by ', '% when hitting only one target.'], 3, [[100, 200, 300]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent('Master of Arms', 'spell_holy_sealofwrath', ['Increases your skill with all weapons by ', '.'], 3, [[3, 6, 9]], null, null, null, null, null, null, null, { isNew: true, isChanged: false, isMoved: false }),
   null,
 ]
 

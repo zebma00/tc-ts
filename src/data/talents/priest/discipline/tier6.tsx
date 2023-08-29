@@ -1,6 +1,12 @@
 import { Talent } from '../../Classes'
 
 const tier6 = [
+  null,
+  new Talent('Mental Strength', 'spell_nature_enchantarmor', ['Increases your Intellect, Stamina and Spirit by ', '%.'], 3, [[3, 6, 9]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D1'], {
+    isNew: false,
+    isChanged: true,
+    isMoved: true,
+  }),
   new Talent(
     'Improved Dispel Magic',
     'spell_holy_dispelmagic',
@@ -15,29 +21,6 @@ const tier6 = [
     null,
     null,
     { isNew: true, isMoved: false, isChanged: false }
-  ),
-  null,
-  new Talent(
-    'Force of Will',
-    'spell_nature_slowingtotem',
-    ['Increases the critical strike chance of your offensive spells by ', '% and your spell damage by ', '%.'],
-    3,
-    [
-      [2, 4, 6],
-      [2, 4, 6],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
   ),
   null,
 ]

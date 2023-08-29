@@ -20,7 +20,11 @@ const tier3 = [
   new Talent('Deep Wounds', 'ability_backstab', ['Your critical strikes cause the target to bleed, dealing ', "% of your melee weapon's average damage over 12 sec."], 3, [[20, 40, 60]], [{ x: 0, y: 2 }], [{ x: 3, y: 2 }], null, null, null, null, [
     'D1',
   ]),
-  null,
+  new Talent('Rolling Thunder', 'spell_nature_thunderclap', ['Increases the damage of your Thunder Clap by ', '% when hitting only one target.'], 3, [[100, 200, 300]], [{ x: 1, y: 3 }], null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier3
