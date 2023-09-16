@@ -7,6 +7,6 @@ export default {
     'Additional items and sets rewarded for honor have been added or changed to better fit various classes and specs.',
     'Throwing weapons items no longer stack, but lose durability when thrown instead. These throwing weapons can be repaired. Some throwing weapons have unique effects, like poisoning the target, or bouncing off of enemies.',
     "Several weapons that increase a druid's attack power while in cat, bear and dire bear forms have been added.",
-    'Incomplete items and recipes can now be obtained from various sources, like bosses, chests and world drops. Collect resources and complete quests to obtain the complete items and recipes.',
+    // 'Incomplete items and recipes can now be obtained from various sources, like bosses, chests and world drops. Collect resources and complete quests to obtain the complete items and recipes.',
   ],
 }

@@ -4,11 +4,11 @@ const tier6 = [
   new Talent(
     'Fiery Resilience',
     'spell_fire_lavaspawn',
-    ['Reduces the duration of crowd control effects on you by ', '%. In addition, critical hits against you have a ', '% chance to ignite the attacker, dealing Fire damage over 6 seconds.'],
+    ['Reduces the duration of crowd control effects on you by ', '%. In addition, critical hits against you have a ', '% chance to ignite the attacker, dealing Fire damage.'],
     3,
     [
       [10, 20, 30],
-      [5, 10, 15],
+      [20, 40, 60],
     ],
     null,
     null,

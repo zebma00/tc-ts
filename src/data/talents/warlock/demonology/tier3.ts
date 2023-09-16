@@ -1,16 +1,10 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent(
-    'Improved Succubus',
-    'spell_shadow_summonsuccubus',
-    ["Increases the effect of your Succubus' Lash of Pain and Soothing Kiss by ", '% and increases the duration of Seduction and Invisibility by ', '%.'],
-    3,
-    [
-      [10, 20, 30],
-      [10, 20, 30],
-    ]
-  ),
+  new Talent('Improved Sayaad', 'ability_warlock_randomizesuccubusincubus', ["Increases the effect of your Succubus' and Incubus' Lash of Pain and Soothing Kiss by ", '% and increases the duration of Seduction and Invisibility by ', '%.'], 3, [
+    [10, 20, 30],
+    [10, 20, 30],
+  ]),
   new Talent(
     'Fel Domination',
     'spell_nature_removecurse',
@@ -47,25 +41,11 @@ const tier3 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Mana Feed',
-    'spell_shadow_manafeed',
-    ['When you gain mana from any source, your active demon gains ', '% of the mana you gain.'],
-    3,
-    [[20, 40, 60]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
+  new Talent('Mana Feed', 'spell_shadow_manafeed', ['When you gain mana from any source, your active demon gains ', '% of the mana you gain.'], 3, [[20, 40, 60]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier3

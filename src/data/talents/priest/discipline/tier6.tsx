@@ -10,7 +10,7 @@ const tier6 = [
   new Talent(
     'Improved Dispel Magic',
     'spell_holy_dispelmagic',
-    ['Gives a your Dispel Magic a ', '% chance to deal Holy damage for each beneficial effect dispelled and Heal for each harmful effect dispelled.'],
+    ['Gives a your Dispel Magic a ', '% chance to deal Holy damage for each beneficial effect dispelled and Heal for each harmful effect dispelled. This damage or healing causes no additional threat.'],
     2,
     [[50, 100]],
     null,
