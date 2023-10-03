@@ -10,11 +10,7 @@ const tier4 = [
     [[2, 4]]
   ),
   null,
-  new Talent('Eradication', 'ability_creature_cursed_03', ['Increases the effect of your damage over time and drain effects on targets below 30% health by ', '%.'], 3, [[10, 20, 30]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  null,
 ]
 
 export default tier4

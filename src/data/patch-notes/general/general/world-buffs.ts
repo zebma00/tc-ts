@@ -5,7 +5,7 @@ export default {
     'Rallying Cry of the Dragonslayer: Now increases reputation and experience gained by 10%.',
     'Songflower Serenade: Now only active in Felwood and Winterspring.',
     "Spirit of Zandalar: Now only active in Stranglethorn Vale and Zul'Gurub.",
-    "Warchief's Blessing: Removed",
+    "Warchief's Blessing: Now only active in Horde territory",
     'Dire Maul North buffs: Removed.',
     "Sayge's Fortunes (Darkmoon Faire): Removed.",
   ],

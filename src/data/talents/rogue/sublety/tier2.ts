@@ -4,11 +4,11 @@ const tier2 = [
   new Talent(
     'Sleight of Hand',
     'ability_rogue_feint',
-    ['Reduces the chance you are hit by enemy melee and ranged attacks by ', '% and reduces the energy cost of your Feint by ', '.'],
+    ['Reduces the chance you are critically hit by enemy melee and ranged attacks by ', '% and reduces the energy cost of your Feint by ', '.'],
     2,
     [
       [2, 4],
-      [5, 10],
+      [8, 15],
     ],
     null,
     null,

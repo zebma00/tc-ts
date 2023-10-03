@@ -36,7 +36,7 @@ const tier5 = [
     null,
     ['D2']
   ),
-  new Talent('Reckoning', 'spell_holy_blessingofstrength', ['Gives you a ', '% chance to gain an extra attack after being the victim of a critical strike or parrying an attack.'], 5, [[10, 20, 30, 40, 50]], null, null, null, null, null, null, null, {
+  new Talent('Reckoning', 'spell_holy_blessingofstrength', ['Gives you a ', '% chance to gain an extra attack after being the victim of a critical strike or blocking an attack.'], 5, [[10, 20, 30, 40, 50]], null, null, null, null, null, null, null, {
     isNew: false,
     isChanged: true,
     isMoved: false,

@@ -7,7 +7,7 @@ const tier3 = [
     'spell_holy_auramastery',
     [
       <>
-        Sanctifies the land beneath the Paladin, doing 64 holy damage to enemies and healing for 64 to friendly targets who enter the area. <br />
+        Sanctifies the land beneath the Paladin, doing 64 holy damage to enemies and healing friendly targets for 64 in the area. <br />
         <br /> Replaces Consecration.
       </>,
     ],

@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Lunar Flare',
     'spell_arcane_arcanetorrent',
-    ['When activated, grants 100% spell critical strike chance to your next two spells that are capable of critical hits.'],
+    ['When activated, grants 100% spell critical strike chance to your next two damaging spells that are capable of critical hits.'],
     1,
     [[]],
     null,

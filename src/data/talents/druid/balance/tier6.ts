@@ -17,21 +17,11 @@ const tier6 = [
     null,
     { isNew: true, isChanged: false, isMoved: false }
   ),
-  new Talent(
-    'Moonfury',
-    'spell_nature_moonglow',
-    ['Increases the damage and critical strike chance of your Starfire, Moonfire and Wrath spells by ', '%.'],
-    3,
-    [[2, 4, 6]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
-  ),
+  new Talent('Moonfury', 'spell_nature_moonglow', ['Increases the damage and critical strike chance of your Starfire, Moonfire and Wrath spells by ', '%.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   null,
 ]
 

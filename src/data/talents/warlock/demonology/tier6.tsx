@@ -16,26 +16,27 @@ const tier6 = [
       <>
         %. <br />
         <br />
-        Void Walker: reduces physical damage taken by{' '}
+        Void Walker: Restores{' '}
       </>,
       <>
-        %. <br />
+        % of total Health every 4 sec.
+        <br />
         <br />
         Succubus: increases Shadow damage by{' '}
       </>,
       <>
         %. <br />
         <br />
-        Felhunter: increases healing received by{' '}
+        Felhunter: Restores{' '}
       </>,
-      '%.',
+      '% of total Mana every 4 sec.',
     ],
     5,
     [
       [2, 4, 6, 8, 10],
+      [0.8, 1.6, 2.4, 3.2, 4],
       [2, 4, 6, 8, 10],
-      [2, 4, 6, 8, 10],
-      [2, 4, 6, 8, 10],
+      [0.4, 0.8, 1.2, 1.6, 2],
     ],
     [{ x: 3, y: 2 }],
     [{ x: 6, y: 2 }],

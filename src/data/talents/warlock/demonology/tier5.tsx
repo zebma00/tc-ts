@@ -30,12 +30,12 @@ const tier5 = [
       <>
         Sacrifices your demon to get an effect that lasts 30 min. Any demon summoned cancels the effect. <br />
         <br /> Imp: increases your Fire damage by 15%. <br />
-        <br /> Void Walker: reduces physical damage you take by 15%.
+        <br /> Void Walker: Restores 6% of total Health every 4 sec.
         <br />
         <br />
         Succubus: increases your Shadow damage 15%. <br />
         <br />
-        Felhunter: Increases your healing received by 15%.
+        Felhunter: Restores 3% of total Mana every 4 sec.
       </>,
     ],
     1,

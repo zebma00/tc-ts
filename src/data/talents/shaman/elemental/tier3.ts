@@ -21,18 +21,17 @@ const tier3 = [
     'Call of Thunder',
     'spell_nature_callstorm',
     ['Increases the critical strike chance of your Lightning Bolt and Chain Lightning spells by an additional ', '%.'],
-    3,
-    [[2, 4, 6]],
+    5,
+    [[1, 2, 3, 4, 5]],
     [{ x: null, y: null }],
     [{ x: 5, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D3'],
-    { isNew: false, isChanged: true, isMoved: false }
+    ['D3']
   ),
-  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases critical strike chance of your Fire and Frost spells and effects by ', '%.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
+  new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases critical strike chance and damage of your Fire and Frost spells and effects by ', '%.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
