@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Readiness',
     'ability_hunter_readiness',
-    ['After an opponent that yields experience or honor dies while affected by your stings, reduces the cooldown of your hunter abilities by ', ' sec.'],
+    ['After an opponent that yields experience or honor dies while affected by one of your stings, reduces the cooldown of your hunter abilities by ', ' sec.'],
     2,
     [[3, 6]],
     null,
