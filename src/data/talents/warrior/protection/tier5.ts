@@ -17,12 +17,12 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
+  new Talent('Improved Shield Bash', 'ability_warrior_shieldbash', ['Gives your Shield Bash a ', '% chance to silence the target for 2 sec.'], 2, [[50, 100]]),
   new Talent('Ignore Pain', 'ability_warrior_focusedrage', ['Removes all movement impairing effects and all effects which cause loss of control of your character.'], 1, [[]], null, null, null, null, 'Instant cast', '5 min cooldown', null, {
     isNew: true,
     isChanged: false,
     isMoved: false,
   }),
-  null,
 ]
 
 export default tier5

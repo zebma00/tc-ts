@@ -33,32 +33,11 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Caretaker',
-    'ability_hunter_mendpet',
-    [
-      'Gives your Mend Pet spell a ',
-      "% chance to remove 1 poison, disease, curse of magic effect from your pet each tick. In addition, Revive Pet's casting time is reduced by ",
-      ' sec, mana cost is reduced by ',
-      '%, and increases the health your pet returns with by an additional ',
-      '%.',
-    ],
-    2,
-    [
-      [15, 30],
-      [3, 6],
-      [20, 40],
-      [15, 30],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  new Talent('Caretaker', 'ability_hunter_beastsoothe', ["Your Revive Pet's casting time is reduced by ", ' sec, mana cost is reduced by ', '%, and increases the health your pet returns with by an additional ', '%.'], 2, [
+    [3, 6],
+    [20, 40],
+    [15, 30],
+  ]),
 ]
 
 export default tier2

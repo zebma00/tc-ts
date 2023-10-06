@@ -25,20 +25,8 @@ const tier4 = [
     'Shadow Weaving',
     'spell_shadow_blackplague',
     ['Your Shadow damage spells have a ', '% chance to cause the target to become vulnerable to Shadow damage, increasing Shadow damage taken by 3%. This effect stacks up to 5 sec. Lasts 15 sec.'],
-    2,
-    [[50, 100]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    5,
+    [[20, 40, 60, 80, 100]]
   ),
 ]
 

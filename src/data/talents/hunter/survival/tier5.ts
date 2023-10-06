@@ -2,11 +2,11 @@ import { Talent } from '../../Classes'
 
 export default [
   new Talent(
-    'Expose Weakness',
-    'ability_rogue_findweakness',
-    ['Your melee and ranged critical strikes have a ', '% chance to apply an Expose Weakness effect to the target. Expose Weakness increases the attack power of all attackers against that target by 25% of your agility for 7 sec.'],
+    'Readiness',
+    'ability_hunter_readiness',
+    ['After an opponent that yields experience or honor dies while affected by your stings, reduces the cooldown of your hunter abilities by ', ' sec.'],
     2,
-    [[50, 100]],
+    [[3, 6]],
     null,
     null,
     null,

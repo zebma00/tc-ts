@@ -25,11 +25,7 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent('Bad Temper', 'ability_warrior_endlessrage', ['Increases your rage generation by ', '% while below 10 rage.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  null,
 ]
 
 export default tier2

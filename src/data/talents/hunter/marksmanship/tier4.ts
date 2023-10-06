@@ -7,24 +7,6 @@ export default [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent(
-    'Improvied Scorpid Sting',
-    'ability_hunter_criticalshot',
-    ['Your Scorpid Sting also reduces physical damage dealt by the target by ', '%.'],
-    2,
-    [[2, 4]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
-  ),
+  new Talent('Mortal Shots', 'ability_piercedamage', ['Increases your ranged critical strike damage bonus by ', '%.'], 5, [[6, 12, 18, 24, 30]], [{ x: 1, y: 2 }]),
   null,
 ]

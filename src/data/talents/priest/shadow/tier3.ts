@@ -15,11 +15,7 @@ const tier3 = [
     '20 yd range',
     'Channeled (3 sec cast)'
   ),
-  new Talent('Misery', 'spell_shadow_misery', ['Your Shadow Word: Pain also causes the target to take an additional ', '% spell damage.'], 3, [[1, 2, 3]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  null,
 ]
 
 export default tier3

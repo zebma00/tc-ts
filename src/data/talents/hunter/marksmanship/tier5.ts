@@ -1,12 +1,6 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent('Improved Mult-Shot', 'ability_upgrademoonglaive', ['Causes your Multi-Shot to return ', '% of its mana cost when hitting one target.'], 2, [[25, 50]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
-  new Talent('Barrage', 'ability_marksmanship', ['Increases the damage done by your Multi-Shot and Volley spells by ', '%.'], 3, [[5, 10, 15]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
   new Talent(
     'Scatter Shot',
     'ability_golemstormbolt',
@@ -19,9 +13,11 @@ export default [
     '15 yd range',
     '30 sec cooldown'
   ),
-  new Talent('Ranger', 'ability_hunter_mastermarksman', ['Your Multi-Shot and Aimed Shot have a ', '% chance to increase the damage of your next Auto Shot by 100%.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
+  new Talent('Barrage', 'ability_upgrademoonglaive', ['Increases the damage done by your Multi-Shot and Volley spells by ', '%.'], 3, [[5, 10, 15]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
+  new Talent('Improvied Scorpid Sting', 'ability_hunter_criticalshot', ['Your Scorpid Sting also reduces physical damage dealt by the target by ', '%.'], 2, [[2, 4]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
     isMoved: false,
   }),
+  null,
 ]
