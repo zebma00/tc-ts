@@ -7,16 +7,15 @@ const tier4 = [
     'Enrage',
     'spell_shadow_unholyfrenzy',
     ['Gives you a ', '% damage increase for 12 sec or a maximum of 12 swings after being the victim of a critical strike.'],
-    3,
-    [[10, 20, 30]],
+    5,
+    [[6, 12, 18, 24, 30]],
     [{ x: null, y: null }],
     [{ x: 5, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D2'],
-    { isNew: false, isChanged: true, isMoved: false }
+    ['D2']
   ),
   new Talent('Improved Slam', 'ability_warrior_decisivestrike', ['Reduces the casting time of your Slam ability by ', ' sec.'], 5, [[0.1, 0.2, 0.3, 0.4, 0.5]], null, [{ x: 4, y: 3 }], null, null, null, null, ['D1'], {
     isNew: false,

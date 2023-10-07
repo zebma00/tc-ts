@@ -8,7 +8,7 @@ const tier3 = [
   new Talent(
     'Fel Domination',
     'spell_nature_removecurse',
-    ['Your next summon of Succubus, Imp, Felhunter or Void Walker has its casting time reduced by 5.5 sec and Mana cost reduced by 50%.'],
+    ['Your next summon of Succubus, Incubus, Imp, Felhunter or Void Walker has its casting time reduced by 5.5 sec and Mana cost reduced by 50%.'],
     1,
     [[]],
     null,
@@ -20,13 +20,13 @@ const tier3 = [
     ['D1']
   ),
   new Talent(
-    'Fel Power',
+    'Fel Stamina',
     'spell_shadow_antishadow',
-    ['Increases the Stamina of your Imp, Succubus, Void Walker and Felhunter by ', '% and increases your maximum health by ', '%.'],
-    3,
+    ['Increases the Stamina of your Imp, Succubus, Incubus, Void Walker and Felhunter by ', '% and increases your maximum health by ', '%.'],
+    5,
     [
-      [5, 10, 15],
-      [1, 2, 3],
+      [3, 6, 9, 12, 15],
+      [1, 2, 3, 4, 5],
     ],
     null,
     null,

@@ -22,7 +22,7 @@ const tier6 = [
         % of total Health every 4 sec.
         <br />
         <br />
-        Succubus: increases Shadow damage by{' '}
+        Succubus/Incubus: increases Shadow damage by{' '}
       </>,
       <>
         %. <br />

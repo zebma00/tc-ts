@@ -33,7 +33,7 @@ const tier5 = [
         <br /> Void Walker: Restores 6% of total Health every 4 sec.
         <br />
         <br />
-        Succubus: increases your Shadow damage 15%. <br />
+        Succubus/Incubus: increases your Shadow damage 15%. <br />
         <br />
         Felhunter: Restores 3% of total Mana every 4 sec.
       </>,
