@@ -8,11 +8,7 @@ const tier3 = [
     isMoved: false,
     isChanged: false,
   }),
-  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Increases your chance to dodge by an additional ', '%.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
-    isNew: false,
-    isChanged: true,
-    isMoved: false,
-  }),
+  new Talent('Anticipation', 'spell_nature_mirrorimage', ['Increases your chance to dodge by an additional ', '%.'], 5, [[1, 2, 3, 4, 5, 6]]),
 ]
 
 export default tier3

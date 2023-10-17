@@ -7,6 +7,5 @@ export default {
     "Spirit of Zandalar: Now only active in Stranglethorn Vale and Zul'Gurub.",
     "Warchief's Blessing: Now only active in Horde territory",
     'Dire Maul North buffs: Removed.',
-    "Sayge's Fortunes (Darkmoon Faire): Removed.",
   ],
 }

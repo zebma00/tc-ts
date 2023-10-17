@@ -5,7 +5,6 @@ export default {
     'New ability: Soulshatter: Reduces threat on the target by 100%. Reagents: Soul Shard. 2 min cooldown.',
     'Firestone reworked: Bonus fire spell damage increased. No longer grants attacks a chance to deal fire damage. Instead Firestone removes the additional threat caused by Searing Pain.',
     'Spellstone now increases your spell damage by a small amount and increases spell hit chance by 2%.',
-    'Mana gained from Life Tap now scales with spirit.',
     'Increased the health gained from Demon Armor.',
     "Curse of Weakness now reduces the target's damage done by 5%. Only one rank available.",
     'Warlocks can now summon party and raid members from within a dungeon or raid.',

@@ -29,28 +29,11 @@ const tier2 = [
       isMoved: false,
     }
   ),
-  new Talent(
-    'Improved Firestone',
-    'inv_ammo_firetar',
-    ['Increases the bonus fire damage of your Firestone by ', '%. In addition, your Firestone increases your chance to hit with Fire spells by ', '%.'],
-    2,
-    [
-      [25, 50],
-      [1, 2],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: true,
-    }
-  ),
+  new Talent('Improved Firestone', 'inv_ammo_firetar', ['Increases the bonus fire damage of your Firestone by ', '%.'], 2, [[25, 50]], null, null, null, null, null, null, null, {
+    isNew: false,
+    isChanged: true,
+    isMoved: true,
+  }),
 ]
 
 export default tier2

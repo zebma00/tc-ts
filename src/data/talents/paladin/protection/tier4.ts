@@ -1,21 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  new Talent(
-    'Spiritual Attunement',
-    'spell_holy_revivechampion',
-    ['When you are healed by a friendly target, you gain mana equal to ', '% of the amount healed.'],
-    2,
-    [[5, 10]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
   new Talent('Improved Hammer of Justice', 'spell_holy_sealofmight', ['Reduces the cooldown of your Hammer of Justice spell by ', ' sec.'], 3, [[5, 10, 15]]),
   new Talent(
     'Improved Concentration Aura',

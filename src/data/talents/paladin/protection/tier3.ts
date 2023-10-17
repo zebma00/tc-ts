@@ -15,7 +15,11 @@ const tier3 = [
   ),
   new Talent('Improved Righteous Fury', 'spell_holy_sealoffury', ['Increases the amount of threat generated bu your Righteous Fury spell by ', '%.'], 3, [[16, 33, 40]]),
   new Talent('Shield Specialization', 'inv_shield_06', ['Increases the amount of damage absorbed by your shield by ', '%.'], 3, [[10, 20, 30]], [{ x: 0, y: 2 }]),
-  null,
+  new Talent('Spiritual Attunement', 'spell_holy_revivechampion', ['When you are healed by a friendly target, you gain mana equal to ', '% of the amount healed.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
 ]
 
 export default tier3

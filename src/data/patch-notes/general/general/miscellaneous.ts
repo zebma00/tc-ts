@@ -10,7 +10,6 @@ export default {
     "New titles have been added: [City] Ambassador [Name] for exalted city reputation; [Name], The Explorer for uncovering all of Azeroth; [Rank] [Profession] [Name]; [Name] the Exalted for exalted reputation at all of your faction's capital cities.",
     'A disenchant option has been added to the need/greed UI.',
     'World bosses now spawn more frequently and have improved loot tables.',
-    'Healing done is now displayed onto targets.',
     'The character pane now contains additional information like spell hit.',
     'Mail between characters on the same account is now instant.',
     'Vendors now sell drinks that restore mana equal to mage’s Conjured Crystal Water.',
