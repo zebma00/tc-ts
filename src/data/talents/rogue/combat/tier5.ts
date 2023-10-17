@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent('Mace Specialization', 'inv_mace_01', ['Gives you a ', '% chance to stun your target for 3 sec and generate 15 energy with a Mace.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
+  new Talent('Mace Specialization', 'inv_mace_01', ['Gives you a ', '% chance to stun your target for 3 sec and generate 25 energy with a Mace.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
     isNew: false,
     isChanged: true,
     isMoved: false,

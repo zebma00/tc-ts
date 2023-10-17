@@ -10,7 +10,7 @@ const tier5 = [
     'Spirit of Redemption',
     'inv_enchant_essenceeternallarge',
     [
-      'Increases your spirit by 5%. Upon death, the priest becomes the Spirit of Redemption for 10 sec. The Spirit of Redemption cannot attack, be attacked or targeted or move. While in this form the priest can cast any healing spells free of cost. When the effect ends, the priest dies.',
+      'Upon death, the priest becomes the Spirit of Redemption for 10 sec. The Spirit of Redemption cannot attack, be attacked or targeted or move. While in this form the priest can cast any healing spells free of cost. When the effect ends, the priest dies.',
     ],
     1,
     [[]],
@@ -20,8 +20,7 @@ const tier5 = [
     null,
     null,
     null,
-    ['D2'],
-    { isNew: false, isChanged: true, isMoved: false }
+    ['D2']
   ),
   new Talent('Improved Healing', 'spell_holy_heal02', ['Reduces the mana cost of your Lesser Heal, Heal and Greater Heal spells by ', '%.'], 3, [[5, 10, 15]], null, null, null, null, null, null, null, {
     isNew: false,

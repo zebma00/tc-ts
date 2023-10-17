@@ -5,20 +5,9 @@ const tier1 = [
   new Talent(
     'Remorseless Attacks',
     'ability_fiegndead',
-    [
-      'After an opponent that yields experience or honor dies while affected by your poisons, gives you a ',
-      '% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec.',
-    ],
+    ['After killing an opponent that yields experience or honor, gives you a ', '% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike. Lasts 20 sec.'],
     2,
-    [[20, 40]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: false, isChanged: true, isMoved: false }
+    [[20, 40]]
   ),
   new Talent('Malice', 'ability_racial_bloodrage', ['Increases your critical strike chance by ', '%.'], 5, [[1, 2, 3, 4, 5]], [{ x: null, y: null }], [{ x: 2, y: 2 }], null, null, null, null, ['D2']),
   null,

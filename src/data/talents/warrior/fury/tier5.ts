@@ -34,7 +34,7 @@ const tier5 = [
     ['D2']
   ),
   null,
-  new Talent('Crushing Rush', 'ability_warrior_weaponmastery', ['Your Slam increases your attack speed by ', '% for 6 sec.'], 2, [[10, 20]], [{ x: 3, y: 3 }], null, null, null, null, null, null, {
+  new Talent('Crushing Rush', 'ability_warrior_weaponmastery', ['Your Slam increases your attack speed by ', '% for 6 sec.'], 2, [[5, 10]], [{ x: 3, y: 3 }], null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

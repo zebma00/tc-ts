@@ -11,7 +11,7 @@ const tier4 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent('Glacial Bolts', 'spell_frost_arcticwinds', ['Gives your Frostbolt critical strikes a ', '% chance to increase the critical strike chance of your next damaging spell by 15%.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
+  new Talent('Glacial Bolts', 'spell_frost_arcticwinds', ['Your Frostbolt critical strikes increase the critical strike chance of your damaging spells by ', '% for 6 sec.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

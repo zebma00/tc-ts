@@ -12,7 +12,7 @@ const tier5 = [
       <>
         % of the mana and health burned by your Feedback. <br />
         <br />
-        Dwarf: Your Chastice increases the next source of direct spell damage to the target by{' '}
+        Dwarf: Your Chastise increases the next source of direct spell damage to the target by{' '}
       </>,
       <>
         %. <br />
