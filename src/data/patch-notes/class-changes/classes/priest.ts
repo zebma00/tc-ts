@@ -10,6 +10,5 @@ export default {
     'Shadowguard (Troll) orbs now look like shadow orbs instead of lightning.',
     'Damage absorbed by your Power Word: Shield now increases with spell healing.',
     'Mind Soothe can no longer be resisted.',
-    'Reduced the mana cost of Power word: Fortitude, Prayer of Fortitude, Divine Spirit, Prayer of Spirit, Shadow Protection and Prayer of Shadow Protection.',
   ],
 }

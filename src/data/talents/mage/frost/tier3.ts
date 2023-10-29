@@ -18,27 +18,6 @@ const tier3 = [
     { isNew: true, isChanged: false, isMoved: false }
   ),
   null,
-  new Talent(
-    'Improved Blizzard',
-    'spell_frost_icestorm',
-    ['Increases the damage done by your Blizzard spell by ', '% and reduces the cast time by ', ' sec.'],
-    2,
-    [
-      [10, 20],
-      [0.5, 1],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Blizzard', 'spell_frost_icestorm', ["Adds a chill effect to your Blizzard spell. This effect lowers the target's movement speed by ", '%. Lasts 1.5 sec.'], 3, [[30, 50, 65]]),
 ]
 export default tier3

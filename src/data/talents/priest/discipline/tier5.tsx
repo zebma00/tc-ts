@@ -42,7 +42,7 @@ const tier5 = [
       [1, 2],
       [1, 2],
     ],
-    [{ x: 4, y: 0 }],
+    null,
     null,
     null,
     null,

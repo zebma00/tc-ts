@@ -5,7 +5,7 @@ const tier7 = [
   new Talent(
     'Shield Slam',
     'inv_shield_05',
-    ['Slam the target with your shield, dealing 325 to 335 damage, modified by your Block value and dispels 2 magic effects from the target. Generates a hight amount of threat.'],
+    ['Slam the target with your shield, dealing 225 to 235 damage, modified by your block value and has a 50% chance of dispelling 1 magic effect on the target. Generates a hight amount of threat.'],
     1,
     [[]],
     [{ x: 4, y: 1 }],
@@ -13,13 +13,7 @@ const tier7 = [
     '20 Rage',
     'Melee Range',
     'Instant cast',
-    '6 sec cooldown',
-    null,
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
+    '6 sec cooldown'
   ),
   null,
   null,
