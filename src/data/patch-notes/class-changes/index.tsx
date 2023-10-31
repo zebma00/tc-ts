@@ -12,14 +12,6 @@ import warrior from './classes/warrior'
 
 export default {
   title: 'Class changes',
-  note: (
-    <>
-      Note TBD. I took some inspiration from{' '}
-      <a href='https://turtle-wow.org/#/home' target='_blank'>
-        turtlewow
-      </a>{' '}
-      for a number of class changes.
-    </>
-  ),
+  note: 'The aim of these class changes is to add diversity and improve specs that are lacking in certain areas of the game. Additionaly, some underused or awkward abilities are targeted to make them more interesting.',
   content: [druid, hunter, hunterPets, mage, paladin, priest, rogue, shaman, warlock, warrior],
 }
