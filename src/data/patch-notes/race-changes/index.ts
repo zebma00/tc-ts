@@ -9,6 +9,5 @@ import undead from './race-changes/undead'
 
 export default {
   title: 'Race changes',
-  note: 'Note TBD',
   content: [human, dwarf, gnome, nightElf, orc, troll, tauren, undead],
 }

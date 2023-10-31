@@ -14,10 +14,10 @@ const tier1 = [
     [[1]],
     [{ x: null, y: null }],
     [{ x: 0, y: 2 }],
+    '50 Mana',
     null,
-    null,
-    null,
-    null,
+    'Instant',
+    '1 min cooldown',
     ['R1']
   ),
   new Talent("Improved Nature's Grasp", 'spell_nature_natureswrath', ["Increases the chance for your Nature's Grasp to entangle an enemy by ", '%.'], 4, [[15, 30, 45, 65]], [{ x: 0, y: 1 }]),

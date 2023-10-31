@@ -1,6 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
+  null,
   new Talent('Grim Reach', 'spell_shadow_callofbone', ['Increases the range of your Affliction spells by ', '%.'], 2, [[10, 20]]),
   new Talent(
     'Nightfall',
@@ -9,7 +10,6 @@ const tier4 = [
     2,
     [[2, 4]]
   ),
-  null,
   null,
 ]
 

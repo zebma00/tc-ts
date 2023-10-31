@@ -4,9 +4,12 @@ const tier2 = [
   new Talent(
     'Soul Siphon',
     'spell_shadow_lifedrain02',
-    ['Increases the amount drained by your Drain Life and Drain Mana spells by an additional ', '% for each Affliction effect on the target, up to a maximum of 60% additional effect.'],
+    ['Increases the amount drained by your Drain Life and Drain Mana spells by an additional ', '% for each Affliction effect on the target, up to a maximum of ', '% additional effect.'],
     2,
-    [[5, 10]],
+    [
+      [3, 6],
+      [9, 18],
+    ],
     null,
     null,
     null,
@@ -28,7 +31,7 @@ const tier2 = [
     [[50, 100]]
   ),
   new Talent('Improved Life Tap', 'spell_shadow_burningspirit', ['Increases the amount of mana rewarded by your Life Tap spell by ', '%.'], 2, [[10, 20]]),
-  new Talent('Malediction', 'spell_shadow_curseofachimonde', ['Increases the damage bonus effect of your Curse of the Elements and Curse of Shadows by ', '%.'], 3, [[1, 2, 3]], null, null, null, null, null, null, null, {
+  new Talent('Eradication', 'ability_warlock_eradication', ['When you deal damage with Corruption, you have a ', '% chance to increase your spell casting speed by 20% for 10 sec.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

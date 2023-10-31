@@ -9,7 +9,7 @@ const tier5 = [
     ["Reduces the target's movement speed by 10% for 12 sec. Only one curse can be active per Warlock on a target."],
     1,
     [[1]],
-    [{ x: 2, y: 2 }],
+    null,
     [{ x: 4, y: 3 }],
     '8% of base mana',
     '30 yd range',
