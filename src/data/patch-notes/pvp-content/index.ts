@@ -1,8 +1,8 @@
 import battlegrounds from './pvp-content/battlegrounds'
-import honorSystem from './pvp-content/honor-system'
+import worldPvP from './pvp-content/world-pvp'
 
 export default {
   title: 'PvP content',
-  note: 'While many players enjoy the classic honor system and are quite attached to it, to others it can feel discouraging. There should be alternatives to both gaining honor and acquiring strong PvP gear.',
-  content: [honorSystem, battlegrounds],
+  note: 'Battlegrounds are great and can slightly improved. World PvP is lacking however, and encouraging players to go out in the world to collect honor could be a nice addition.',
+  content: [worldPvP, battlegrounds],
 }

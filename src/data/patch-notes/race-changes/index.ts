@@ -9,6 +9,6 @@ import undead from './race-changes/undead'
 
 export default {
   title: 'Race changes',
-  note: 'Some races are lacking in certain areas, or get outcompeted in certain roles. These changes aim to create a niche for each race in both PvE and PvP, while still retaining their core fantasies.',
+  note: 'Some race/class combinations are lacking in certain areas, or get outcompeted in certain roles. These changes aim to create a niche for each race in both PvE and PvP, while still retaining their core fantasies.',
   content: [human, dwarf, gnome, nightElf, orc, troll, tauren, undead],
 }

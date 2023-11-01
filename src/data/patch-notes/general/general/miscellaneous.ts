@@ -14,6 +14,7 @@ export default {
     'The character pane now contains additional information like spell hit.',
     'Mail between characters on the same account is now instant.',
     'The Troll weapon trainer now trains daggers.',
+    'Some enemies in dungeons have been adjusted to limit the power of mage boosting.',
     'Vendors now sell drinks that restore mana equal to mage’s Conjured Crystal Water.',
     'Vendors now sell food that restores health equal to mage’s Conjured Cinnamon Roll.',
   ],
