@@ -7,6 +7,6 @@ import miscellaneous from './general/miscellaneous'
 
 export default {
   title: 'General',
-  note: 'Note TBD; based on classic HC (not SoM), so includes improved UI options for professions and displaying healing onto targets along with other QoL changes.',
+  note: 'The main goal of these proposed changes is to add diversity to World of Warcraft Classic, without trying to reinvent the game that we know and love. All QoL changes that are found in modern classic HC, as well as the new honor system are included.',
   content: [world, heroic, serverBalance, worldBuffs, miscellaneous],
 }
