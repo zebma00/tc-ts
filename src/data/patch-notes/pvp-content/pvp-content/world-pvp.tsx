@@ -1,5 +1,5 @@
 export default {
-  title: 'Honor system',
+  title: 'World PvP',
   content: [
     'Neutral elite and groups of elite patrols have been added in a number of zones.',
     'Defeating these enemies grants a substantial amount of honor and three Alliance or Horde Marks of Honor.  This reward is only granted to players of the victorious faction who contributed to the kill.',
