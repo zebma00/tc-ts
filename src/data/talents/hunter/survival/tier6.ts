@@ -4,11 +4,11 @@ export default [
   new Talent(
     'Diligence',
     'spell_shadow_summonimp',
-    ['Increases your damage by ', '% and reduces the mana cost of your abilities by ', '% for 12 sec after a one of your traps is triggered.'],
+    ['Increases your damage by ', '% and reduces the mana cost of your abilities by ', '% for 15 sec after a one of your traps is triggered.'],
     2,
     [
       [5, 10],
-      [25, 50],
+      [15, 30],
     ],
     [{ x: 4, y: 0 }],
     null,

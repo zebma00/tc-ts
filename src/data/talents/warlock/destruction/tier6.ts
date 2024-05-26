@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier6 = [
-  new Talent('Annihilation', 'ability_creature_cursed_03', ['Gives your spell critical strikes a ', '% chance to reduce the cooldown of your Soulshatter by 5 sec.'], 3, [[15, 30, 45]], null, null, null, null, null, null, null, {
+  new Talent('Annihilation', 'ability_creature_cursed_03', ['Gives your spell critical strikes a ', '% chance to reduce the cooldown of your Soulshatter by 5 sec.'], 3, [[30, 60, 90]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

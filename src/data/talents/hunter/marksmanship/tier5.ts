@@ -14,7 +14,7 @@ export default [
     '30 sec cooldown'
   ),
   new Talent('Barrage', 'ability_upgrademoonglaive', ['Increases the damage done by your Multi-Shot and Volley spells by ', '%.'], 3, [[5, 10, 15]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
-  new Talent('Bow Specialization', 'inv_weapon_bow_07', ['Gives you a ', '% chance to trigger an additional attack against the same target when using bows.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
+  new Talent('Bow Specialization', 'inv_weapon_bow_07', ['Gives you a ', '% chance to trigger an additional attack against the same target when using a Bow.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
     isChanged: false,
     isMoved: false,
     isNew: true,

@@ -1,7 +1,25 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent(
+    'Torment',
+    'ability_warlock_everlastingaffliction',
+    ['Whenever a target affected by your Corruption dies, ', "% of the remaining damage is added to your active Corruption effects. In addition, your active Corruption's durations are refreshed."],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isChanged: false,
+      isMoved: false,
+      isNew: true,
+    }
+  ),
   new Talent('Siphon Life', 'spell_shadow_requiem', ['Transfers 15 health from the target to the caster every 3 sec. Lasts 30 sec.'], 1, [[]], [{ x: null, y: null }], [{ x: 5, y: 1 }], '150 Mana', '30 yd range', 'Instant', null, ['D1']),
   new Talent(
     'Curse of Exhaustion',
