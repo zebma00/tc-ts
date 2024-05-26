@@ -9,6 +9,5 @@ export default {
     'Starshards (Night Elf) now deals increased damage and lasts 4 sec. 1 min cooldown.',
     'Shadowguard (Troll) orbs now look like shadow orbs instead of lightning.',
     'Damage absorbed by your Power Word: Shield now increases with spell healing.',
-    'Mind Soothe can no longer be resisted.',
   ],
 }

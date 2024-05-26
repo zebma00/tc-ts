@@ -1,7 +1,8 @@
 export default {
   title: 'Miscellaneous',
   content: [
-    'A "duel as party" option has been added from the character dropdown menu. This allows parties to duel each other.',
+    'Hit and spell hit are now one stat. Crit and spell crit are now one stat.',
+    'A "duel as party" option has been added from the character dropdown menu for party leaders. This allows parties to duel each other.',
     'Quest log size increased to 30.',
     'New class quests have been added.',
     'Normal, elite and boss target dummies have been added to all major cities. Attacking these dummies does not increase weapon skill.',
@@ -10,10 +11,10 @@ export default {
     "New titles have been added: [City] Ambassador [Name] for exalted city reputation; [Name], The Explorer for uncovering all of Azeroth; [Rank] [Profession] [Name]; [Name] the Exalted for exalted reputation at all of your faction's capital cities.",
     'A disenchant option has been added to the need/greed UI.',
     'World bosses now spawn more frequently and have improved loot tables.',
-    'The character pane now contains additional information like spell hit.',
+    'The character pane now contains additional information like hit and crit.',
     'Mail between characters on the same account is now instant.',
     'The Troll weapon trainer now trains daggers.',
-    'Some enemies in dungeons have been adjusted to limit the power of mage boosting.',
+    "The boats that travel between Ruth'eran Village - Auberdine and Feralas coast - Feathermoon Stronghold now have the Night Elf boat model.",
     'Vendors now sell drinks that restore mana equal to mage’s Conjured Crystal Water.',
     'Vendors now sell food that restores health equal to mage’s Conjured Cinnamon Roll.',
   ],
