@@ -1,7 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier3 = [
-  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit with melee attacks and spells by ', '%.'], 3, [[1, 2, 3]]),
+  new Talent("Nature's Guidance", 'spell_frost_stun', ['Increases your chance to hit by ', '%.'], 3, [[1, 2, 3]]),
   new Talent('Healing Focus', 'spell_nature_healingwavelesser', ['Gives you a ', '% chance to avoid interruption caused by damage while casting any Healing spell.'], 5, [[14, 28, 42, 56, 70]]),
   new Talent(
     'Water Shield',

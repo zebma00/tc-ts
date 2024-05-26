@@ -1,10 +1,39 @@
 import { Talent } from '../../Classes'
 
 const tier4 = [
-  new Talent('Improved Shred', 'spell_shadow_vampiricaura', ['Reduces the Energy cost of your Shred ability by ', '.'], 2, [[6, 12]]),
-  new Talent('Predatory Strikes', 'ability_hunter_pet_cat', ['Increases your melee attack power while in Bear, Dire Bear or Cat Form by ', '% of your level.'], 3, [[50, 100, 150]], [{ x: null, y: null }], [{ x: 5, y: 1 }], null, null, null, null, [
-    'D2',
-  ]),
+  new Talent(
+    'Natural Guardian',
+    'ability_druid_kingofthejungle',
+    ['When you deal a melee critical strike, you have a ', '% chance to gain 5% armor for 8 sec. This effect stacks up to 5 times.'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    { isNew: true, isChanged: false, isMoved: false }
+  ),
+  new Talent(
+    'Predatory Strikes',
+    'ability_hunter_pet_cat',
+    ['Increases your melee attack power while in Bear, Dire Bear or Cat Form by ', '% of your level and increases your spell damage and healing by ', '% of your attack power.'],
+    3,
+    [
+      [50, 100, 150],
+      [10, 20, 30],
+    ],
+    [{ x: null, y: null }],
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D2'],
+    { isNew: false, isChanged: true, isMoved: false }
+  ),
   new Talent(
     'Primal Fury',
     'ability_racial_cannibalize',
@@ -27,21 +56,7 @@ const tier4 = [
     null,
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent(
-    'Natural Guardian',
-    'ability_druid_kingofthejungle',
-    ['When you deal a melee critical strike, you have a ', '% chance to gain 5% armor for 8 sec. This effect stacks up to 5 times.'],
-    2,
-    [[50, 100]],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    { isNew: true, isChanged: false, isMoved: false }
-  ),
+  null,
 ]
 
 export default tier4

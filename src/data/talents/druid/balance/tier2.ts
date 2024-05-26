@@ -2,29 +2,15 @@ import { Talent } from '../../Classes'
 
 const tier2 = [
   new Talent('Improved Entangling Roots', 'spell_nature_stranglevines', ['Gives you a ', '% chance to avoid interruption caused by damage while casting Entangling Roots.'], 3, [[40, 70, 100]]),
-  new Talent(
-    'Improved Moonfire',
-    'spell_nature_starfall',
-    ['Increases the damage and critical strike chance of your Moonfire spell by ', '%.'],
-    2,
-    [[5, 10]],
-    [{ x: null, y: null }],
-    [{ x: 3, y: 1 }],
-    null,
-    null,
-    null,
-    null,
-    ['D2'],
-    {
-      isNew: false,
-      isChanged: true,
-      isMoved: false,
-    }
-  ),
+  new Talent('Improved Moonfire', 'spell_nature_starfall', ['Increases the damage and critical strike chance of your Moonfire spell by ', '%.'], 2, [[5, 10]], [{ x: null, y: null }], [{ x: 3, y: 1 }], null, null, null, null, ['D2'], {
+    isNew: false,
+    isChanged: true,
+    isMoved: false,
+  }),
   new Talent(
     'Natural Weapons',
     'inv_staff_01',
-    ['Increases the damage you deal with physical attacks in all forms by ', '% and increases your chance to hit with spells and melee attacks by ', '%.'],
+    ['Increases the damage you deal with physical attacks in all forms by ', '% and increases your chance to hit by ', '%.'],
     3,
     [
       [4, 7, 19],

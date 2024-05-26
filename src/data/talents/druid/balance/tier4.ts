@@ -4,13 +4,13 @@ const tier4 = [
   null,
   new Talent('Vengeance', 'spell_nature_purge', ['Increases the critical strike damage bonus of your Starfire, Moonfire and Wrath by ', '%.'], 5, [[20, 40, 60, 80, 100]], [{ x: 1, y: 1 }]),
   new Talent(
-    'Celestial Focus',
+    'Improved Starfire',
     'spell_arcane_starfire',
-    ['Gives you Starfire a ', "% chance to stun the target for 3 sec and increases the chance you'll resist spell interruption when casting your Wrath spell by ", '%.'],
-    2,
+    ['Reduces the cast time of your Starfire by ', ' sec and gives you Starfire a ', '% chance to stun the target for 3 sec.'],
+    3,
     [
-      [8, 15],
-      [35, 70],
+      [0.2, 0.4, 0.5],
+      [5, 10, 15],
     ],
     null,
     null,
