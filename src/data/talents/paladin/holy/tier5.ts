@@ -1,11 +1,25 @@
 import { Talent } from '../../Classes'
-//spell_holy_holyprotection
+
 const tier5 = [
-  new Talent('Blessed Surge', 'spell_holy_spellwarding', ['Gives your spell critical strikes a ', '% chance to increase your Holy damage by 20% for 8 sec.'], 2, [[50, 100]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent(
+    'Blessed Surge',
+    'spell_holy_spellwarding',
+    ['Critical hits have a ', '% chance to reset the cooldown of your Exorcism and Holy Wrath and reduce their mana cost by 100%. 5 sec cooldown'],
+    2,
+    [[50, 100]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent(
     'Divine Favor',
     'spell_holy_heal',

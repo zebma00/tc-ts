@@ -1,40 +1,25 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
+  null,
   new Talent(
-    'Righteous Focus',
-    'spell_holy_spiritualguidence',
-    ['When activated, increases the range of your next Judgement by 20 yards and causes your next Judgement to not incur its cooldown.'],
+    'Holy Shield',
+    'spell_holy_blessingofprotection',
+    ['Increases chance to block by 30% for 10 sec, and deals 65 Holy damage for each attack blocked while active. Damage caused by Holy Shield causes 20% additional threat. Each block expends a charge. 4 charges.'],
     1,
     [[]],
     null,
-    null,
-    null,
-    null,
-    'Instant',
-    '30 sec cooldown',
-    null,
-    {
-      isNew: true,
-      isChanged: false,
-      isMoved: false,
-    }
-  ),
-  new Talent(
-    'Blessing of Protection',
-    'spell_nature_lightningshield',
-    [
-      'Places a Blessing on the friendly target, reducing damage dealt from all sources by up to 10 for 5 min. In addition, when the target blocks a melee attack the attacker will take 14 Holy damage. Players may only have one Blessing on them per Paladin at any one time.',
-    ],
-    1,
-    [[]],
-    [{ x: null, y: null }],
     [{ x: 6, y: 1 }],
-    '60 Mana',
-    '30 yd range',
-    'Instant',
+    '150 Mana',
     null,
-    ['D2']
+    'Instant',
+    '10 sec cooldown',
+    ['D2'],
+    {
+      isNew: false,
+      isChanged: false,
+      isMoved: true,
+    }
   ),
   new Talent('Reckoning', 'spell_holy_blessingofstrength', ['Gives you a ', '% chance to gain an extra attack after being the victim of a critical strike or blocking an attack.'], 5, [[10, 20, 30, 40, 50]], null, null, null, null, null, null, null, {
     isNew: false,
