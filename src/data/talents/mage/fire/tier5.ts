@@ -1,7 +1,25 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent(
+    'Blazing Speed',
+    'spell_fire_burningspeed',
+    ['Gives you a ', '% chance when hit by a melee or ranged attack to increase your movement speel by 50% and dispel all movement impairing effects.'],
+    2,
+    [[5, 10]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent('Critical Mass', 'spell_nature_wispheal', ['Increases the critical strike chance of your Fire spells by ', '%.'], 3, [[2, 4, 6]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
   new Talent(
     'Blast Wave',

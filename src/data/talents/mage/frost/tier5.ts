@@ -1,7 +1,11 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  null,
+  new Talent('Glacial Bolts', 'spell_frost_arcticwinds', ['Your Frostbolt critical strikes increase the critical strike chance of your damaging spells by ', '% for 6 sec.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Ice Block',
     'spell_frost_frost',

@@ -11,11 +11,25 @@ const tier4 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent('Glacial Bolts', 'spell_frost_arcticwinds', ['Your Frostbolt critical strikes increase the critical strike chance of your damaging spells by ', '% for 6 sec.'], 3, [[2, 4, 6]], null, null, null, null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent(
+    'Brain Freeze',
+    'ability_mage_brainfreeze',
+    ['Your Frost damage spells with chilling effects have a ', '% chance to increase the damage of your next Fire or Arcane damage spell by 50%.'],
+    3,
+    [[5, 10, 15]],
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
 ]
 
 export default tier4
