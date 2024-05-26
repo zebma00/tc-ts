@@ -7,7 +7,11 @@ const tier6 = [
     isMoved: false,
   }),
   null,
-  new Talent('Improved Hamstring', 'ability_shockwave', ['Gives your Hamstring a ', '% chance to immobilize the target for 5 sec.'], 3, [[10, 20, 30]]),
+  new Talent('Blood Frenzy', 'ability_warrior_bloodfrenzy', ['Each time you deal Bleed damage, you gain ', ' Rage.'], 2, [[3, 5]], null, null, null, null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   null,
 ]
 

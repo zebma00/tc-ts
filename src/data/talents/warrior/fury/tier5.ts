@@ -4,11 +4,11 @@ const tier5 = [
   new Talent(
     'Improved Intercept',
     'ability_rogue_sprint',
-    ['Reduces the rage cost of your Intercept by ', ' rage points and reduces the cooldown by ', ' sec.'],
+    ['Reduces the cooldown by ', ' sec and gives your intercept a ', '% chance to remove movement impairing effects.'],
     2,
     [
       [5, 10],
-      [5, 10],
+      [50, 100],
     ],
     null,
     null,
