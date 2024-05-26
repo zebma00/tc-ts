@@ -65,12 +65,17 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
+  new Talent('Shamanistic Rage', 'spell_nature_shamanrage', ['Reduces all damage you take by 20% and you regenerate mana equal to 5% of your maximum mana every second for 15 sec.'], 1, [[]], null, null, '10% of base Mana', null, null, null, null, {
+    isNew: true,
+    isChanged: false,
+    isMoved: false,
+  }),
   new Talent(
     'Totemic Fury',
     'spell_fire_totemofwrath',
-    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by 30% for 8 sec and reduce the cooldown of your totems that are on cooldown by 1 sec.'],
-    1,
-    [[]],
+    ['Your critical strikes with melee attacks increase the effect of your totems that affect friendly targets by ', '% for 8 sec and reduce the cooldown of your totems that are on cooldown by 1 sec.'],
+    2,
+    [[15, 30]],
     null,
     null,
     null,
@@ -84,7 +89,6 @@ const tier5 = [
       isMoved: false,
     }
   ),
-  null,
 ]
 
 export default tier5

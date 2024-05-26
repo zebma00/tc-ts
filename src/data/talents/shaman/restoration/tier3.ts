@@ -7,7 +7,7 @@ const tier3 = [
     'Water Shield',
     'ability_shaman_watershield',
     [
-      'The caster is surrounded by 3 globes of water, granting 12 mana per 5 sec. When a spell, melee or ranged attack hits the caster, 39 mana is restored to the caster. This expends one water globe. Only one globe will activate every few seconds.  Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time.',
+      'The caster is surrounded by 3 globes of water. When the caster scores a critical hit with a spell, or when a spell, melee or ranged attack hits the caster, 39 mana is restored to the caster. This expends one water globe. Only one globe will activate every few seconds.  Lasts 10 min.  Only one Elemental Shield can be active on the Shaman at any one time.',
     ],
     1,
     [[]],

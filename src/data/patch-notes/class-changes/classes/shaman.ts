@@ -3,6 +3,7 @@ export default {
   content: [
     'New ability: Totemic Recall: Removes all your totems and returns mana equal to 25% of their cost. Learned at lvl 4.',
     'Reduced the cast time of Lightning Bolt and Chain Lightning by 0.5 sec.',
+    'Lightning Shield now also triggers when the Shaman scores a critical hit with a melee attack.',
     'Increased the radius of totems that affect friendly targets to 30 yards.',
     'Sentry Totem now has stealth.',
     'Stoneskin Totem now also reduces damage taken from ranged attacks.',

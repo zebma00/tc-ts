@@ -1,28 +1,7 @@
 import { Talent } from '../../Classes'
 
 const tier5 = [
-  new Talent(
-    'Two-Handed Weapon Specialization',
-    'inv_hammer_04',
-    ['Increases the damage you deal with two-handed melee weapons by ', '% and increases your spell damage by ', '% of your attack power.'],
-    3,
-    [
-      [2, 4, 6],
-      [10, 20, 30],
-    ],
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    {
-      isMoved: false,
-      isChanged: true,
-      isNew: false,
-    }
-  ),
+  new Talent('Two-Handed Weapon Specialization', 'inv_hammer_04', ['Increases the damage you deal with two-handed melee weapons by ', '%.'], 3, [[2, 4, 6]]),
   null,
   new Talent(
     'Repentance',

@@ -6,7 +6,24 @@ const tier3 = [
     isChanged: true,
     isMoved: false,
   }),
-  new Talent('Conviction', 'spell_holy_retributionaura', ['Increases your chance to get a critical strike with Melee weapons by ', '%.'], 5, [[1, 2, 3, 4, 5]], [{ x: null, y: null }], [{ x: 5, y: 1 }], null, null, null, null, ['D3']),
+  new Talent(
+    'Conviction',
+    'spell_holy_retributionaura',
+    ['Increases your chance to get a critical strike with Melee weapons by ', '% and increases your spell damage by ', '% of your attack power.'],
+    5,
+    [
+      [1, 2, 3, 4, 5],
+      [6, 12, 18, 24, 30],
+    ],
+    [{ x: null, y: null }],
+    [{ x: 5, y: 1 }],
+    null,
+    null,
+    null,
+    null,
+    ['D3'],
+    { isNew: false, isChanged: true, isMoved: false }
+  ),
   new Talent(
     'Seal of Command',
     'ability_warrior_innerrage',

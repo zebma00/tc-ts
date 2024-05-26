@@ -24,12 +24,12 @@ const tier3 = [
     5,
     [[1, 2, 3, 4, 6]],
     [{ x: null, y: null }],
-    [{ x: 5, y: 2 }],
+    [{ x: 4, y: 2 }],
     null,
     null,
     null,
     null,
-    ['D3']
+    ['D2']
   ),
   new Talent('Ice and Fire', 'spell_fire_masterofelements', ['Increases critical strike chance and damage of your Fire and Frost spells and effects by ', '%.'], 5, [[1, 2, 3, 4, 5]], null, null, null, null, null, null, null, {
     isNew: true,
