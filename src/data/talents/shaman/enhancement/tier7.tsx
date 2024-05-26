@@ -9,11 +9,11 @@ const tier7 = [
       <>
         Gives you an extra attack with an additional effect depending on your active weapon enhancement. <br />
         <br />
-        Rockbiter: Deals an additional 50% weapon damage and taunts the target to attack the shaman. <br />
+        Rockbiter: Deals an additional 70% weapon damage and taunts the target to attack the shaman. <br />
         <br />
-        Windfury: Increases the shaman's attack speed by 10% for 12 sec. <br />
+        Windfury: Increases the shaman's attack speed by 20% for 8 sec. <br />
         <br />
-        Flametongue: Increases the damage of your next damaging spell by 50%. <br />
+        Flametongue: Increases the damage of your next damaging spell by 70%. <br />
         <br />
         Frostbrand: Deals an additional 50% of weapon damage as Frost damage and roots the target in place for 4 sec. <br />
       </>,
@@ -25,7 +25,7 @@ const tier7 = [
     'Melee range',
     '8% of base mana',
     'Instant',
-    '12 sec cooldown',
+    '20 sec cooldown',
     null,
     { isNew: false, isChanged: true, isMoved: false }
   ),
