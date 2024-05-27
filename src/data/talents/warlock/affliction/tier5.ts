@@ -4,7 +4,7 @@ const tier5 = [
   new Talent(
     'Torment',
     'ability_warlock_everlastingaffliction',
-    ['Whenever a target affected by your Corruption dies, ', "% of the remaining damage is added to your active Corruption effects. In addition, your active Corruption's durations are refreshed."],
+    ['Whenever a target affected by your Corruption dies, ', "% of the remaining damage is added to your active Corruption effects, up to 200% additional damage. In addition, your active Corruptions' durations are refreshed."],
     2,
     [[50, 100]],
     null,

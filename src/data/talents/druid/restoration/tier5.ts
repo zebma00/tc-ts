@@ -28,7 +28,7 @@ const tier5 = [
   new Talent(
     'Fury of Stormrage',
     'inv_staff_90',
-    ['Reduces the mana cost of Wrath by ', '% and each time you deal damage with Wrath you have a ', '% chance to reduce the cast time of your next Healing Touch within 15 sec by 2 sec.'],
+    ['Reduces the mana cost of Wrath by ', '% and each time you deal damage with Wrath you have a ', '% chance to reduce the cast time of your next Healing Touch within 15 sec by 1.5 sec.'],
     2,
     [
       [50, 100],

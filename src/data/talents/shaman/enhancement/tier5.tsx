@@ -65,11 +65,25 @@ const tier5 = [
     ['D2'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Shamanistic Rage', 'spell_nature_shamanrage', ['Reduces all damage you take by 20% and you regenerate mana equal to 5% of your maximum mana every second for 15 sec.'], 1, [[]], null, null, '10% of base Mana', null, null, null, null, {
-    isNew: true,
-    isChanged: false,
-    isMoved: false,
-  }),
+  new Talent(
+    'Shamanistic Rage',
+    'spell_nature_shamanrage',
+    ['Reduces all damage you take by 20% and gives your succesful melee attacks a chance to regenerate mana equal to 30% of your attack power. Lasts 15 sec.'],
+    1,
+    [[]],
+    null,
+    null,
+    'Instant',
+    '1 min cooldown',
+    null,
+    null,
+    null,
+    {
+      isNew: true,
+      isChanged: false,
+      isMoved: false,
+    }
+  ),
   new Talent(
     'Totemic Fury',
     'spell_fire_totemofwrath',

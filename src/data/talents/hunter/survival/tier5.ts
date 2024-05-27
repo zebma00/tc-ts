@@ -1,25 +1,11 @@
 import { Talent } from '../../Classes'
 
 export default [
-  new Talent(
-    'Trap Launcher',
-    'ability_hunter_resourcefulness',
-    ['When activated, your next Trap will be launched instantly at the enemy target.'],
-    1,
-    [[]],
-    null,
-    [{ x: 5, y: 0 }],
-    '3% of base mana',
-    '40 yd rang',
-    'Instant',
-    '1 min cooldow',
-    ['D1'],
-    {
-      isChanged: false,
-      isMoved: false,
-      isNew: true,
-    }
-  ),
+  new Talent('Trap Launcher', 'ability_hunter_resourcefulness', ['When activated, your next Trap will be launched instantly at the enemy target.'], 1, [[]], null, null, '3% of base mana', '40 yd rang', 'Instant', '1 min cooldow', null, {
+    isChanged: false,
+    isMoved: false,
+    isNew: true,
+  }),
   new Talent('Killer Instinct', 'spell_holy_blessingofstamina', ['Increases your critical strike chance with all attacks by ', '%.'], 3, [[1, 2, 3]], [{ x: null, y: null }], [{ x: 6, y: 1 }], null, null, null, null, ['D2']),
   new Talent(
     'Counterattack',

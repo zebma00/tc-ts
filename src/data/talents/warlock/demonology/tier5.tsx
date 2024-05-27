@@ -54,7 +54,7 @@ const tier5 = [
     }
   ),
   null,
-  new Talent('Demonic Synergy', 'spell_shadow_demonicempathy', ['Damage done by you or your summoned demon has a 5% chance to increase the damage done by the other by ', '% for 15 sec.'], 2, [[10, 20]], null, null, null, null, null, null, null, {
+  new Talent('Demonic Synergy', 'spell_shadow_demonicempathy', ['Damage done by you or your summoned demon has a ', '% chance to increase the damage done by the other by 10% for 15 sec.'], 2, [[5, 10]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

@@ -16,7 +16,7 @@ const tier1 = [
     ['R1'],
     { isNew: false, isChanged: true, isMoved: false }
   ),
-  new Talent('Improved Spirit Tap', 'spell_shadow_requiem', ['Gives you a ', '% chance to gain Spirit Tap after dealing Shadow damage.'], 2, [[1, 2]], [{ x: 0, y: 0 }], null, null, null, null, null, null, {
+  new Talent('Improved Spirit Tap', 'spell_shadow_requiem', ['Gives you a ', '% chance to gain Spirit Tap after dealing Shadow damage.'], 2, [[2, 4]], [{ x: 0, y: 0 }], null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

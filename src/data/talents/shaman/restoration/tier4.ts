@@ -4,9 +4,9 @@ const tier4 = [
   new Talent(
     'Restorative Surge',
     'spell_nature_giftofthewaterspirit',
-    ['Your attacks and damaging spells have ', ' chance to trigger your active Mana Spring or Healing Stream Totem.'],
+    ['Critical strikes from your attacks and damaging spells have a ', '% chance to trigger your active Mana Spring or Healing Stream Totem.'],
     2,
-    [['a', 'an increased']],
+    [[25, 50]],
     [{ x: 3, y: 1 }],
     null,
     null,
