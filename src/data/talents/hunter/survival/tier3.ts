@@ -4,7 +4,7 @@ export default [
   new Talent(
     'Trap Mastery',
     'spell_nature_timestop',
-    ['Increases the duration of your Freezing and Frost traps by ', '% and the damage of your Explosive and Immolations traps by ', '%. In addition, reduces the chance your traps are resisted by ', '% and reduces the time to arm traps by ', 'sec.'],
+    ['Increases the duration of your Freezing and Frost traps by ', '% and the damage of your Explosive and Immolations traps by ', '%. In addition, reduces the chance your traps are resisted by ', '% and reduces the time to arm traps by ', ' sec.'],
     2,
     [
       [15, 30],
@@ -30,12 +30,9 @@ export default [
   new Talent(
     'Diligence',
     'spell_shadow_summonimp',
-    ['Increases your damage by ', '% and reduces the mana cost of your abilities by ', '% for 15 sec after a one of your traps is triggered.'],
+    ['Fire or Nature damage with one of you abilities, you have a ', '% chance to cause your next Aimed Shot, Arcane Shot or Raptor Strike to trigger no cooldown.'],
     2,
-    [
-      [5, 10],
-      [15, 30],
-    ],
+    [[3, 6]],
     null,
     null,
     null,

@@ -28,7 +28,7 @@ const tier2 = [
     [3, 6, 9, 12, 15],
     [1, 2, 3, 4, 5],
   ]),
-  new Talent('Bloodshed', 'ability_druid_ravage', ['Your Garrote and Rupture ticks have a ', '% chance to restore 5 energy.'], 2, [[25, 50]], null, null, null, null, null, null, null, {
+  new Talent('Bloodshed', 'spell_deathknight_bloodboil', ['Your Garrote and Rupture ticks have a ', '% chance to restore 5 energy.'], 2, [[25, 50]], null, null, null, null, null, null, null, {
     isNew: true,
     isChanged: false,
     isMoved: false,

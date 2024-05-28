@@ -7,6 +7,6 @@ export default [
     isChanged: false,
     isMoved: false,
   }),
-  null,
+  new Talent('Efficiency', 'spell_frost_wizardmark', ['Reduces the Mana cost of your Shots and Stings by ', '%.'], 5, [[2, 4, 6, 8, 10]]),
   new Talent('Hawk Eye', 'ability_townwatch', ['Increases the range of your ranged weapons by ', ' yards.'], 3, [[2, 4, 6]]),
 ]
